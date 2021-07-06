@@ -13,6 +13,25 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 
 const Banner = () => {
+    const data = useStaticQuery(graphql`
+    query{
+        banner: file(relativePath: {eq: "banner.md"}) {
+            id
+            childMarkdownRemark {
+              id
+              frontmatter {
+                title
+                description
+                boxdescription
+                bannertyping {
+                  id
+                  name
+                }
+              }
+            }
+          }
+        }
+     `)
     const [bcontact, setBcontact] = useState(true)
     const [open, setOpen] = React.useState(false);
 
@@ -29,7 +48,7 @@ const Banner = () => {
                 <div id="banner_container">
                     <div id="banner_container_matter">
                         <div id="banner_title">
-                            <div id="static-txt">aaaaaaaaaaaaaaaaaaaa</div>
+                            <div id="static-txt">{data.banner.childMarkdownRemark.frontmatter.title}</div>
                             <Typewriter id="Typewriter"
                                 options={{
                                     loop: true,
@@ -58,7 +77,7 @@ const Banner = () => {
                                 }}
                             />
                         </div>
-                        <p id="banner_desc">aaa</p>
+                        <p id="banner_desc">{data.banner.childMarkdownRemark.frontmatter.description}</p>
                         <div id="banner_btn_container">
                             <button onClick={handleClickOpen}><img src={img1} alt="img" />Watch Video</button>
                             <Dialog
@@ -84,7 +103,7 @@ const Banner = () => {
                                 <img src={img2} alt="img" />
                             </div>
                             <div id="banner_mini_container_matter">
-                                <p>aaaaaaaaaaaaaaaa</p>
+                                <p>{data.banner.childMarkdownRemark.frontmatter.boxdescription}</p>
                             </div>
                         </div>
                     </div>
