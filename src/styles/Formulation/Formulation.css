@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#formulation #contact {
+  background: #f5f8ff;
+}
+#formulation #navcont #contact {
+  background: white;
+}
+@media (max-width: 750px) {
+  #formulation #contact .contact_info_block {
+    background: transparent;
+  }
+}

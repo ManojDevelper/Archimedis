@@ -1,0 +1,451 @@
+#fservice {
+  width: 100%;
+  background: white;
+  padding: 7vw 10vw 10.2877697841727vw 10vw;
+}
+#fservice p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.45323741007194vw;
+  line-height: 4.74820143884892vw;
+  text-align: center;
+  color: #200e32;
+}
+#fservice p:nth-child(2) {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 2.01438848920863vw;
+  text-align: center;
+  color: #200e32;
+  width: 36.9784172661871vw;
+  margin: 0.5vw auto auto auto;
+}
+#fservice_container {
+  width: 100%;
+  height: 100%;
+}
+#fservice_container .fservice_container_cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 12vw;
+}
+#fservice_container_cards:nth-child(1) {
+  margin-top: 0;
+}
+#fservice_container_main:nth-child(3) #fserviceassurance{
+  display: block;
+}
+#fservice_container_main:nth-child(4) #fserviceassurance{
+  display: block;
+}
+#fservice_container_main #fserviceassurance{
+  display: none;
+}
+#fservice
+  #fservice_container_main:nth-child(even)
+  #fservice_container
+  .fservice_container_cards {
+  flex-direction: row-reverse;
+}
+#fservice_container_cards_block1 {
+  display: flex;
+  width: 55%;
+}
+#fservice_container_cards_matter {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  margin: auto auto auto 3vw;
+}
+#fservice_container_cards_matter #c_c_title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.87769784172662vw;
+  line-height: 3.59712230215827vw;
+  color: #200e32;
+}
+#fservice_container_cards_matter #c_c_matter {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 2.01438848920863vw;
+  color: #200e32;
+  text-align: justify;
+  margin: 0;
+  margin-top: 0.79136690647482vw;
+}
+#fservice_container_cards_matter button img {
+  width: 1.72661870503597vw;
+  height: 1.72661870503597vw;
+  position: absolute;
+  top: 0.863309352517986vw;
+  right: 2.15827338129496vw;
+}
+#fservice_container_cards_block2 {
+  width: 32.3741007194245vw;
+  height: 25.1798561151079vw;
+  border: 0.215827338129496vw solid #22bdef;
+  position: relative;
+}
+#fservice
+  #fservice_container_main:nth-child(4)
+  #fservice_container_cards_block2 {
+  border: 0.215827338129496vw solid #f8569e;
+}
+#fservice
+  #fservice_container_main:nth-child(5)
+  #fservice_container_cards_block2 {
+  border: 0.215827338129496vw solid #22bdef;
+}
+#fservice
+  #fservice_container_main:nth-child(6)
+  #fservice_container_cards_block2 {
+  border: 0.215827338129496vw solid #fcb041;
+}
+#fservice
+  #fservice_container_main:nth-child(7)
+  #fservice_container_cards_block2 {
+  border: 0.215827338129496vw solid #22bdef;
+}
+#fservice
+  #fservice_container_main:nth-child(8)
+  #fservice_container_cards_block2 {
+  border: 0.215827338129496vw solid #fcb041;
+}
+#fservice_container_cards_block2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 1.15107913669065vw;
+  left: 1.15107913669065vw;
+  box-shadow: 0px 0px 4.31654676258993vw 0px rgba(16, 19, 89, 0.3);
+}
+#fservice
+  #fservice_container_main:nth-child(even)
+  .fservice_container_cards
+  #fservice_container_cards_block2
+  img {
+  left: unset;
+  right: 1.15107913669065vw;
+}
+#fservice
+  #fservice_container_main:nth-child(3)
+  .fservice_container_cards:nth-child(1) {
+  margin-top: 0;
+}
+#fservice_container_cards_block {
+  margin-top: 2vw;
+  width: 32vw;
+}
+#fservice_container_cards_block #block_title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #18191f;
+  text-align: left;
+}
+#fservice_container_cards_block
+  #fservice_container_cards_block_card_container_blocks {
+  margin-top: 0.5vw;
+}
+#fservice_container_cards_block
+  #fservice_container_cards_block_card_container_blocks
+  img {
+  width: 112px;
+  height: 112px;
+}
+#fserviceassurance {
+  width: 100%;
+  height: fit-content;
+  margin-top: 7.76978417266187vw;
+}
+#fserviceassurance #fserviceassurance_title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.72661870503597vw;
+  line-height: 2.01438848920863vw;
+  text-align: center;
+  color: #200e32;
+  margin-top: 0;
+}
+#fserviceassurance #fserviceassurance_desc {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 2.01438848920863vw;
+  text-align: center;
+  color: #200e32;
+  width: 47.4820143884892vw;
+  margin: 1vw auto auto auto;
+}
+#fserviceassurance_container {
+  margin-top: 4.53237410071942vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.90647482014388vw 1vw;
+}
+#fserviceassurance_container_card1 img {
+  width: 6.33093525179856vw;
+  height: 6.33093525179856vw;
+}
+#fserviceassurance
+  #fserviceassurance_container
+  #fserviceassurance_container_card1
+  p {
+  width: 11.0669064748201vw;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.29496402877698vw;
+  line-height: 1.79856115107914vw;
+  text-align: center;
+  color: #200e32;
+  margin: auto;
+  margin-top: 0.359712230215827vw;
+}
+#fserviceassurance #fservice_matter:nth-child(2) #fserviceassurance_title {
+  margin-top: 10vw;
+}
+#fservice
+  #fservice_container_main:nth-child(4)
+  #fserviceassurance
+  #fserviceassurance_container
+  #fserviceassurance_container_card1:nth-child(1)
+  p {
+  width: 16.4748201438849vw;
+}
+#fservice
+  #fservice_container_main:nth-child(4)
+  #fserviceassurance
+  #fserviceassurance_container
+  #fserviceassurance_container_card1:nth-child(2)
+  p {
+  width: 14.3165467625899vw;
+}
+#fservice
+  #fservice_container_main:nth-child(4)
+  #fserviceassurance
+  #fserviceassurance_container
+  #fserviceassurance_container_card1:nth-child(4)
+  p {
+  width: 17vw;
+}
+@media (max-width: 750px) {
+  #fservice {
+    width: 100%;
+    padding: 40vw 8vw 23.3333333333333vw 8vw;
+  }
+  #fservice p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6.04651162790698vw;
+    margin-top: 19vw;
+    line-height: normal;
+    text-align: center;
+    color: #200e32;
+    margin-top: 0;
+  }
+  #fservice p:nth-child(2) {
+    font-size: 3.4vw;
+    line-height: 5.5vw;
+    width: 84vw;
+    margin-top: 2.3vw;
+  }
+  #fservice_container_cards_matter #c_c_matter {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.15107913669065vw;
+    line-height: 2.01438848920863vw;
+    color: #200e32;
+    text-align: justify;
+    margin-top: 0.79136690647482vw;
+    opacity: 0.8;
+  }
+  #fservice_container .fservice_container_cards {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  #fservice_container_cards_block2 {
+    width: 100%;
+    height: 65vw;
+    border: none;
+  }
+  #fservice_container_cards_block2 img {
+    bottom: 0;
+    left: 0;
+    box-shadow: 6px 0px 40px 0px rgb(16 19 89 / 20%);
+  }
+  .fservice_container_cards:nth-child(odd) #fservice_container_cards_block1 {
+    margin-right: 0;
+    width: 100%;
+  }
+  #fservice_container_cards_matter #c_c_title {
+    font-size: 6vw;
+    line-height: normal;
+  }
+  #fservice_container_cards_matter #c_c_matter {
+    font-size: 3.5vw;
+    line-height: 5.5vw;
+    margin-top: 4vw;
+    width: 100%;
+    opacity: 0.8;
+  }
+  #fservice_container_cards_matter {
+    height: fit-content;
+    margin: 10vw 0 0 0;
+  }
+  .fservice_container_cards:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .fservice_container_cards:nth-child(even) #fservice_container_cards_block1 {
+    margin-left: 0;
+    width: 100%;
+  }
+  .fservice_container_cards:nth-child(even)
+    #fservice_container_cards_block2
+    img {
+    left: 0;
+    right: unset;
+  }
+  .fservice_container_cards:nth-child(2) #fservice_container_cards_block2 {
+    border: none;
+  }
+  .fservice_container_cards:nth-child(3) #fservice_container_cards_block2 {
+    border: none;
+  }
+  .fservice_container_cards:nth-child(4) #fservice_container_cards_block2 {
+    border: none;
+  }
+  #fservice_container {
+    margin-top: 15vw;
+    padding: 0;
+  }
+  #fservice_container .fservice_container_cards {
+    margin-top: 23.3333333333333vw;
+  }
+  #fserviceassurance {
+    width: 100%;
+    margin-top: 11.3953488372093vw;
+  }
+  #fserviceassurance #fserviceassurance_title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.18604651162791vw;
+    line-height: 6.51162790697674vw;
+    text-align: center;
+    color: #18191f;
+  }
+  #fserviceassurance_container {
+    margin-top: 9.53488372093023vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12.7906976744186vw;
+    padding: 0;
+  }
+  #fserviceassurance #fserviceassurance_container_card1 img {
+    width: 16.7441860465116vw;
+    height: 16.7441860465116vw;
+  }
+  #fserviceassurance
+    #fserviceassurance_container
+    #fserviceassurance_container_card1
+    p {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.25581395348837vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #200e32;
+    margin: auto;
+    margin-top: 0.359712230215827vw;
+  }
+  #fserviceassurance #fservice_matter:nth-child(2) #fserviceassurance_title {
+    margin-top: 36.7441860465116vw;
+  }
+  #fservice
+    #fservice_container_main:nth-child(even)
+    #fservice_container
+    .fservice_container_cards {
+    flex-direction: column-reverse;
+  }
+  #fserviceassurance #fservice_matter:nth-child(2) #fserviceassurance_title {
+    margin-top: 10vw;
+  }
+  #ffacility
+    #ffacility_container
+    #ffacility_container_cards:nth-child(3)
+    #ffacility_container_cards_block2 {
+    border: none;
+  }
+  #fservice
+    #fservice_container_main:nth-child(5)
+    #fservice_container_cards_block2 {
+    border: none;
+  }
+  #fservice
+    #fservice_container_main:nth-child(4)
+    #fservice_container_cards_block2 {
+    border: none;
+  }
+  #fservice
+    #fservice_container_main:nth-child(5)
+    #fservice_container_cards_block2 {
+    border: none;
+  }
+  #fservice
+    #fservice_container_main:nth-child(6)
+    #fservice_container_cards_block2 {
+    border: none;
+  }
+  #fservice
+    #fservice_container_main:nth-child(7)
+    #fservice_container_cards_block2 {
+    border: none;
+  }
+  #fservice
+    #fservice_container_main:nth-child(8)
+    #fservice_container_cards_block2 {
+    border: none;
+  }
+  #fservice
+    #fservice_container_main:nth-child(4)
+    #fserviceassurance
+    #fserviceassurance_container
+    #fserviceassurance_container_card1:nth-child(1)
+    p {
+    width: 100%;
+  }
+  #fservice
+    #fservice_container_main:nth-child(4)
+    #fserviceassurance
+    #fserviceassurance_container
+    #fserviceassurance_container_card1:nth-child(2)
+    p {
+    width: 100%;
+  }
+  #fservice
+    #fservice_container_main:nth-child(4)
+    #fserviceassurance
+    #fserviceassurance_container
+    #fserviceassurance_container_card1:nth-child(4)
+    p {
+    width: 100%;
+  }
+}
