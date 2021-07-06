@@ -1,0 +1,157 @@
+#productdev {
+  width: 100%;
+  height: fit-content;
+}
+#productdev #quality_matter {
+  background: #f5f8ff;
+  padding: 9.64028776978417vw 11.4388489208633vw;
+}
+#productdev #quality_matter:nth-child(2) {
+  background: white;
+}
+#productdev #productdevtitle {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.16546762589928vw;
+  line-height: 4.74820143884892vw;
+  text-align: center;
+  color: #200e32;
+  margin-top: 0;
+}
+#productdev .productdevtitle {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.16546762589928vw;
+  line-height: 4.74820143884892vw;
+  text-align: center;
+  color: #200e32;
+}
+#productdev #productdev_desc {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 2.01438848920863vw;
+  text-align: center;
+  color: #200e32;
+  width: 47.4820143884892vw;
+  margin: 1vw auto auto auto;
+}
+#productdev_container {
+  padding-top: 4.53237410071942vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.53956834532374vw 1vw;
+}
+.productdev_container_card1 img {
+  width: 6.33093525179856vw;
+  height: 6.33093525179856vw;
+}
+#productdev #productdev_container .productdev_container_card1 p {
+  width: 13.8129496402878vw;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.29496402877698vw;
+  line-height: 1.94244604316547vw;
+  text-align: center;
+  color: #200e32;
+  margin: auto;
+  margin-top: 0.359712230215827vw;
+}
+#productdev #productdev_container #productdev_container_card1:nth-child(4) p {
+  width: 100%;
+}
+#productdev #productdev_container #productdev_container_card1:nth-child(5) p {
+  width: 100%;
+}
+#productdev #productdev_container #productdev_container_card1:nth-child(6) p {
+  width: 100%;
+}
+#productdev #productdev_container #productdev_container_card1:nth-child(7) p {
+  width: 27vw;
+}
+#productdev #productdev_container #productdev_container_card1:nth-child(9) p {
+  width: 100%;
+}
+@media (max-width: 750px) {
+  #productdev {
+    width: 100%;
+  }
+  #productdev #quality_matter {
+    padding: 13.4883720930233vw 3vw;
+  }
+  #productdev #productdevtitle {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6.04651162790698vw;
+    margin-top: 19vw;
+    line-height: normal;
+    text-align: center;
+    color: #200e32;
+    margin-top: 0;
+  }
+  #productdev .productdevtitle {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6.04651162790698vw;
+    margin-top: 19vw;
+    line-height: normal;
+    text-align: center;
+    color: #200e32;
+    margin-top: 0;
+  }
+  #productdev #productdev_desc {
+    font-size: 3.4vw;
+    line-height: 5.5vw;
+    width: 84vw;
+    margin-top: 2.3vw;
+  }
+  #productdev_container {
+    margin-top: 14.1860465116279vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13vw 3vw;
+    padding: 0;
+    width: 100%;
+  }
+  #productdev .productdev_container_card1 img {
+    width: 13.3333333333333vw;
+    height: 13.3333333333333vw;
+  }
+  #productdev #productdev_container .productdev_container_card1 p {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.8vw;
+    line-height: 5.5vw;
+    text-align: center;
+    color: #200e32;
+    margin: auto;
+    margin-top: 0.359712230215827vw;
+  }
+  #productdev #productdev_container .productdev_container_card1 #p4_c_dis2 {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.25581395348837vw;
+    line-height: 4.41860465116279vw;
+    margin: 0.465116279069767vw auto 0 auto;
+    text-align: center;
+    color: #200e32;
+  }
+  #productdev #quality_matter:nth-child(2) .productdevtitle {
+    margin-top: 0;
+  }
+  #productdev #productdev_container #productdev_container_card1:nth-child(7) p {
+    width: 100%;
+  }
+}
