@@ -7,6 +7,35 @@ import next from "../../images/next.svg";
 import prev from "../../images/prev.svg";
 
 const Patners = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      patners:  file(relativePath: {eq: "patners.md"}) {
+        id
+        childMarkdownRemark {
+          frontmatter {
+            Patnertitle
+            patnerdescription
+            patnercarousal {
+              id
+              patners {
+                id
+                patnerimage {
+                  id
+                  image {
+                    childImageSharp {
+                      fluid {
+                        src
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+       }
+  `)
   const [bhide, setBhide] = useState(true)
   const directionButtons = (direction) => {
     return (
@@ -33,27 +62,29 @@ const Patners = () => {
       <div id="patners">
         <div id="patners_container">
           <div id="patners_container_matter">
-            <p>aaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p>{data.patners.childMarkdownRemark.frontmatter.Patnertitle}</p>
+            <p>{data.patners.childMarkdownRemark.frontmatter.patnerdescription}</p>
           </div>
           <Carousel interval={10000000} nextLabel={"Next"}
             prevLabel={"Previous"}
             nextIcon={directionButtons("Next")}
             prevIcon={directionButtons("Previous")}>
-
-              <Carousel.Item >
+            {data.patners.childMarkdownRemark.frontmatter.patnercarousal.map(patnercarousals =>
+              <Carousel.Item key={patnercarousals.id}>
                 <div id="patners_container_carousal" className="active-content">
-        
-                    <div id="patners_container_carousal_container" >
-   
-                        <div id="patners_container_carousal_container_container">
-                          <img src="" alt="img" />
+                  {patnercarousals.patners.map(patnerss =>
+                    <div id="patners_container_carousal_container" key={patnerss.id}>
+                      {patnerss.patnerimage.map(patnerimages =>
+                        <div id="patners_container_carousal_container_container" key={patnerimages.id}>
+                          <img src={patnerimages.image.childImageSharp.fluid.src} alt="img" />
                         </div>
-                      
+                      )}
                     </div>
-                  
+                  )}
                 </div>
               </Carousel.Item>
+
+            )}
           </Carousel>
         </div>
       </div>
