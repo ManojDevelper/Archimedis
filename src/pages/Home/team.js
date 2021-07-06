@@ -6,18 +6,46 @@ import tw from "../../images/t_tw.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Team = () => {
+  const data = useStaticQuery(graphql`
+    query{
+        Team:file(relativePath: {eq: "team.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                teams {
+                  id
+                  teamtitle
+                  teamstyle
+                  team {
+                    id
+                    teaamname
+                    teamdesignation
+                    teamimg {
+                      childImageSharp {
+                        fluid {
+                          src
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+    }`)
   return (
     <>
       <div id="team">
-          <div>
-            <h1 >sssssssss</h1>
+        {data.Team.childMarkdownRemark.frontmatter.teams.map(teamss =>
+          <div key={teamss.id}>
+            <h1 style={{ marginTop: (teamss.teamstyle) }}>{teamss.teamtitle}</h1>
             <div id="team_container">
-            
-                <div id="team_container_cards" >
+              {teamss.team.map(teams =>
+                <div id="team_container_cards" key={teams.id}>
                   <div id="team_container_cards_block1">
-                    <img src="" alt="img" />
-                    <p>ssssssssssssssssssssssssssssss</p>
-                    <p id="designation">ssssssssssssssssssssssssss</p>
+                    <img src={teams.teamimg.childImageSharp.fluid.src} alt="img" />
+                    <p>{teams.teaamname}</p>
+                    <p id="designation">{teams.teamdesignation}</p>
                   </div>
                   <div id="team_container_cards_block2">
                     <div id="team_container_cards_block2_container">
@@ -27,10 +55,10 @@ const Team = () => {
                     </div>
                   </div>
                 </div>
-              
+              )}
             </div>
           </div>
-        
+        )}
       </div>
     </>
   );
