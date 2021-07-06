@@ -1,0 +1,163 @@
+.compocompo {
+  padding: 11.5107913669065vw 0 13.5971223021583vw 0;
+  background: white;
+}
+#compocompo_container {
+  width: 59.7122302158273vw;
+  margin: auto;
+}
+#compocompo_container_top1 {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+#compocompo_container_top1 #compocompo_container_top1_b1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#compocompo_container_top1 img {
+  width: 4.60431654676259vw;
+  height: 4.60431654676259vw;
+  border-radius: 50%;
+}
+#compocompo_container_top1 #compocompo_container_top1_b2 {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: auto 0 auto 0.79136690647482vw;
+}
+#compocompo_container_top1 #compocompo_container_top1_b2 span {
+  margin: 0 0.719424460431655vw;
+}
+#compocompo_container_top1 #compocompo_container_top1_b2 p1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.15107913669065vw;
+  line-height: 1.43884892086331vw;
+  color: #18191f;
+}
+#compocompo_container_top1 #compocompo_container_top1_b2 p2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.863309352517986vw;
+  line-height: 1.43884892086331vw;
+  color: #18191f;
+  opacity: 0.7;
+}
+#compocompo_container_top2 {
+  padding-top: 1.72661870503597vw;
+}
+#compocompo_container_top2 #compocompo_container_top2_matter {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2.15827338129496vw;
+}
+#compocompo_container_top2 h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.30215827338129vw;
+  line-height: 3.45323741007194vw;
+  color: #200e32;
+  text-align: justify;
+}
+#compocompo_container_top2 p4 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.15107913669065vw;
+  line-height: 2.30215827338129vw;
+  letter-spacing: 0.01em;
+  color: #200e32;
+  text-align: justify;
+}
+#compocompo_container_top2 img {
+  margin: 3.59712230215827vw 0;
+}
+#compocompo_container_top2:nth-child(3) {
+  margin-top: 5.53956834532374vw;
+}
+#compocompo_container_top2:nth-child(3) h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.30215827338129vw;
+  line-height: 3.45323741007194vw;
+  color: #200e32;
+  text-align: justify;
+}
+#compocompo_container_top2:nth-child(3) #compocompo_container_top2_matter {
+  margin-top: 1.22302158273381vw;
+}
+#compocompo2 #contact {
+  background: rgba(245, 248, 255, 1);
+}
+@media (max-width: 750px) {
+  .compocompo {
+    padding: 90px 5vw 13.5971223021583vw 5vw;
+    background: white;
+  }
+  #compocompo_container {
+    width: 100%;
+    margin: auto;
+  }
+  #compocompo_container_top1 img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+  }
+  #compocompo_container_top1 #compocompo_container_top1_b2 p1 {
+    font-size: 3vw;
+    line-height: initial;
+  }
+  #compocompo_container_top1 #compocompo_container_top1_b2 p2 {
+    font-size: 3vw;
+    line-height: initial;
+  }
+  #compocompo_container_top1 #compocompo_container_top1_b2 span {
+    margin: 0 2vw;
+  }
+  #compocompo_container_top1 #compocompo_container_top1_b2 {
+    margin: auto 0 auto 0vw;
+  }
+  #compocompo_container_top1 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  #compocompo_container_top2 h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: #200e32;
+    text-align: justify;
+  }
+  #compocompo_container_top2 p4 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    line-height: inherit;
+    letter-spacing: 0.01em;
+    color: #200e32;
+    text-align: justify;
+  }
+  #compocompo_container_top2:nth-child(3) h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    line-height: 0px;
+    color: #200e32;
+    text-align: justify;
+  }
+  #compocompo_container_top2:nth-child(3) #compocompo_container_top2_matter {
+    margin-top: 5vw;
+  }
+  #compocompo_container_top2 img {
+    margin: 5vw 0;
+  }
+}
