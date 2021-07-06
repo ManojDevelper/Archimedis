@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Nav.css';
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "gatsby"
-import Logo from "../images/Logo.png";
+import Logo from "../images/logo.svg";
 import ham from "../images/ham.svg";
 import close from "../images/navclose.svg";
 import plus from "../images/navplus.svg";
