@@ -5,44 +5,42 @@ import { graphql, useStaticQuery } from "gatsby";
 const Standout = () => {
   const data = useStaticQuery(graphql`
     query{
-        Standout: file(relativePath: {eq: "standout.md"}) {
-            id
-            childMarkdownRemark {
-              frontmatter {
-                standout {
+        Standout: file(relativePath: {eq: "Standout.md"}) {
+          id
+          childMarkdownRemark {
+            frontmatter {
+              standout {
+                id
+                head
+                content
+                Standoutcontainer {
                   id
-                  title
-                  description
-                  standoutcontainer {
-                    id
-                    title
-                    image {
-                      publicURL
-                    }
+                  standname
+                  standimage {
+                    publicURL
                   }
                 }
               }
             }
           }
+        }
     }`)
   return (
     <>
-      {data.Standout.childMarkdownRemark.frontmatter.standout.map(standouts =>
-        <div id="standout" key={standouts.id}>
-          <p>{standouts.title}</p>
-          <p>{standouts.description}</p>
-          <div id="standout_container">
-            {standouts.standoutcontainer.map(standoutcontainers =>
-              <>
-                <div id="standout_card1" key={standoutcontainers.id}>
-                  <img src={standoutcontainers.standimage.publicURL} alt="img" />
-                  <p id="p4_c_dis">{standoutcontainers.title}</p>
-                </div>
-              </>
-            )}
-          </div>
+    {data.Standout.childMarkdownRemark.frontmatter.standout.map(standouts =>
+      <div id="standout" key={standouts.id}>
+        <p>{standouts.head}</p>
+        <p>{standouts.content}</p>
+        <div id="standout_container">
+          {standouts.Standoutcontainer.map(Standoutcontainers =>
+            <div id="standout_card1" key={Standoutcontainers.id}>
+              <img src={Standoutcontainers.standimage.publicURL} alt="img" />
+              <p id="p4_c_dis">{Standoutcontainers.standname}</p>
+            </div>
+          )}
         </div>
-      )}
+      </div>
+    )}
     </>
   );
 };

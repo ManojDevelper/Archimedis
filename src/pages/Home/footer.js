@@ -8,21 +8,39 @@ import img5 from "../../images/youtube.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Footer = () => {
+    const data = useStaticQuery(graphql`
+    query{
+        Footer: file(relativePath: {eq: "footer.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                footer {
+                  id
+                  title
+                  footercontainer {
+                    id
+                    description
+                  }
+                }
+              }
+            }
+          }
+    }`)
     return (
         <>
             <div id="footer">
                 <div id="footer_container">
                     <div id="footer_container_top">
-                
-                            <div id="footer_cards">
-                                <h1>aaaaaaaa</h1>
-                      
-                                    <div >
-                                        <p>aaaaaaaaaaaaaaaaaa</p>
+                        {data.Footer.childMarkdownRemark.frontmatter.footer.map(footers =>
+                            <div id="footer_cards" key={footers.id}>
+                                <h1>{footers.title}</h1>
+                                {footers.footercontainer.map(footercontainers =>
+                                    <div key={footercontainers.id}>
+                                        <p>{footercontainers.description}</p>
                                     </div>
-                                
+                                )}
                             </div>
-                        
+                        )}
                         <div id="footer_cards2">
                             <iframe title="Archimedis" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.306655100214!2d80.0145069!3d12.9989065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd072fdf7b5826742!2sArchimedis%20Healthcare%20Private%20Limited%20-%20Reputed%20Pharma%20Manufacturers%20Chennai!5e0!3m2!1sen!2sin!4v1623929915150!5m2!1sen!2sin" id="footermap"></iframe>
                         </div>
