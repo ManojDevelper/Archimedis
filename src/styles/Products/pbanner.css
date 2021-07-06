@@ -1,0 +1,54 @@
+#pbanner {
+  width: 100%;
+  height: 45vw;
+  background: url("../../data/assets/Products/pbanner.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-top: 3vw;
+}
+#pbanner_container {
+  width: 51vw;
+  height: 18.7769784172662vw;
+  background: #22bdef;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5vw;
+}
+#pbanner_container h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.87769784172662vw;
+  line-height: 3.9568345323741vw;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 43.7410071942446vw;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  #pbanner {
+    margin-top: 85px;
+  }
+}
+@media (max-width: 750px) {
+  #pbanner {
+    height: 43.0232558139535vw;
+  }
+  #pbanner_container {
+    width: 84.4186046511628vw;
+    height: 29.7674418604651vw;
+    background: #22bdef;
+    margin: auto auto -22.5vw auto;
+    padding-left: 0;
+  }
+  #pbanner_container h1 {
+    text-align: center;
+    font-size: 4.65116279069767vw;
+    line-height: 6.51162790697674vw;
+    width: 100%;
+  }
+}
