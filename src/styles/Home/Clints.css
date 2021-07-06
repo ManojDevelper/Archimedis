@@ -1,0 +1,225 @@
+#clints {
+  background-color: #f5f8ff;
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../data/assets/quatation_mark.svg");
+  background-repeat: no-repeat;
+  background-size: 12.6618705035971vw 10.7194244604317vw;
+  background-position: top right 6.90647482014388vw;
+  padding: 8.70503597122302vw 20.863309352518vw;
+}
+#clints p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.87769784172662vw;
+  line-height: 3.9568345323741vw;
+  text-align: center;
+  color: #200e32;
+}
+#clints_container_main {
+  width: 100%;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(23, 23, 99, 0.07);
+  padding: 2.58992805755396vw 3.02158273381295vw;
+  margin-top: 2.94964028776978vw;
+  border-radius: 0.719424460431655vw;
+}
+#clints_container_main_b1 h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.43884892086331vw;
+  line-height: 2.01438848920863vw;
+  color: #200e32;
+}
+#clints_container_main_b1 p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 2.01438848920863vw;
+  color: #200e32;
+  text-align: left;
+  width: 53.1654676258993vw;
+  margin-top: 1.15107913669065vw;
+  opacity: 0.8;
+}
+#clints_container_main_b2 {
+  display: flex;
+  margin-top: 2.37410071942446vw;
+}
+#clints_container_main_b2 #clints_container_main_b2_b1 img {
+  width: 4.60431654676259vw;
+  height: 4.60431654676259vw;
+}
+#clints_container_main_b2_b2 {
+  margin-left: 1.15107913669065vw;
+  text-align: left;
+}
+#clints
+  #clints_container
+  #clints_container_main_b2
+  #clints_container_main_b2_b2
+  p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.29496402877698vw;
+  line-height: 2.01438848920863vw;
+  color: #200e32;
+  margin-top: 0.619424460431655vw;
+  text-align: left;
+}
+#clints
+  #clints_container
+  #clints_container_main_b2
+  #clints_container_main_b2_b2
+  p:nth-child(2) {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.00719424460432vw;
+  line-height: 1.72661870503597vw;
+  color: #200e32;
+  margin-top: 0;
+  text-align: left;
+}
+#clints_container .carousel-control-prev-icon {
+  background-image: url("../../images/next.svg");
+  background-color: transparent;
+  background-size: 0.5vw;
+}
+#clints_container .carousel-control-next-icon {
+  background-image: url("../../images/prev.svg");
+  background-color: transparent;
+  background-size: 0.5vw;
+}
+#main_carousal_control {
+  position: relative;
+  box-shadow: 0px 0.719424460431655vw 1.43884892086331vw rgba(23, 23, 99, 0.07);
+}
+#main_carousal_control a.carousel-control-next {
+  width: 2.73381294964029vw;
+  height: 2.73381294964029vw;
+  position: absolute;
+  top: 20.5vw;
+  right: 1.43884892086331vw;
+  border: 0.107913669064748vw solid #22bdef;
+  border-radius: 2.15827338129496vw;
+  background-color: transparent;
+}
+#main_carousal_control a.carousel-control-prev {
+  width: 2.73381294964029vw;
+  height: 2.73381294964029vw;
+  position: absolute;
+  top: 20.5vw;
+  left: 48.9208633093525vw;
+  border: 0.107913669064748vw solid #22bdef;
+  border-radius: 2.15827338129496vw;
+  background-color: transparent;
+}
+#main_carousal_control .carousel-indicators {
+  bottom: -4vw;
+}
+#main_carousal_control .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-bottom: unset;
+  background: white;
+  border-radius: 50%;
+  border: 2.2px solid #22bdef;
+  opacity: 0.6;
+}
+#main_carousal_control .carousel-indicators .active {
+  background: #2d307b;
+  border: 2.2px solid #2d307b;
+  border-radius: 50%;
+  opacity: 1;
+}
+@media (max-width: 750px) {
+  #clints {
+    padding: 15vw 8vw 25vw 8vw;
+    background: none;
+  }
+  #clints_container {
+    margin-top: 6.5vw;
+  }
+  #clints p {
+    font-size: 6.5vw;
+    line-height: 9vw;
+    margin: auto;
+    width: 60vw;
+  }
+  #clints_container_main_b1 h1 {
+    font-size: 4vw;
+  }
+  #clints_container_main_b1 p {
+    font-size: 3vw;
+    line-height: 5vw;
+    width: 100%;
+    margin-top: 4vw;
+  }
+  #clints_container_main {
+    padding: 8vw 4vw;
+    margin-top: 0vw;
+    border-radius: 2vw;
+  }
+  #clints_container_main_b2 #clints_container_main_b2_b1 img {
+    width: 20vw;
+    height: auto;
+  }
+  #clints
+    #clints_container
+    #clints_container_main_b2
+    #clints_container_main_b2_b2
+    p {
+    font-size: 5vw;
+    line-height: initial;
+    color: #200e32;
+    margin-top: 0.619424460431655vw;
+    text-align: left;
+    padding-left: 2vw;
+  }
+  #clints
+    #clints_container
+    #clints_container_main_b2
+    #clints_container_main_b2_b2
+    p:nth-child(2) {
+    font-size: 3.5vw;
+    line-height: inherit;
+    color: #200e32;
+    margin-top: 0;
+    text-align: left;
+  }
+  #main_carousal_control a.carousel-control-next {
+    display: none;
+  }
+  #main_carousal_control a.carousel-control-prev {
+    display: none;
+  }
+  #main_carousal_control {
+    border-radius: 2vw;
+  }
+  #clints_container_main_b2 {
+    margin-top: 8vw;
+  }
+  #main_carousal_control .carousel-indicators li {
+    width: 1.2vw;
+    height: 1.2vw;
+    border-bottom: unset;
+    background: white;
+    border-radius: 50%;
+    border: 0.4vw solid #22bdef;
+    margin-left: 2vw;
+  }
+  #main_carousal_control .carousel-indicators .active {
+    background: #2d307b;
+    border: 0.4vw solid #2d307b;
+    border-radius: 50%;
+  }
+  #main_carousal_control .carousel-indicators {
+    bottom: -8vw;
+  }
+}
