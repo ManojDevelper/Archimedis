@@ -1,0 +1,174 @@
+#Qualityassurance {
+  width: 100%;
+  height: fit-content;
+  padding: 9.64028776978417vw 11.4388489208633vw;
+}
+#Qualityassurance #Qualityassurance_title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.45323741007194vw;
+  line-height: 4.74820143884892vw;
+  text-align: center;
+  color: #200e32;
+  margin-top: 0;
+}
+#Qualityassurance #Qualityassurance_desc {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 2.01438848920863vw;
+  text-align: center;
+  color: #200e32;
+  width: 47.4820143884892vw;
+  margin: 1vw auto auto auto;
+}
+#Qualityassurance_container {
+  margin-top: 4.53237410071942vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.53956834532374vw 1vw;
+}
+#Qualityassurance_container_card1 img {
+  width: 6.33093525179856vw;
+  height: 6.33093525179856vw;
+}
+#Qualityassurance
+  #Qualityassurance_container
+  #Qualityassurance_container_card1
+  p {
+  width: 11.0669064748201vw;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.43884892086331vw;
+  line-height: 1.94244604316547vw;
+  text-align: center;
+  color: #200e32;
+  margin: auto;
+  margin-top: 0.359712230215827vw;
+}
+#Qualityassurance
+  #Qualityassurance_container
+  #Qualityassurance_container_card1:nth-child(4)
+  p {
+  width: 100%;
+}
+#Qualityassurance
+  #Qualityassurance_container
+  #Qualityassurance_container_card1:nth-child(5)
+  p {
+  width: 100%;
+}
+#Qualityassurance
+  #Qualityassurance_container
+  #Qualityassurance_container_card1:nth-child(6)
+  p {
+  width: 100%;
+}
+#Qualityassurance
+  #Qualityassurance_container
+  #Qualityassurance_container_card1:nth-child(7)
+  p {
+  width: 27vw;
+}
+#Qualityassurance
+  #Qualityassurance_container
+  #Qualityassurance_container_card1:nth-child(9)
+  p {
+  width: 100%;
+}
+#Qualityassurance
+  #Qualityassurance_container
+  #Qualityassurance_container_card1
+  #p4_c_dis2 {
+  width: 14.0287769784173vw;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: auto;
+  text-align: center;
+  color: #200e32;
+  margin-top: 0.5vw;
+}
+#Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_title {
+  margin-top: 10vw;
+}
+@media (max-width: 750px) {
+  #Qualityassurance {
+    width: 100%;
+    padding: 13.4883720930233vw 3vw;
+  }
+  #Qualityassurance #Qualityassurance_title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6.04651162790698vw;
+    margin-top: 19vw;
+    line-height: normal;
+    text-align: center;
+    color: #200e32;
+    margin-top: 0;
+  }
+  #Qualityassurance #Qualityassurance_desc {
+    font-size: 3.4vw;
+    line-height: 5.5vw;
+    width: 84vw;
+    margin-top: 2.3vw;
+  }
+  #Qualityassurance_container {
+    margin-top: 14.1860465116279vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13vw 3vw;
+    padding: 0;
+    width: 100%;
+  }
+  #Qualityassurance #Qualityassurance_container_card1 img {
+    width: 16.7441860465116vw;
+    height: 16.7441860465116vw;
+  }
+  #Qualityassurance
+    #Qualityassurance_container
+    #Qualityassurance_container_card1
+    p {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.8vw;
+    line-height: 5.5vw;
+    text-align: center;
+    color: #200e32;
+    margin: auto;
+    margin-top: 0.359712230215827vw;
+  }
+  #Qualityassurance
+    #Qualityassurance_container
+    #Qualityassurance_container_card1
+    #p4_c_dis2 {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.25581395348837vw;
+    line-height: 4.41860465116279vw;
+    margin: 0.465116279069767vw auto 0 auto;
+    text-align: center;
+    color: #200e32;
+  }
+  #Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_title {
+    margin-top: 36.7441860465116vw;
+  }
+  #Qualityassurance
+    #Qualityassurance_container
+    #Qualityassurance_container_card1:nth-child(7)
+    p {
+    width: 100%;
+  }
+}

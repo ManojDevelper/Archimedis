@@ -1,0 +1,11 @@
+#manfacturing #contact{
+    background: #F5F8FF;
+}
+#manfacturing #navcont #contact{
+    background: white;
+}
+@media (max-width:750px){
+    #manfacturing #contact .contact_info_block {
+        background:transparent;
+    }
+}
