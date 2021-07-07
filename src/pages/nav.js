@@ -12,7 +12,6 @@ import nav2 from "../images/navfacebook.svg";
 import nav3 from "../images/navinsta.svg";
 import nav5 from "../images/navtwitter.svg";
 import nav6 from "../images/navyoutube.svg";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from "./Home/contact";
 
 function Navbars() {

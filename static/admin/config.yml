@@ -1,18 +1,26 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: main
 
-publish_mode: editorial_workflow
-
-media_folder: 'assets'
-public_folder: '/'
+media_folder: src/data/assets
+public_folder: /assets
 
 collections:
-  - label: Home
-    name: home
-    files:
-      - label: Home
-        name: home
-        file: 'home.md'
-        fields:
-          - { label: Title, name: title }
-          - { label: Description, name: description }
+  - name: "Status"
+    label: "status"
+    folder: "src/pages/Home"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Status",
+          name: "Status",
+          widget: "list",
+          fields:
+            [
+              { label: statusnumber, name: "statusnumber", widget: "string" },
+              { label: statustitle, name: "statustitle", widget: "string" },
+              { label: statusimage, name: "statusimage", widget: "image" },
+            ],
+        }
