@@ -25,3 +25,9 @@ collections:
         name: "Status"
         fields:
           - {label: Status, name: "Status", widget: "list", fields: [{ label: statusnumber, name: "statusnumber", widget: "string" }, { label: statustitle, name: "statustitle", widget: "string" }, { label: statusimage, name: "statusimage", widget: "image" }]}
+      - file: "src/data/about.md"
+        label: "about"
+        name: "About"
+        fields:
+          - {label: "abouttitle", name: "abouttitle", widget: "string"}
+          - {label: "aboutImg", name: "aboutImg", widget: "string"}
