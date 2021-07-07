@@ -20,11 +20,8 @@ collections:
   - label: "Markdown"
     name: "markdown"
     files:
-      - file: "src/data/Status.md"
+      - file: "src/data/status.md"
         label: "status"
         name: "Status"
         fields:
           - {label: Status, name: "Status", widget: "list", fields: [{ label: statusnumber, name: "statusnumber", widget: "string" }, { label: statustitle, name: "statustitle", widget: "string" }, { label: statusimage, name: "statusimage", widget: "image" }]}
-          
-              
-              
