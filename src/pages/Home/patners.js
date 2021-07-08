@@ -32,27 +32,6 @@ const Patners = () => {
       }
        }
   `)
-  const [bhide, setBhide] = useState(true)
-  const directionButtons = (direction) => {
-    return (
-      <>
-        {!bhide ?
-          <span
-            aria-hidden="true"
-            className={direction === "Next" ? "button-next" : "button-prev"}
-            onClick={() => setBhide(true)}
-          >
-            <img src={next} alt="img" id="nxt_img" />
-          </span> : <span
-            aria-hidden="true"
-            className={direction === "Previous" ? "button-next" : "button-prev"}
-            onClick={() => setBhide(false)}
-          >
-            <img src={prev} alt="img" id="prev_img" />
-          </span>}
-      </>
-    );
-  };
   return (
     <>
       <div id="patners">
@@ -61,10 +40,7 @@ const Patners = () => {
             <p>{data.patners.childMarkdownRemark.frontmatter.Patnertitle}</p>
             <p>{data.patners.childMarkdownRemark.frontmatter.patnerdescription}</p>
           </div>
-          <Carousel interval={10000000} nextLabel={"Next"}
-            prevLabel={"Previous"}
-            nextIcon={directionButtons("Next")}
-            prevIcon={directionButtons("Previous")} id="carousss">
+          <Carousel interval={10000000} id="carousss">
             {data.patners.childMarkdownRemark.frontmatter.patnercarousal.map(patnercarousals =>
               <Carousel.Item key={patnercarousals.id} id="carousss2">
                 <div id="patners_container_carousal" className="active-content">

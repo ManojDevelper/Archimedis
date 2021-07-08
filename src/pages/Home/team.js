@@ -1,8 +1,5 @@
 import React from "react";
 import "../../styles/Home/Team.css";
-import fb from "../../images/t_fb.svg";
-import li from "../../images/t_li.svg";
-import tw from "../../images/t_tw.svg";
 import btn1 from "../../images/btnhover.svg";
 import btn2 from "../../images/btnnormal.svg";
 import { graphql, useStaticQuery } from "gatsby";

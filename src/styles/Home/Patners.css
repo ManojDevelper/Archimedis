@@ -5,37 +5,35 @@
   padding: 10.9352517985612vw 0;
   position: relative;
 }
-#patners .button-next{
+#patners .carousel-control-prev-icon {
+  background-image: url("../../images/next.svg"); 
+  background-color: transparent;
+  background-size: 0.5vw;
+}
+#patners .carousel-control-next-icon {
+  background-image: url("../../images/prev.svg");
+  background-color: transparent;
+  background-size: 0.5vw;
+}
+#patners a.carousel-control-next{
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
-  top:14vw;
-  right: 3vw;
+  top:15vw;
+  right: 7vw;
   border: 0.107913669064748vw solid #22BDEF;
   border-radius: 2.15827338129496vw;
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#patners .button-prev{
-  width: 2.73381294964029vw;
-  height: 2.73381294964029vw;
-  position: absolute;
-  top:14vw;
-  right: 3vw;
-  border: 0.107913669064748vw solid #22BDEF;
-  border-radius: 2.15827338129496vw;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#patners a.carousel-control-next img{
-  width: 0.5vw;
 }
 #patners a.carousel-control-prev{
-display: none;
+  width: 2.73381294964029vw;
+  height: 2.73381294964029vw;
+  position: absolute;
+  top:15vw;
+  left: 7vw;
+  border: 0.107913669064748vw solid #22BDEF;
+  border-radius: 2.15827338129496vw;
+  background-color: transparent;
 }
 #patners .carousel-indicators {
   bottom: -4vw;
@@ -138,8 +136,8 @@ display: none;
   height: 4.82014388489209vw;
 }
 #patners_container_carousal_container:nth-child(4) img {
-  width: 10.0719424460432vw;
-  height: 3.16546762589928vw;
+  width: 7.98561151079137vw;
+  height: 4.89208633093525vw;
 }
 #patners_container_carousal_container:nth-child(5) img {
   width: 9.64028776978417vw;
@@ -162,7 +160,7 @@ display: none;
   height: 5.25179856115108vw;
 }
 #patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container img{
-  width: 7.48201438848921vw;
+  width: 10vw;
   height: 3.16546762589928vw;
 }
 @media (max-width:750px){
