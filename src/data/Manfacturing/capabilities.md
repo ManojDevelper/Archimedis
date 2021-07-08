@@ -48,7 +48,7 @@ Capabilities:
                 {
                   id: 2,
                   capabilitiesminicardstitle: "Blister",
-                  image: "../assets/m_c_i2.png",
+                  image: "../assets/m_c2_i2.png",
                 },
                 {
                   id: 3,
