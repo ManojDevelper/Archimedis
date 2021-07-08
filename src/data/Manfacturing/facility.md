@@ -15,7 +15,7 @@ Facility:
             description1: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description2: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description3: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
-            fimage: "../assets/Manfacturing/f_c1.png",
+            fimage: "../assets/f_c1.png",
           },
           {
             id: 2,
@@ -25,7 +25,7 @@ Facility:
             description1: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description2: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description3: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
-            fimage: "../assets/Manfacturing/f_c2.png",
+            fimage: "../assets/f_c2.png",
           },
           {
             id: 3,
@@ -35,7 +35,7 @@ Facility:
             description1: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description2: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description3: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
-            fimage: "../assets/Manfacturing/f_c3.png",
+            fimage: "../assets/f_c3.png",
           },
           {
             id: 4,
@@ -45,7 +45,7 @@ Facility:
             description1: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description2: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description3: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
-            fimage: "../assets/Manfacturing/f_c4.png",
+            fimage: "../assets/f_c4.png",
           },
           {
             id: 5,
@@ -55,7 +55,7 @@ Facility:
             description1: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description2: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
             description3: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
-            fimage: "../assets/Manfacturing/f_c5.png",
+            fimage: "../assets/f_c5.png",
           },
         ],
     },

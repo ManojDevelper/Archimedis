@@ -122,4 +122,64 @@ collections:
         create: true
         fields:
           - {label: "Services", name: "fservices", widget: "list", fields: [{label: "Title", name: "fservicetitle", widget: "string"}, {label: "Description", name: "fservicedesc", widget: "string"}, {label: "Services Cards", name: "fservicecards", widget: "list", fields: [{label: "Id", name: "fservicecardid", widget: "string"}, {label: "Title", name: "fservicecardtitle", widget: "string"}, {label: "Description", name: "fservicecarddesc", widget: "string"}, {label: "Main title", name: "fserviceminicardsmaintitle", widget: "string"}, {label: "Image", name: "fservicepic", widget: "image"}, {label: Mini Blocks, name: "fserviceminicards", widget: "list", fields: [{label: "fserviceminicardstitle", name: "fserviceminicardstitle", widget: "string"}, {label: "Images", name: "fserviceminicardsimg", widget: "image"}]}]}]}
-  
+  - label: "Manfacturing"
+    name: "manfacturing"
+    files:
+      - file: "src/data/Manfacturing/mbanner.md"
+        label: "Banner"
+        name: "mbanner"
+        create: true
+        fields:
+          - {label: "Title", name: "description", widget: "string"}
+      - file: "src/data/Manfacturing/capabilities.md"
+        label: "Capabilities"
+        name: "capable"
+        create: true
+        fields:
+          - {label: "Capabilities", name: "Capabilities", widget: "list", fields: [{label: "Title", name: "capabilitiestitle", widget: "string"}, {label: "Description", name: "capabilitiesdesc", widget: "string"}, {label: "Capabilities Cards", name: "capabilitiescards", widget: "list", fields: [{label: "Id", name: "capabilitiescardid", widget: "string"}, {label: "Title", name: "capabilitiescardtitle", widget: "string"}, {label: "Description", name: "capabilitiescarddesc", widget: "string"}, {label: "Image", name: "image", widget: "image"}, {label: "Mini Blocks", name: "capabilitiesminicards", widget: "list", fields: [{label: "Title", name: "capabilitiesminicardstitle", widget: "string"}, {label: "Image", name: "image", widget: "image"}]}]}]}
+      - file: "src/data/Manfacturing/facility.md"
+        label: "Facility"
+        name: "facility"
+        create: true
+        fields:
+          - {label: "Facility", name: "Facility", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "Facility Cards", name: "Facilitycards", widget: "list", fields: [{label: "Id", name: "facilityid", widget: "string"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "Description2", name: "description2", widget: "string"}, {label: "Description3", name: "description3", widget: "string"}, {label: "Image", name: "fimage", widget: "image"}]}]}
+      - file: "src/data/Manfacturing/industry.md"
+        label: "Industry"
+        name: "industry"
+        create: true
+        fields:
+          - {label: "Industry", name: "industry", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "Industry Cards", name: "industrycards", widget: "list", fields: [{label: "Id", name: "industryid", widget: "string"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "Image", name: "Image", widget: "image"}]}]}
+      - file: "src/data/Manfacturing/quality.md"
+        label: "Quality"
+        name: "quality"
+        create: true
+        fields:
+          - {label: "Quality", name: "Quality", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "Description1", name: "description1", widget: "string"}, {label: "Description2", name: "description2", widget: "string"}, {label: "Image", name: "image", widget: "image"} ]}
+      - file: "src/data/Manfacturing/qualityassurance.md"
+        label: "Quality Assurance"
+        name: "qualityassurance"
+        create: true
+        fields:
+          - {label: "Quality Assurance", name: "qualityassurance", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "QA Container", name: "qualityassuranceminicontainer", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "Image", name: "image", widget: "image"}]}]}
+  - label: "Digital"
+    name: "digital"
+    create: true
+    fields:
+      - file: "src/data/Digital/dbanner.md"
+        label: "Banner"
+        name: "dbanner"
+        create: true
+        fields:
+          - {label: "Title", name: "description", widget: "string"}
+      - file: "src/data/Digital/dsolution.md"
+        label: "Solution"
+        name: "dsolution"
+        create: true
+        fields:
+          - {label: "Solution", name: "dsolution", widget: "list", fields: [{label: "Title", name: "dsolutiontitle", widget: "string"}, {label: "Description", name: "dsolutiondesc", widget: "string"}, {label: "Cards", name: "dsolutioncards", widget: "list", fields: [{label: "Id", name: "dsolutioncardid", widget: "string"}, {label: "Title", name: "dsolutioncardtitle", widget: "string"}, {label: "Description", name: "dsolutioncarddesc", widget: "string"}, {label: "Title1", name: "dsolutionminicardsmaintitle", widget: "string"}, {label: "Title2", name: "dsolutionminicardsmaintitle", widget: "string"}, {label: "Image", name: "Image", widget: "image"}, {label: "Mini cards", name: "dsolutionminicards", widget: "list", fields: [{label: "Title", name: "dsolutionminicardstitle", widget: "string"}, {label: "Description", name: "dsolutionminicardstitle2", widget: "string"}, {label: "Image", name: "dsolutionminicardsimg", widget: "image"}]}]}]}
+      - file: "src/data/Manfacturing/productdev.md"
+        label: "Product Development"
+        name: "productdev"
+        create: true
+        fields:
+          - {label: "Product Development", name: "prodev", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "Product Container", name: "prodevminicontainer", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Image", name: "Image", widget: "image"}]}]}
