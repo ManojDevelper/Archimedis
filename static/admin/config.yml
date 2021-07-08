@@ -8,7 +8,7 @@ media_folder: 'src/data/assets'
 public_folder: 'src/data/assets'
 
 collections:
-  - label: "Landing"
+  - label: "Test"
     name: "pages"
     folder: "src/data"
     create: true
@@ -17,8 +17,8 @@ collections:
       - {label: "Heading", name: "headding", widget: "string"}   
       - {label: "Description", name: "description", widget: "string"} 
   
-  - label: "Markdown"
-    name: "markdown"
+  - label: "Landing"
+    name: "landing"
     files:
       - file: "src/data/banner.md"
         label: "Banner"
@@ -93,3 +93,33 @@ collections:
         fields:
           - {label: "Title", name: "wedotitle", widget: "string"}
           - {label: "Wedo container", name: "patnercarousal", widget: "list", fields: [{label: "Name", name: "wedoname", widget: "string"}, {label: "Description", name: "wedodesc", widget: "string"}, {label: "Image", name: "wedoimg", widget: "image"}]}
+  
+  - label: "Formulations"
+    name: "formulation"
+    create: true
+    files:
+      - file: "src/data/Formulations/fbanner.md"
+        label: "Banner"
+        name: "fbanner"
+        create: true
+        fields:
+          - {label: "Title", name: "description", widget: "string"}
+      - file: "src/data/Formulations/casestudy.md"
+        label: "Casestudy"
+        name: "casestudy"
+        create: true
+        fields:
+          - {label: "Casestudy", name: "Casestudy", widget: "list", fields: [{label: "Title", name: "Casestudytitle", widget: "string"}, {label: "Casestudycards", name: "Casestudycards", widget: "list", fields: [{label: "Title", name: "Casestudyblockid", widget: "string"}, {label: "Description", name: "Casestudyname", widget: "string"}, {label: "Date", name: "Casestudydesc", widget: "string"}, {label: "Image", name: "image", widget: "image"}]}]}
+      - file: "src/data/Formulations/ffacility.md"
+        label: "Facility"
+        name: "ffacility"
+        create: true
+        fields:
+          - {label: "Facility", name: "Ffacility", widget: "list", fields: [{label: "Title", name: "Ffacilitytitle", widget: "string"}, {label: "Description", name: "Ffacilitydis", widget: "string"}, {label: "Facility Cards", name: "Ffacilitycards", widget: "list", fields: [{label: "Id", name: "Ffacilityblockid", widget: "string"}, {label: "Title", name: "Ffacilityname", widget: "string"}, {label: "Description", name: "Ffacilitydesc", widget: "string"}, {label: "Image", name: "ffacilitypic", widget: "image"}]}]}
+      - file: "src/data/Formulations/fservices.md"
+        label: "Services"
+        name: "fservice"
+        create: true
+        fields:
+          - {label: "Services", name: "fservices", widget: "list", fields: [{label: "Title", name: "fservicetitle", widget: "string"}, {label: "Description", name: "fservicedesc", widget: "string"}, {label: "Services Cards", name: "fservicecards", widget: "list", fields: [{label: "Id", name: "fservicecardid", widget: "string"}, {label: "Title", name: "fservicecardtitle", widget: "string"}, {label: "Description", name: "fservicecarddesc", widget: "string"}, {label: "Main title", name: "fserviceminicardsmaintitle", widget: "string"}, {label: "Image", name: "fservicepic", widget: "image"}, {label: Mini Blocks, name: "fserviceminicards", widget: "list", fields: [{label: "fserviceminicardstitle", name: "fserviceminicardstitle", widget: "string"}, {label: "Images", name: "fserviceminicardsimg", widget: "image"}]}]}]}
+  
