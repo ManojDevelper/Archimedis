@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/Home/Blogs.css";
 import { graphql, useStaticQuery } from "gatsby";
+import {Link} from "gatsby";
 
 const Blogs = () => {
   const data = useStaticQuery(graphql`
@@ -33,16 +34,16 @@ const Blogs = () => {
         <h1>{data.Blogs.childMarkdownRemark.frontmatter.blogtitle}</h1>
         <div id="blog_container">
           {data.Blogs.childMarkdownRemark.frontmatter.blogs.map(blogss =>
-            <div id="blog_card" key={blogss.id}>
+            <Link id="blog_card" key={blogss.id} to="../Formulation/Casecompo/">
               <div id="blog_card_b1">
                 <img src={blogss.blogimg.childImageSharp.fluid.src} alt="img" />
               </div>
               <div id="blog_card_b2">
-                <p>{blogss.blogcardtitle}</p>
+                <p id="bcc2title">{blogss.blogcardtitle}</p>
                 <p>{blogss.blogcarddesc}</p>
                 <p>{blogss.blogcarddate}</p>
               </div>
-            </div>
+            </Link>
           )}
         </div>
       </div>
