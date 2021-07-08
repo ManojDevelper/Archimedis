@@ -4,7 +4,7 @@ industry:
     {
       id: 1,
       title: "Industry 4.0",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "With the changing times we too have adapted. Check out the initiatives taken by us for a digital revamp.",
       industrycards:
         [
           {

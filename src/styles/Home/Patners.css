@@ -9,7 +9,7 @@
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
-  top:15vw;
+  top:14vw;
   right: 3vw;
   border: 0.107913669064748vw solid #22BDEF;
   border-radius: 2.15827338129496vw;
@@ -22,7 +22,7 @@
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
-  top:15vw;
+  top:14vw;
   right: 3vw;
   border: 0.107913669064748vw solid #22BDEF;
   border-radius: 2.15827338129496vw;
@@ -84,11 +84,13 @@ display: none;
   text-align: center;
   color: #200e32;
 }
+/* #patners #carousss #patners_container_carousal:{
+  border: 1px solid red;
+} */
 #patners_container_carousal {
-  height: fit-content;
+  height: 30vw;
   width: fit-content;
   margin: auto;
-  margin-top: 3.45323741007194vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +149,22 @@ display: none;
   width: 8.63309352517986vw;
   height: 3.59712230215827vw;
 }
+#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(1) img{
+  width: 9.49640287769784vw;
+  height: 3.66906474820144vw;
+}
+#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(2) #patners_container_carousal_container_container:first-child img{
+  width: 7.48201438848921vw;
+  height: 4.1726618705036vw;
+}
+#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(2) #patners_container_carousal_container_container:nth-child(2) img{
+  width: 5.25179856115108vw;
+  height: 5.25179856115108vw;
+}
+#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container img{
+  width: 7.48201438848921vw;
+  height: 3.16546762589928vw;
+}
 @media (max-width:750px){
   #patners {
     padding: 15vw 8vw 8.5vw 8vw;
@@ -168,6 +186,10 @@ display: none;
   font-size: 3.5vw;
   width: 100%;
   margin-top: 3vw;
+}
+#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(1){
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 #patners_container_carousal {
   height: fit-content;

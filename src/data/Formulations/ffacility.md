@@ -4,7 +4,7 @@ Ffacility:
     {
       id: 1,
       Ffacilitytitle: "Facility",
-      Ffacilitydis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.",
+      Ffacilitydis: "Built with resourceful systems and backed by fool-proof processes. Singularly and in totality, they maintain the product quality throughout the process and contribute towards maximising the output.",
       Ffacilitycards:
         [
           {

@@ -4,7 +4,7 @@ foodsupliments:
     {
       id: 1,
       title: "Food Supplements",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Our hectic life strips us of time, so much so, that we even miss out on the essential nutrients. We can’t provide you with time but can help you cover at least the nutrition bit with our quality supplements.",
       foodsuplimentscards:
         [
           {

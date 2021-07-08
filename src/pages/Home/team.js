@@ -3,6 +3,8 @@ import "../../styles/Home/Team.css";
 import fb from "../../images/t_fb.svg";
 import li from "../../images/t_li.svg";
 import tw from "../../images/t_tw.svg";
+import btn1 from "../../images/btnhover.svg";
+import btn2 from "../../images/btnnormal.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Team = () => {
@@ -49,9 +51,8 @@ const Team = () => {
                   </div>
                   <div id="team_container_cards_block2">
                     <div id="team_container_cards_block2_container">
-                      <img src={li} alt="img" />
-                      <img src={tw} alt="img" />
-                      <img src={fb} alt="img" />
+                      <img src={btn1} alt="img" id="btnnormal"/>
+                      <img src={btn2} alt="img" id="btnhover"/>
                     </div>
                   </div>
                 </div>

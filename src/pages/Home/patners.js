@@ -22,11 +22,7 @@ const Patners = () => {
                 patnerimage {
                   id
                   image {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                    publicURL
                   }
                 }
               }
@@ -68,15 +64,15 @@ const Patners = () => {
           <Carousel interval={10000000} nextLabel={"Next"}
             prevLabel={"Previous"}
             nextIcon={directionButtons("Next")}
-            prevIcon={directionButtons("Previous")}>
+            prevIcon={directionButtons("Previous")} id="carousss">
             {data.patners.childMarkdownRemark.frontmatter.patnercarousal.map(patnercarousals =>
-              <Carousel.Item key={patnercarousals.id}>
+              <Carousel.Item key={patnercarousals.id} id="carousss2">
                 <div id="patners_container_carousal" className="active-content">
                   {patnercarousals.patners.map(patnerss =>
                     <div id="patners_container_carousal_container" key={patnerss.id}>
                       {patnerss.patnerimage.map(patnerimages =>
                         <div id="patners_container_carousal_container_container" key={patnerimages.id}>
-                          <img src={patnerimages.image.childImageSharp.fluid.src} alt="img" />
+                          <img src={patnerimages.image.publicURL} alt="img" />
                         </div>
                       )}
                     </div>

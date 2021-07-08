@@ -20,11 +20,6 @@
 #clints_container_main {
   width: 100%;
   height: fit-content;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(23, 23, 99, 0.07);
-  padding: 2.58992805755396vw 3.02158273381295vw;
-  margin-top: 2.94964028776978vw;
-  border-radius: 0.719424460431655vw;
 }
 #clints_container_main_b1 h1 {
   font-family: Manrope;
@@ -98,14 +93,18 @@
 }
 #main_carousal_control {
   position: relative;
+  background: #ffffff;
   box-shadow: 0px 0.719424460431655vw 1.43884892086331vw rgba(23, 23, 99, 0.07);
+  padding: 2.58992805755396vw 3.02158273381295vw;
+  margin-top: 2.94964028776978vw;
+  border-radius: 0.719424460431655vw;
 }
 #main_carousal_control a.carousel-control-next {
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
-  top: 20.5vw;
-  right: 1.43884892086331vw;
+  top: 17.5vw;
+  right: 2.9vw;
   border: 0.107913669064748vw solid #22bdef;
   border-radius: 2.15827338129496vw;
   background-color: transparent;
@@ -114,8 +113,8 @@
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
-  top: 20.5vw;
-  left: 48.9208633093525vw;
+  top: 17.5vw;
+  left: 48vw;
   border: 0.107913669064748vw solid #22bdef;
   border-radius: 2.15827338129496vw;
   background-color: transparent;
