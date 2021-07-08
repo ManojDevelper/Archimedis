@@ -21,7 +21,7 @@
   margin: auto;
   margin-top: 7.9136690647482vw;
   text-decoration: none;
-  padding-right: 1vw;
+  padding: 1vw;
 }
 #blog_card:hover{
   box-shadow: 0px 0px 2.15827338129496vw rgb(23 23 99 / 16%);
