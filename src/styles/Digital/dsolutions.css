@@ -184,11 +184,12 @@
   margin: 1vw auto auto auto;
 }
 #dsolutionsassurance_container {
-  margin-top: 4.53237410071942vw;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.30215827338129vw 3.45323741007194vw;
+  gap: 2.30215827338vw 3vw;
+  width: fit-content;
+  margin: 4.53237410071942vw auto auto auto;
 }
 #dsolutionsassurance_container #dsolutionsassurance_container_card1 {
   display: flex;
@@ -197,8 +198,8 @@
   background: #ffffff;
   box-shadow: 0px 0px 0.575539568345324vw rgba(42, 71, 124, 0.18);
   border-radius: 0.575539568345324vw;
-  width:16.6187050359712vw;
-  height:6.90647482014388vw;
+  width: 16.6187050359712vw;
+  height: 6.90647482014388vw;
   padding: 0 0.3vw 0 1.15107913669065vw;
   transition: 0.5s ease-in-out;
 }
@@ -228,11 +229,18 @@
   #dsolutionsassurance_title {
   margin-top: 10vw;
 }
-#dsolutionsassurance #dsolutionsassurance_container #dsolutionsassurance_container_card1:first-child p{
+#dsolutionsassurance
+  #dsolutionsassurance_container
+  #dsolutionsassurance_container_card1:first-child
+  p {
   display: flex;
   flex-direction: column;
 }
-#dsolutionsassurance #dsolutionsassurance_container #dsolutionsassurance_container_card1:first-child p span{
+#dsolutionsassurance
+  #dsolutionsassurance_container
+  #dsolutionsassurance_container_card1:first-child
+  p
+  span {
   font-size: 0.863309352517986vw;
   line-height: 1.15107913669065vw;
   font-weight: normal;
@@ -279,7 +287,7 @@
 #dsolutions_matter2 #dsolutionsassurance_container2 {
   background: url("../../data/assets/dottedmap.svg");
   background-repeat: no-repeat;
-  margin-top: 5.61151079136691vw;
+  margin-top: 5.6115107913669vw;
   background-position: center top;
   background-size: 78vw 25.611510791366vw;
   display: grid;
@@ -289,7 +297,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  row-gap: 8.5vw;
+  row-gap: 9vw;
+  margin-top: 0.5vw;
 }
 #dsolutions_matter2 #dash_container #dash_container_card1 {
   display: grid;
@@ -328,7 +337,7 @@
 @media (max-width: 750px) {
   #dsolutions {
     width: 100%;
-    padding: 40vw 8vw 13.0233vw 8vw;
+    padding: 40vw 5vw 13.0233vw 5vw;
   }
   #dsolutions p {
     font-family: Manrope;
@@ -450,27 +459,46 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12.7906976744186vw;
+    gap: 5vw;
     padding: 0;
   }
+  #dsolutionsassurance #dsolutionsassurance_container_card1 {
+    width: auto;
+    height: 16.7441860465116vw;
+    box-shadow: 0px 0px 1.3953488372093vw rgba(42, 71, 124, 0.12);
+    border-radius: 1.86046511627907vw;
+    transition: 0.5s ease-in-out;
+  }
+  #dsolutionsassurance #dsolutionsassurance_container_card1:hover {
+    box-shadow: 0px 0px 0.5vw rgba(42, 71, 124, 0.12);
+  }
   #dsolutionsassurance #dsolutionsassurance_container_card1 img {
-    width: 13.3333333333333vw;
-    height: 13.3333333333333vw;
+    width: 8.37209302325581vw;
+    height: 8.37209302325581vw;
   }
   #dsolutionsassurance
     #dsolutionsassurance_container
     #dsolutionsassurance_container_card1
     p {
-    width: 100%;
+    width: fit-content;
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 3.25581395348837vw;
+    font-size: 2.5vw;
     line-height: 4vw;
-    text-align: center;
+    text-align: left;
     color: #200e32;
-    margin: auto;
-    margin-top: 0.359712230215827vw;
+    margin: auto auto auto 1.5vw;
+  }
+  #dsolutionsassurance
+    #dsolutionsassurance_container
+    #dsolutionsassurance_container_card1:first-child
+    p
+    span {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-weight: normal;
+    font-style: normal;
   }
   #dsolutionsassurance
     #dsolutions_matter:nth-child(2)
@@ -552,16 +580,30 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 11.6279069767442vw;
+    gap: 5vw 3vw;
   }
   #dsolutions_matter2 {
     margin-top: 26.4285714285714vw;
   }
+  #dash_container_card1 {
+    display: flex;
+    width: 42.093023255814vw;
+    height: 45.5813953488372vw;
+    background: #ffffff;
+    box-shadow: 0px 0px 1.3953488372093vw rgba(42, 71, 124, 0.12);
+    border-radius: 1.86046511627907vw;
+    padding: 1.2vw;
+    transition: 0.5s ease-in-out;
+  }
+  #dash_container_card1:hover {
+    box-shadow: 0px 0px 0.5vw rgba(42, 71, 124, 0.12);
+  }
   #dsolutions_matter2 #dash_container #dash_container_card1 img {
-    width: 13.3333333333333vw;
-    height: 13.3333333333333vw;
+    width: 10vw;
+    height: 10vw;
     text-align: center;
     margin: auto;
+    border-radius: 50%;
   }
   #dsolutions_matter2 #dash_container #dash_container_card1 p {
     width: 100%;
@@ -570,17 +612,18 @@
     font-weight: bold;
     font-size: 3.33333333333333vw;
     line-height: 4.52380952380952vw;
-    text-align: center;
     color: #200e32;
     margin: auto;
-    margin-top: 1.9047619047619vw;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
   }
   #dsolutions_matter2 #dash_container #dash_container_card1 p span {
-    font-size: 2.85714285714286vw;
+    font-size: 2.4vw;
     line-height: 3.80952380952381vw;
     width: 100%;
+    text-align: center;
+    margin-top: 0.5vw;
   }
   #dsolutions_matter2 #dsolutionsassurance_container2 {
     margin-top: 6.66666666666667vw;

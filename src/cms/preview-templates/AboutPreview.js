@@ -2,21 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 import About from "../../pages/Home/about";
 
-const AboutPreview = ({ entry, widgetFor, getAsset }) => {
+const AboutPreview = ({ entry, getAsset }) => {
 
   const data = entry.getIn(["data"]).toJS();
-  var image = entry.getIn(['data', 'author_image']);
+  var image = entry.getIn(['data', 'aboutImg']);
   var getImage = getAsset(image);
 
-  if(getImage) {
+  if (getImage) {
     var aboutImage = getImage.toString();
   }
 
   return (
     <div>
       <About
-      abouttitle={data.abouttitle}
-      aboutdesc={data.aboutdesc}
+        abouttitle={data.abouttitle}
+        aboutdesc={data.aboutdesc}
         aboutImg={aboutImage}
       />
     </div>

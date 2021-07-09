@@ -23,10 +23,6 @@ const Banner = () => {
                 title
                 description
                 boxdescription
-                bannertyping {
-                  id
-                  name
-                }
               }
             }
           }

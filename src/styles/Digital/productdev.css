@@ -46,9 +46,9 @@
   display: grid;
   grid-template-columns: repeat(3, 24.4604316546763vw);
   gap: 2.87769784172662vw;
-  padding: 1.43884892086331vw 1.8705035971223vw 1.29496402877698vw 1vw;
+  padding: 1.43884892086331vw 1.8705035971223vw 1.29496402877698vw 3vw;
 }
-.productdev_container_card1{
+.productdev_container_card1 {
   height: 12.4460431654676vw;
   padding: 1vw 1vw;
   background: #ffffff;
@@ -56,10 +56,10 @@
   border-radius: 0.575539568345324vw;
   transition: 0.5s ease-in-out;
 }
-.productdev_container_card1:hover{
+.productdev_container_card1:hover {
   box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
 }
-#productdev_container_card1_block1{
+#productdev_container_card1_block1 {
   display: flex;
 }
 .productdev_container_card1 img {
@@ -92,10 +92,7 @@
 #productdev #productdev_container #productdev_container_card1:nth-child(9) p {
   width: 100%;
 }
-#productdev
-  #productdev_container
-  .productdev_container_card1
-  #p4_c_dis2 {
+#productdev #productdev_container .productdev_container_card1 #p4_c_dis2 {
   width: 21.294964028777vw;
   font-family: Manrope;
   font-style: normal;
@@ -152,36 +149,45 @@
     width: 100%;
   }
   #productdev .productdev_container_card1 img {
-    width: 13.3333333333333vw;
-    height: 13.3333333333333vw;
+    width: 8.37209302325581vw;
+    height: 8.37209302325581vw;
   }
   #productdev #productdev_container .productdev_container_card1 p {
     width: 100%;
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 3.8vw;
-    line-height: 5.5vw;
-    text-align: center;
+    font-size: 2.7906976744186vw;
+    line-height: 4vw;
+    text-align: left;
     color: #200e32;
-    margin: auto;
-    margin-top: 0.359712230215827vw;
+    margin: auto auto auto 2vw;
   }
   #productdev #productdev_container .productdev_container_card1 #p4_c_dis2 {
-    width: 100%;
+    width: 36.7441860465116vw;
     font-family: Manrope;
     font-style: normal;
     font-weight: normal;
     font-size: 3.25581395348837vw;
     line-height: 4.41860465116279vw;
-    margin: 0.465116279069767vw auto 0 auto;
-    text-align: center;
+    margin: 0;
+    text-align: justify;
     color: #200e32;
+    margin-top: 2vw;
   }
   #productdev #quality_matter:nth-child(2) .productdevtitle {
     margin-top: 0;
   }
   #productdev #productdev_container #productdev_container_card1:nth-child(7) p {
     width: 100%;
+  }
+  .productdev_container_card1 {
+    height: fit-content;
+    padding: 2.7906976744186vw 3.48837209302326vw;
+    background: #ffffff;
+    transition: 0.5s ease-in-out;
+    background: #ffffff;
+    box-shadow: 0px 0px 1.3953488372093vw rgba(42, 71, 124, 0.12);
+    border-radius: 1.86046511627907vw;
   }
 }

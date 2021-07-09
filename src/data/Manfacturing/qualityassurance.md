@@ -16,7 +16,8 @@ qualityassurance:
           {
             id: 2,
             title: "Training",
-            description: " New Employee Orientation and Periodic Reinforcement Trainings.",
+            description: " New Employee Orientation and Periodic Reinforcement Trainings provided to get everyone well versed with the system.
+",
             image: "../assets/mp4_c2.svg",
           },
           {
@@ -27,21 +28,21 @@ qualityassurance:
           },
           {
             id: 4,
-            title: "Corrective Actions",
-            description: "Lorem ipsum dolor sit amet, conse  adipiscing elit.",
-            image: "../assets/mp4_c5.svg",
-          },
-          {
-            id: 5,
-            title: "Preventive Actions",
-            description: "Proactive action to prevent the occurrence of quality issues.",
-            image: "../assets/mp4_c4.svg",
-          },
-          {
-            id: 6,
             title: "Reporting any Non-conformance",
             description: "Reporting any deviation from the specifications.",
             image: "../assets/mp4_c9.svg",
+          },
+          {
+            id: 5,
+            title: "Corrective Actions",
+            description: "Recommending solutions to quality issues and following up said issues to resolution",
+            image: "../assets/mp4_c5.svg",
+          },
+          {
+            id: 6,
+            title: "Preventive Actions",
+            description: "Proactive action to prevent the occurrence of quality issues",
+            image: "../assets/mp4_c4.svg",
           },
           {
             id: 7,

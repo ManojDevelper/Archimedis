@@ -4,6 +4,8 @@ import { StyleSheetManager } from 'styled-components';
 import { GlobalStyle } from '../styles/global-styles';
 
 import AboutPreview from "./preview-templates/AboutPreview";
+import homeBannerPreview from "./preview-templates/homeBannerPreview";
+import homeBlogsPreview from "./preview-templates/homeBlogsPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -18,7 +20,7 @@ function StyleInjector({ children }) {
     iframeRef && (
       <StyleSheetManager target={iframeRef}>
         <>
-        {children}<GlobalStyle />
+          {children}<GlobalStyle />
         </>
       </StyleSheetManager>
     )
@@ -34,3 +36,5 @@ export default function withStyledComponentsRendered(Comp) {
 }
 
 CMS.registerPreviewTemplate("about", withStyledComponentsRendered(AboutPreview));
+CMS.registerPreviewTemplate("banner", withStyledComponentsRendered(homeBannerPreview));
+CMS.registerPreviewTemplate("blogs", withStyledComponentsRendered(homeBlogsPreview));

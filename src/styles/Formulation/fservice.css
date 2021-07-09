@@ -369,30 +369,34 @@
     margin-top: 9.53488372093023vw;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     gap: 6vw 5vw;
     padding: 0;
   }
   #fserviceassurance_container_card1 {
-    height: fit-content;
+    width: 42.093023255814vw;
+    height:16.7441860465116vw;
     border-radius: 1vw;
-    padding: 1vw 0 1vw 1vw;
+    border-radius: 1.86046511627907vw;
+    padding: 2.7906976744186vw 0 2.7906976744186vw 0.5vw;
+    display: grid;
+    grid-template-columns: 20% 70%;
   }
   #fserviceassurance #fserviceassurance_container_card1 img {
-    width: 12vw;
-    height: 12vw;
+    width: 8.37209302325581vw;
+    height: 8.37209302325581vw;
     margin: 0;
   }
   #fserviceassurance
     #fserviceassurance_container
     #fserviceassurance_container_card1
     p {
-    width: 100%;
+    width: 25.1162790697674vw;
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.8vw;
-    line-height: 3.5vw;
+    font-size: 2.7906976744186vw;
+    line-height: 3.72093023255814vw;
     text-align: left;
     color: #200e32;
     margin: auto 0 auto 2vw;
