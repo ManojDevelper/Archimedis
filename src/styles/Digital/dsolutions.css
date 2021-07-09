@@ -187,12 +187,27 @@
   margin-top: 4.53237410071942vw;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6.90647482014388vw 1vw;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.30215827338129vw 3.45323741007194vw;
+}
+#dsolutionsassurance_container #dsolutionsassurance_container_card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 0.575539568345324vw rgba(42, 71, 124, 0.18);
+  border-radius: 0.575539568345324vw;
+  width:16.6187050359712vw;
+  height:6.90647482014388vw;
+  padding: 0 0.3vw 0 1.15107913669065vw;
+  transition: 0.5s ease-in-out;
+}
+#dsolutionsassurance_container #dsolutionsassurance_container_card1:hover {
+  box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
 }
 #dsolutionsassurance_container_card1 img {
-  width: 6.33093525179856vw;
-  height: 6.33093525179856vw;
+  width: 3.45323741007194vw;
+  height: 3.45323741007194vw;
 }
 #dsolutionsassurance
   #dsolutionsassurance_container
@@ -201,18 +216,27 @@
   width: 80%;
   font-family: Manrope;
   font-style: normal;
-  font-weight: bold;
-  font-size: 1.29496402877698vw;
-  line-height: 1.79856115107914vw;
-  text-align: center;
+  font-weight: 600;
+  font-size: 1.00719424460432vw;
+  line-height: 1.36690647482014vw;
+  text-align: left;
   color: #200e32;
-  margin: auto;
-  margin-top: 0.359712230215827vw;
+  margin: auto auto auto 1vw;
 }
 #dsolutionsassurance
   #dsolutions_matter:nth-child(2)
   #dsolutionsassurance_title {
   margin-top: 10vw;
+}
+#dsolutionsassurance #dsolutionsassurance_container #dsolutionsassurance_container_card1:first-child p{
+  display: flex;
+  flex-direction: column;
+}
+#dsolutionsassurance #dsolutionsassurance_container #dsolutionsassurance_container_card1:first-child p span{
+  font-size: 0.863309352517986vw;
+  line-height: 1.15107913669065vw;
+  font-weight: normal;
+  font-style: normal;
 }
 #dsolutions
   #dsolutions_container_main:nth-child(4)
@@ -220,7 +244,7 @@
   #dsolutionsassurance_container
   #dsolutionsassurance_container_card1:nth-child(1)
   p {
-  width: 16.4748201438849vw;
+  width: 100%;
 }
 #dsolutions
   #dsolutions_container_main:nth-child(4)
@@ -256,16 +280,16 @@
   background: url("../../data/assets/dottedmap.svg");
   background-repeat: no-repeat;
   margin-top: 5.61151079136691vw;
-  background-position: center top 2.87769784172662vw;
+  background-position: center top;
+  background-size: 78vw 25.611510791366vw;
   display: grid;
   grid-template-columns: auto;
-  background-size: 76.8345323741007vw 46.5467625899281vw;
 }
 #dsolutions_matter2 #dash_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  row-gap: 13.5vw;
+  row-gap: 8.5vw;
 }
 #dsolutions_matter2 #dash_container #dash_container_card1 {
   display: grid;
@@ -321,7 +345,7 @@
     font-family: Manrope;
     font-style: normal;
     font-weight: 600;
-    font-size:3.80952380952381vw;
+    font-size: 3.80952380952381vw;
     line-height: 5.71428571428571vw;
     display: flex;
     text-align: center;
@@ -528,38 +552,38 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap:11.6279069767442vw;
-}
-#dsolutions_matter2 {
-  margin-top: 26.4285714285714vw;
-}
-#dsolutions_matter2 #dash_container #dash_container_card1 img {
-  width: 13.3333333333333vw;
-  height: 13.3333333333333vw;
-  text-align: center;
-  margin: auto;
-}
-#dsolutions_matter2 #dash_container #dash_container_card1 p {
-  width: 100%;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 3.33333333333333vw;
-  line-height: 4.52380952380952vw;
-  text-align: center;
-  color: #200e32;
-  margin: auto;
-  margin-top:1.9047619047619vw;
-  display: flex;
-  flex-direction: column;
-}
-#dsolutions_matter2 #dash_container #dash_container_card1 p span {
-  font-size: 2.85714285714286vw;
-  line-height: 3.80952380952381vw;
-  width: 100%;
-}
-#dsolutions_matter2 #dsolutionsassurance_container2 {
-  margin-top: 6.66666666666667vw;
-  background: unset;
-}
+    gap: 11.6279069767442vw;
+  }
+  #dsolutions_matter2 {
+    margin-top: 26.4285714285714vw;
+  }
+  #dsolutions_matter2 #dash_container #dash_container_card1 img {
+    width: 13.3333333333333vw;
+    height: 13.3333333333333vw;
+    text-align: center;
+    margin: auto;
+  }
+  #dsolutions_matter2 #dash_container #dash_container_card1 p {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.33333333333333vw;
+    line-height: 4.52380952380952vw;
+    text-align: center;
+    color: #200e32;
+    margin: auto;
+    margin-top: 1.9047619047619vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #dsolutions_matter2 #dash_container #dash_container_card1 p span {
+    font-size: 2.85714285714286vw;
+    line-height: 3.80952380952381vw;
+    width: 100%;
+  }
+  #dsolutions_matter2 #dsolutionsassurance_container2 {
+    margin-top: 6.66666666666667vw;
+    background: unset;
+  }
 }

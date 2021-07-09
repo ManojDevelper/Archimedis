@@ -40,9 +40,13 @@ const Qualityassurance = () => {
                                 {qualityassurances.qualityassuranceminicontainer.map(qualityassuranceminicontainers =>
                                     <>
                                         <div id="Qualityassurance_container_card1" key={qualityassuranceminicontainers.id}>
+                                        <div id="Qualityassurance_container_card1_block1">
                                             <img src={qualityassuranceminicontainers.image.publicURL} alt="img" />
                                             <p id="p4_c_dis">{qualityassuranceminicontainers.title}</p>
+                                            </div>
+                                            <div id="Qualityassurance_container_card1_block2">
                                             <p id="p4_c_dis2">{qualityassuranceminicontainers.description}</p>
+                                            </div>
                                         </div>
                                     </>
                                 )}

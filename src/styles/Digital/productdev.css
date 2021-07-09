@@ -40,27 +40,42 @@
   margin: 1vw auto auto auto;
 }
 #productdev_container {
-  padding-top: 4.53237410071942vw;
+  margin: auto;
+  margin-top: 4.53237410071942vw;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5.53956834532374vw 1vw;
+  grid-template-columns: repeat(3, 24.4604316546763vw);
+  gap: 2.87769784172662vw;
+  padding: 1.43884892086331vw 1.8705035971223vw 1.29496402877698vw 1vw;
+}
+.productdev_container_card1{
+  height: 12.4460431654676vw;
+  padding: 1vw 1vw;
+  background: #ffffff;
+  box-shadow: 0px 0px 0.575539568345324vw rgba(42, 71, 124, 0.18);
+  border-radius: 0.575539568345324vw;
+  transition: 0.5s ease-in-out;
+}
+.productdev_container_card1:hover{
+  box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
+}
+#productdev_container_card1_block1{
+  display: flex;
 }
 .productdev_container_card1 img {
-  width: 6.33093525179856vw;
-  height: 6.33093525179856vw;
+  width: 3.45323741007194vw;
+  height: 3.45323741007194vw;
 }
 #productdev #productdev_container .productdev_container_card1 p {
-  width: 13.8129496402878vw;
+  width: 12vw;
   font-family: Manrope;
   font-style: normal;
-  font-weight: bold;
-  font-size: 1.29496402877698vw;
-  line-height: 1.94244604316547vw;
-  text-align: center;
+  font-weight: 600;
+  font-size: 1.15107913669065vw;
+  line-height: 1.5vw;
+  text-align: left;
   color: #200e32;
-  margin: auto;
-  margin-top: 0.359712230215827vw;
+  margin: auto 0 auto 1vw;
 }
 #productdev #productdev_container #productdev_container_card1:nth-child(4) p {
   width: 100%;
@@ -76,6 +91,21 @@
 }
 #productdev #productdev_container #productdev_container_card1:nth-child(9) p {
   width: 100%;
+}
+#productdev
+  #productdev_container
+  .productdev_container_card1
+  #p4_c_dis2 {
+  width: 21.294964028777vw;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.00719424460432vw;
+  line-height: 1.58273381294964vw;
+  text-align: left;
+  color: #200e32;
+  margin: 0;
+  margin-top: 1vw;
 }
 @media (max-width: 750px) {
   #productdev {

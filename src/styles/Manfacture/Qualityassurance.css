@@ -25,15 +25,31 @@
   margin: 1vw auto auto auto;
 }
 #Qualityassurance_container {
+  margin: auto;
   margin-top: 4.53237410071942vw;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5.53956834532374vw 1vw;
+  grid-template-columns: repeat(3, 24.4604316546763vw);
+  gap: 2.87769784172662vw;
+  padding: 1.43884892086331vw 1.8705035971223vw 1.29496402877698vw 1vw;
+}
+#Qualityassurance_container_card1 {
+  height: 12.4460431654676vw;
+  padding: 1vw 1vw;
+  background: #ffffff;
+  box-shadow: 0px 0px 0.575539568345324vw rgba(42, 71, 124, 0.18);
+  border-radius: 0.575539568345324vw;
+  transition: 0.5s ease-in-out;
+}
+#Qualityassurance_container_card1:hover {
+  box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
+}
+#Qualityassurance_container_card1_block1 {
+  display: flex;
 }
 #Qualityassurance_container_card1 img {
-  width: 6.33093525179856vw;
-  height: 6.33093525179856vw;
+  width: 3.45323741007194vw;
+  height: 3.45323741007194vw;
 }
 #Qualityassurance
   #Qualityassurance_container
@@ -42,13 +58,12 @@
   width: 11.0669064748201vw;
   font-family: Manrope;
   font-style: normal;
-  font-weight: bold;
-  font-size: 1.43884892086331vw;
+  font-weight: 600;
+  font-size: 1.15107913669065vw;
   line-height: 1.94244604316547vw;
-  text-align: center;
+  text-align: left;
   color: #200e32;
-  margin: auto;
-  margin-top: 0.359712230215827vw;
+  margin: auto 0 auto 1vw;
 }
 #Qualityassurance
   #Qualityassurance_container
@@ -84,19 +99,28 @@
   #Qualityassurance_container
   #Qualityassurance_container_card1
   #p4_c_dis2 {
-  width: 14.0287769784173vw;
+  width: 21.294964028777vw;
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  margin: auto;
-  text-align: center;
+  font-size: 1.00719424460432vw;
+  line-height: 1.58273381294964vw;
+  text-align: left;
   color: #200e32;
-  margin-top: 0.5vw;
+  margin: 0;
+  margin-top: 1vw;
 }
 #Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_title {
   margin-top: 10vw;
+}
+#Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_container #Qualityassurance_container_card1 #Qualityassurance_container_card1_block1 img{
+  margin: auto;
+}
+#Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_container #Qualityassurance_container_card1 #Qualityassurance_container_card1_block1 #p4_c_dis{
+  display: none;
+}
+#Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_container #Qualityassurance_container_card1 #Qualityassurance_container_card1_block2 #p4_c_dis2{
+  text-align: center;
 }
 @media (max-width: 750px) {
   #Qualityassurance {

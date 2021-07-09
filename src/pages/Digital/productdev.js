@@ -19,6 +19,7 @@ const Productdev = () => {
                     id
                     pdcontid
                     title
+                    title2
                     Image {
                       publicURL
                     }
@@ -31,7 +32,6 @@ const Productdev = () => {
      `)
     return (
         <>
-
             <div id="productdev">
                 {data.Prodev.childMarkdownRemark.frontmatter.prodev.map(prodevs =>
                     <>
@@ -42,8 +42,13 @@ const Productdev = () => {
                                 {prodevs.prodevminicontainer.map(prodevminicontainers =>
                                     <>
                                         <div className="productdev_container_card1" id={prodevminicontainers.pdcontid} key={prodevminicontainers.id}>
+                                        <div id="productdev_container_card1_block1">
                                             <img src={prodevminicontainers.Image.publicURL} alt="img" />
                                             <p id="p4_c_dis">{prodevminicontainers.title}</p>
+                                            </div>
+                                            <div id="productdev_container_card1_block2">
+                                            <p id="p4_c_dis2">{prodevminicontainers.title2}</p>
+                                            </div>
                                         </div>
                                     </>
                                 )}
