@@ -205,10 +205,6 @@
   box-shadow: 0px 0px 0.575539568345324vw rgba(42, 71, 124, 0.18);
   border-radius: 1vw;
   padding: 1vw 0 1vw 1vw;
-  transition: 0.5s ease-in-out;
-}
-#fserviceassurance_container_card1:hover {
-  box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
 }
 #fserviceassurance_container_card1 img {
   width: 3.45323741007194vw;
@@ -260,7 +256,7 @@
 @media (max-width: 750px) {
   #fservice {
     width: 100%;
-    padding: 40vw 8vw 23.3333333333333vw 8vw;
+    padding: 40vw 6vw 23.3333333333333vw 6vw;
   }
   #fservice p {
     font-family: Manrope;
@@ -369,12 +365,11 @@
     margin-top: 9.53488372093023vw;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 6vw 5vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.72093023255814vw;
     padding: 0;
   }
   #fserviceassurance_container_card1 {
-    width: 42.093023255814vw;
     height:16.7441860465116vw;
     border-radius: 1vw;
     border-radius: 1.86046511627907vw;
@@ -387,20 +382,17 @@
     height: 8.37209302325581vw;
     margin: 0;
   }
-  #fserviceassurance
-    #fserviceassurance_container
-    #fserviceassurance_container_card1
-    p {
+  #fserviceassurance #fserviceassurance_container #fserviceassurance_container_card1 p {
     width: 25.1162790697674vw;
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.7906976744186vw;
-    line-height: 3.72093023255814vw;
+    font-size: 2.7vw;
+    line-height: 3.5vw;
     text-align: left;
     color: #200e32;
     margin: auto 0 auto 2vw;
-  }
+}
   #fserviceassurance #fservice_matter:nth-child(2) #fserviceassurance_title {
     margin-top: 36.7441860465116vw;
   }

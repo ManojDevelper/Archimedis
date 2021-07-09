@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-#popupclose{
+#popupclose {
   width: 20px;
-  height:20px;
+  height: 20px;
   cursor: pointer;
 }
 button {
   font-family: Manrope !important;
 }
 #popup {
- width: fit-content;
- padding: 8px;
+  width: fit-content;
+  padding: 8px;
 }
 #pop1 .MuiDialog-paperWidthSm {
   max-width: fit-content;
@@ -227,5 +227,24 @@ button {
     line-height: 4vw;
     color: #18191f;
     margin-left: 2vw;
+  }
+  #popvideo {
+    width: 90vw;
+    height: 40vw;
+  }
+  #popup {
+    width: 100%;
+    padding: 0;
+  }
+  #banner_btn_container button:first-child {
+    position: relative;
+    padding-left: 5vw;
+  }
+  #banner_btn_container button img {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 2.6vw;
+    left: 6vw;
   }
 }

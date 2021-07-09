@@ -12,8 +12,6 @@
 }
 #compocompo_container_top1 #compocompo_container_top1_b1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #compocompo_container_top1 img {
   width: 4.60431654676259vw;
@@ -104,9 +102,9 @@
     margin: auto;
   }
   #compocompo_container_top1 img {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 20%;
   }
   #compocompo_container_top1 #compocompo_container_top1_b2 p1 {
     font-size: 3vw;
@@ -122,16 +120,30 @@
   #compocompo_container_top1 #compocompo_container_top1_b2 {
     margin: auto 0 auto 0vw;
   }
+  #compocompo_container_top2:nth-child(3) h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5vw;
+    line-height: 0px;
+    color: #200e32;
+    text-align: justify;
+    margin-top: 8vw;
+}
   #compocompo_container_top1 {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 70%;
+    margin-bottom: 8vw;
+  }
+  #compocompo_container_top2:nth-child(3) {
+    margin-top: 0;
   }
   #compocompo_container_top2 h1 {
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 3vw;
-    line-height: 5vw;
+    font-size: 4vw;
+    line-height: 6vw;
     color: #200e32;
     text-align: justify;
   }
@@ -139,7 +151,7 @@
     font-family: Manrope;
     font-style: normal;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 4vw;
     line-height: inherit;
     letter-spacing: 0.01em;
     color: #200e32;
@@ -149,7 +161,7 @@
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 4.5vw;
     line-height: 0px;
     color: #200e32;
     text-align: justify;

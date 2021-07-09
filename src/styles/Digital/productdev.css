@@ -56,9 +56,6 @@
   border-radius: 0.575539568345324vw;
   transition: 0.5s ease-in-out;
 }
-.productdev_container_card1:hover {
-  box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
-}
 #productdev_container_card1_block1 {
   display: flex;
 }
@@ -144,7 +141,7 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 13vw 3vw;
+    gap:3.72093023255814vw;
     padding: 0;
     width: 100%;
   }
@@ -173,7 +170,7 @@
     margin: 0;
     text-align: justify;
     color: #200e32;
-    margin-top: 2vw;
+    margin-top: 3vw;
   }
   #productdev #quality_matter:nth-child(2) .productdevtitle {
     margin-top: 0;
@@ -182,7 +179,7 @@
     width: 100%;
   }
   .productdev_container_card1 {
-    height: fit-content;
+    height:45vw;
     padding: 2.7906976744186vw 3.48837209302326vw;
     background: #ffffff;
     transition: 0.5s ease-in-out;

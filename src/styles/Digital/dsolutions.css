@@ -203,9 +203,6 @@
   padding: 0 0.3vw 0 1.15107913669065vw;
   transition: 0.5s ease-in-out;
 }
-#dsolutionsassurance_container #dsolutionsassurance_container_card1:hover {
-  box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
-}
 #dsolutionsassurance_container_card1 img {
   width: 3.45323741007194vw;
   height: 3.45323741007194vw;
@@ -459,7 +456,7 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5vw;
+    gap: 3.72093023255814vw;
     padding: 0;
   }
   #dsolutionsassurance #dsolutionsassurance_container_card1 {
@@ -468,9 +465,6 @@
     box-shadow: 0px 0px 1.3953488372093vw rgba(42, 71, 124, 0.12);
     border-radius: 1.86046511627907vw;
     transition: 0.5s ease-in-out;
-  }
-  #dsolutionsassurance #dsolutionsassurance_container_card1:hover {
-    box-shadow: 0px 0px 0.5vw rgba(42, 71, 124, 0.12);
   }
   #dsolutionsassurance #dsolutionsassurance_container_card1 img {
     width: 8.37209302325581vw;
@@ -580,7 +574,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 5vw 3vw;
+    gap: 3.72093023255814vw;
   }
   #dsolutions_matter2 {
     margin-top: 26.4285714285714vw;
@@ -594,9 +588,6 @@
     border-radius: 1.86046511627907vw;
     padding: 1.2vw;
     transition: 0.5s ease-in-out;
-  }
-  #dash_container_card1:hover {
-    box-shadow: 0px 0px 0.5vw rgba(42, 71, 124, 0.12);
   }
   #dsolutions_matter2 #dash_container #dash_container_card1 img {
     width: 10vw;

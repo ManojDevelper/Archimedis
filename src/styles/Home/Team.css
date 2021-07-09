@@ -66,7 +66,6 @@
 }
 #team_container_cards_block2_container img {
   cursor: pointer;
-  cursor: pointer;
 }
 #team_container_cards_block2_container #btnhover{
   display: none;
@@ -121,10 +120,13 @@
 }
 #team_container_cards_block2_container {
   width: fit-content;
-  display: grid;
-  grid-template-rows: 4vw;
-  grid-template-columns: repeat(3, 4vw);
-  grid-gap:5vw;
-  margin: 4vw auto 0 auto;
+  display: block;
+}
+#team_container_cards_block2_container img{
+  width: 18vw;
+}
+#team_container_cards_block2 {
+  width: 100%;
+  margin-top: 3vw;
 }
 }

@@ -41,9 +41,6 @@
   border-radius: 0.575539568345324vw;
   transition: 0.5s ease-in-out;
 }
-#Qualityassurance_container_card1:hover {
-  box-shadow: 0px 0px 0.1vw rgba(42, 71, 124, 0.18);
-}
 #Qualityassurance_container_card1_block1 {
   display: flex;
 }
@@ -195,9 +192,6 @@
     box-shadow: 0px 0px 1.3953488372093vw rgba(42, 71, 124, 0.12);
     border-radius: 1.86046511627907vw;
     transition: 0.5s ease-in-out;
-  }
-  #Qualityassurance #Qualityassurance_container_card1:hover {
-    box-shadow: 0px 0px 0.5vw rgba(42, 71, 124, 0.12);
   }
   #Qualityassurance #Qualityassurance_container_card1 img {
     width: 8.37209302325581vw;
