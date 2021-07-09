@@ -28,7 +28,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
           - {label: "Description2", name: "boxdescription", widget: "string"}
-          - {label: "Typing Letters", name: "bannertyping", widget: "list", fields: [{label: "name", name: "name", widget: "string"}, {label: "Letter Count", name: "count", widget: "string"}]}
       - file: "src/data/status.md"
         label: "Status"
         name: "status"
@@ -77,15 +76,13 @@ collections:
         name: "standout"
         create: true
         fields:
-          - {label: "Title", name: "Patnertitle", widget: "string"}
-          - {label: "Description", name: "patnerdescription", widget: "string"}
-          - {label: "StandOut Container", name: "standout", widget: "list", fields: [{label: "Title", name: "head", widget: "string"}, {label: "Description", name: "content", widget: "sring"}, {label: "Standout cards", name: "Standoutcontainer", widget: "list", fields: [{label: "Name", name: "standname", widget: "sring"}, {label: "Image", name: "standimage", widget: "image"}]} ]}
+          - {label: "StandOut Container", name: "standout", widget: "list", fields: [{label: "Title", name: "head", widget: "string"}, {label: "Description", name: "content", widget: "string"}, {label: "Standout cards", name: "Standoutcontainer", widget: "list", fields: [{label: "Name", name: "standname", widget: "string"}, {label: "Image", name: "standimage", widget: "image"}]} ]}
       - file: "src/data/team.md"
         label: "Team"
         name: "team"
         create: true
         fields:
-          - {label: "Teams Container", name: "teams", widget: "list", fields: [{label: "Title", name: "teamtitle", widget: "string"}, {label: "Team cards", name: "team", widget: "list", fields: [{label: "Name", name: "teaamname", widget: "sring"}, {label: "Designation", name: "teamdesignation", widget: "string"}, {label: "Image", name: "teamimg", widget: "image"}]} ]}
+          - {label: "Teams Container", name: "teams", widget: "list", fields: [{label: "Title", name: "teamtitle", widget: "string"}, {label: "Team cards", name: "team", widget: "list", fields: [{label: "Name", name: "teaamname", widget: "string"}, {label: "Designation", name: "teamdesignation", widget: "string"}, {label: "Image", name: "teamimg", widget: "image"}]} ]}
       - file: "src/data/wedo.md"
         label: "Wedo"
         name: "wedo"

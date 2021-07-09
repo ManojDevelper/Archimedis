@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheetManager } from 'styled-components';
 import { GlobalStyle } from '../styles/global-styles';
 
-import HomePreview from "./preview-templates/HomePreview";
+import AboutPreview from "./preview-templates/AboutPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -33,4 +33,4 @@ export default function withStyledComponentsRendered(Comp) {
   );
 }
 
-CMS.registerPreviewTemplate("home", withStyledComponentsRendered(HomePreview));
+CMS.registerPreviewTemplate("about", withStyledComponentsRendered(AboutPreview));

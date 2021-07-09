@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../styles/Home/Patners.css";
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { graphql, useStaticQuery } from "gatsby";
-import next from "../../images/next.svg";
-import prev from "../../images/prev.svg";
 
 const Patners = () => {
   const data = useStaticQuery(graphql`
