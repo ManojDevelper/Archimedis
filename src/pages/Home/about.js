@@ -18,14 +18,15 @@ const About = () => {
               }
             }
     }`)
-    const aboutPrev = data.about.childMarkdownRemark.frontmatter;
-    const aboutImg = aboutPrev.aboutImg.publicURL
+    const abouttitle = data.about.childMarkdownRemark.frontmatter.abouttitle;
+    const aboutdesc = data.about.childMarkdownRemark.frontmatter.aboutdesc;
+    const aboutImg = data.about.childMarkdownRemark.frontmatter.aboutImg.publicURL;
   return (
     <>
       <div id="about">
-        <p>{aboutPrev.abouttitle}</p>
+        <p>{abouttitle}</p>
         <img src={aboutImg} alt="img" />
-        <p id="about_dec">{aboutPrev.aboutdesc}</p>
+        <p id="about_dec">{aboutdesc}</p>
       </div>
     </>
   );

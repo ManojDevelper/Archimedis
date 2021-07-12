@@ -4,7 +4,7 @@ import Banner from "../../pages/Home/banner";
 
 const homeBannerPreview = ({ entry }) => {
 
-    const data = entry.getIn(["data.banner.childMarkdownRemark.frontmatter"]).toJS();
+    const data = entry.getIn(["data"]).toJS();
 
     return (
         <div>

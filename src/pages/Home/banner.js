@@ -28,6 +28,9 @@ const Banner = () => {
           }
         }
      `)
+     const title =data.banner.childMarkdownRemark.frontmatter.title;
+     const description =data.banner.childMarkdownRemark.frontmatter.description;
+     const boxdescription =data.banner.childMarkdownRemark.frontmatter.boxdescription;
     const [bcontact, setBcontact] = useState(true)
     const [open, setOpen] = React.useState(false);
 
@@ -44,7 +47,7 @@ const Banner = () => {
                 <div id="banner_container">
                     <div id="banner_container_matter">
                         <div id="banner_title">
-                            <div id="static-txt">{data.banner.childMarkdownRemark.frontmatter.title}</div>
+                            <div id="static-txt">{title}</div>
                             <Typewriter id="Typewriter"
                                 options={{
                                     loop: true,
@@ -73,7 +76,7 @@ const Banner = () => {
                                 }}
                             />
                         </div>
-                        <p id="banner_desc">{data.banner.childMarkdownRemark.frontmatter.description}</p>
+                        <p id="banner_desc">{boxdescription}</p>
                         <div id="banner_btn_container">
                             <button onClick={handleClickOpen}><img src={img1} alt="img" />Watch Video</button>
                             <Dialog
@@ -99,7 +102,7 @@ const Banner = () => {
                                 <img src={img2} alt="img" />
                             </div>
                             <div id="banner_mini_container_matter">
-                                <p>{data.banner.childMarkdownRemark.frontmatter.boxdescription}</p>
+                                <p>{boxdescription}</p>
                             </div>
                         </div>
                     </div>

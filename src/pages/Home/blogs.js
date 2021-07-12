@@ -24,20 +24,23 @@ const Blogs = () => {
             }
           }
     }`)
+  const blogtitle = data.Blogs.childMarkdownRemark.frontmatter.blogtitle;
+  const blogs = data.Blogs.childMarkdownRemark.frontmatter.blogs;
+
   return (
     <>
       <div id="blog">
-        <h1>{data.Blogs.childMarkdownRemark.frontmatter.blogtitle}</h1>
+        <h1>{blogtitle}</h1>
         <div id="blog_container">
-          {data.Blogs.childMarkdownRemark.frontmatter.blogs.map(blogss =>
-            <Link id="blog_card" key={blogss.id} to="../Formulation/Casecompo/">
+          {blogs.map(blogitem =>
+            <Link id="blog_card" key={blogitem.id} to="../Formulation/Casecompo/">
               <div id="blog_card_b1">
-                <img src={blogss.blogimg.publicURL} alt="img" />
+                <img src={blogitem.blogimg.publicURL} alt="img" />
               </div>
               <div id="blog_card_b2">
-                <p id="bcc2title">{blogss.blogcardtitle}</p>
-                <p>{blogss.blogcarddesc}</p>
-                <p>{blogss.blogcarddate}</p>
+                <p id="bcc2title">{blogitem.blogcardtitle}</p>
+                <p>{blogitem.blogcarddesc}</p>
+                <p>{blogitem.blogcarddate}</p>
               </div>
             </Link>
           )}
