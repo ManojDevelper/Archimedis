@@ -4,9 +4,9 @@ import About from "../../pages/Home/about";
 
 const AboutPreview = ({ entry, getAsset }) => {
 
-  const data = entry.getIn(["data.about.childMarkdownRemark.frontmatter"]).toJS();
+  const data = entry.getIn(["data"]).toJS();
   console.log(data)
-  var image = entry.getIn(['data.about.childMarkdownRemark.frontmatter.aboutImg.publicURL']);
+  var image = entry.getIn(['aboutImg']);
   var getImage = getAsset(image);
 
   if (getImage) {
