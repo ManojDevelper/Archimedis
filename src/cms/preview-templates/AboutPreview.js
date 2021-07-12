@@ -6,7 +6,7 @@ const AboutPreview = ({ entry, getAsset }) => {
 
   const data = entry.getIn(["data.about.childMarkdownRemark.frontmatter"]).toJS();
   console.log(data)
-  var image = entry.getIn(['data.about.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src']);
+  var image = entry.getIn(['data.about.childMarkdownRemark.frontmatter.aboutImg.publicURL']);
   var getImage = getAsset(image);
 
   if (getImage) {

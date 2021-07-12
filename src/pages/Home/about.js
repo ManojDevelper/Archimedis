@@ -12,11 +12,7 @@ const About = () => {
                     abouttitle
                     aboutdesc
                     aboutImg {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                      publicURL
                   }
                 }
               }
@@ -26,7 +22,7 @@ const About = () => {
     <>
       <div id="about">
         <p>{data.about.childMarkdownRemark.frontmatter.abouttitle}</p>
-        <img src={data.about.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src} alt="img" />
+        <img src={data.about.childMarkdownRemark.frontmatter.aboutImg.publicURL} alt="img" />
         <p id="about_dec">{data.about.childMarkdownRemark.frontmatter.aboutdesc}</p>
       </div>
     </>

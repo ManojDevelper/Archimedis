@@ -4,8 +4,8 @@ import Blogs from "../../pages/Home/blogs";
 
 const homeBlogsPreview = ({ entry, getAsset }) => {
 
-  const data = entry.getIn(["data"]).toJS();
-  var image = entry.getIn(['data', 'blogimg']);
+  const data = entry.getIn(["data.Blogs.childMarkdownRemark.frontmatter"]).toJS();
+  var image = entry.getIn(["data.Blogs.childMarkdownRemark.frontmatter.blogs.blogimg.publicURL"]);
   var getImage = getAsset(image);
 
   if (getImage) {

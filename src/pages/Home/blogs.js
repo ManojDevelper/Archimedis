@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/Home/Blogs.css";
 import { graphql, useStaticQuery } from "gatsby";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
 const Blogs = () => {
   const data = useStaticQuery(graphql`
@@ -17,11 +17,7 @@ const Blogs = () => {
                   blogcarddesc
                   blogcarddate
                   blogimg {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                    publicURL
                   }
                 }
               }
@@ -36,7 +32,7 @@ const Blogs = () => {
           {data.Blogs.childMarkdownRemark.frontmatter.blogs.map(blogss =>
             <Link id="blog_card" key={blogss.id} to="../Formulation/Casecompo/">
               <div id="blog_card_b1">
-                <img src={blogss.blogimg.childImageSharp.fluid.src} alt="img" />
+                <img src={blogss.blogimg.publicURL} alt="img" />
               </div>
               <div id="blog_card_b2">
                 <p id="bcc2title">{blogss.blogcardtitle}</p>
