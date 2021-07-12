@@ -21,7 +21,7 @@ function Navbars() {
     const [hidesss, setHidesss] = useState("")
     const [hidessss, setHidessss] = useState("")
     const [contact, setContact] = useState(true)
-    
+
     return (
         <>
             <Navbar id="nav" collapseOnSelect={true} expand="lg" >
@@ -122,9 +122,9 @@ function Navbars() {
                                         </div>
                                         <div id="nav_manu_container_card">
                                             <h1>Food Supplements</h1>
-                                            <Link to="/products/#product1" id="nav_sub_link">Product 1</Link>
-                                            <Link to="/products/#product2" id="nav_sub_link">Product 2</Link>
-                                            <Link to="/products/#product3" id="nav_sub_link">Product 3</Link>
+                                            <Link to="/products/#VitaminD" id="nav_sub_link">Vitamin D</Link>
+                                            <Link to="/products/#BoneCollagen" id="nav_sub_link">Bone Collagen</Link>
+                                            <Link to="/products/#Lola" id="nav_sub_link">Lola</Link>
                                         </div>
                                         <div id="nav_manu_container_card">
                                             <h1>Archimedis Branded</h1>

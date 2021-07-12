@@ -80,6 +80,11 @@
   margin: 0;
   margin-top: 0.79136690647482vw;
 }
+#fservice_container_cards_matter #c_c_matter li{
+  font-size: 1vw;
+  font-weight: bold;
+  margin-left: 1vw;
+}
 #fservice_container_cards_matter button img {
   width: 1.72661870503597vw;
   height: 1.72661870503597vw;
@@ -465,4 +470,10 @@
     p {
     width: 100%;
   }
+  #fservice_container_cards_matter #c_c_matter li {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-left: 1vw;
+    margin-top: 3vw;
+}
 }

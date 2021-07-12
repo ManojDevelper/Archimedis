@@ -4,7 +4,7 @@ Capabilities:
     {
       id: 1,
       capabilitiestitle: "Capabilities",
-      capabilitiesdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer",
+      capabilitiesdesc: "Our certified plant is adept at producing quality outputs in various forms and excels in many sectors.",
       capabilitiescards:
         [
           {

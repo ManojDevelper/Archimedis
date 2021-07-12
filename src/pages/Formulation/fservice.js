@@ -33,6 +33,11 @@ const Fservice = () => {
                     publicURL
                   }
                 }
+                fc
+                fli{
+                  id
+                  list
+                }
               }
             }
           }
@@ -54,6 +59,13 @@ const Fservice = () => {
                     <div id="fservice_container_cards_matter">
                       <h1 id="c_c_title">{fservicecardss.fservicecardtitle}</h1>
                       <p id="c_c_matter">{fservicecardss.fservicecarddesc}</p>
+                      <p id="c_c_matter">{fservicecardss.fc}
+                      {fservicecardss.fli.map(flis =>
+                      <>
+                      <li key={flis.id}>{flis.list}</li>
+                      </>
+                      )}</p>
+                      
                     </div>
                   </div>
                   <div id="fservice_container_cards_block2">

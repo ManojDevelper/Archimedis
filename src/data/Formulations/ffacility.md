@@ -11,7 +11,7 @@ Ffacility:
             id: 1,
             Ffacilityblockid: "R&D",
             Ffacilityname: "R&D Pilot Plant",
-            Ffacilitydesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            Ffacilitydesc: "The sector of the plant where lab scale formulas are transformed into a viable product. This is achieved by structuring a liable and practical procedure to manufacture the product.",
             ffacilitypic: "../assets/fp2_c9.png",
           },
           {
@@ -25,7 +25,7 @@ Ffacility:
             id: 3,
             Ffacilityblockid: "StabilityChamber",
             Ffacilityname: "Stability Chamber",
-            Ffacilitydesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            Ffacilitydesc: "Stability studies are conducted by the analytical research and development team for their new developed products encompassing the following conditions:",
             ffacilitypic: "../assets/fp2_c10.png",
           },
         ],

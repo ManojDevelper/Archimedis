@@ -4,7 +4,7 @@ dsolution:
     {
       id: 1,
       dsolutiontitle: "Solutions",
-      dsolutiondesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.",
+      dsolutiondesc: "Implementations of modern-day technology and processes which reduce optimal input and maximize output.",
       dsolutioncards:
         [
           {

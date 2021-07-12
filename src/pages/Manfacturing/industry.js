@@ -3,7 +3,7 @@ import "../../styles/Manfacture/Industry.css";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Industry = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
         Industry: file(relativePath: {eq: "Manfacturing/industry.md"}) {
             id
@@ -18,6 +18,10 @@ const Industry = () => {
                     industryid
                     title
                     description
+                    li {
+                      id
+                      list
+                    }
                     Image {
                       childImageSharp {
                         fluid {
@@ -32,32 +36,38 @@ const Industry = () => {
           }
     }
   `)
-    return (
-        <>
-            {data.Industry.childMarkdownRemark.frontmatter.industry.map(industrys =>
-                <div id="industry">
-                    <p>{industrys.title}</p>
-                    <p>{industrys.description}</p>
-                    <div id="industry_container">
-                        {industrys.industrycards.map(industrycardss =>
-                            <>
-                                <div className="industry_container_cards" id={industrycardss.industryid} key={industrycardss.id}>
-                                    <div id="industry_container_cards_block1">
-                                        <div id="industry_container_cards_matter">
-                                            <h1 id="c_c_title">{industrycardss.title}</h1>
-                                            <p id="c_c_matter">{industrycardss.description}</p>
-                                        </div>
-                                    </div>
-                                    <div id="industry_container_cards_block2">
-                                        <img src={industrycardss.Image.childImageSharp.fluid.src} alt="img" />
-                                    </div>
-                                </div>
-                            </>
+  return (
+    <>
+      {data.Industry.childMarkdownRemark.frontmatter.industry.map(industrys =>
+        <div id="industry">
+          <p>{industrys.title}</p>
+          <p>{industrys.description}</p>
+          <div id="industry_container">
+            {industrys.industrycards.map(industrycardss =>
+              <>
+                <div className="industry_container_cards" id={industrycardss.industryid} key={industrycardss.id}>
+                  <div id="industry_container_cards_block1">
+                    <div id="industry_container_cards_matter">
+                      <h1 id="c_c_title">{industrycardss.title}</h1>
+                      <p id="c_c_matter">{industrycardss.description}
+                        {industrycardss.li.map(lis =>
+                          <>
+                            <li key={lis.id}>{lis.list}</li>
+                          </>
                         )}
+                        Thus, resulting in quality output with minimal to no defects.</p>
                     </div>
+                  </div>
+                  <div id="industry_container_cards_block2">
+                    <img src={industrycardss.Image.childImageSharp.fluid.src} alt="img" />
+                  </div>
                 </div>
+              </>
             )}
-        </>
-    );
+          </div>
+        </div>
+      )}
+    </>
+  );
 };
 export default Industry;

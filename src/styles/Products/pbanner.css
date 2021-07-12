@@ -21,11 +21,11 @@
   font-family: Manrope;
   font-style: normal;
   font-weight: 600;
-  font-size: 2.87769784172662vw;
-  line-height: 3.9568345323741vw;
+  font-size: 2vw;
+  line-height: 3.5vw;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 43.7410071942446vw;
   margin: auto;
 }
@@ -47,8 +47,8 @@
   }
   #pbanner_container h1 {
     text-align: center;
-    font-size: 4.65116279069767vw;
-    line-height: 6.51162790697674vw;
+    font-size: 3.5vw;
+    line-height: 6.4vw;
     width: 100%;
   }
 }

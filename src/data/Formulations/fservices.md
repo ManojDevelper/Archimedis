@@ -77,6 +77,8 @@ fservices:
                   fserviceminicardsimg: "../assets/mp4_c3.svg",
                 },
               ],
+            fc: "",
+            fli: []
           },
           {
             id: 2,
@@ -138,6 +140,8 @@ fservices:
                   fserviceminicardsimg: "../assets/mp4_c2.svg",
                 },
               ],
+            fc: "",
+            fli: []
           },
           {
             id: 3,
@@ -146,6 +150,8 @@ fservices:
             fservicecarddesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             fservicepic: "../assets/fp2_c3.png",
             fserviceminicards: [],
+            fc: "",
+            fli: []
           },
           {
             id: 4,
@@ -154,14 +160,32 @@ fservices:
             fservicecarddesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             fservicepic: "../assets/fp2_c4.png",
             fserviceminicards: [],
+            fc: "",
+            fli: []
           },
           {
             id: 5,
             fservicecardid: "StabilityStudies",
             fservicecardtitle: "Stability Studies",
-            fservicecarddesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            fservicecarddesc: "Stability studies are conducted by the analytical research and development team for their new developed products encompassing the ",
             fservicepic: "../assets/fp2_c5.png",
             fserviceminicards: [],
+            fc: "Following Conditions:",
+            fli: 
+              [
+                {
+                  id: 1,
+                  list: "Long term",
+                },
+                {
+                  id: 2,
+                  list: "Intermediate",
+                },
+                {
+                  id: 3,
+                  list: "Accelerated",
+                },
+              ]
           },
           {
             id: 6,
@@ -170,6 +194,8 @@ fservices:
             fservicecarddesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             fservicepic: "../assets/fp2_c6.png",
             fserviceminicards: [],
+            fc: "",
+            fli: []
           },
           {
             id: 7,
@@ -178,6 +204,8 @@ fservices:
             fservicecarddesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             fservicepic: "../assets/fp2_c7.png",
             fserviceminicards: [],
+            fc: "",
+            fli: []
           },
         ],
     },
