@@ -6,6 +6,7 @@ import { GlobalStyle } from '../styles/global-styles';
 import AboutPreview from "./preview-templates/AboutPreview";
 import homeBannerPreview from "./preview-templates/homeBannerPreview";
 import homeBlogsPreview from "./preview-templates/homeBlogsPreview";
+import homeClintsPreview from "./preview-templates/homeClintsPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -38,3 +39,4 @@ export default function withStyledComponentsRendered(Comp) {
 CMS.registerPreviewTemplate("about", withStyledComponentsRendered(AboutPreview));
 CMS.registerPreviewTemplate("banner", withStyledComponentsRendered(homeBannerPreview));
 CMS.registerPreviewTemplate("blogs", withStyledComponentsRendered(homeBlogsPreview));
+CMS.registerPreviewTemplate("clints", withStyledComponentsRendered(homeClintsPreview));
