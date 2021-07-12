@@ -13,7 +13,7 @@ fservices:
             fservicecardtitle: "Formulation Development",
             fservicecarddesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             fserviceminicardsmaintitle: "Infrastructure Facilities",
-            fservicepic: "../assets/fp2_c1.png",
+            fservicepic: "../assets/fp2_c2.png",
             fserviceminicards:
               [
                 {
@@ -86,7 +86,7 @@ fservices:
             fservicecardtitle: "Analytical Method Development",
             fservicecarddesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             fserviceminicardsmaintitle: "Infrastructure Facilities",
-            fservicepic: "../assets/fp2_c2.png",
+            fservicepic: "../assets/fp2_c1.png",
             fserviceminicards:
               [
                 {
