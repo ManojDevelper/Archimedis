@@ -16,23 +16,21 @@ const Wedo = () => {
                   wedoname
                   wedodesc
                   wedoimg {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                    publicURL
                   }
                 }
               }
             }
           }
     }`)
+    const wedotitle = data.Wedo.childMarkdownRemark.frontmatter.wedotitle;
+    const wedo = data.Wedo.childMarkdownRemark.frontmatter.wedo;
   return (
     <>
       <div id="wedo">
-        <p>{data.Wedo.childMarkdownRemark.frontmatter.wedotitle}</p>
+        <p>{wedotitle}</p>
         <div id="wedo_container">
-          {data.Wedo.childMarkdownRemark.frontmatter.wedo.map(wedos =>
+          {wedo.map(wedos =>
             <div id="wedo_container_cards" key={wedos.id}>
               <div id="wedo_container_cards_block1">
                 <div id="wedo_container_cards_matter">
@@ -42,7 +40,7 @@ const Wedo = () => {
                 </div>
               </div>
               <div id="wedo_container_cards_block2">
-                <img src={wedos.wedoimg.childImageSharp.fluid.src} alt="img" />
+                <img src={wedos.wedoimg.publicURL} alt="img" />
               </div>
             </div>
           )}

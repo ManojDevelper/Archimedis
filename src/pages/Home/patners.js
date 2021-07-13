@@ -30,19 +30,22 @@ const Patners = () => {
       }
        }
   `)
+  const Patnertitle = data.patners.childMarkdownRemark.frontmatter.Patnertitle;
+  const patnerdescription = data.patners.childMarkdownRemark.frontmatter.patnerdescription;
+  const patnercarousal = data.patners.childMarkdownRemark.frontmatter.patnercarousal;
   return (
     <>
       <div id="patners">
         <div id="patners_container">
           <div id="patners_container_matter">
-            <p>{data.patners.childMarkdownRemark.frontmatter.Patnertitle}</p>
-            <p>{data.patners.childMarkdownRemark.frontmatter.patnerdescription}</p>
+            <p>{Patnertitle}</p>
+            <p>{patnerdescription}</p>
           </div>
           <Carousel interval={10000000} id="carousss">
-            {data.patners.childMarkdownRemark.frontmatter.patnercarousal.map(patnercarousals =>
-              <Carousel.Item key={patnercarousals.id} id="carousss2">
+            {patnercarousal && patnercarousal.map(patnercarousalItem =>
+              <Carousel.Item key={patnercarousalItem.id} id="carousss2">
                 <div id="patners_container_carousal" className="active-content">
-                  {patnercarousals.patners.map(patnerss =>
+                  {patnercarousalItem.patners.map(patnerss =>
                     <div id="patners_container_carousal_container" key={patnerss.id}>
                       {patnerss.patnerimage.map(patnerimages =>
                         <div id="patners_container_carousal_container_container" key={patnerimages.id}>
@@ -53,7 +56,6 @@ const Patners = () => {
                   )}
                 </div>
               </Carousel.Item>
-
             )}
           </Carousel>
         </div>

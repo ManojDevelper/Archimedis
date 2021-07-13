@@ -25,9 +25,10 @@ const Standout = () => {
           }
         }
     }`)
+    const standout = data.Standout.childMarkdownRemark.frontmatter.standout;
   return (
     <>
-    {data.Standout.childMarkdownRemark.frontmatter.standout.map(standouts =>
+    {standout.map(standouts =>
       <div id="standout" key={standouts.id}>
         <p>{standouts.head}</p>
         <p>{standouts.content}</p>

@@ -32,10 +32,11 @@ const Team = () => {
             }
           }
     }`)
+    const teams = data.Team.childMarkdownRemark.frontmatter.teams;
   return (
     <>
       <div id="team">
-        {data.Team.childMarkdownRemark.frontmatter.teams.map(teamss =>
+        {teams.map(teamss =>
           <div key={teamss.id}>
             <h1 style={{ marginTop: (teamss.teamstyle) }}>{teamss.teamtitle}</h1>
             <div id="team_container">

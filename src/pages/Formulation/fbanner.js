@@ -15,11 +15,12 @@ const Fbanner = () => {
           }
         }
      `)
+     const description = data.Fbanner.childMarkdownRemark.frontmatter.description;
     return (
         <>
             <div id="fbanner">
                 <div id="mbanner_container">
-                    <h1>{data.Fbanner.childMarkdownRemark.frontmatter.description}</h1>
+                    <h1>{description}</h1>
                 </div>
             </div>
             <Top2 link="/formulation/"/>

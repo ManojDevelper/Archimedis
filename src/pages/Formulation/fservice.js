@@ -20,11 +20,7 @@ const Fservice = () => {
                 fservicecarddesc
                 fserviceminicardsmaintitle
                 fservicepic {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                  publicURL
                   }
                 fserviceminicards {
                   id
@@ -45,9 +41,10 @@ const Fservice = () => {
       }
     }
   `)
+  const fservices = data.Fservices.childMarkdownRemark.frontmatter.fservices;
   return (
     <>
-      {data.Fservices.childMarkdownRemark.frontmatter.fservices.map(fservicess =>
+      {fservices.map(fservicess =>
         <div id="fservice">
           <p>{fservicess.fservicetitle}</p>
           <p>{fservicess.fservicedesc}</p>
@@ -69,7 +66,7 @@ const Fservice = () => {
                     </div>
                   </div>
                   <div id="fservice_container_cards_block2">
-                    <img src={fservicecardss.fservicepic.childImageSharp.fluid.src} alt="img" />
+                    <img src={fservicecardss.fservicepic.publicURL} alt="img" />
                   </div>
                 </div>
 

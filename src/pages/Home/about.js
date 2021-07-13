@@ -21,6 +21,7 @@ const About = () => {
     const abouttitle = data.about.childMarkdownRemark.frontmatter.abouttitle;
     const aboutdesc = data.about.childMarkdownRemark.frontmatter.aboutdesc;
     const aboutImg = data.about.childMarkdownRemark.frontmatter.aboutImg.publicURL;
+    console.log(data);
   return (
     <>
       <div id="about">

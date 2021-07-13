@@ -76,7 +76,7 @@ const Banner = () => {
                                 }}
                             />
                         </div>
-                        <p id="banner_desc">{boxdescription}</p>
+                        <p id="banner_desc">{description}</p>
                         <div id="banner_btn_container">
                             <button onClick={handleClickOpen}><img src={img1} alt="img" />Watch Video</button>
                             <Dialog
