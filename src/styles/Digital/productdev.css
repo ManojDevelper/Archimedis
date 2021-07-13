@@ -4,7 +4,7 @@
 }
 #productdev #quality_matter {
   background: #f5f8ff;
-  padding: 9.64028776978417vw 11.4388489208633vw;
+  padding: 9.64028776978417vw 0;
 }
 #productdev #quality_matter:nth-child(2) {
   background: white;
@@ -47,6 +47,7 @@
   grid-template-columns: repeat(3, 24.4604316546763vw);
   gap: 2.87769784172662vw;
   padding: 1.43884892086331vw 1.8705035971223vw 1.29496402877698vw 3vw;
+  width: fit-content;
 }
 .productdev_container_card1 {
   height: 12.4460431654676vw;
