@@ -1,5 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
+  branch: main
   repo: sgost/imgtst2
 
 publish_mode: editorial_workflow
