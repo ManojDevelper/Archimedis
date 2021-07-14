@@ -8,16 +8,13 @@ const AboutPreview = ({ entry, getAsset }) => {
   var image = entry.getIn(["data", 'aboutImg']);
   var getImage = getAsset(image);
 
-  if (getImage) {
-    var aboutImage = getImage.toString();
-  }
 
   return (
     <div>
       <About
         abouttitle={data.abouttitle}
         aboutdesc={data.aboutdesc}
-        aboutImg={aboutImage}
+        aboutImg={getImage.toString()}
       />
     </div>
   );
