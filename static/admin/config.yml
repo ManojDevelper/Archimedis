@@ -1,11 +1,10 @@
 backend:
   name: git-gateway
   branch: main
-  repo: sgost/imgtst2
 
 publish_mode: editorial_workflow
 
-media_folder: 'src/data/assets'
+media_folder: 'src/data/images'
 public_folder: 'src/data/assets'
 
 collections:
@@ -41,7 +40,7 @@ collections:
         create: true
         fields:
           - {label: abouttitle, name: abouttitle, widget: string}
-          - {label: aboutImg, name: aboutImg, widget: image}
+          - {label: aboutImg, name: aboutimg, widget: image}
       - file: src/data/blogs.md
         label: Blogs
         name: blogs
