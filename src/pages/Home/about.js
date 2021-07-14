@@ -34,11 +34,11 @@ const About = () => {
     <>
       <div id="about">
         <p>{abouttitle}</p>
-        {aboutImg.extension === "svg" && aboutImg.childImageSharp === null && aboutImg ? (<img src={aboutImg} alt="img" />) : (
+        {aboutImg !== null && aboutImg.childImageSharp ? (
         <>
         {aboutImg.extension === "svg" && aboutImg.childImageSharp === null ? (<img src={aboutImg.publicURL} alt="img" />) : (<img src={aboutImg.childImageSharp.fluid.src} alt="img" />)}
         </>
-        )}
+        ) : (<img src={aboutImg} alt="img" />)}
         <p id="about_dec">{aboutdesc}</p>
       </div>
     </>
