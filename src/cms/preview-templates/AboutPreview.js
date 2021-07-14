@@ -5,7 +5,7 @@ import About from "../../pages/Home/about";
 const AboutPreview = ({ entry, getAsset }) => {
 
   const data = entry.getIn(["data"]).toJS();
-  var image = entry.getIn(["data", 'aboutImg']);
+  var image = entry.getIn(["data", 'aboutimg']);
   var getImage = getAsset(image);
   console.log(getImage);
   return (
@@ -13,7 +13,7 @@ const AboutPreview = ({ entry, getAsset }) => {
       <About
         abouttitle={data.abouttitle}
         aboutdesc={data.aboutdesc}
-        aboutImg={getImage.toString()}
+        aboutimg={getImage.toString()}
         preview={true}
       />
     </div>

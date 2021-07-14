@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/Home/About.css";
 import { graphql, useStaticQuery } from "gatsby";
-import _ from "lodash";
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -12,7 +11,7 @@ const About = () => {
                 frontmatter {
                     abouttitle
                     aboutdesc
-                    aboutImg {
+                    aboutimg {
                       publicURL
                       extension
                       childImageSharp {
@@ -27,17 +26,17 @@ const About = () => {
     }`)
   const abouttitle = data.about.childMarkdownRemark.frontmatter.abouttitle;
   const aboutdesc = data.about.childMarkdownRemark.frontmatter.aboutdesc;
-  const aboutImg = data.about.childMarkdownRemark.frontmatter.aboutImg;
+  const aboutimg = data.about.childMarkdownRemark.frontmatter.aboutimg;
 
   return (
     <>
       <div id="about">
         <p>{abouttitle}</p>
-        {aboutImg !== null && aboutImg.childImageSharp ? (
+        {aboutimg && aboutimg.childImageSharp ? (
         <>
-        {aboutImg.extension === "svg" && aboutImg.childImageSharp === null ? (<img src={aboutImg.publicURL} alt="img" />) : (<img src={aboutImg.childImageSharp.fluid.src} alt="img" />)}
+        {aboutimg.extension === "svg" && aboutimg.childImageSharp === null ? (<img src={aboutimg.publicURL} alt="img" />) : (<img src={aboutimg.childImageSharp.fluid.src} alt="img" />)}
         </>
-        ) : (<img src={aboutImg} alt="img" />)}
+        ) : (<img src={aboutimg} alt="img" />)}
         <p id="about_dec">{aboutdesc}</p>
       </div>
     </>
