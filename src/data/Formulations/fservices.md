@@ -101,7 +101,7 @@ fservices:
                 },
                 {
                   id: 7,
-                  fserviceminicardstitle: "Halogen moisture Balance",
+                  fserviceminicardstitle: "Mettler Toledo Analytical, Semi micro & Micro Balances",
                   fserviceminicardsimg: "../assets/fs28.svg",
                 },
                 {
@@ -111,13 +111,18 @@ fservices:
                 },
                 {
                   id: 9,
-                  fserviceminicardstitle: "Analytical and Micro Balances",
+                  fserviceminicardstitle: "Karl-Fischer Titrator",
                   fserviceminicardsimg: "../assets/fs2110.svg",
                 },
                 {
                   id: 10,
                   fserviceminicardstitle: "Karl-Fischer Titrator",
-                  fserviceminicardsimg: "../assets/fs2111.svg",
+                  fserviceminicardsimg: "../assets/fs2112.svg",
+                },
+                {
+                  id: 11,
+                  fserviceminicardstitle: "Karl-Fischer Titrator",
+                  fserviceminicardsimg: "../assets/fs2113.svg",
                 },
               ],
             fc: "",
