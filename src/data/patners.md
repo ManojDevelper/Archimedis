@@ -65,7 +65,8 @@ patnercarousal:
             id: 3,
             patnerimage:
               [
-                { id: 1, image: "../data/assets/p3_c10.svg" },
+                { id: 1, image: "../data/assets/p3_c12.svg" },
+                 { id: 1, image: "../data/assets/p3_c13.svg" },
               ],
           },
         ],
