@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../styles/Home/Footer.css";
 import img1 from "../../images/linkdin.svg";
 import img2 from "../../images/facebook.svg";
@@ -7,26 +7,8 @@ import img4 from "../../images/twitter.svg";
 import img5 from "../../images/youtube.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Footer = () => {
-    const data = useStaticQuery(graphql`
-    query{
-        Footer: file(relativePath: {eq: "footer.md"}) {
-            id
-            childMarkdownRemark {
-              frontmatter {
-                footer {
-                  id
-                  title
-                  footercontainer {
-                    id
-                    description
-                  }
-                }
-              }
-            }
-          }
-    }`)
-    const footer = data.Footer.childMarkdownRemark.frontmatter.footer;
+export const Footer = ({ footer }) => {
+
     return (
         <>
             <div id="footer">
@@ -35,7 +17,7 @@ const Footer = () => {
                         {footer && footer.map(footerItem =>
                             <div id="footer_cards" key={footerItem.id}>
                                 <h1>{footerItem.title}</h1>
-                                {footerItem.footercontainer.map(footercontainers =>
+                                {footerItem && footerItem.footercontainer.map(footercontainers =>
                                     <div key={footercontainers.id}>
                                         <p>{footercontainers.description}</p>
                                     </div>
@@ -61,4 +43,39 @@ const Footer = () => {
         </>
     );
 };
-export default Footer;
+const FooterPrev = props => {
+    const [footerPre, setFooterPre] = useState({});
+    const data = useStaticQuery(graphql`
+    query{
+        file(relativePath: {eq: "footer.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                footer {
+                  id
+                  title
+                  footercontainer {
+                    id
+                    description
+                  }
+                }
+              }
+            }
+          }
+    }`)
+    useEffect(() => {
+        if (data.file) {
+            setFooterPre(data.file.childMarkdownRemark.frontmatter);
+        }
+    }, [data.file]);
+    return (
+        <>
+            {data.file &&
+                <Footer
+                    footer={footerPre.footer}
+                />
+            }
+        </>
+    )
+}
+export default FooterPrev;

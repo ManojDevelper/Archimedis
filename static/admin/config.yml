@@ -80,7 +80,9 @@ collections:
         create: true
         public_folder: './assets'
         fields:
-          - {label: StandOut Container, name: standout, widget: list, fields: [{label: Title, name: head, widget: string}, {label: Description, name: content, widget: string}, {label: Standout cards, name: Standoutcontainer, widget: list, fields: [{label: Name, name: standname, widget: string}, {label: Image, name: standimage, widget: image}]} ]}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Standoutcontainer, name: Standoutcontainer, widget: list, fields: [{label: Name, name: standname, widget: string}, {label: Image, name: standimage, widget: image}]}
       - file: src/data/team.md
         label: Team
         name: team
@@ -96,19 +98,23 @@ collections:
         fields:
           - {label: Title, name: wedotitle, widget: string}
           - {label: Wedo container, name: patnercarousal, widget: list, fields: [{label: Name, name: wedoname, widget: string}, {label: Description, name: wedodesc, widget: string}, {label: Image, name: wedoimg, widget: image}]}
+      - file: src/data/footer.md
+        label: Footer
+        name: footer
+        create: true
+        fields:
+          - {label: Footer, name: footer, widget: list, fields: [{label: title, name: title, widget: string}, {label: FooterContainer, name: footercontainer, widget: list, fields: [{label: description, name: description, widget: string}]}]}
   
   - label: Formulations
     name: formulation
-    create: true
-    public_folder: './assets'
     files:
       - file: src/data/Formulations/fbanner.md
-        label: Banner
+        label: Formulations Banner
         name: fbanner
         create: true
         public_folder: './assets'
         fields:
-          - {label: Title, name: description, widget: string}
+          - {label: Title, name: Formulationsdescription, widget: string}
       - file: src/data/Formulations/casestudy.md
         label: Casestudy
         name: casestudy
@@ -175,3 +181,22 @@ collections:
         public_folder: './assets'
         fields:
           - {label: Quality Assurance, name: qualityassurance, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: QA Container, name: qualityassuranceminicontainer, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: image, widget: image}]}]}
+  - label: Digital
+    name: digital
+    file: src/data/Formulations
+    files:
+      - file: src/data/Digital/dbanner.md
+        label: Digital Banner
+        name: dbanner
+        fields:
+          - {label: Title, name: description, widget: string}
+      - file: src/data/Digital/dsolution.md
+        label: Digital Solution
+        name: dsolution
+        fields:
+          - {label: Solutions, name: dsolution, widget: list, fields: [{label: Card Title, name: dsolutiontitle, widget: string}, {label: Description, name: dsolutiondesc, widget: string}, {label: Solution Cards, name: dsolutioncards, widget: list, fields: [{label: Id, name: dsolutioncardid, widget: string}, {label: Title, name: dsolutioncardtitle, widget: string}, {label: Description, name: dsolutioncarddesc, widget: string}, {label: Mini Icon Cards Title, name: dsolutionminicardsmaintitle, widget: string}, {label: Mini Icon Cards Title2, name: dsolutionminicardsmaintitle2, widget: string}, {label: Card Image, name: Image, widget: image}, {label: Mini Card, name: dsolutionminicards, widget: list, fields: [{label: Title, name: dsolutionminicardstitle, widget: string}, {label: Title2, name: dsolutionminicardstitle2, widget: string}, {label: Card Icon, name: dsolutionminicardsimg, widget: image}]}]}]}
+      - file: src/data/Digital/productdev.md
+        label: Product Development
+        name: productdev
+        fields:
+          - {label: Product Development, name: prodev, widget: list, fields: [{label: Id, name: pdid, widget: string}, {label: Card Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Mini Container, name: prodevminicontainer, widget: list, fields: [{label: Id, name: pdcontid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: title2, widget: string}, {label: Icon, name: Image, widget: image}]}]}

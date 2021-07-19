@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Online from "../../pages/Home/online";
+import { Online } from "../../pages/Home/online";
 
 const homeOnlinePreview = ({ entry, getAsset }) => {
 
   const data = entry.getIn(["data"]).toJS();
-  console.log(data)
-  var image = entry.getIn(['onlineimg']);
+
+  var image = entry.getIn(["data", 'onlineimg']);
   var getImage = getAsset(image);
 
   if (getImage) {

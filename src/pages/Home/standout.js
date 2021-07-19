@@ -1,18 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Home/Standout.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Standout = () => {
+export const Standout = ({ title, description, Standoutcontainer }) => {
+
+  return (
+    <>
+      <div id="standout">
+        <p>{title}</p>
+        <p>{description}</p>
+        <div id="standout_container">
+          {Standoutcontainer && Standoutcontainer.map(Standoutcontainers =>
+            <div id="standout_card1" key={Standoutcontainers.id}>
+              <img src={Standoutcontainers.standimage.publicURL} alt="img" />
+              <p id="p4_c_dis">{Standoutcontainers.standname}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
+};
+const StandoutPrev = props => {
+  const [standoutPre, setStandoutPre] = useState({});
   const data = useStaticQuery(graphql`
     query{
-        Standout: file(relativePath: {eq: "Standout.md"}) {
+        file(relativePath: {eq: "Standout.md"}) {
           id
           childMarkdownRemark {
             frontmatter {
-              standout {
-                id
-                head
-                content
+                title
+                description
                 Standoutcontainer {
                   id
                   standname
@@ -23,26 +41,23 @@ const Standout = () => {
               }
             }
           }
-        }
     }`)
-    const standout = data.Standout.childMarkdownRemark.frontmatter.standout;
+  useEffect(() => {
+    if (data.file) {
+      setStandoutPre(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
   return (
     <>
-    {standout.map(standouts =>
-      <div id="standout" key={standouts.id}>
-        <p>{standouts.head}</p>
-        <p>{standouts.content}</p>
-        <div id="standout_container">
-          {standouts.Standoutcontainer.map(Standoutcontainers =>
-            <div id="standout_card1" key={Standoutcontainers.id}>
-              <img src={Standoutcontainers.standimage.publicURL} alt="img" />
-              <p id="p4_c_dis">{Standoutcontainers.standname}</p>
-            </div>
-          )}
-        </div>
-      </div>
-    )}
+      {
+        data.file &&
+        <Standout
+          title={standoutPre.title}
+          description={standoutPre.description}
+          Standoutcontainer={standoutPre.Standoutcontainer}
+        />
+      }
     </>
-  );
-};
-export default Standout;
+  )
+}
+export default StandoutPrev;

@@ -12,7 +12,17 @@ export const Blogs = ({ blogtitle, blogs }) => {
           {blogs && blogs.map(blogItem =>
             <Link id="blog_card" key={blogItem.id} to="../Formulation/Casecompo/">
               <div id="blog_card_b1">
+              {blogItem.blogimg.extension === "svg" && blogItem.blogimg.childImageSharp !== null ?
+              <>
+              (
                 <img src={blogItem.blogimg.publicURL} alt="img" />
+              )
+              </>
+              :
+              (
+                <img src={blogItem.blogimg.childImageSharp.fluid.src} alt="img" />
+              )
+              }
               </div>
               <div id="blog_card_b2">
                 <p id="bcc2title">{blogItem.blogcardtitle}</p>
@@ -42,6 +52,12 @@ const BlogPrev = props => {
                 blogcarddate
                 blogimg {
                   publicURL
+                  extension
+                      childImageSharp {
+                        fluid {
+                          src
+                        }
+                  }
                 }
               }
             }

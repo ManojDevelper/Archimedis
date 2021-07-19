@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Clints from "../../pages/Home/clints";
+import { Clints } from "../../pages/Home/clints";
 
 const homeClintsPreview = ({ entry, getAsset }) => {
 

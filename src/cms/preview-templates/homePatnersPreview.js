@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Patners from "../../pages/Home/patners";
+import { Patners } from "../../pages/Home/patners";
 
 const homePatnersPreview = ({ entry, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
-    if (data.hasOwnProperty('patners')) {
+    if (data.hasOwnProperty('data', 'patners')) {
         if (data.patnercarousal) {
             data.patnercarousal.map(patnercarousals => {
                 patnercarousals.patners.map(patner => {
@@ -20,13 +20,11 @@ const homePatnersPreview = ({ entry, getAsset }) => {
     }
 
     return (
-        <div>
-            <Patners
-                Patnertitle={data.Patnertitle}
-                patnerdescription={data.patnerdescription}
-                patnercarousal={data.patnercarousal}
-            />
-        </div>
+        <Patners
+            Patnertitle={data.Patnertitle}
+            patnerdescription={data.patnerdescription}
+            patnercarousal={data.patnercarousal}
+        />
     );
 };
 

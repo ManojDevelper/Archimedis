@@ -1,36 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Home/Wedo.css";
 import arrow from "../../images/arow.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Wedo = () => {
-  const data = useStaticQuery(graphql`
-    query{
-        Wedo: file(relativePath: {eq: "wedo.md"}) {
-            id
-            childMarkdownRemark {
-              frontmatter {
-                wedotitle
-                wedo {
-                  id
-                  wedoname
-                  wedodesc
-                  wedoimg {
-                    publicURL
-                  }
-                }
-              }
-            }
-          }
-    }`)
-    const wedotitle = data.Wedo.childMarkdownRemark.frontmatter.wedotitle;
-    const wedo = data.Wedo.childMarkdownRemark.frontmatter.wedo;
+export const Wedo = ({ wedotitle, wedo }) => {
   return (
     <>
       <div id="wedo">
         <p>{wedotitle}</p>
         <div id="wedo_container">
-          {wedo.map(wedos =>
+          {wedo && wedo.map(wedos =>
             <div id="wedo_container_cards" key={wedos.id}>
               <div id="wedo_container_cards_block1">
                 <div id="wedo_container_cards_matter">
@@ -49,4 +28,42 @@ const Wedo = () => {
     </>
   );
 };
-export default Wedo;
+const WedoPrev = props => {
+  const [statusPre, setStatusPre] = useState({});
+  const data = useStaticQuery(graphql`
+  query{
+  file(relativePath: {eq: "wedo.md"}) {
+          id
+          childMarkdownRemark {
+            frontmatter {
+              wedotitle
+              wedo {
+                id
+                wedoname
+                wedodesc
+                wedoimg {
+                  publicURL
+                }
+              }
+            }
+          }
+        }
+  }`)
+  useEffect(() => {
+    if (data.file) {
+      setStatusPre(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
+  return (
+    <>
+      {
+        data.file &&
+        <Wedo
+          wedotitle={statusPre.wedotitle}
+          wedo={statusPre.wedo}
+        />
+      }
+    </>
+  )
+}
+export default WedoPrev;

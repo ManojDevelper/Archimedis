@@ -9,13 +9,13 @@ const Fbanner = () => {
         Fbanner: file(relativePath: {eq: "Formulations/fbanner.md"}) {
             childMarkdownRemark {
               frontmatter {
-                description
+                Formulationsdescription
               }
             }
           }
         }
      `)
-     const description = data.Fbanner.childMarkdownRemark.frontmatter.description;
+     const description = data.Fbanner.childMarkdownRemark.frontmatter.Formulationsdescription;
     return (
         <>
             <div id="fbanner">

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Status from "../../pages/Home/status";
+import { Status } from "../../pages/Home/status";
 
 const homePatnersPreview = ({ entry, getAsset }) => {
 
@@ -8,8 +8,8 @@ const homePatnersPreview = ({ entry, getAsset }) => {
     if (data.hasOwnProperty('Status')) {
         if (data.Status) {
             data.Status.map(Statuss => {
-                    var getImage = getAsset(Statuss.statusimage);
-                    Statuss.statusimage = getImage.toString();
+                var getImage = getAsset(Statuss.statusimage);
+                Statuss.statusimage = getImage.toString();
                 return Status;
             });
         }

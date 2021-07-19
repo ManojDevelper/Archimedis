@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Team from "../../pages/Home/team";
+import { Team } from "../../pages/Home/team";
 
 const homeTeamPreview = ({ entry, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
+
     if (data.hasOwnProperty('teams')) {
         if (data.teams) {
             data.teams.map(teamss => {

@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Footer from "../../pages/Home/footer";
+import { Footer } from "../../pages/Home/footer";
 
-const homeFooterPreview = ({ entry, getAsset }) => {
+const homeFooterPreview = ({ entry }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
@@ -19,7 +19,6 @@ homeFooterPreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
-    getAsset: PropTypes.func,
 };
 
 export default homeFooterPreview;
