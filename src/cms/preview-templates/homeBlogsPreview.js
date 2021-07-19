@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Blogs from "../../pages/Home/blogs";
+import { Blogs } from "../../pages/Home/blogs";
 
 const homeBlogsPreview = ({ entry, getAsset }) => {
 
