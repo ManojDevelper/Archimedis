@@ -12,11 +12,11 @@ const AboutPreview = ({ entry, getAsset }) => {
     }
     console.log(AboutImage)
     return (
-            <About
-                abouttitle={data.abouttitle}
-                aboutdesc={data.aboutdesc}
-                aboutImgs={AboutImage}
-            />
+        <About
+            abouttitle={data.abouttitle}
+            aboutdesc={data.aboutdesc}
+            aboutImgs={AboutImage}
+        />
     );
 
 };

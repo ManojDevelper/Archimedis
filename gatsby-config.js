@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `gatsby`,
+    title: `Archimedis Website`,
     description: `Gatsby is a React-based open source framework with performance, scalability and security built-in.`,
     keywords: ['gatsby', 'react']
   },
@@ -15,6 +15,24 @@ module.exports = {
         component: require.resolve(`./src/components/Layout/index.js`),
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        }
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
@@ -24,7 +42,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

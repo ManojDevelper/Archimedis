@@ -8,7 +8,7 @@ export const About = ({ abouttitle, aboutdesc, aboutImgs }) => {
     <>
       <div id="about">
         <p>{abouttitle}</p>
-        <img src={aboutImgs} alt="img"/>
+        <img src={aboutImgs} alt="img" />
         <p id="about_dec">{aboutdesc}</p>
       </div>
     </>
@@ -17,26 +17,25 @@ export const About = ({ abouttitle, aboutdesc, aboutImgs }) => {
 const AboutPrev = props => {
   const [aboutPre, setAboutPre] = useState({});
   const data = useStaticQuery(graphql`
-    query{
-       file(relativePath: {eq: "about.md"}) {
-              id
-              childMarkdownRemark {
-                frontmatter {
-                    abouttitle
-                    aboutdesc
-                    aboutImg {
-                      publicURL
-                      extension
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
+  query{
+    file(relativePath: {eq: "about.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                  abouttitle
+                  aboutdesc
+                  aboutImg {
+                    childImageSharp {
+                      fluid {
+                        src
                       }
-                  }
+                    }
+                    publicURL
                 }
               }
             }
-    }`)
+          }
+}`)
   useEffect(() => {
     if (data.file) {
       setAboutPre(data.file.childMarkdownRemark.frontmatter);
