@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../styles/Home/Banner.css";
 import img1 from "../../images/play_btn.svg";
 import img2 from "../../images/medal.svg";
@@ -12,25 +12,8 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 
-const Banner = () => {
-    const data = useStaticQuery(graphql`
-    query{
-        banner: file(relativePath: {eq: "banner.md"}) {
-            id
-            childMarkdownRemark {
-              id
-              frontmatter {
-                title
-                description
-                boxdescription
-              }
-            }
-          }
-        }
-     `)
-     const title =data.banner.childMarkdownRemark.frontmatter.title;
-     const description =data.banner.childMarkdownRemark.frontmatter.description;
-     const boxdescription =data.banner.childMarkdownRemark.frontmatter.boxdescription;
+export const Banner = ({ title, description, boxdescription }) => {
+
     const [bcontact, setBcontact] = useState(true)
     const [open, setOpen] = React.useState(false);
 
@@ -87,7 +70,7 @@ const Banner = () => {
                                 id="pop1"
                             >
                                 <DialogActions>
-                                    <img src={close} alt="img" onClick={handleClose} id="popupclose" role="presentation"/>
+                                    <img src={close} alt="img" onClick={handleClose} id="popupclose" role="presentation" />
                                 </DialogActions>
                                 <DialogContent id="popup">
                                     <iframe width="900" height="500"
@@ -118,4 +101,38 @@ const Banner = () => {
         </>
     );
 };
-export default Banner;
+const BannerPrev = props => {
+    const [bannerPre, setBannerPre] = useState({});
+    const data = useStaticQuery(graphql`
+    query{
+      file(relativePath: {eq: "banner.md"}) {
+            id
+            childMarkdownRemark {
+              id
+              frontmatter {
+                title
+                description
+                boxdescription
+              }
+            }
+          }
+        }
+     `)
+    useEffect(() => {
+        if (data.file) {
+            setBannerPre(data.file.childMarkdownRemark.frontmatter);
+        }
+    }, [data.file]);
+    return (
+        <>
+            {data.file &&
+                <Banner
+                    title={bannerPre.title}
+                    description={bannerPre.description}
+                    boxdescription={bannerPre.boxdescription}
+                />
+            }
+        </>
+    )
+}
+export default BannerPrev;

@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Home/About.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-const About = () => {
+export const About = ({ abouttitle, aboutdesc, aboutImgs }) => {
+
+  return (
+    <>
+      <div id="about">
+        <p>{abouttitle}</p>
+        <img src={aboutImgs} alt="img"/>
+        <p id="about_dec">{aboutdesc}</p>
+      </div>
+    </>
+  );
+};
+const AboutPrev = props => {
+  const [aboutPre, setAboutPre] = useState({});
   const data = useStaticQuery(graphql`
     query{
-        about:file(relativePath: {eq: "about.md"}) {
+       file(relativePath: {eq: "about.md"}) {
               id
               childMarkdownRemark {
                 frontmatter {
                     abouttitle
                     aboutdesc
-                    aboutimg {
+                    aboutImg {
                       publicURL
                       extension
                       childImageSharp {
@@ -24,18 +37,28 @@ const About = () => {
               }
             }
     }`)
-  const abouttitle = data.about.childMarkdownRemark.frontmatter.abouttitle;
-  const aboutdesc = data.about.childMarkdownRemark.frontmatter.aboutdesc;
-  const aboutimg = data.about.childMarkdownRemark.frontmatter.aboutimg;
-
+  useEffect(() => {
+    if (data.file) {
+      setAboutPre(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
+  let AboutImage;
+  if (data.file.childMarkdownRemark.frontmatter.aboutImg !== null && data.file.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src !== null) {
+    AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg.publicURL;
+  } else {
+    AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src;
+  }
   return (
     <>
-      <div id="about">
-        <p>{abouttitle}</p>
-        {aboutimg.extension === "svg" && aboutimg.childImageSharp === null ? (<img src={aboutimg.publicURL} alt="img" />) : (<img src={aboutimg.childImageSharp.fluid.src} alt="img" />)}
-        <p id="about_dec">{aboutdesc}</p>
-      </div>
+      {
+        data.file &&
+        <About
+          abouttitle={aboutPre.abouttitle}
+          aboutdesc={aboutPre.aboutdesc}
+          aboutImgs={AboutImage}
+        />
+      }
     </>
-  );
-};
-export default About;
+  )
+}
+export default AboutPrev;

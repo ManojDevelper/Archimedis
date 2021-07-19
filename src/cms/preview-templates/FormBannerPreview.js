@@ -1,25 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Fbanner from "../../pages/Formulation/fbanner";
+import { Banner } from "../../pages/Home/banner";
 
-const FormBannerPreview = ({ entry, getAsset }) => {
+const homeBannerPreview = ({ entry }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
     return (
         <div>
-            <Fbanner
+            <Banner
+                title={data.title}
                 description={data.description}
+                boxdescription={data.boxdescription}
             />
         </div>
     );
+
 };
 
-FormBannerPreview.propTypes = {
+homeBannerPreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
-    }),
-    getAsset: PropTypes.func,
+    })
 };
 
-export default FormBannerPreview;
+export default homeBannerPreview;
