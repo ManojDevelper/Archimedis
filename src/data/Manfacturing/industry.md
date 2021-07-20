@@ -12,7 +12,7 @@ industry:
             industryid: "smart",
             title: "Smart Dispensing",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            Image: "../assets/i_c1.png",
+            Image: ../assets/i_c1.png,
             li: []
           },
           {
@@ -20,7 +20,7 @@ industry:
             industryid: "Environment",
             title: "Environment Monitoring",
             description: "Implementation of environmental monitoring systems ensures periodic checks on essential parameters such as",
-            Image: "../assets/i_c2.png",
+            Image: ../assets/i_c2.png,
             li: 
               [
                 {
@@ -50,7 +50,7 @@ industry:
             industryid: "ERP",
             title: "ERP",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            Image: "../assets/i_c3.png",
+            Image: ../assets/i_c3.png,
             li: []
           },
         ],
