@@ -8,7 +8,7 @@ clints:
           carousalreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. id integer. Lorem ipsum dolor sit amet, consectetur",
           clintname: "Jane Cooper",
           clintdesignation: "CEO, ABC Corporation",
-          clintimg: ../data/assets/c_prof1.png,
+          clintimg: assets/c_prof1.png,
       },
       {
           id: 2,
@@ -16,7 +16,7 @@ clints:
           carousalreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. id integer. Lorem ipsum dolor sit amet, consectetur",
           clintname: "Jane Cooper",
           clintdesignation: "CEO, ABC Corporation",
-          clintimg: ../data/assets/c_prof1.png,
+          clintimg: assets/c_prof1.png,
       },
       {
           id: 3,
@@ -24,7 +24,7 @@ clints:
           carousalreview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. id integer. Lorem ipsum dolor sit amet, consectetur",
           clintname: "Jane Cooper",
           clintdesignation: "CEO, ABC Corporation",
-          clintimg: ../data/assets/c_prof1.png,
+          clintimg: assets/c_prof1.png,
       }
   ]
 ---

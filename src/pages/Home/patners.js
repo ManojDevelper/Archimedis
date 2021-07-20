@@ -18,9 +18,9 @@ export const Patners = ({ Patnertitle, patnerdescription, patnercarousal }) => {
             {patnercarousal && patnercarousal.map(patnercarousalItem =>
               <Carousel.Item key={patnercarousalItem.id} id="carousss2">
                 <div id="patners_container_carousal" className="active-content">
-                  {patnercarousalItem && patnercarousalItem.patners.map(patnerss =>
+                  {patnercarousalItem.patners.map(patnerss =>
                     <div id="patners_container_carousal_container" key={patnerss.id}>
-                      {patnerss && patnerss.patnerimage.map(patnerimages =>
+                      {patnerss.patnerimage.map(patnerimages =>
                         <div id="patners_container_carousal_container_container" key={patnerimages.id}>
                           <img src={patnerimages.image.publicURL} alt="img" />
                         </div>
@@ -36,7 +36,7 @@ export const Patners = ({ Patnertitle, patnerdescription, patnercarousal }) => {
     </>
   );
 };
-const PatnerPrev = props => {
+const PatnerPrev = () => {
   const [patnerPre, setPatnerPre] = useState({});
   const data = useStaticQuery(graphql`
     query {

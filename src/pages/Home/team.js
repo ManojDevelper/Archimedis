@@ -16,7 +16,7 @@ export const Team = ({ teams }) => {
               {teamss && teamss.team.map(teams =>
                 <div id="team_container_cards" key={teams.id}>
                   <div id="team_container_cards_block1">
-                    <img src={teams.teamimg.childImageSharp.fluid.src} alt="img" />
+                    <img src={teams.teamimg.publicURL} alt="img" />
                     <p>{teams.teaamname}</p>
                     <p id="designation">{teams.teamdesignation}</p>
                   </div>
@@ -52,11 +52,7 @@ const TeamPrev = props => {
                   teaamname
                   teamdesignation
                   teamimg {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                    publicURL
                   }
                 }
               }

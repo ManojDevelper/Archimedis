@@ -21,13 +21,7 @@ export const Clints = ({ clintstitle, clints }) => {
                                     </div>
                                     <div id="clints_container_main_b2">
                                         <div id="clints_container_main_b2_b1">
-                                            {clintItem.clintimg.extension === null && clintItem.clintimg.childImageSharp !== null ?
-                                                (
-                                                    <img src={clintItem.clintimg.publicURL} alt="img" />
-                                                ) :
-                                                (
-                                                    <img src={clintItem.clintimg.childImageSharp.fluid.src} alt="img" />
-                                                )}
+                                            <img src={clintItem.clintimg.publicURL} alt="img" />
                                         </div>
                                         <div id="clints_container_main_b2_b2">
                                             <p>{clintItem.clintname}</p>
@@ -43,7 +37,7 @@ export const Clints = ({ clintstitle, clints }) => {
         </>
     );
 };
-const ClintsPrev = props => {
+const ClintsPrev = () => {
     const [clintsprePre, setClintspre] = useState({});
     const data = useStaticQuery(graphql`
     query{
@@ -60,12 +54,6 @@ const ClintsPrev = props => {
                   clintdesignation
                   clintimg {
                     publicURL
-                    extension
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                     }
                   }
                 }
               }
