@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 publish_mode: editorial_workflow
-media_folder: "src/data/assets"
+media_folder: "src/dat.a/assets"
 public_folder: "/"
 collections:
   - label: Test
@@ -35,7 +35,7 @@ collections:
         label: About
         name: about
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - { label: abouttitle, name: abouttitle, widget: string }
           - { label: aboutdesc, name: aboutdesc, widget: string }
@@ -44,7 +44,7 @@ collections:
         label: Blogs
         name: blogs
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: blogtitle, widget: string}
           - {label: Blog Container, name: blogs, widget: list, fields: [{label: Title, name: blogcardtitle, widget: string}, {label: Description, name: blogcarddesc, widget: string}, {label: date, name: blogcarddate, widget: string}, {label: image, name: blogimg, widget: image}]}
@@ -52,7 +52,7 @@ collections:
         label: Clints
         name: clints
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: clintstitle, widget: string}
           - {label: Clints Container, name: clints, widget: list, fields: [{label: Title, name: carousaltitle, widget: string}, {label: Review, name: carousalreview, widget: string}, {label: Name, name: clintname, widget: string},  {label: Designation, name: clintdesignation, widget: string}, {label: Profile Image, name: clintimg, widget: image}]}
@@ -60,7 +60,7 @@ collections:
         label: Online
         name: online
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: onlinetitle, widget: string}
           - {label: Description, name: onlinedesc, widget: string}
@@ -69,7 +69,7 @@ collections:
         label: Patners
         name: patners
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: Patnertitle, widget: string}
           - {label: Description, name: patnerdescription, widget: string}
@@ -78,7 +78,7 @@ collections:
         label: Standout
         name: standout
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string}
@@ -87,14 +87,14 @@ collections:
         label: Team
         name: team
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Teams Container, name: teams, widget: list, fields: [{label: Title, name: teamtitle, widget: string}, {label: Team cards, name: team, widget: list, fields: [{label: Name, name: teaamname, widget: string}, {label: Designation, name: teamdesignation, widget: string}, {label: Image, name: teamimg, widget: image}]} ]}
       - file: src/data/wedo.md
         label: Wedo
         name: wedo
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: wedotitle, widget: string}
           - {label: Wedo container, name: patnercarousal, widget: list, fields: [{label: Name, name: wedoname, widget: string}, {label: Description, name: wedodesc, widget: string}, {label: Image, name: wedoimg, widget: image}]}
@@ -112,28 +112,28 @@ collections:
         label: Formulations Banner
         name: fbanner
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: Formulationsdescription, widget: string}
       - file: src/data/Formulations/casestudy.md
         label: Casestudy
         name: casestudy
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Casestudy, name: Casestudy, widget: list, fields: [{label: Title, name: Casestudytitle, widget: string}, {label: Casestudycards, name: Casestudycards, widget: list, fields: [{label: Title, name: Casestudyblockid, widget: string}, {label: Description, name: Casestudyname, widget: string}, {label: Date, name: Casestudydesc, widget: string}, {label: Image, name: image, widget: image}]}]}
       - file: src/data/Formulations/ffacility.md
         label: Facility
         name: ffacility
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Facility, name: Ffacility, widget: list, fields: [{label: Title, name: Ffacilitytitle, widget: string}, {label: Description, name: Ffacilitydis, widget: string}, {label: Facility Cards, name: Ffacilitycards, widget: list, fields: [{label: Id, name: Ffacilityblockid, widget: string}, {label: Title, name: Ffacilityname, widget: string}, {label: Description, name: Ffacilitydesc, widget: string}, {label: Image, name: ffacilitypic, widget: image}]}]}
       - file: src/data/Formulations/fservices.md
         label: Services
         name: fservice
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Services, name: fservices, widget: list, fields: [{label: Title, name: fservicetitle, widget: string}, {label: Description, name: fservicedesc, widget: string}, {label: Services Cards, name: fservicecards, widget: list, fields: [{label: Id, name: fservicecardid, widget: string}, {label: Title, name: fservicecardtitle, widget: string}, {label: Description, name: fservicecarddesc, widget: string}, {label: Main title, name: fserviceminicardsmaintitle, widget: string}, {label: Image, name: fservicepic, widget: image}, {label: Mini Blocks, name: fserviceminicards, widget: list, fields: [{label: fserviceminicardstitle, name: fserviceminicardstitle, widget: string}, {label: Images, name: fserviceminicardsimg, widget: image}]}]}]}
   - label: Manfacturing
@@ -143,42 +143,42 @@ collections:
         label: Banner
         name: mbanner
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Title, name: description, widget: string}
       - file: src/data/Manfacturing/capabilities.md
         label: Capabilities
         name: capable
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Capabilities, name: Capabilities, widget: list, fields: [{label: Title, name: capabilitiestitle, widget: string}, {label: Description, name: capabilitiesdesc, widget: string}, {label: Capabilities Cards, name: capabilitiescards, widget: list, fields: [{label: Id, name: capabilitiescardid, widget: string}, {label: Title, name: capabilitiescardtitle, widget: string}, {label: Description, name: capabilitiescarddesc, widget: string}, {label: Image, name: image, widget: image}, {label: Mini Blocks, name: capabilitiesminicards, widget: list, fields: [{label: Title, name: capabilitiesminicardstitle, widget: string}, {label: Image, name: image, widget: image}]}]}]}
       - file: src/data/Manfacturing/facility.md
         label: Facility
         name: facility
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Facility, name: Facility, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Facility Cards, name: Facilitycards, widget: list, fields: [{label: Id, name: facilityid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Description2, name: description2, widget: string}, {label: Description3, name: description3, widget: string}, {label: Image, name: fimage, widget: image}]}]}
       - file: src/data/Manfacturing/industry.md
         label: Industry
         name: industry
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Industry, name: industry, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Industry Cards, name: industrycards, widget: list, fields: [{label: Id, name: industryid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
       - file: src/data/Manfacturing/quality.md
         label: Quality
         name: quality
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Quality, name: Quality, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Description1, name: description1, widget: string}, {label: Description2, name: description2, widget: string}, {label: Image, name: image, widget: image} ]}
       - file: src/data/Manfacturing/qualityassurance.md
         label: Quality Assurance
         name: qualityassurance
         create: true
-        public_folder: './assets'
+        public_folder: '../assets'
         fields:
           - {label: Quality Assurance, name: qualityassurance, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: QA Container, name: qualityassuranceminicontainer, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: image, widget: image}]}]}
   - label: Digital
