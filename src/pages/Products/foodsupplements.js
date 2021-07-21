@@ -11,7 +11,7 @@ export const Foodsupplements = ({ foodsupliments }) => {
           <p>{foodsuplimentss.title}</p>
           <p>{foodsuplimentss.description}</p>
           <div id="foodsupplements_container">
-            {foodsuplimentss && foodsuplimentss.foodsuplimentscards.map(foodsuplimentscardss =>
+            {foodsuplimentss.foodsuplimentscards.map(foodsuplimentscardss =>
               <>
                 <div className="foodsupplements_container_cards" id={foodsuplimentscardss.foodsuplimentsid} key={foodsuplimentscardss.id}>
                   <div id="foodsupplements_container_cards_block1">

@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: main
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
@@ -217,3 +217,24 @@ collections:
         public_folder: '../assets'
         fields:
           - {label: Title, name: description, widget: string, required: false}
+      - file: src/data/Products/pharmaceutical.md
+        label: Products Pharmaceutical
+        name: pharmaceutical
+        create: true
+        public_folder: '../assets'
+        fields:
+          - {label: Pharmaceutical, name: pharmaceutical, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Pharmaceutical Cards, name: pharmaceuticalcards, widget: list, fields: [{label: Link, name: pharmaceuticalid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
+      - file: src/data/Products/foodsuplements.md
+        label: Food Suplements
+        name: foodsupplements
+        create: true
+        public_folder: '../assets'
+        fields:
+          - {label: Food Suplements, name: foodsupliments, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Food Suppliments Cards, name: foodsuplimentscards, widget: list, fields: [{label: Link, name: foodsuplimentsid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
+      - file: src/data/Products/archibrand.md
+        label: ArchiBrand
+        name: archibrand
+        create: true
+        public_folder: '../assets'
+        fields:
+          - {label: ArchiBrand, name: archibrand, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Archi Brand Cards, name: archibrandcards, widget: list, fields: [{label: Link, name: archibrandid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
