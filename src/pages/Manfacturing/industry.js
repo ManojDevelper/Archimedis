@@ -1,11 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Manfacture/Industry.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Industry = () => {
+export const Industry = ({ industry }) => {
+
+  return (
+    <>
+      {industry && industry.map(industrys =>
+        <div id="industry">
+          <p>{industrys.title}</p>
+          <p>{industrys.description}</p>
+          <div id="industry_container">
+            {industrys && industrys.industrycards.map(industrycardss =>
+              <>
+                <div className="industry_container_cards" id={industrycardss.industryid} key={industrycardss.id}>
+                  <div id="industry_container_cards_block1">
+                    <div id="industry_container_cards_matter">
+                      <h1 id="c_c_title">{industrycardss.title}</h1>
+                      <p id="c_c_matter">{industrycardss.description}
+                        {industrycardss && industrycardss.li.map(lis =>
+                          <>
+                            <li key={lis.id}>{lis.list}</li>
+                          </>
+                        )}
+                        Thus, resulting in quality output with minimal to no defects.</p>
+                    </div>
+                  </div>
+                  {(industrycardss.Image.childImageSharp.fluid.src !== null || industrycardss.Image === "svg") ? (
+                  <div id="industry_container_cards_block2">
+                    <img src={industrycardss.Image.publicURL} alt="img" />
+                  </div>
+                  ) : (
+                    <div id="industry_container_cards_block2">
+                    <img src={industrycardss.Image.childImageSharp.fluid.src} alt="img" />
+                  </div>
+                  )}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+const IndustryPre = props => {
+  const [IndustryPre, setIndustryPre] = useState({});
   const data = useStaticQuery(graphql`
     query {
-        Industry: file(relativePath: {eq: "Manfacturing/industry.md"}) {
+        file(relativePath: {eq: "Manfacturing/industry.md"}) {
             id
             childMarkdownRemark {
               frontmatter {
@@ -23,6 +67,7 @@ const Industry = () => {
                       list
                     }
                     Image {
+                      publicURL
                       childImageSharp {
                         fluid {
                           src
@@ -36,38 +81,20 @@ const Industry = () => {
           }
     }
   `)
+  useEffect(() => {
+    if (data.file) {
+      setIndustryPre(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
   return (
     <>
-      {data.Industry.childMarkdownRemark.frontmatter.industry.map(industrys =>
-        <div id="industry">
-          <p>{industrys.title}</p>
-          <p>{industrys.description}</p>
-          <div id="industry_container">
-            {industrys.industrycards.map(industrycardss =>
-              <>
-                <div className="industry_container_cards" id={industrycardss.industryid} key={industrycardss.id}>
-                  <div id="industry_container_cards_block1">
-                    <div id="industry_container_cards_matter">
-                      <h1 id="c_c_title">{industrycardss.title}</h1>
-                      <p id="c_c_matter">{industrycardss.description}
-                        {industrycardss.li.map(lis =>
-                          <>
-                            <li key={lis.id}>{lis.list}</li>
-                          </>
-                        )}
-                        Thus, resulting in quality output with minimal to no defects.</p>
-                    </div>
-                  </div>
-                  <div id="industry_container_cards_block2">
-                    <img src={industrycardss.Image.childImageSharp.fluid.src} alt="img" />
-                  </div>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-      )}
+      {
+        data.file &&
+        <Industry
+          industry={IndustryPre.industry}
+        />
+      }
     </>
-  );
-};
-export default Industry;
+  )
+}
+export default IndustryPre;

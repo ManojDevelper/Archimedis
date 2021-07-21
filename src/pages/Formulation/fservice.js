@@ -1,50 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Formulation/fservice.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Fservice = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      Fservices: file(relativePath: {eq: "Formulations/fservices.md"}) {
-        id
-        childMarkdownRemark {
-          frontmatter {
-            fservices {
-              id
-              fservicetitle
-              fservicedesc
-              fservicecards {
-                id
-                fservicecardid
-                fservicecardtitle
-                fservicecarddesc
-                fserviceminicardsmaintitle
-                fservicepic {
-                  publicURL
-                  }
-                fserviceminicards {
-                  id
-                  fserviceminicardstitle
-                  fserviceminicardsimg {
-                    publicURL
-                  }
-                }
-                fc
-                fli{
-                  id
-                  list
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-  const fservices = data.Fservices.childMarkdownRemark.frontmatter.fservices;
+export const Fservice = ({fservices}) => {
+  
   return (
     <>
-      {fservices.map(fservicess =>
+      {fservices && fservices.map(fservicess =>
         <div id="fservice">
           <p>{fservicess.fservicetitle}</p>
           <p>{fservicess.fservicedesc}</p>
@@ -94,4 +56,60 @@ const Fservice = () => {
   )
 }
 
-export default Fservice;
+const FServiceprev = props => {
+  const [FServicepre, setFServicepre] = useState({})
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: {eq: "Formulations/fservices.md"}) {
+        id
+        childMarkdownRemark {
+          frontmatter {
+            fservices {
+              id
+              fservicetitle
+              fservicedesc
+              fservicecards {
+                id
+                fservicecardid
+                fservicecardtitle
+                fservicecarddesc
+                fserviceminicardsmaintitle
+                fservicepic {
+                  publicURL
+                  }
+                fserviceminicards {
+                  id
+                  fserviceminicardstitle
+                  fserviceminicardsimg {
+                    publicURL
+                  }
+                }
+                fc
+                fli{
+                  id
+                  list
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  useEffect(() => {
+    if (data.file) {
+      setFServicepre(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
+  return(
+    <>
+    {
+      data.file &&
+      <Fservice
+        fservices={FServicepre.fservices}
+      />
+    }
+    </>
+  )
+}
+export default FServiceprev;

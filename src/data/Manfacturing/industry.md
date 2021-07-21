@@ -50,7 +50,7 @@ industry:
             industryid: "ERP",
             title: "ERP",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            Image: ../assets/i_c3.png,
+            Image: ../assets/digital.png,
             li: []
           },
         ],

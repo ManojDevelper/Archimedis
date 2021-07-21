@@ -1,37 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Products/Archibranded.css";
 import arrow from "../../images/arow.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Archibranded = () => {
-    const data = useStaticQuery(graphql`
-    query{
-        Archibrand:  file(relativePath: {eq: "Products/archibrand.md"}) {
-            id
-            childMarkdownRemark {
-              frontmatter {
-                archibrand {
-                  id
-                  title
-                  description
-                  archibrandcards {
-                    id
-                    archibrandid
-                    title
-                    description
-                    Image {
-                        publicURL
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-     `)
+export const Archibranded = ({ archibrand }) => {
+
     return (
         <>
-            {data.Archibrand.childMarkdownRemark.frontmatter.archibrand.map(archibrands =>
+            {archibrand && archibrand.map(archibrands =>
                 <div id="archibranded" key={archibrands.id}>
                     <p>{archibrands.title}</p>
                     <p>{archibrands.description}</p>
@@ -58,4 +34,47 @@ const Archibranded = () => {
         </>
     );
 };
-export default Archibranded;
+const ArchiBrandedPrev = props => {
+    const [ArchiBrandedPre, setArchiBrandedPre] = useState({});
+    const data = useStaticQuery(graphql`
+    query{
+        file(relativePath: {eq: "Products/archibrand.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                archibrand {
+                  id
+                  title
+                  description
+                  archibrandcards {
+                    id
+                    archibrandid
+                    title
+                    description
+                    Image {
+                        publicURL
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+     `)
+    useEffect(() => {
+        if (data.file) {
+            setArchiBrandedPre(data.file.childMarkdownRemark.frontmatter);
+        }
+    }, [data.file]);
+    return (
+        <>
+            {
+                data.file &&
+                <Archibranded
+                    archibrand={ArchiBrandedPre.archibrand}
+                />
+            }
+        </>
+    )
+}
+export default ArchiBrandedPrev;

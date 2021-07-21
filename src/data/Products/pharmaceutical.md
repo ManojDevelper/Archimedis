@@ -18,14 +18,14 @@ pharmaceutical:
             id: 2,
             pharmaceuticalid: "Prescription",
             title: "Prescription Drugs",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            description: "Prescription drugs are pharmaceutical drugs which legally require a medical prescription from a doctor before consumption. We house many variants with presence in fields of anti-diabetics, anti-hypertensives, anti-anginals and many more.",
             Image: ../assets/ph_i2.png,
           },
           {
             id: 3,
             pharmaceuticalid: "OTC",
             title: "OTC",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            description: "OTC stands for over-the-counter drugs. These are non-prescription medicines that are medicines that you can buy without any prescription. These are safe and effective when directions on the label are followed. We house many quality produced OTC products which you can rely on.",
             Image: ../assets/ph_i3.png,
           },
           {

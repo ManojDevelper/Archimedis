@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: main
 publish_mode: editorial_workflow
-media_folder: "src/dat.a/assets"
+media_folder: "src/data/assets"
 public_folder: "/"
 collections:
   - label: Test
@@ -200,3 +200,12 @@ collections:
         name: productdev
         fields:
           - {label: Product Development, name: prodev, widget: list, fields: [{label: Id, name: pdid, widget: string}, {label: Card Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Mini Container, name: prodevminicontainer, widget: list, fields: [{label: Id, name: pdcontid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: title2, widget: string}, {label: Icon, name: Image, widget: image}]}]}
+  - label: Products
+    name: products
+    file: src/data/Products
+    files:
+      - file: src/data/Products/pbanner.md
+        label: Products Banner
+        name: pbanner
+        fields:
+          - {label: Title, name: description, widget: string}

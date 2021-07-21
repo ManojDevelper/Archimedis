@@ -1,25 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Fservice from "../../pages/Formulation/fservice";
+import { MBanner } from "../../pages/Manfacturing/mbanner";
 
-const FormServicePreview = ({ entry, getAsset }) => {
+const ManuBannerPreview = ({ entry }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
     return (
         <div>
-            <Fservice
+            <MBanner
                 description={data.description}
             />
         </div>
     );
 };
 
-FormServicePreview.propTypes = {
+ManuBannerPreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
-    getAsset: PropTypes.func,
 };
 
-export default FormServicePreview;
+export default ManuBannerPreview;

@@ -1,54 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Digital/dsolutions.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Dsolutions = () => {
-    const data = useStaticQuery(graphql`
-    query{
-        Dsolution:   file(relativePath: {eq: "Digital/dsolution.md"}) {
-            id
-            childMarkdownRemark {
-              frontmatter {
-                dsolution {
-                  id
-                  dsolutiontitle
-                  dsolutiondesc
-                  dsolutioncards {
-                    id
-                    dsolutioncardid
-                    dsolutioncardtitle
-                    dsolutioncarddesc
-                    dsolutionminicardsmaintitle
-                    dsolutionminicardsmaintitle2
-                    Image {
-                        publicURL
-                    }
-                    dsolutionminicards {
-                      id
-                      dsolutionminicardstitle
-                      dsolutionminicardstitle2
-                      dsolutionminicardsimg {
-                        publicURL
-                      }
-                    }
-                    dsolutionminicards2 {
-                        id
-                        minicardd
-                        minicardd2
-                        Image {
-                          publicURL
-                        }
-                      }
-                  }
-                }
-              }
-            }
-          }
-        }
-     `)
+export const Dsolutions = ({dsolution}) => {
+
     return (
         <>
-            {data.Dsolution.childMarkdownRemark.frontmatter.dsolution.map(dsolutions =>
+            {dsolution && dsolution.map(dsolutions =>
                 <div id="dsolutions" key={dsolutions.id}>
                     <p>{dsolutions.dsolutiontitle}</p>
                     <p>{dsolutions.dsolutiondesc}</p>
@@ -108,4 +66,65 @@ const Dsolutions = () => {
     )
 }
 
-export default Dsolutions;
+const DsolutionsPrev = props => {
+    const [DsolutionsPre, setDsolutionsPre] = useState({});
+    const data = useStaticQuery(graphql`
+    query{
+        file(relativePath: {eq: "Digital/dsolution.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                dsolution {
+                  id
+                  dsolutiontitle
+                  dsolutiondesc
+                  dsolutioncards {
+                    id
+                    dsolutioncardid
+                    dsolutioncardtitle
+                    dsolutioncarddesc
+                    dsolutionminicardsmaintitle
+                    dsolutionminicardsmaintitle2
+                    Image {
+                        publicURL
+                    }
+                    dsolutionminicards {
+                      id
+                      dsolutionminicardstitle
+                      dsolutionminicardstitle2
+                      dsolutionminicardsimg {
+                        publicURL
+                      }
+                    }
+                    dsolutionminicards2 {
+                        id
+                        minicardd
+                        minicardd2
+                        Image {
+                          publicURL
+                        }
+                      }
+                  }
+                }
+              }
+            }
+          }
+        }
+     `)
+     useEffect(() => {
+        if (data.file) {
+            setDsolutionsPre(data.file.childMarkdownRemark.frontmatter);
+        }
+      }, [data.file]);
+    return (
+        <>
+        {
+            data.file &&
+            <Dsolutions
+                dsolution={DsolutionsPre.dsolution}
+            />
+        }
+        </>
+    )
+}
+export default DsolutionsPrev;

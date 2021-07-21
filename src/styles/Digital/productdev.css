@@ -50,7 +50,7 @@
   width: fit-content;
 }
 .productdev_container_card1 {
-  height: 12.4460431654676vw;
+  height: 18vw;
   padding: 1vw 1vw;
   background: #ffffff;
   box-shadow: 0px 0px 0.575539568345324vw rgba(42, 71, 124, 0.18);
@@ -97,10 +97,11 @@
   font-weight: normal;
   font-size: 1.00719424460432vw;
   line-height: 1.58273381294964vw;
-  text-align: left;
+  text-align: justify;
   color: #200e32;
   margin: 0;
   margin-top: 1vw;
+  margin-right: 0;
 }
 @media (max-width: 750px) {
   #productdev {
@@ -166,10 +167,10 @@
     font-family: Manrope;
     font-style: normal;
     font-weight: normal;
-    font-size: 3.25581395348837vw;
+    font-size: 2.8vw;
     line-height: 4.41860465116279vw;
     margin: 0;
-    text-align: justify;
+    text-align: left;
     color: #200e32;
     margin-top: 3vw;
   }
@@ -180,7 +181,7 @@
     width: 100%;
   }
   .productdev_container_card1 {
-    height:45vw;
+    height:69vw;
     padding: 2.7906976744186vw 3.48837209302326vw;
     background: #ffffff;
     transition: 0.5s ease-in-out;

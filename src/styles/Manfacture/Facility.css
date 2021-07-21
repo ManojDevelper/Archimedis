@@ -110,10 +110,6 @@
 .facility_container_cards:nth-child(4) #facility_container_cards_block2 {
   border: 0.215827338129496vw solid #8c90ff;
 }
-#facility_container_cards_block {
-  margin-top: 2vw;
-  width: 32vw;
-}
 #facility_container_cards_block li {
   font-family: Manrope;
   font-style: normal;
