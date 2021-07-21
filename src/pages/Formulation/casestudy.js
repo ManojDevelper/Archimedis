@@ -5,19 +5,19 @@ import arrow2 from "../../images/blog_btn_blue.svg";
 import { graphql, useStaticQuery } from "gatsby";
 import { Link } from "gatsby";
 
-export const Casestudy = ({Casestudy}) => {
-  
+export const Casestudy = ({ Casestudy }) => {
+
   return (
     <>
       {Casestudy && Casestudy.map(Casestudys =>
         <div id="casestudy">
           <h1>{Casestudys.Casestudytitle}</h1>
           <div id="casestudy_container">
-            {Casestudys.Casestudycards.map(Casestudycardss =>
+            {Casestudys && Casestudys.Casestudycards.map(Casestudycardss =>
               <>
                 <div className="casestudy_card" id={Casestudycardss.Casestudyblockid} key={Casestudycardss.id}>
                   <div id="casestudy_card_b1">
-                    <img src={Casestudycardss.image.childImageSharp.fluid.src} alt="img" />
+                    <img src={Casestudycardss.image.publicURL} alt="img" />
                   </div>
                   <div id="casestudy_card_b2">
                     <p>{Casestudycardss.Casestudyname}</p>
@@ -33,7 +33,7 @@ export const Casestudy = ({Casestudy}) => {
     </>
   );
 };
-const CasestudyPrev = props => {
+const CasestudyPrev = () => {
   const [casestudypre, setCasestudypre] = useState({});
   const data = useStaticQuery(graphql`
     query{
@@ -50,11 +50,7 @@ const CasestudyPrev = props => {
                     Casestudydesc
                     Casestudyblockid
                     image {
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                      }
+                      publicURL
                     }
                   }
                 }
@@ -63,19 +59,19 @@ const CasestudyPrev = props => {
           }
         }
      `)
-     useEffect(() => {
-      if (data.file) {
-        setCasestudypre(data.file.childMarkdownRemark.frontmatter);
-      }
-  }, [data.file]);
-  return(
-    <>
-    {
-      data.file &&
-      <Casestudy
-        Casestudy={casestudypre.Casestudy}
-      />
+  useEffect(() => {
+    if (data.file) {
+      setCasestudypre(data.file.childMarkdownRemark.frontmatter);
     }
+  }, [data.file]);
+  return (
+    <>
+      {
+        data.file &&
+        <Casestudy
+          Casestudy={casestudypre.Casestudy}
+        />
+      }
     </>
   )
 }

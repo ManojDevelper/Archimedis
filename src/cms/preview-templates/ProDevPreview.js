@@ -12,9 +12,9 @@ const ProDevPreview = ({ entry, getAsset }) => {
                     var getImage = getAsset(prodevminicontainers.Image);
                     prodevminicontainers.Image = getImage.toString();
                     return prodevminicontainers;
-                })
+                });
                 return prodevs;
-            })
+            });
         }
     }
 
