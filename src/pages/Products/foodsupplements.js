@@ -21,7 +21,7 @@ export const Foodsupplements = ({ foodsupliments }) => {
                     </div>
                   </div>
                   <div id="foodsupplements_container_cards_block2">
-                    <img src={foodsuplimentscardss.Image.childImageSharp.fluid.src} alt="img" />
+                    <img src={foodsuplimentscardss.Image.publicURL} alt="img" />
                   </div>
                 </div>
               </>
@@ -50,11 +50,7 @@ const FoodsupplementsPrev = props => {
                     description
                     foodsuplimentsid
                     Image {
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                      }
+                      publicURL
                     }
                   }
                 }

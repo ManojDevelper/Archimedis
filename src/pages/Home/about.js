@@ -31,6 +31,7 @@ const AboutPrev = props => {
                       }
                     }
                     publicURL
+                    extension
                 }
               }
             }
@@ -42,7 +43,7 @@ const AboutPrev = props => {
     }
   }, [data.file]);
   let AboutImage;
-  if (data.file.childMarkdownRemark.frontmatter.aboutImg !== null && data.file.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src !== null) {
+  if (data.file.childMarkdownRemark.frontmatter.aboutImg.extension === "svg" && data.file.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src !== null) {
     AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg.publicURL;
   } else {
     AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src;

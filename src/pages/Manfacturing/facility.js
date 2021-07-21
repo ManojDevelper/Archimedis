@@ -29,7 +29,7 @@ export const Facility = ({ Facility }) => {
                     </div>
                   </div>
                   <div id="facility_container_cards_block2">
-                    <img src={Facilitycardss.fimage.childImageSharp.fluid.src} alt="img" />
+                    <img src={Facilitycardss.fimage.publicURL} alt="img" />
                   </div>
                 </div>
               </>
@@ -68,11 +68,7 @@ const FacilityPrev = props => {
                     descriptionSpan4
                     descriptionSpan5
                     fimage {
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                      }
+                      publicURL
                     }
                   }
                 }

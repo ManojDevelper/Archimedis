@@ -55,11 +55,6 @@ const ProductdevPrev = () => {
                     title
                     title2
                     Image {
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                      }
                       publicURL
                     }
                   }

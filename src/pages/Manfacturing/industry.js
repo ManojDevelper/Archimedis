@@ -26,15 +26,9 @@ export const Industry = ({ industry }) => {
                         Thus, resulting in quality output with minimal to no defects.</p>
                     </div>
                   </div>
-                  {(industrycardss.Image.childImageSharp.fluid.src !== null || industrycardss.Image === "svg") ? (
                   <div id="industry_container_cards_block2">
                     <img src={industrycardss.Image.publicURL} alt="img" />
                   </div>
-                  ) : (
-                    <div id="industry_container_cards_block2">
-                    <img src={industrycardss.Image.childImageSharp.fluid.src} alt="img" />
-                  </div>
-                  )}
                 </div>
               </>
             )}
@@ -68,11 +62,6 @@ const IndustryPre = props => {
                     }
                     Image {
                       publicURL
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                      }
                     }
                   }
                 }

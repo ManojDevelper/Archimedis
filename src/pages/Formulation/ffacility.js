@@ -15,7 +15,7 @@ export const Ffacility = ({ Ffacility }) => {
               <>
                 <div className="ffacility_container_cards" id={Ffacilitycardss.Ffacilityblockid} key={Ffacilitycardss.id}>
                   <div id="ffacility_container_cards_block2">
-                    <img src={Ffacilitycardss.ffacilitypic.childImageSharp.fluid.src} alt="img" />
+                    <img src={Ffacilitycardss.ffacilitypic.publicURL} alt="img" />
                   </div>
                   <div id="ffacility_container_cards_block1">
                     <div id="ffacility_container_cards_matter">
@@ -50,11 +50,7 @@ const FfacilityPrev = props => {
                     Ffacilitydesc
                     Ffacilityname
                       ffacilitypic {
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                      }
+                      publicURL
                     }
                   }
                 }

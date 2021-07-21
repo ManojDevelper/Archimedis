@@ -20,7 +20,7 @@ export const Pharmaceutical = ({ pharmaceutical }) => {
                   </div>
                 </div>
                 <div id="pharmaceutical_container_cards_block2">
-                  <img src={pharmaceuticalcardss.Image.childImageSharp.fluid.src} alt="img" />
+                  <img src={pharmaceuticalcardss.Image.publicURL} alt="img" />
                 </div>
               </div>
             )}
@@ -48,11 +48,7 @@ const PharmaceuticalPrev = props => {
                   description
                   pharmaceuticalid
                   Image {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                    publicURL
                   }
                 }
               }

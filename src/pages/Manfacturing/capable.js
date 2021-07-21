@@ -24,7 +24,7 @@ export const Capable = ({ Capabilities }) => {
                           {capabilitiescardss.capabilitiesminicards.map(capabilitiesminicardss =>
                             <>
                               <div id="capable_container_cards_block_card_container_blocks">
-                                <img src={capabilitiesminicardss.image.childImageSharp.fluid.src} alt="img" />
+                                <img src={capabilitiesminicardss.image.publicURL} alt="img" />
                                 <p>{capabilitiesminicardss.capabilitiesminicardstitle}</p>
                               </div>
                             </>
@@ -34,7 +34,7 @@ export const Capable = ({ Capabilities }) => {
                     </div>
                   </div>
                   <div id="capable_container_cards_block2">
-                    <img src={capabilitiescardss.image.childImageSharp.fluid.src} alt="img" />
+                    <img src={capabilitiescardss.image.publicURL} alt="img" />
                   </div>
                 </div>
               </>
@@ -63,21 +63,13 @@ const CapablePrev = props => {
                 capabilitiescardid
                 capabilitiescarddesc
                 image {
-                  childImageSharp {
-                    fluid {
-                      src
-                    }
-                  }
+                  publicURL
                 }
                 capabilitiesminicards {
                   id
                   capabilitiesminicardstitle
                   image {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
+                    publicURL
                   }
                 }
               }
