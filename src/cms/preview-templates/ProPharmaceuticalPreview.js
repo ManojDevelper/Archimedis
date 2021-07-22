@@ -9,11 +9,8 @@ const ProPharmaceuticalPreview = ({ entry, getAsset }) => {
         if (data.pharmaceutical) {
             data.pharmaceutical.map(pharmaceuticals => {
                 pharmaceuticals.pharmaceuticalcards.map(pharmaceuticalcardss => {
-                    pharmaceuticalcardss.pharmaceuticalid.map(pharmaceuticalids => {
                         var getImage = getAsset(pharmaceuticalids.Image);
                         pharmaceuticalids.Image = getImage.toString();
-                        return pharmaceuticalids;
-                    })
                     return pharmaceuticalcardss;
                 })
                 return pharmaceuticals;
