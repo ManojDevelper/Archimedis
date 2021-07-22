@@ -18,7 +18,7 @@ Ffacility:
             id: 2,
             Ffacilityblockid: "AnalyticalLab",
             Ffacilityname: "Analytical Lab",
-            Ffacilitydesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            Ffacilitydesc: "Our analytical lab is spacious and well-equipped with facilities. Analysts are well-trained to be capable of handling instruments such as HPLC, dissolution test apparatus, ultra-micro balance and many other sophisticated instruments. All instruments are regularly calibrated and maintained properly to be ready for use. The chemicals have a separate chemical store to keep the stocks with even amenities in the lab to keep the used chemicals.",
             ffacilitypic: "../assets/fp2_c8.png",
           },
           {

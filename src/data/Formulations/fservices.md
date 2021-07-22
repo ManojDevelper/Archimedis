@@ -77,7 +77,7 @@ fservices:
                 },
                 {
                   id: 2,
-                  fserviceminicardstitle: "UV-Visible Spectrophotometer",
+                  fserviceminicardstitle: "Shimadzu UV-Visible Spectrophotometer",
                   fserviceminicardsimg: "../assets/fs22.svg",
                 },
                 {
@@ -117,12 +117,12 @@ fservices:
                 },
                 {
                   id: 10,
-                  fserviceminicardstitle: "Karl-Fischer Titrator",
+                  fserviceminicardstitle: "Milli-Q Water Purifier",
                   fserviceminicardsimg: "../assets/fs2112.svg",
                 },
                 {
                   id: 11,
-                  fserviceminicardstitle: "Karl-Fischer Titrator",
+                  fserviceminicardstitle: "Bruker FT-IR Spectrophotometer",
                   fserviceminicardsimg: "../assets/fs2113.svg",
                 },
               ],

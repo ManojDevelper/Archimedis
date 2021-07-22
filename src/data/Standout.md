@@ -10,7 +10,7 @@ Standoutcontainer:
     },
     {
       id: 2,
-      sstandname: "Capable People",
+      standname: "Capable People",
       standimage: assets/p4_c2.svg,
     },
     {
