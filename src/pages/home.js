@@ -12,24 +12,43 @@ import Blogs from "./Home/blogs";
 import Contact from "./Home/contact";
 import Footer from "./Home/footer";
 import Nav from "./nav";
+import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
 
 const Home = () => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: {eq: "seo.md"}) {
+        childMarkdownRemark {
+          frontmatter {
+            title
+            description
+            keywords
+          }
+        }
+      }
+    }
+  `);
+
+  const seoData = data.file.childMarkdownRemark.frontmatter;
   return (
     <>
-    <div id="home">
-    <Nav />
-      <Banner />
-      <Patners />
-      <Wedo />
-      <Status />
-      <Standout />
-      <Online />
-      <Clints />
-      <About />
-      <Team />
-      <Blogs />
-      <Contact />
-      <Footer />
+      <div id="home">
+        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
+        <Nav />
+        <Banner />
+        <Patners />
+        <Wedo />
+        <Status />
+        <Standout />
+        <Online />
+        <Clints />
+        <About />
+        <Team />
+        <Blogs />
+        <Contact />
+        <Footer />
       </div>
     </>
   )
