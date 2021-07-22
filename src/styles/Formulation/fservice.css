@@ -492,4 +492,28 @@
     margin-left: 1vw;
     margin-top: 3vw;
 }
+#fservice
+  #fservice_container_main:nth-child(4)
+  #fserviceassurance
+  #fserviceassurance_container
+  #fserviceassurance_container_card1:nth-child(3)
+  p {
+  width: 100%;
+}
+#fservice
+  #fservice_container_main:nth-child(4)
+  #fserviceassurance
+  #fserviceassurance_container
+  #fserviceassurance_container_card1:nth-child(4)
+  p {
+  width: 100%;
+}
+#fservice
+  #fservice_container_main:nth-child(4)
+  #fserviceassurance
+  #fserviceassurance_container
+  #fserviceassurance_container_card1:nth-child(7)
+  p {
+  width: 100%;
+}
 }

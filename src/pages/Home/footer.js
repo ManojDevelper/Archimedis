@@ -5,7 +5,7 @@ import img2 from "../../images/facebook.svg";
 import img3 from "../../images/insta.svg";
 import img4 from "../../images/twitter.svg";
 import img5 from "../../images/youtube.svg";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 
 export const Footer = ({ footer }) => {
 
@@ -16,10 +16,10 @@ export const Footer = ({ footer }) => {
                     <div id="footer_container_top">
                         {footer && footer.map(footerItem =>
                             <div id="footer_cards" key={footerItem.id}>
-                                <h1>{footerItem.title}</h1>
+                                <Link to={footerItem.link} id="h1">{footerItem.title}</Link>
                                 {footerItem && footerItem.footercontainer.map(footercontainers =>
                                     <div key={footercontainers.id}>
-                                        <p>{footercontainers.description}</p>
+                                        <Link to={footercontainers.Link} id="p">{footercontainers.description}</Link>
                                     </div>
                                 )}
                             </div>
@@ -54,9 +54,11 @@ const FooterPrev = props => {
                 footer {
                   id
                   title
+                  link
                   footercontainer {
                     id
                     description
+                    Link
                   }
                 }
               }

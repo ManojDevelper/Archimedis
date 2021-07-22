@@ -51,4 +51,10 @@
     line-height: 6.4vw;
     width: 100%;
 }
+#dbanner_container h1 {
+  text-align: center;
+  font-size: 3.5vw;
+  line-height: 6.4vw;
+  width: 100%;
+}
 }

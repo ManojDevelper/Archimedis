@@ -12,7 +12,7 @@
   grid-template-columns: repeat(6, auto);
   gap: 1.43884892086331vw;
 }
-#footer_cards h1 {
+#footer_cards #h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -22,12 +22,13 @@
   cursor: pointer;
   margin-bottom: 0.8vw;
   opacity: 1;
+  text-decoration: none;
 }
-#footer_cards h1:hover {
+#footer_cards #h1:hover {
   opacity: 0.8;
   transition: 0.5s ease-in-out;
 }
-#footer_cards p {
+#footer_cards #p {
   font-family: Manrope;
   font-style: normal;
   font-weight: 500;
@@ -75,13 +76,13 @@
     grid-template-columns: repeat(2, 50%);
     gap: 10vw 1.43884892086331vw;
   }
-  #footer_cards h1 {
+  #footer_cards #h1 {
     font-size: 3.9vw;
     line-height: inherit;
     margin-bottom: 1vw;
     opacity: 0.8;
   }
-  #footer_cards p {
+  #footer_cards #p {
     font-size: 3.1vw;
     line-height: 7vw;
     opacity: 0.8;

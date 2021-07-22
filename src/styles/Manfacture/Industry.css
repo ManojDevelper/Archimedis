@@ -231,4 +231,15 @@
   .industry_container_cards {
     margin-top: 22.8348837209302vw;
   }
+  #industry_container_cards_matter #c_c_matter li {
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0.1vw 0;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.25581395348vw;
+    line-height: 5.11627906976744vw;
+    color: #18191f;
+}
 }
