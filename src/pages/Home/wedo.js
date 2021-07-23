@@ -3,7 +3,7 @@ import "../../styles/Home/Wedo.css";
 import arrow from "../../images/arow.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const Wedo = ({ wedotitle, wedo }) => {
+export const Wedo = ({ wedotitle, wedo, html }) => {
   return (
     <>
       <div id="wedo">
@@ -25,6 +25,7 @@ export const Wedo = ({ wedotitle, wedo }) => {
           )}
         </div>
       </div>
+      {html}
     </>
   );
 };
@@ -46,6 +47,7 @@ const WedoPrev = props => {
                 }
               }
             }
+            html
           }
         }
   }`)
@@ -61,6 +63,7 @@ const WedoPrev = props => {
         <Wedo
           wedotitle={statusPre.wedotitle}
           wedo={statusPre.wedo}
+          html={data.file.childMarkdownRemark.html}
         />
       }
     </>

@@ -31,3 +31,5 @@ wedo:
     },
   ]
 ---
+<h1>Hello<h1>
+<img src="../images/banner.png">

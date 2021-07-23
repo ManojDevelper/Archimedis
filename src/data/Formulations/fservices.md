@@ -82,7 +82,7 @@ fservices:
                 },
                 {
                   id: 3,
-                  fserviceminicardstitle: "Dissolution Apparatus – Auto sampler Enabled",
+                  fserviceminicardstitle: "Lab India 12 Units Dissolution Apparatus",
                   fserviceminicardsimg: "../assets/fs23.svg",
                 },
                 {
