@@ -137,7 +137,7 @@
 }
 #patners_container_carousal_container:nth-child(4) img {
   width: 7.98561151079137vw;
-  height: 4.89208633093525vw;
+  height: 2vw;
 }
 #patners_container_carousal_container:nth-child(5) img {
   width: 9.64028776978417vw;
@@ -160,8 +160,8 @@
   height: 5.25179856115108vw;
 }
 #patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container img{
-  width: 10vw;
-  height: 3.16546762589928vw;
+  width: 4.82014388489209vw;
+  height: 5.68345323741007vw;
 }
 #patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container:nth-child(1){
 display: none;
@@ -276,8 +276,8 @@ display: none;
   height: 4.82014388489209vw;
 }
 #patners_container_carousal_container:nth-child(4) img {
-  width: 22vw;
-  height: 9vw;
+  width: 15vw;
+  height: 5vw;
 }
 #patners_container_carousal_container:nth-child(5) img {
   width: 20vw;
@@ -327,7 +327,7 @@ display: none;
   height: 10vw;
 }
 #patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container img {
-  width: 20vw;
-  height: 15vw;
+  width: 15vw;
+  height: 10vw;
 }
 }

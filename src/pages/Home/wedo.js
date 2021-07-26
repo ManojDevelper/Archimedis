@@ -25,7 +25,6 @@ export const Wedo = ({ wedotitle, wedo, html }) => {
           )}
         </div>
       </div>
-      {html}
     </>
   );
 };
@@ -47,7 +46,6 @@ const WedoPrev = props => {
                 }
               }
             }
-            html
           }
         }
   }`)
@@ -63,7 +61,6 @@ const WedoPrev = props => {
         <Wedo
           wedotitle={statusPre.wedotitle}
           wedo={statusPre.wedo}
-          html={data.file.childMarkdownRemark.html}
         />
       }
     </>
