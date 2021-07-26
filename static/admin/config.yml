@@ -278,3 +278,35 @@ collections:
         public_folder: '../assets'
         fields:
           - {label: ArchiBrand, name: archibrand, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Archi Brand Cards, name: archibrandcards, widget: list, fields: [{label: Link, name: archibrandid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
+  - name: blog
+    label: Blog
+    label_singular: 'Blog'
+    folder: blog
+    media_folder: ''
+    public_folder: ''
+    slug: '{{slug}}'
+    create: true
+    nested:
+      depth: 100
+      summary: '{{title}}'
+    fields:
+      - label: Author Image
+        name: author_image
+        widget: image
+        media_folder: '/blog/'
+        default: 'cc-logo-new.png'
+      - { name: author, label: Author, default: 'ContentConcepts' }
+      - { name: bio, label: Bio }
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: date, default: ''}
+      - { name: previewImage, label: Preview Image, widget: image }
+      - { name: excerpt, label: Excerpt }
+      - { name: tags, label: Tags, widget: list }
+      - { name: body, label: Body, widget: markdown }
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - { name: title, label: Title }
+          - { name: description, label: Description }
+          - { name: keywords, label: Keywords, widget: list }

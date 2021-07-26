@@ -84,6 +84,10 @@ module.exports = {
             },
           },
         ],
+        plugins: [
+          `gatsby-remark-reading-time`,
+          // ...
+        ],
       },
     },
     {
