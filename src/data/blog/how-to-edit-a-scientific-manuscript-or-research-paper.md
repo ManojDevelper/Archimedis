@@ -1,5 +1,6 @@
 ---
-author_image: ../assets/blog_2.png
+author_image: ../assets/t4.png
+Banner_image: ../assets/blog_2.png
 author: ContentConcepts
 bio: Manuscript Editing Services
 title: Five Reasons Bi-layer Splits During Coating

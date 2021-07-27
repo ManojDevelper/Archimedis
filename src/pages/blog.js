@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => {
                   <div id="blog_container" key={blogItem.node.id}>
                     <Link id="blog_card" to={blogItem.node.fields.slug}>
                       <div id="blog_card_b1">
-                        <img src={blogItem.node.frontmatter.author_image.publicURL} alt="img" />
+                        <img src={blogItem.node.frontmatter.Banner_image.publicURL} alt="img" />
                       </div>
                       <div id="blog_card_b2">
                         <p id="bcc2title">{blogItem.node.frontmatter.title}</p>
@@ -44,7 +44,7 @@ export default BlogPage
 
 export const pageQuery = graphql`
   query {
-    blogData: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(blog)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }) {
+    blogData: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/src/data/(blog)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id
@@ -55,13 +55,7 @@ export const pageQuery = graphql`
             title
             excerpt
             author
-            author_image {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-              extension
+            Banner_image {
               publicURL
             }
             date(formatString: "MMMM DD, YYYY")
