@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: git-gateway
   branch: main
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
@@ -293,7 +293,7 @@ collections:
       - label: Author Image
         name: author_image
         widget: image
-        media_folder: '/blog/'
+        media_folder: '/assets/'
         default: 'cc-logo-new.png'
       - { name: author, label: Author, default: 'ContentConcepts' }
       - { name: bio, label: Bio }
