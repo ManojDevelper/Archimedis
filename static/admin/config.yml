@@ -293,7 +293,7 @@ collections:
       - label: Author Image
         name: author_image
         widget: image
-        media_folder: '/assets/'
+        media_folder: '/blog/'
         default: 'cc-logo-new.png'
       - { name: author, label: Author, default: 'ContentConcepts' }
       - { name: bio, label: Bio }
