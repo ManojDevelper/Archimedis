@@ -73,15 +73,6 @@ collections:
           - {label: Title, name: onlinetitle, widget: string, required: false}
           - {label: Description, name: onlinedesc, widget: string, required: false}
           - {label: Image, name: onlineimg, widget: image}
-      - file: src/data/patners.md
-        label: Patners
-        name: patners
-        create: true
-        public_folder: './assets'
-        fields:
-          - {label: Title, name: Patnertitle, widget: string, required: false}
-          - {label: Description, name: patnerdescription, widget: string, required: false}
-          - {label: Patner carousal, name: patnercarousal, widget: list, fields: [{label: Patner Container, name: patners, widget: list, fields: [{label: Image, name: patnerimage, widget: image}]} ]}
       - file: src/data/Standout.md
         label: Standout
         name: standout
@@ -291,9 +282,6 @@ collections:
     fields:
       - label: Author Image
         name: author_image
-        widget: image
-      - label: Card Preview Image
-        name: Banner_image
         widget: image
       - { name: author, label: Author, default: 'ContentConcepts' }
       - { name: bio, label: Bio }

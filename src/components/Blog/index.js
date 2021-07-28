@@ -52,7 +52,7 @@ export const BlogPost = ({
             Tagged with
             {
               tags.map((type, i, arr) => {
-                let divider = i < arr.length - 1 && <>, </>;
+                let divider = i<arr.length-1 && <>, </>;
                 return (
                   <span key={type}>{type}{divider}</span>
                 )
@@ -74,16 +74,14 @@ const Blog = ({ data }) => {
 
   const seoData = post.frontmatter.seo;
 
-  const authorImage = post.frontmatter.author_image.publicURL;
-  const PreviewImage = post.frontmatter.Banner_image.publicURL;
- 
+    const authorImage = post.frontmatter.author_image.publicURL;
+
   return (
     <Fragment>
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
       <BlogPost
         fields={post.fields}
         author_image={authorImage}
-        Banner_image={PreviewImage}
         author={post.frontmatter.author}
         bio={post.frontmatter.bio}
         date={post.frontmatter.date}
@@ -93,7 +91,7 @@ const Blog = ({ data }) => {
         preview={false}
       />
     </Fragment>
-  )
+    )
 }
 
 export default Blog
@@ -110,21 +108,6 @@ export const query = graphql`
       frontmatter {
         author
         author_image {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-          extension
-          publicURL
-        }
-        Banner_image {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-          extension
           publicURL
         }
         bio

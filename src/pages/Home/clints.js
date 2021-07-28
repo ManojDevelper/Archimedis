@@ -20,9 +20,13 @@ export const Clints = ({ clintstitle, clints }) => {
                                         <p>{clintItem.carousalreview}</p>
                                     </div>
                                     <div id="clints_container_main_b2">
-                                        <div id="clints_container_main_b2_b1">
-                                            <img src={clintItem.clintimg.publicURL} alt="img" />
-                                        </div>
+                                        {clintItem.clintimg !== null &&
+                                            <div id="clints_container_main_b2_b1">
+                                                {(clintItem.clintimg !== null && clintItem.clintimg.childImageSharp)
+                                                    ? (<img src={clintItem.clintimg.childImageSharp.fluid.src} alt="img" />) :
+                                                    (<img src={clintItem.clintimg} alt="img" />)}
+                                            </div>
+                                        }
                                         <div id="clints_container_main_b2_b2">
                                             <p>{clintItem.clintname}</p>
                                             <p>{clintItem.clintdesignation}</p>
@@ -53,6 +57,11 @@ const ClintsPrev = () => {
                   carousalreview
                   clintdesignation
                   clintimg {
+                    childImageSharp {
+                        fluid {
+                          src
+                        }
+                      }
                     publicURL
                   }
                 }

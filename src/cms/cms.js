@@ -10,7 +10,6 @@ import homeBlogsPreview from "./preview-templates/homeBlogsPreview";
 import homeClintsPreview from "./preview-templates/homeClintsPreview";
 import homeFooterPreview from "./preview-templates/homeFooterPreview";
 import homeOnlinePreview from "./preview-templates/homeOnlinePreview";
-import homePatnersPreview from "./preview-templates/homePatnersPreview";
 import homeStandoutPreview from "./preview-templates/homeStandoutPreview";
 import homeTeamPreview from "./preview-templates/homeTeamPreview";
 import homeWedoPreview from "./preview-templates/homeWedoPreview";
@@ -65,7 +64,6 @@ CMS.registerPreviewTemplate("blogs", withStyledComponentsRendered(homeBlogsPrevi
 CMS.registerPreviewTemplate("clints", withStyledComponentsRendered(homeClintsPreview));
 CMS.registerPreviewTemplate("footer", withStyledComponentsRendered(homeFooterPreview));
 CMS.registerPreviewTemplate("online", withStyledComponentsRendered(homeOnlinePreview));
-CMS.registerPreviewTemplate("patners", withStyledComponentsRendered(homePatnersPreview));
 CMS.registerPreviewTemplate("standout", withStyledComponentsRendered(homeStandoutPreview));
 CMS.registerPreviewTemplate("team", withStyledComponentsRendered(homeTeamPreview));
 CMS.registerPreviewTemplate("wedo", withStyledComponentsRendered(homeWedoPreview));

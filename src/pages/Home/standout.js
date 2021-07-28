@@ -11,10 +11,16 @@ export const Standout = ({ title, description, Standoutcontainer }) => {
         <p>{description}</p>
         <div id="standout_container">
           {Standoutcontainer && Standoutcontainer.map(Standoutcontainers =>
+          <>
+            {Standoutcontainers.standimage !== null && 
             <div id="standout_card1" key={Standoutcontainers.id}>
-              <img src={Standoutcontainers.standimage.publicURL} alt="img" />
+            {(Standoutcontainers.standimage !== null && Standoutcontainers.standimage.childImageSharp)
+                    ? (<img src={Standoutcontainers.standimage.childImageSharp.fluid.src} alt="img" />) :
+                    (<img src={Standoutcontainers.standimage} alt="img" />)}
               <p id="p4_c_dis">{Standoutcontainers.standname}</p>
             </div>
+          }
+          </>
           )}
         </div>
       </div>
@@ -35,6 +41,11 @@ const StandoutPrev = props => {
                   id
                   standname
                   standimage {
+                    childImageSharp {
+                      fluid {
+                        src
+                      }
+                    }
                     publicURL
                   }
                 }

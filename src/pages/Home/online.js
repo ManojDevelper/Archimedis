@@ -38,6 +38,7 @@ const OnlinePrev = props => {
                         src
                       }
                     }
+                    publicURL
                   }
                 }
               }

@@ -14,6 +14,7 @@ const homeTeamPreview = ({ entry, getAsset }) => {
                     teamItem.teamimg = getImage.toString();
                     return teamItem;
                 })
+                return teamss;
             });
         }
     }
