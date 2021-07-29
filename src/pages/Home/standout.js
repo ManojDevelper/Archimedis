@@ -14,8 +14,8 @@ export const Standout = ({ title, description, Standoutcontainer }) => {
           <>
             {Standoutcontainers.standimage !== null && 
             <div id="standout_card1" key={Standoutcontainers.id}>
-            {(Standoutcontainers.standimage !== null && Standoutcontainers.standimage.childImageSharp)
-                    ? (<img src={Standoutcontainers.standimage.childImageSharp.fluid.src} alt="img" />) :
+            {(Standoutcontainers.standimage !== null)
+                    ? (<img src={Standoutcontainers.standimage.publicURL} alt="img" />) :
                     (<img src={Standoutcontainers.standimage} alt="img" />)}
               <p id="p4_c_dis">{Standoutcontainers.standname}</p>
             </div>
