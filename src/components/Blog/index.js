@@ -75,6 +75,7 @@ const Blog = ({ data }) => {
   const seoData = post.frontmatter.seo;
 
     const authorImage = post.frontmatter.author_image.publicURL;
+    const preview_Image = post.frontmatter.previewImage.publicURL;
 
   return (
     <Fragment>
@@ -82,6 +83,7 @@ const Blog = ({ data }) => {
       <BlogPost
         fields={post.fields}
         author_image={authorImage}
+        previewImage={preview_Image}
         author={post.frontmatter.author}
         bio={post.frontmatter.bio}
         date={post.frontmatter.date}
@@ -108,6 +110,9 @@ export const query = graphql`
       frontmatter {
         author
         author_image {
+          publicURL
+        }
+        previewImage {
           publicURL
         }
         bio

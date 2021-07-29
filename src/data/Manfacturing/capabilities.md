@@ -72,14 +72,14 @@ Capabilities:
                 },
               ],
           },
-          {
-            id: 4,
-            capabilitiescardid: "Clinicaltrail",
-            capabilitiescardtitle: "Clinical Trial Supplies",
-            capabilitiescarddesc: "Clinical trials are key to producing new innovative medicine . Archimedis clinical trial supply process ensures your study drug is where you need it  and when you need it.",
-            image: ../assets/c_c4.png,
-            capabilitiesminicards: [],
-          },
+          # {
+          #   id: 4,
+          #   capabilitiescardid: "Clinicaltrail",
+          #   capabilitiescardtitle: "Clinical Trial Supplies",
+          #   capabilitiescarddesc: "Clinical trials are key to producing new innovative medicine . Archimedis clinical trial supply process ensures your study drug is where you need it  and when you need it.",
+          #   image: ../assets/c_c4.png,
+          #   capabilitiesminicards: [],
+          # },
           {
             id: 5,
             capabilitiescardid: "Commercial",

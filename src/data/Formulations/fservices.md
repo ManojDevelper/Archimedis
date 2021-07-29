@@ -173,26 +173,26 @@ fservices:
                 },
               ]
           },
-          {
-            id: 6,
-            fservicecardid: "BEStudies",
-            fservicecardtitle: "BE Studies",
-            fservicecarddesc: "BE studies stand for bioequivalence studies which are used to demonstrate therapeutic equivalence between two drugs. BE studies can save a lot of time and money for the cost of development and play an instrumental role in developing new drug formulations of existing drugs.",
-            fservicepic: "../assets/fp2_c6.png",
-            fserviceminicards: [],
-            fc: "",
-            fli: []
-          },
-          {
-            id: 7,
-            fservicecardid: "ClinicalTrials",
-            fservicecardtitle: "Clinical Trials",
-            fservicecarddesc: "Clinical trials are conducted by our experts with extensive care to ensure utmost safety and efficacy of the drugs. These trials are the stepping stones for achieving the regulatory approvals for which thorough investigations are conducted.",
-            fservicepic: "../assets/fp2_c7.png",
-            fserviceminicards: [],
-            fc: "",
-            fli: []
-          },
+          # {
+          #   id: 6,
+          #   fservicecardid: "BEStudies",
+          #   fservicecardtitle: "BE Studies",
+          #   fservicecarddesc: "BE studies stand for bioequivalence studies which are used to demonstrate therapeutic equivalence between two drugs. BE studies can save a lot of time and money for the cost of development and play an instrumental role in developing new drug formulations of existing drugs.",
+          #   fservicepic: "../assets/fp2_c6.png",
+          #   fserviceminicards: [],
+          #   fc: "",
+          #   fli: []
+          # },
+          # {
+          #   id: 7,
+          #   fservicecardid: "ClinicalTrials",
+          #   fservicecardtitle: "Clinical Trials",
+          #   fservicecarddesc: "Clinical trials are conducted by our experts with extensive care to ensure utmost safety and efficacy of the drugs. These trials are the stepping stones for achieving the regulatory approvals for which thorough investigations are conducted.",
+          #   fservicepic: "../assets/fp2_c7.png",
+          #   fserviceminicards: [],
+          #   fc: "",
+          #   fli: []
+          # },
         ],
     },
   ]

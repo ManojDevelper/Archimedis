@@ -59,8 +59,8 @@ function Navbars() {
                                             <Link to="/formulation/#AnalyticalMethodValidation" id="nav_sub_link">Analytical Method Validation</Link>
                                             <Link to="/formulation/#RegulatoryAffairs" id="nav_sub_link">Regulatory Affairs</Link>
                                             <Link to="/formulation/#StabilityStudies" id="nav_sub_link">Stability Studies</Link>
-                                            <Link to="/formulation/#BEStudies" id="nav_sub_link">BE Studies</Link>
-                                            <Link to="/formulation/#ClinicalTrials" id="nav_sub_link">Clinical Trials</Link>
+                                            {/* <Link to="/formulation/#BEStudies" id="nav_sub_link">BE Studies</Link>
+                                            <Link to="/formulation/#ClinicalTrials" id="nav_sub_link">Clinical Trials</Link> */}
                                         </div>
                                         <div id="nav_manu_container_card">
                                             <h1>Infrastructure</h1>
@@ -86,7 +86,7 @@ function Navbars() {
                                             <Link to="/manfacture/#tablets" id="nav_sub_link">Tablets</Link>
                                             <Link to="/manfacture/#Capsules" id="nav_sub_link">Capsules</Link>
                                             <Link to="/manfacture/#Powder" id="nav_sub_link">Dry Syrup / Sachet</Link>
-                                            <Link to="/manfacture/#Clinicaltrail" id="nav_sub_link">Clinical Trial Supplies</Link>
+                                            {/* <Link to="/manfacture/#Clinicaltrail" id="nav_sub_link">Clinical Trial Supplies</Link> */}
                                             <Link to="/manfacture/#Commercial" id="nav_sub_link">Commercial Scale</Link>
                                         </div>
                                         <div id="nav_manu_container_card">

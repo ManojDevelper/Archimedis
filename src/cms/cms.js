@@ -11,7 +11,6 @@ import homeClintsPreview from "./preview-templates/homeClintsPreview";
 import homeFooterPreview from "./preview-templates/homeFooterPreview";
 import homeOnlinePreview from "./preview-templates/homeOnlinePreview";
 import homeStandoutPreview from "./preview-templates/homeStandoutPreview";
-import homeTeamPreview from "./preview-templates/homeTeamPreview";
 import homeWedoPreview from "./preview-templates/homeWedoPreview";
 import fCasestudyPreview from "./preview-templates/fCasestudyPreview";
 import FBannerPreview from "./preview-templates/FBannerPreview";
@@ -28,6 +27,7 @@ import ProFoodSupplyPreview from "./preview-templates/ProFoodSupplyPreview";
 import ProPharmaceuticalPreview from "./preview-templates/ProPharmaceuticalPreview";
 import ProDsolutionsPreview from "./preview-templates/ProDsolutionsPreview";
 import ProDevPreview from "./preview-templates/ProDevPreview";
+import homeTeamPreview from "./preview-templates/homeTeamPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -65,7 +65,6 @@ CMS.registerPreviewTemplate("clints", withStyledComponentsRendered(homeClintsPre
 CMS.registerPreviewTemplate("footer", withStyledComponentsRendered(homeFooterPreview));
 CMS.registerPreviewTemplate("online", withStyledComponentsRendered(homeOnlinePreview));
 CMS.registerPreviewTemplate("standout", withStyledComponentsRendered(homeStandoutPreview));
-CMS.registerPreviewTemplate("team", withStyledComponentsRendered(homeTeamPreview));
 CMS.registerPreviewTemplate("wedo", withStyledComponentsRendered(homeWedoPreview));
 CMS.registerPreviewTemplate("casestudy", withStyledComponentsRendered(fCasestudyPreview));
 CMS.registerPreviewTemplate("fbanner", withStyledComponentsRendered(FBannerPreview));
@@ -83,3 +82,4 @@ CMS.registerPreviewTemplate("pharmaceutical", withStyledComponentsRendered(ProPh
 CMS.registerPreviewTemplate("foodsupplements", withStyledComponentsRendered(ProFoodSupplyPreview));
 CMS.registerPreviewTemplate("dsolutions", withStyledComponentsRendered(ProDsolutionsPreview));
 CMS.registerPreviewTemplate("productdev", withStyledComponentsRendered(ProDevPreview));
+CMS.registerPreviewTemplate("team", withStyledComponentsRendered(homeTeamPreview));

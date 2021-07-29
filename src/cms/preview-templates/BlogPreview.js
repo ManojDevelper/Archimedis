@@ -19,9 +19,18 @@ const BlogPreview = ({ entry, widgetFor, getAsset }) => {
     var authorImage = getImage.toString();
   }
 
+
+  var image2 = entry.getIn(['data', 'previewImage']);
+  var getImage2 = getAsset(image2);
+
+  if(getImage) {
+    var preview_Image = getImage2.toString();
+  }
+
   return (
     <BlogPost
       author_image={authorImage}
+      previewImage={preview_Image}
       author={data.author}
       bio={data.bio}
       date={date}
