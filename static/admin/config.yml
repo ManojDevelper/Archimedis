@@ -10,10 +10,15 @@ collections:
     folder: src/data
     create: true
     fields:
-      - {label: Title, name: title, widget: string, required: false}
-      - {label: Heading, name: headding, widget: string, required: false}   
-      - {label: Description, name: description, widget: string, required: false} 
-  
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Heading, name: headding, widget: string, required: false }
+      - {
+          label: Description,
+          name: description,
+          widget: string,
+          required: false,
+        }
+
   - label: Landing
     name: landing
     files:
@@ -22,7 +27,7 @@ collections:
         name: seoHome
         create: true
         fields:
-          - {label: Title, name: title}
+          - { label: Title, name: title }
           - { label: Description, name: description }
           - { label: Keywords, name: keywords, widget: list }
       - file: src/data/banner.md
@@ -30,80 +35,324 @@ collections:
         name: banner
         create: true
         fields:
-          - {label: Title, name: title, widget: string, required: false}
-          - {label: Description, name: description, widget: string, required: false}
-          - {label: Description2, name: boxdescription, widget: string, required: false}
+          - { label: Title, name: title, widget: string, required: false }
+          - {
+              label: Description,
+              name: description,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: Description2,
+              name: boxdescription,
+              widget: string,
+              required: false,
+            }
       - file: src/data/status.md
         label: Status
         name: status
         create: true
         fields:
-          - {label: Status, name: Status, widget: list, fields: [{ label: statusnumber, name: statusnumber, widget: string, required: false }, { label: statustitle, name: statustitle, widget: string, required: false }, { label: statusimage, name: statusimage, widget: image }]}
+          - {
+              label: Status,
+              name: Status,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: statusnumber,
+                    name: statusnumber,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: statustitle,
+                    name: statustitle,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: statusimage, name: statusimage, widget: image },
+                ],
+            }
       - file: src/data/about.md
         label: About
         name: about
         create: true
-        public_folder: './assets'
+        public_folder: "./assets"
         fields:
-          - { label: abouttitle, name: abouttitle, widget: string, required: false }
-          - { label: aboutdesc, name: aboutdesc, widget: string, required: false }
+          - {
+              label: abouttitle,
+              name: abouttitle,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: aboutdesc,
+              name: aboutdesc,
+              widget: string,
+              required: false,
+            }
           - { label: aboutImg, name: aboutImg, widget: image }
       - file: src/data/blogs.md
         label: Blogs
         name: blogs
         create: true
-        public_folder: './assets'
+        public_folder: "./assets"
         fields:
-          - {label: Title, name: blogtitle, widget: string, required: false}
-          - {label: Blog Container, name: blogs, widget: list, fields: [{label: Title, name: blogcardtitle, widget: string, required: false}, {label: Description, name: blogcarddesc, widget: string, required: false}, {label: date, name: blogcarddate, widget: string, required: false}, {label: image, name: blogimg, widget: image}]}
+          - { label: Title, name: blogtitle, widget: string, required: false }
+          - {
+              label: Blog Container,
+              name: blogs,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: blogcardtitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: blogcarddesc,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: date,
+                    name: blogcarddate,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: image, name: blogimg, widget: image },
+                ],
+            }
       - file: src/data/clints.md
         label: Clints
         name: clints
         create: true
-        public_folder: './assets'
+        public_folder: "./assets"
         fields:
-          - {label: Title, name: clintstitle, widget: string, required: false}
-          - {label: Clints Container, name: clints, widget: list, fields: [{label: Title, name: carousaltitle, widget: string, required: false}, {label: Review, name: carousalreview, widget: string, required: false}, {label: Name, name: clintname, widget: string, required: false},  {label: Designation, name: clintdesignation, widget: string, required: false}, {label: Profile Image, name: clintimg, widget: image}]}
+          - { label: Title, name: clintstitle, widget: string, required: false }
+          - {
+              label: Clints Container,
+              name: clints,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: carousaltitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Review,
+                    name: carousalreview,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Name,
+                    name: clintname,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Designation,
+                    name: clintdesignation,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: Profile Image, name: clintimg, widget: image },
+                ],
+            }
       - file: src/data/online.md
         label: Online
         name: online
         create: true
-        public_folder: './assets'
+        public_folder: "./assets"
         fields:
-          - {label: Title, name: onlinetitle, widget: string, required: false}
-          - {label: Description, name: onlinedesc, widget: string, required: false}
-          - {label: Image, name: onlineimg, widget: image}
+          - { label: Title, name: onlinetitle, widget: string, required: false }
+          - {
+              label: Description,
+              name: onlinedesc,
+              widget: string,
+              required: false,
+            }
+          - { label: Image, name: onlineimg, widget: image }
       - file: src/data/Standout.md
         label: Standout
         name: standout
         create: true
-        public_folder: './assets'
+        public_folder: "./assets"
         fields:
-          - {label: Title, name: title, widget: string, required: false}
-          - {label: Description, name: description, widget: string, required: false}
-          - {label: Standoutcontainer, name: Standoutcontainer, widget: list, fields: [{label: Name, name: standname, widget: string, required: false}, {label: Image, name: standimage, widget: image}]}
+          - { label: Title, name: title, widget: string, required: false }
+          - {
+              label: Description,
+              name: description,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: Standoutcontainer,
+              name: Standoutcontainer,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Name,
+                    name: standname,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: Image, name: standimage, widget: image },
+                ],
+            }
       - file: src/data/team.md
         label: Team
         name: team
         create: true
-        public_folder: './assets'
+        public_folder: "./assets"
         fields:
-          - {label: Teams Container, name: teams, widget: list, fields: [{label: Title, name: teamtitle, widget: string, required: false}, {label: Team cards, name: team, widget: list, fields: [{label: Name, name: teaamname, widget: string, required: false}, {label: Designation, name: teamdesignation, widget: string, required: false}, {label: Image, name: teamimg, widget: image}]} ]}
+          - {
+              label: Teams Container,
+              name: teams,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: teamtitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Team cards,
+                    name: team,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Name,
+                          name: teaamname,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Designation,
+                          name: teamdesignation,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: teamimg, widget: image },
+                      ],
+                  },
+                ],
+            }
+      - file: src/data/bod.md
+        label: Leadership Team
+        name: bod
+        create: true
+        public_folder: "./assets"
+        fields:
+          - {
+              label: Leadership Team,
+              name: teams2,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: teamtitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Team cards,
+                    name: team,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Name,
+                          name: teaamname,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Designation,
+                          name: teamdesignation,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: teamimg, widget: image },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/wedo.md
         label: Wedo
         name: wedo
         create: true
-        public_folder: './assets'
+        public_folder: "./assets"
         fields:
-          - {label: Title, name: wedotitle, widget: string, required: false}
-          - {label: Wedo container, name: patnercarousal, widget: list, fields: [{label: Name, name: wedoname, widget: string, required: false}, {label: Description, name: wedodesc, widget: string, required: false}, {label: Image, name: wedoimg, widget: image}]}
+          - { label: Title, name: wedotitle, widget: string, required: false }
+          - {
+              label: Wedo container,
+              name: patnercarousal,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Name,
+                    name: wedoname,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: wedodesc,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: Image, name: wedoimg, widget: image },
+                ],
+            }
       - file: src/data/footer.md
         label: Footer
         name: footer
         create: true
         fields:
-          - {label: Footer, name: footer, widget: list, fields: [{label: title, name: title, widget: string, required: false}, {label: FooterContainer, name: footercontainer, widget: list, fields: [{label: description, name: description, widget: string, required: false}]}]}
-  
+          - {
+              label: Footer,
+              name: footer,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: FooterContainer,
+                    name: footercontainer,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: description,
+                          name: description,
+                          widget: string,
+                          required: false,
+                        },
+                      ],
+                  },
+                ],
+            }
+
   - label: Formulations
     name: formulation
     files:
@@ -112,37 +361,199 @@ collections:
         name: seoFormulations
         create: true
         fields:
-          - {label: Title, name: title}
+          - { label: Title, name: title }
           - { label: Description, name: description }
           - { label: Keywords, name: keywords, widget: list }
       - file: src/data/Formulations/fbanner.md
         label: Formulations Banner
         name: fbanner
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Title, name: Formulationsdescription, widget: string, required: false}
+          - {
+              label: Title,
+              name: Formulationsdescription,
+              widget: string,
+              required: false,
+            }
       - file: src/data/Formulations/casestudy.md
         label: Casestudy
         name: casestudy
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Casestudy, name: Casestudy, widget: list, fields: [{label: Title, name: Casestudytitle, widget: string, required: false}, {label: Casestudycards, name: Casestudycards, widget: list, fields: [{label: Title, name: Casestudyblockid, widget: string, required: false}, {label: Description, name: Casestudyname, widget: string, required: false}, {label: Date, name: Casestudydesc, widget: string, required: false}, {label: Image, name: image, widget: image}]}]}
+          - {
+              label: Casestudy,
+              name: Casestudy,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: Casestudytitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Casestudycards,
+                    name: Casestudycards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Title,
+                          name: Casestudyblockid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: Casestudyname,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Date,
+                          name: Casestudydesc,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: image, widget: image },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Formulations/ffacility.md
         label: Facility
         name: ffacility
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Facility, name: Ffacility, widget: list, fields: [{label: Title, name: Ffacilitytitle, widget: string, required: false}, {label: Description, name: Ffacilitydis, widget: string, required: false}, {label: Facility Cards, name: Ffacilitycards, widget: list, fields: [{label: Id, name: Ffacilityblockid, widget: string, required: false}, {label: Title, name: Ffacilityname, widget: string, required: false}, {label: Description, name: Ffacilitydesc, widget: string, required: false}, {label: Image, name: ffacilitypic, widget: image}]}]}
+          - {
+              label: Facility,
+              name: Ffacility,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: Ffacilitytitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: Ffacilitydis,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Facility Cards,
+                    name: Ffacilitycards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Id,
+                          name: Ffacilityblockid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Title,
+                          name: Ffacilityname,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: Ffacilitydesc,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: ffacilitypic, widget: image },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Formulations/fservices.md
         label: Services
         name: fservice
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Services, name: fservices, widget: list, fields: [{label: Title, name: fservicetitle, widget: string, required: false}, {label: Description, name: fservicedesc, widget: string, required: false}, {label: Services Cards, name: fservicecards, widget: list, fields: [{label: Id, name: fservicecardid, widget: string, required: false}, {label: Title, name: fservicecardtitle, widget: string, required: false}, {label: Description, name: fservicecarddesc, widget: string, required: false}, {label: Main title, name: fserviceminicardsmaintitle, widget: string, required: false}, {label: Image, name: fservicepic, widget: image}, {label: Mini Blocks, name: fserviceminicards, widget: list, fields: [{label: fserviceminicardstitle, name: fserviceminicardstitle, widget: string, required: false}, {label: Images, name: fserviceminicardsimg, widget: image}]}]}]}
+          - {
+              label: Services,
+              name: fservices,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: fservicetitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: fservicedesc,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Services Cards,
+                    name: fservicecards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Id,
+                          name: fservicecardid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Title,
+                          name: fservicecardtitle,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: fservicecarddesc,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Main title,
+                          name: fserviceminicardsmaintitle,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: fservicepic, widget: image },
+                        {
+                          label: Mini Blocks,
+                          name: fserviceminicards,
+                          widget: list,
+                          fields:
+                            [
+                              {
+                                label: fserviceminicardstitle,
+                                name: fserviceminicardstitle,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: Images,
+                                name: fserviceminicardsimg,
+                                widget: image,
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
   - label: Manfacturing
     name: manfacturing
     files:
@@ -151,51 +562,288 @@ collections:
         name: seoManfacturing
         create: true
         fields:
-          - {label: Title, name: title}
+          - { label: Title, name: title }
           - { label: Description, name: description }
           - { label: Keywords, name: keywords, widget: list }
       - file: src/data/Manfacturing/mbanner.md
         label: Banner
         name: mbanner
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Title, name: description, widget: string, required: false}
+          - { label: Title, name: description, widget: string, required: false }
       - file: src/data/Manfacturing/capabilities.md
         label: Capabilities
         name: capable
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Capabilities, name: Capabilities, widget: list, fields: [{label: Title, name: capabilitiestitle, widget: string, required: false}, {label: Description, name: capabilitiesdesc, widget: string, required: false}, {label: Capabilities Cards, name: capabilitiescards, widget: list, fields: [{label: Id, name: capabilitiescardid, widget: string, required: false}, {label: Title, name: capabilitiescardtitle, widget: string, required: false}, {label: Description, name: capabilitiescarddesc, widget: string, required: false}, {label: Image, name: image, widget: image}, {label: Mini Blocks, name: capabilitiesminicards, widget: list, fields: [{label: Title, name: capabilitiesminicardstitle, widget: string, required: false}, {label: Image, name: image, widget: image}]}]}]}
+          - {
+              label: Capabilities,
+              name: Capabilities,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: capabilitiestitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: capabilitiesdesc,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Capabilities Cards,
+                    name: capabilitiescards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Id,
+                          name: capabilitiescardid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Title,
+                          name: capabilitiescardtitle,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: capabilitiescarddesc,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: image, widget: image },
+                        {
+                          label: Mini Blocks,
+                          name: capabilitiesminicards,
+                          widget: list,
+                          fields:
+                            [
+                              {
+                                label: Title,
+                                name: capabilitiesminicardstitle,
+                                widget: string,
+                                required: false,
+                              },
+                              { label: Image, name: image, widget: image },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Manfacturing/facility.md
         label: Facility
         name: facility
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Facility, name: Facility, widget: list, fields: [{label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Facility Cards, name: Facilitycards, widget: list, fields: [{label: Id, name: facilityid, widget: string, required: false}, {label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Description2, name: description2, widget: string, required: false}, {label: Description3, name: description3, widget: string, required: false}, {label: Image, name: fimage, widget: image}]}]}
+          - {
+              label: Facility,
+              name: Facility,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Facility Cards,
+                    name: Facilitycards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Id,
+                          name: facilityid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description2,
+                          name: description2,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description3,
+                          name: description3,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: fimage, widget: image },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Manfacturing/industry.md
         label: Industry
         name: industry
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Industry, name: industry, widget: list, fields: [{label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Industry Cards, name: industrycards, widget: list, fields: [{label: Id, name: industryid, widget: string, required: false}, {label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Image, name: Image, widget: image}]}]}
+          - {
+              label: Industry,
+              name: industry,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Industry Cards,
+                    name: industrycards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Id,
+                          name: industryid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: Image, widget: image },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Manfacturing/quality.md
         label: Quality
         name: quality
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Quality, name: Quality, widget: list, fields: [{label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Description1, name: description1, widget: string, required: false}, {label: Description2, name: description2, widget: string, required: false}, {label: Image, name: image, widget: image} ]}
+          - {
+              label: Quality,
+              name: Quality,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description1,
+                    name: description1,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description2,
+                    name: description2,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
       - file: src/data/Manfacturing/qualityassurance.md
         label: Quality Assurance
         name: qualityassurance
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Quality Assurance, name: qualityassurance, widget: list, fields: [{label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: QA Container, name: qualityassuranceminicontainer, widget: list, fields: [{label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Image, name: image, widget: image}]}]}
+          - {
+              label: Quality Assurance,
+              name: qualityassurance,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: QA Container,
+                    name: qualityassuranceminicontainer,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Image, name: image, widget: image },
+                      ],
+                  },
+                ],
+            }
   - label: Digital
     name: digital
     file: src/data/Formulations
@@ -205,30 +853,160 @@ collections:
         name: seoDigital
         create: true
         fields:
-          - {label: Title, name: title}
+          - { label: Title, name: title }
           - { label: Description, name: description }
           - { label: Keywords, name: keywords, widget: list }
       - file: src/data/Digital/dbanner.md
         label: Digital Banner
         name: dbanner
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Title, name: description, widget: string, required: false}
+          - { label: Title, name: description, widget: string, required: false }
       - file: src/data/Digital/dsolution.md
         label: Digital Solution
         name: dsolution
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Solutions, name: dsolution, widget: list, fields: [{label: Card Title, name: dsolutiontitle, widget: string, required: false}, {label: Description, name: dsolutiondesc, widget: string, required: false}, {label: Solution Cards, name: dsolutioncards, widget: list, fields: [{label: Id, name: dsolutioncardid, widget: string, required: false}, {label: Title, name: dsolutioncardtitle, widget: string, required: false}, {label: Description, name: dsolutioncarddesc, widget: string, required: false}, {label: Mini Icon Cards Title, name: dsolutionminicardsmaintitle, widget: string, required: false}, {label: Mini Icon Cards Title2, name: dsolutionminicardsmaintitle2, widget: string, required: false}, {label: Card Image, name: Image, widget: image}, {label: Mini Card, name: dsolutionminicards, widget: list, fields: [{label: Title, name: dsolutionminicardstitle, widget: string, required: false}, {label: Title2, name: dsolutionminicardstitle2, widget: string, required: false}, {label: Card Icon, name: dsolutionminicardsimg, widget: image}]}]}]}
+          - {
+              label: Solutions,
+              name: dsolution,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Card Title,
+                    name: dsolutiontitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: dsolutiondesc,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Solution Cards,
+                    name: dsolutioncards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Id,
+                          name: dsolutioncardid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Title,
+                          name: dsolutioncardtitle,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: dsolutioncarddesc,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Mini Icon Cards Title,
+                          name: dsolutionminicardsmaintitle,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Mini Icon Cards Title2,
+                          name: dsolutionminicardsmaintitle2,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Card Image, name: Image, widget: image },
+                        {
+                          label: Mini Card,
+                          name: dsolutionminicards,
+                          widget: list,
+                          fields:
+                            [
+                              {
+                                label: Title,
+                                name: dsolutionminicardstitle,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: Title2,
+                                name: dsolutionminicardstitle2,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: Card Icon,
+                                name: dsolutionminicardsimg,
+                                widget: image,
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Digital/productdev.md
         label: Product Development
         name: productdev
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Product Development, name: prodev, widget: list, fields: [{label: Id, name: pdid, widget: string, required: false}, {label: Card Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Mini Container, name: prodevminicontainer, widget: list, fields: [{label: Id, name: pdcontid, widget: string, required: false}, {label: Title, name: title, widget: string, required: false}, {label: Description, name: title2, widget: string, required: false}, {label: Icon, name: Image, widget: image}]}]}
+          - {
+              label: Product Development,
+              name: prodev,
+              widget: list,
+              fields:
+                [
+                  { label: Id, name: pdid, widget: string, required: false },
+                  {
+                    label: Card Title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Mini Container,
+                    name: prodevminicontainer,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Id,
+                          name: pdcontid,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: title2,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Icon, name: Image, widget: image },
+                      ],
+                  },
+                ],
+            }
   - label: Products
     name: products
     file: src/data/Products
@@ -238,55 +1016,130 @@ collections:
         name: seoProducts
         create: true
         fields:
-          - {label: Title, name: title}
+          - { label: Title, name: title }
           - { label: Description, name: description }
           - { label: Keywords, name: keywords, widget: list }
       - file: src/data/Products/pbanner.md
         label: Products Banner
         name: pbanner
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Title, name: description, widget: string, required: false}
+          - { label: Title, name: description, widget: string, required: false }
       - file: src/data/Products/pharmaceutical.md
         label: Products Pharmaceutical
         name: pharmaceutical
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Pharmaceutical, name: pharmaceutical, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Pharmaceutical Cards, name: pharmaceuticalcards, widget: list, fields: [{label: Link, name: pharmaceuticalid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
+          - {
+              label: Pharmaceutical,
+              name: pharmaceutical,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: string },
+                  {
+                    label: Pharmaceutical Cards,
+                    name: pharmaceuticalcards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Link, name: pharmaceuticalid, widget: string },
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
+                        { label: Image, name: Image, widget: image },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Products/foodsuplements.md
         label: Food Suplements
         name: foodsupplements
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: Food Suplements, name: foodsupliments, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Food Suppliments Cards, name: foodsuplimentscards, widget: list, fields: [{label: Link, name: foodsuplimentsid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
+          - {
+              label: Food Suplements,
+              name: foodsupliments,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: string },
+                  {
+                    label: Food Suppliments Cards,
+                    name: foodsuplimentscards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Link, name: foodsuplimentsid, widget: string },
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
+                        { label: Image, name: Image, widget: image },
+                      ],
+                  },
+                ],
+            }
       - file: src/data/Products/archibrand.md
         label: ArchiBrand
         name: archibrand
         create: true
-        public_folder: '../assets'
+        public_folder: "../assets"
         fields:
-          - {label: ArchiBrand, name: archibrand, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Archi Brand Cards, name: archibrandcards, widget: list, fields: [{label: Link, name: archibrandid, widget: string}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: Image, widget: image}]}]}
+          - {
+              label: ArchiBrand,
+              name: archibrand,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: string },
+                  {
+                    label: Archi Brand Cards,
+                    name: archibrandcards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Link, name: archibrandid, widget: string },
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
+                        { label: Image, name: Image, widget: image },
+                      ],
+                  },
+                ],
+            }
   - name: blog
     label: Blog
-    label_singular: 'Blog'
+    label_singular: "Blog"
     folder: src/data/blog
-    public_folder: '../assets'
-    slug: '{{slug}}'
+    public_folder: "../assets"
+    slug: "{{slug}}"
     create: true
     nested:
       depth: 100
-      summary: '{{title}}'
+      summary: "{{title}}"
     fields:
       - label: Author Image
         name: author_image
         widget: image
-      - { name: author, label: Author, default: 'ContentConcepts' }
+      - { name: author, label: Author, default: "ContentConcepts" }
       - { name: bio, label: Bio }
       - { name: title, label: Title }
-      - { name: date, label: Date, widget: date, default: ''}
+      - { name: date, label: Date, widget: date, default: "" }
       - { name: previewImage, label: Preview Image, widget: image }
       - { name: excerpt, label: Excerpt }
       - { name: tags, label: Tags, widget: list }

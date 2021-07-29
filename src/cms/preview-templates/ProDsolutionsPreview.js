@@ -7,7 +7,9 @@ const ProDsolutionsPreview = ({ entry, getAsset }) => {
     const data = entry.getIn(["data"]).toJS();
     if (data.hasOwnProperty('dsolution')) {
         if (data.dsolution) {
+            console.log(data.dsolution)
             data.dsolution.map(dsolutions => {
+                console.log(dsolutions)
                 dsolutions.dsolutioncards.map(dsolutioncardss => {
                     var getImage = getAsset(dsolutioncardss.Image);
                     dsolutioncardss.Image = getImage.toString();

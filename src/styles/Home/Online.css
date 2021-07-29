@@ -15,7 +15,7 @@
   height: fit-content;
   margin: auto 0;
 }
-#online_container p {
+#online_container_block1 h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -23,7 +23,7 @@
   line-height: 5.17985611510791vw;
   color: #ffffff;
 }
-#online_container p:nth-child(2) {
+#online_container_block1 h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 500;
@@ -31,6 +31,7 @@
   line-height: 2.01438848920863vw;
   width: 33.0935251798561vw;
   text-align: justify;
+  color: white;
 }
 #online_container_block1 button {
   width: 15vw;
@@ -83,7 +84,7 @@
     align-items: center;
     flex-direction: column;
   }
-  #online_container p {
+  #online_container h1 {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
@@ -92,7 +93,7 @@
     color: #ffffff;
     text-align: center;
 }
-#online_container p:nth-child(2) {
+#online_container h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 500;

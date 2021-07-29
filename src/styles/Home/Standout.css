@@ -2,7 +2,7 @@
   width: 100%;
   padding: 13.0935251798561vw 1.43884892086331vw;
 }
-#standout p {
+#standout h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -11,7 +11,7 @@
   text-align: center;
   color: #200e32;
 }
-#standout p:nth-child(2) {
+#standout h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -32,7 +32,7 @@
   width: 6.33093525179856vw;
   height: 6.33093525179856vw;
 }
-#standout #standout_container #standout_card1 p {
+#standout #standout_container #standout_card1 #p4_c_dis {
   width: 11.0669064748201vw;
   font-family: Manrope;
   font-style: normal;
@@ -41,9 +41,9 @@
   line-height: 1.94244604316547vw;
   text-align: center;
   color: #200e32;
-  margin-top: 0.359712230215827vw;
+  margin: 0.359712230215827vw auto 0 auto;
 }
-#standout #standout_container #standout_card1:nth-child(2) p {
+#standout #standout_container #standout_card1:nth-child(2) #p4_c_dis {
   width: 9vw;
 }
 @media (max-width: 750px) {
@@ -51,11 +51,11 @@
     width: 100%;
     padding: 15vw 1.43884892086331vw;
   }
-  #standout p {
+  #standout h1 {
     font-size: 6.5vw;
     line-height: inherit;
   }
-  #standout p:nth-child(2) {
+  #standout h2 {
     font-size: 4vw;
     line-height: 5.5vw;
     margin: 1.5vw auto 0 auto;
@@ -73,7 +73,7 @@
     width: 20vw;
     height: 20vw;
   }
-  #standout #standout_container #standout_card1 p {
+  #standout #standout_container #standout_card1 #p4_c_dis {
     width: 20vw;
     font-family: Manrope;
     font-style: normal;
@@ -84,7 +84,7 @@
     color: #200e32;
     margin-top: 0.359712230215827vw;
   }
-  #standout #standout_container #standout_card1:nth-child(2) p {
+  #standout #standout_container #standout_card1:nth-child(2) #p4_c_dis {
     width: 21vw;
   }
 }

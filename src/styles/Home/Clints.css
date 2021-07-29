@@ -8,7 +8,7 @@
   background-position: top right 6.90647482014388vw;
   padding: 8.70503597122302vw 20.863309352518vw;
 }
-#clints p {
+#clints h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -145,7 +145,7 @@
   #clints_container {
     margin-top: 6.5vw;
   }
-  #clints p {
+  #clints h1 {
     font-size: 6.5vw;
     line-height: 9vw;
     margin: auto;

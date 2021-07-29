@@ -9,7 +9,7 @@ export const Clints = ({ clintstitle, clints }) => {
     return (
         <>
             <div id="clints">
-                <p>{clintstitle}</p>
+                <h1>{clintstitle}</h1>
                 <div id="clints_container">
                     <Carousel id="main_carousal_control" interval={1000000}>
                         {clints && clints.map(clintItem =>

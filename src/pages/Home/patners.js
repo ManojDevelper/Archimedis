@@ -11,8 +11,8 @@ export const Patners = ({ Patnertitle, patnerdescription, patnercarousal }) => {
       <div id="patners">
         <div id="patners_container">
           <div id="patners_container_matter">
-            <p>{Patnertitle}</p>
-            <p>{patnerdescription}</p>
+            <h1>{Patnertitle}</h1>
+            <h2>{patnerdescription}</h2>
           </div>
           <Carousel interval={10000000} id="carousss">
             {patnercarousal && patnercarousal.map(patnercarousalItem =>

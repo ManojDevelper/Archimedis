@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Nav.css';
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "gatsby"
-import Logo from "../images/logo.svg";
+import Logo from "../images/navlogo.png";
 import ham from "../images/ham.svg";
 import close from "../images/navclose.svg";
 import plus from "../images/navplus.svg";
@@ -43,7 +43,6 @@ function Navbars() {
                     <Nav id="navbarResponsive">
                         <ul id="nav_b1">
                             <li id="nav_links"><Nav.Link href="/home/#about" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Nav.Link></li>
-                            <li id="nav_links"><Nav.Link href="/home/#team" id="nav_main_link" activeClassName='active'>Our People<span>|</span></Nav.Link></li>
                             <li id="nav_links"><Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients<span>|</span></Nav.Link></li>
                             <li id="nav_links"><Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog<span>|</span></Nav.Link></li>
                             <li id="nav_links"><Nav.Link id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link></li>
@@ -99,7 +98,8 @@ function Navbars() {
                                             <Link to="/manfacture/#Manufacturing" id="nav_sub_link">Manufacturing</Link>
                                             <Link to="/manfacture/#packing" id="nav_sub_link">Packing</Link>
                                             <Link to="/manfacture/#Warehouse" id="nav_sub_link">Warehouse</Link>
-                                            <Link to="/manfacture/#utilities" id="nav_sub_link">Utilities (HVAC / Water)</Link>
+                                            <Link to="/manfacture/#AirHandling" id="nav_sub_link">Air Handling Units (AHUs)</Link>
+                                            <Link to="/manfacture/#WaterPurification" id="nav_sub_link">Water Purification</Link>
                                             <Link to="/manfacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
                                         </div>
                                         <div id="nav_manu_container_card">

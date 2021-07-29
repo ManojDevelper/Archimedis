@@ -7,20 +7,20 @@ export const Standout = ({ title, description, Standoutcontainer }) => {
   return (
     <>
       <div id="standout">
-        <p>{title}</p>
-        <p>{description}</p>
+        <h1>{title}</h1>
+        <h2>{description}</h2>
         <div id="standout_container">
           {Standoutcontainer && Standoutcontainer.map(Standoutcontainers =>
-          <>
-            {Standoutcontainers.standimage !== null && 
-            <div id="standout_card1" key={Standoutcontainers.id}>
-            {(Standoutcontainers.standimage !== null)
+            <>
+              {Standoutcontainers.standimage !== null &&
+                <div id="standout_card1" key={Standoutcontainers.id}>
+                  {(Standoutcontainers.standimage !== null)
                     ? (<img src={Standoutcontainers.standimage.publicURL} alt="img" />) :
                     (<img src={Standoutcontainers.standimage} alt="img" />)}
-              <p id="p4_c_dis">{Standoutcontainers.standname}</p>
-            </div>
-          }
-          </>
+                  <p id="p4_c_dis">{Standoutcontainers.standname}</p>
+                </div>
+              }
+            </>
           )}
         </div>
       </div>

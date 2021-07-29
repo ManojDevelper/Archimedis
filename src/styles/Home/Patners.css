@@ -64,7 +64,7 @@
 .active-carousal_img_arrow2{
   transform: rotate(180deg);
 }
-#patners_container_matter p {
+#patners_container_matter h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -73,7 +73,7 @@
   text-align: center;
   color: #200e32;
 }
-#patners_container_matter p:nth-child(2) {
+#patners_container_matter h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -170,13 +170,13 @@ display: none;
   #patners {
     padding: 15vw 8vw 8.5vw 8vw;
 }
-  #patners_container_matter p {
+  #patners_container_matter h1 {
     font-size: 5vw;
     line-height: 5.7vw;
     width: 50vw;
     margin: auto;
 }
-#patners_container_matter p:nth-child(2) {
+#patners_container_matter h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;

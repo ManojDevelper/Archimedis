@@ -4,9 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Archimedis Website`,
-    description: `Gatsby is a React-based open source framework with performance, scalability and security built-in.`,
-    keywords: ['gatsby', 'react']
+    title: `Archimedis Healthcare Private Limited - Reputed Pharma Manufacturers Chennai`,
+    description: `Archimedis reputed third party contract pharmaceutical company in Chennai, India. Our Products are Tablets, Capsules, Dry powder and Hand sanitizers.`,
+    keywords: ['Medical'],
+    siteUrl: `http://www.archimedis.global/`,
   },
   plugins: [
     {

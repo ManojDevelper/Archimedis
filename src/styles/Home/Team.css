@@ -1,6 +1,55 @@
 #team {
   width: 100%;
   padding: 7.55395683453237vw 4.60431654676259vw;
+  display: flex;
+  flex-direction: column;
+}
+#backarrow {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  color: #200e32;
+  text-decoration: none;
+}
+#backarrow img {
+  width: 24px;
+  height: 24px;
+  margin-left: 4vw;
+  margin-right: 0.5vw;
+}
+#team #linktbn {
+  margin: 6.69064748201439vw auto 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+#team button {
+  width: 13.0215827338129vw;
+  height: 3.45323741007194vw;
+  background: #e6e7fd;
+  border-radius: 0.575539568345324vw;
+  outline: none;
+  border: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.15107913669065vw;
+  line-height: 2.15827338129496vw;
+  color: #200e32;
+  padding-right: 1vw;
+  transition: 0.5s ease;
+}
+#team button:hover {
+  width: 14vw;
+}
+#team button img {
+  width: 1.72661870503597vw;
+  height: 1.72661870503597vw;
+  position: relative;
+  top: 0.4vw;
+  left: 0.6vw;
 }
 #team div h1 {
   font-family: Manrope;
@@ -67,66 +116,94 @@
 #team_container_cards_block2_container img {
   cursor: pointer;
 }
-#team_container_cards_block2_container #btnhover{
+#team_container_cards_block2_container #btnhover {
   display: none;
 }
-#team_container_cards_block2_container:hover #btnnormal{
+#team_container_cards_block2_container:hover #btnnormal {
   display: none;
 }
-#team_container_cards_block2_container:hover #btnhover{
+#team_container_cards_block2_container:hover #btnhover {
   display: block;
 }
-@media (max-width:750px){
+@media (max-width: 750px) {
+  #team button {
+    width: 40vw;
+    height: 9.5vw;
+    border-radius: 1.2vw;
+    font-size: 3vw;
+    margin-top: 8vw;
+  }
+  #team button img {
+    display: none;
+  }
+  #backarrow {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 27px;
+    display: flex;
+    color: #200e32;
+    text-decoration: none;
+  }
+  #backarrow img {
+    width: 10px;
+    height: 10px;
+    margin-left: 4vw;
+    margin-right: 0.5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   #team {
-    padding: 20vw 4.60431654676259vw;
-}
+    padding: 10vw 4.60431654676259vw;
+  }
   #team div h1 {
     font-size: 6vw;
     line-height: inherit;
-}
-#team_container {
-  display: grid;
-  grid-template-columns: repeat(02, 1fr);
-  margin-top: 4.31654676258993vw;
-  gap: 12vw;
-}
-#team_container_cards_block1 img {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 2vw;
-}
-#team_container_cards_block2_container img {
-  cursor: pointer;
-  opacity: 0.6;
-  margin-top: 0;
-}
-#team_container_cards_block1 p {
-  font-size: 3vw;
-  line-height: initial;
-  text-align: center;
-  color: #200e32;
-  margin-top: 1vw;
-}
-#team_container_cards_block1 #designation {
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2vw;
-  line-height: 2.15827338129496vw;
-  text-align: center;
-  color: #200e32;
-  margin-top: 1vw;
-}
-#team_container_cards_block2_container {
-  width: fit-content;
-  display: block;
-}
-#team_container_cards_block2_container img{
-  width: 18vw;
-}
-#team_container_cards_block2 {
-  width: 100%;
-  margin-top: 3vw;
-}
+  }
+  #team_container {
+    display: grid;
+    grid-template-columns: repeat(02, 1fr);
+    margin-top: 4.31654676258993vw;
+    gap: 12vw;
+  }
+  #team_container_cards_block1 img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 2vw;
+  }
+  #team_container_cards_block2_container img {
+    cursor: pointer;
+    opacity: 0.6;
+    margin-top: 0;
+  }
+  #team_container_cards_block1 p {
+    font-size: 3vw;
+    line-height: initial;
+    text-align: center;
+    color: #200e32;
+    margin-top: 1vw;
+  }
+  #team_container_cards_block1 #designation {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    line-height: 2.15827338129496vw;
+    text-align: center;
+    color: #200e32;
+    margin-top: 1vw;
+  }
+  #team_container_cards_block2_container {
+    width: fit-content;
+    display: block;
+  }
+  #team_container_cards_block2_container img {
+    width: 18vw;
+  }
+  #team_container_cards_block2 {
+    width: 100%;
+    margin-top: 3vw;
+  }
 }

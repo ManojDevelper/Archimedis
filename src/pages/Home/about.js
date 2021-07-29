@@ -7,9 +7,9 @@ export const About = ({ abouttitle, aboutdesc, aboutImgs }) => {
   return (
     <>
       <div id="about">
-        <p>{abouttitle}</p>
+        <h1>{abouttitle}</h1>
         <img src={aboutImgs} alt="img" />
-        <p id="about_dec">{aboutdesc}</p>
+        <h2 id="about_dec">{aboutdesc}</h2>
       </div>
     </>
   );

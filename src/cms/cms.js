@@ -28,6 +28,7 @@ import ProPharmaceuticalPreview from "./preview-templates/ProPharmaceuticalPrevi
 import ProDsolutionsPreview from "./preview-templates/ProDsolutionsPreview";
 import ProDevPreview from "./preview-templates/ProDevPreview";
 import homeTeamPreview from "./preview-templates/homeTeamPreview";
+import homeTeam2Preview from "./preview-templates/homeTeam2Preview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -83,3 +84,4 @@ CMS.registerPreviewTemplate("foodsupplements", withStyledComponentsRendered(ProF
 CMS.registerPreviewTemplate("dsolutions", withStyledComponentsRendered(ProDsolutionsPreview));
 CMS.registerPreviewTemplate("productdev", withStyledComponentsRendered(ProDevPreview));
 CMS.registerPreviewTemplate("team", withStyledComponentsRendered(homeTeamPreview));
+CMS.registerPreviewTemplate("bod", withStyledComponentsRendered(homeTeam2Preview));

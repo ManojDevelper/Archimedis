@@ -8,8 +8,8 @@ export const Online = ({ onlinetitle, onlinedesc, onlineimg }) => {
       <div id="online">
         <div id="online_container">
           <div id="online_container_block1">
-            <p>{onlinetitle}</p>
-            <p>{onlinedesc}</p>
+            <h1>{onlinetitle}</h1>
+            <h2>{onlinedesc}</h2>
             <h1 id="onlinebutton">Coming Soon...</h1>
           </div>
           <div id="online_container_block1">

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/Home/Team.css";
-import btn1 from "../../images/btnhover.svg";
-import btn2 from "../../images/btnnormal.svg";
+import btnarrow from "../../images/btnarrow.svg";
 import { graphql, useStaticQuery } from "gatsby";
+import {Link} from "gatsby";
 
 export const Team = ({ teams }) => {
 
@@ -11,7 +11,7 @@ export const Team = ({ teams }) => {
       <div id="team">
         {teams && teams.map(teamss =>
           <div key={teamss.id}>
-            <h1 style={{ marginTop: (teamss.teamstyle) }}>{teamss.teamtitle}</h1>
+            <h1>{teamss.teamtitle}</h1>
             <div id="team_container">
               {teamss && teamss.team.map(teams =>
                 <div id="team_container_cards" key={teams.id}>
@@ -20,17 +20,12 @@ export const Team = ({ teams }) => {
                     <p>{teams.teaamname}</p>
                     <p id="designation">{teams.teamdesignation}</p>
                   </div>
-                  <div id="team_container_cards_block2">
-                    <div id="team_container_cards_block2_container">
-                      <img src={btn1} alt="img" id="btnnormal" />
-                      <img src={btn2} alt="img" id="btnhover" />
-                    </div>
-                  </div>
                 </div>
               )}
             </div>
           </div>
         )}
+        <Link to="/Home/bod" id="linktbn"><button>View More<img src={btnarrow} alt="btnimg"/></button></Link>
       </div>
     </>
   );
@@ -46,7 +41,6 @@ const TeamPrev = props => {
               teams {
                 id
                 teamtitle
-                teamstyle
                 team {
                   id
                   teaamname

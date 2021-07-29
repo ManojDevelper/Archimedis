@@ -2,7 +2,7 @@
   width: 100%;
   padding: 10.7913669064748vw 16.1870503597122vw 0 16.1870503597122vw;
 }
-#about p {
+#about h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -22,21 +22,22 @@
   margin: auto;
   margin-top: 5.32374100719424vw;
   opacity: 0.8;
+  text-align: center;
 }
-@media(max-width:750px){
+@media (max-width: 750px) {
   #about {
     padding: 10.7913669064748vw 3vw 0 3vw;
-}
-#about p {
-  font-size: 7vw;
-  line-height: unset;
-}
-#about img{
-  margin-top: 8vw;
-}
-#about #about_dec {
-  font-size: 3.5vw;
-  line-height: 6vw;
-  width: 88vw;
-}
+  }
+  #about h1 {
+    font-size: 7vw;
+    line-height: unset;
+  }
+  #about img {
+    margin-top: 8vw;
+  }
+  #about #about_dec {
+    font-size: 3.5vw;
+    line-height: 6vw;
+    width: 88vw;
+  }
 }

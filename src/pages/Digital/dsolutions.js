@@ -3,6 +3,7 @@ import "../../styles/Digital/dsolutions.css";
 import { graphql, useStaticQuery } from "gatsby";
 
 export const Dsolutions = ({dsolution}) => {
+    console.log(dsolution)
 
     return (
         <>
