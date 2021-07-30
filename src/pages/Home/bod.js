@@ -24,10 +24,10 @@ export const Team2 = ({ teams2 }) => {
                                         <p id="designation">{teams.teamdesignation}</p>
                                     </div>
                                     <div id="team_container_cards_block2">
-                                        <div id="team_container_cards_block2_container">
+                                        <a href={teams.linkdin} id="team_container_cards_block2_container" target="_blank">
                                             <img src={btn1} alt="img" id="btnnormal" />
                                             <img src={btn2} alt="img" id="btnhover" />
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             )}
@@ -53,6 +53,7 @@ const Team2Prev = props => {
                   id
                   teaamname
                   teamdesignation
+                  linkdin
                   teamimg {
                     publicURL
                   }
