@@ -23,10 +23,9 @@ seo:
     - academic editing
     - academic proofreading
 ---
-
 A scientific manuscript is written in different style and length depending upon the author, the journal instructions and the topic. So it is hard to generalise a format or style for research papers. However, there are some general guidelines that will help you publish a successful scientific manuscript in journals. When editing your own manuscript, follow these tips for making your paper effective so that it is not rejected by the publisher. 
 
-## Follow  instructions to authors 
+## Follow  instructions to authors
 
 This is the first thing any journal editor would notice. Strictly adhere to the instructions from the journal. Many manuscript authors tend to overlook the instructions, especially the word count. Authors who have English as a second language (ESL) have difficulty in writing short sentences. A good manuscript editor  should look at the length of the manuscript. Editors should also review for the style, tone, and the English version - British or American .
 
@@ -34,7 +33,7 @@ This is the first thing any journal editor would notice. Strictly adhere to the 
 
 The audience for the research paper - the science community - is used to reading manuscripts in a certain format and style that follows a logical order. When editing your manuscript or your peer’s , review the manuscript to check whether it follows the following order:
 i) a clear title, 
-ii) abstract, 
+ii) abstract,
 iii) introductory paragraph, 
 iv) methods and materials
 v) discussion of results, 
