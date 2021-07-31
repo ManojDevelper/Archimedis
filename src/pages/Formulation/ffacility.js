@@ -12,7 +12,6 @@ export const Ffacility = ({ Ffacility }) => {
           <h2>{Ffacilitys.Ffacilitydis}</h2>
           <div id="ffacility_container">
             {Ffacilitys.Ffacilitycards.map(Ffacilitycardss =>
-              <>
                 <div className="ffacility_container_cards" id={Ffacilitycardss.Ffacilityblockid} key={Ffacilitycardss.id}>
                   <div id="ffacility_container_cards_block2">
                   {(Ffacilitycardss.ffacilitypic.publicURL) ? 
@@ -28,7 +27,6 @@ export const Ffacility = ({ Ffacility }) => {
                     </div>
                   </div>
                 </div>
-              </>
             )}
           </div>
         </div>

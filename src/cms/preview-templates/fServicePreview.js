@@ -13,8 +13,8 @@ const fServicePreview = ({ entry, getAsset }) => {
                     fservicecardss.fservicepic = getImage.toString();
                     
                     fservicecardss.fserviceminicards.map(fserviceminicardss => {
-                        var getImage = getAsset(fservicecardss.fserviceminicardsimg);
-                        fservicecardss.fserviceminicardsimg = getImage.toString();
+                        var getImage = getAsset(fserviceminicardss.fserviceminicardsimg);
+                        fserviceminicardss.fserviceminicardsimg = getImage.toString();
                         return fserviceminicardss;
                     })
                     return fservicecardss;

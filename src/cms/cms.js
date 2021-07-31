@@ -4,6 +4,7 @@ import { StyleSheetManager } from 'styled-components';
 import { GlobalStyle } from '../styles/global-styles';
 
 import BlogPreview from "./preview-templates/BlogPreview";
+import CasePreview from "./preview-templates/CaseStudyPreview";
 import AboutPreview from "./preview-templates/AboutPreview";
 import homeBannerPreview from "./preview-templates/homeBannerPreview";
 import homeBlogsPreview from "./preview-templates/homeBlogsPreview";
@@ -59,6 +60,7 @@ export default function withStyledComponentsRendered(Comp) {
   );
 }
 
+CMS.registerPreviewTemplate("casestudy", withStyledComponentsRendered(CasePreview));
 CMS.registerPreviewTemplate("blog", withStyledComponentsRendered(BlogPreview));
 CMS.registerPreviewTemplate("about", withStyledComponentsRendered(AboutPreview));
 CMS.registerPreviewTemplate("banner", withStyledComponentsRendered(homeBannerPreview));

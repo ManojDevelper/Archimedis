@@ -125,6 +125,12 @@ collections:
                     widget: string,
                     required: false,
                   },
+                  {
+                    label: Link To Main Blog,
+                    name: link,
+                    widget: string,
+                    required: false,
+                  },
                   { label: image, name: blogimg, widget: image },
                 ],
             }
@@ -1104,6 +1110,35 @@ collections:
     label: Blog
     label_singular: "Blog"
     folder: src/data/blog
+    public_folder: "../assets"
+    slug: "{{slug}}"
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - label: Author Image
+        name: author_image
+        widget: image
+      - { name: author, label: Author, default: "ContentConcepts" }
+      - { name: bio, label: Bio }
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: date, default: "" }
+      - { name: previewImage, label: Preview Image, widget: image }
+      - { name: excerpt, label: Excerpt }
+      - { name: tags, label: Tags, widget: list }
+      - { name: body, label: Body, widget: markdown }
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - { name: title, label: Title }
+          - { name: description, label: Description }
+          - { name: keywords, label: Keywords, widget: list }
+  - name: CaseStudy
+    label: Case Study
+    label_singular: "CaseStudy"
+    folder: src/data/CaseStudy
     public_folder: "../assets"
     slug: "{{slug}}"
     create: true

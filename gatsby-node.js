@@ -28,6 +28,39 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
 
+  const caseStudy = graphql(`
+    query {
+			allMarkdownRemark(
+				filter: { fileAbsolutePath: { regex: "/src/data/(CaseStudy)\\/.*\\\\.md$/" } }
+			) {
+				edges {
+					node {
+						fields {
+							slug
+						}
+					}
+				}
+			}
+		}
+	`).then(result => {
+		if (result.errors) {
+			Promise.reject(result.errors);
+		}
+
+		// Create CaseStudy pages
+		result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+			createPage({
+				path: node.fields.slug,
+        component: path.resolve(`./src/components/CaseStudy/index.js`),
+        context: {
+          slug: node.fields.slug
+        },
+			});
+		});
+  });
+
+
+
   const blogs = graphql(`
     query {
 			allMarkdownRemark(
@@ -59,6 +92,6 @@ exports.createPages = async ({ graphql, actions }) => {
 		});
   });
 
-  return Promise.all([blogs]);
+  return Promise.all([blogs, caseStudy]);
 
 }

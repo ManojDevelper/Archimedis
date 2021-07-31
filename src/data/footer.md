@@ -471,11 +471,5 @@ footer:
           },
         ],
     },
-    {
-      id: 6,
-      title: "SiteMap",
-      link: "/sitemap",
-      footercontainer: []
-    }
   ]
 ---

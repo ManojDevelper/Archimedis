@@ -36,15 +36,6 @@
 #fservice_container_cards:nth-child(1) {
   margin-top: 0;
 }
-#fservice_container_main:nth-child(3) #fserviceassurance {
-  display: block;
-}
-#fservice_container_main:nth-child(4) #fserviceassurance {
-  display: block;
-}
-#fservice_container_main #fserviceassurance {
-  display: none;
-}
 #fservice
   #fservice_container_main:nth-child(even)
   #fservice_container

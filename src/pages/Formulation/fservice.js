@@ -10,6 +10,7 @@ export const Fservice = ({ fservices }) => {
         <div id="fservice">
           <h1>{fservicess.fservicetitle}</h1>
           <h2>{fservicess.fservicedesc}</h2>
+          <div>
           {fservicess.fservicecards.map(fservicecardss =>
             <div id="fservice_container_main" key={fservicecardss.id}>
               <div id="fservice_container">
@@ -58,6 +59,7 @@ export const Fservice = ({ fservices }) => {
               </div>
             </div>
           )}
+          </div>
         </div>
       )}
     </>

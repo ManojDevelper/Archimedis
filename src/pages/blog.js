@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import "../styles/Home/Blogs.css";
 import Contact from "./Home/contact";
 import Footer from "./Home/footer";
-
+import SEO from "../components/seo";
 
 const BlogPage = ({ data }) => {
 
@@ -13,9 +13,12 @@ const BlogPage = ({ data }) => {
 
   return (
     <Fragment>
+    <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords}/>
       <div className="blogListContainer">
         <div id="blog">
-          <h1>Blogs</h1>
+          <div id="blogtitle">
+            <Link to="/blog" id="h1" activeStyle={{ color: `skyBlue` }}>Blogs</Link><h1 id="h1">/</h1><Link to="/casestudy" id="h1" activeStyle={{ color: `skyBlue` }}>CaseStudy</Link>
+          </div>
           {
             blogList && blogList.map(blogItem => {
               return (
@@ -38,8 +41,8 @@ const BlogPage = ({ data }) => {
           }
         </div>
       </div>
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </Fragment>
   )
 }
