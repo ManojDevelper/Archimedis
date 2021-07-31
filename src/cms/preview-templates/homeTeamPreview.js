@@ -19,7 +19,7 @@ const homeTeamPreview = ({ entry, getAsset }) => {
     return (
         <div>
             <Team
-                teamtitle={teamPre.teamtitle}
+                teamtitle={data.teamtitle}
                 teams={data.teams}
             />
         </div>
