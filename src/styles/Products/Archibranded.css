@@ -3,7 +3,7 @@
   background: white;
   padding: 7vw 10.9352517985612vw 13.0215827338129vw 8.70503597122302vw;
 }
-#archibranded p {
+#archibranded h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -13,7 +13,7 @@
   margin: auto;
   width: fit-content;
 }
-#archibranded p:nth-child(2) {
+#archibranded h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -57,7 +57,7 @@
   height: fit-content;
   margin: auto 0;
 }
-#archibranded_container_cards_matter h1 {
+#archibranded_container_cards_matter p {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -75,6 +75,7 @@
   opacity: 0.8;
   text-align: justify;
   margin-top: 0.79136690647482vw;
+  margin-left: 0;
 }
 #archibranded_container_cards_matter button {
   width: 13.0215827338129vw;
@@ -142,10 +143,10 @@
     background: white;
     padding: 20vw 8vw;
   }
-  #archibranded p {
+  #archibranded h1 {
     font-size: 8vw;
   }
-  #archibranded p:nth-child(2) {
+  #archibranded h2 {
     font-size: 3.4vw;
     line-height: 5.5vw;
     width: 84vw;

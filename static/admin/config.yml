@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: git-gateway
   branch: main
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
@@ -215,41 +215,8 @@ collections:
         create: true
         public_folder: "./assets"
         fields:
-          - {
-              label: Teams Container,
-              name: teams,
-              widget: list,
-              fields:
-                [
-                  {
-                    label: Title,
-                    name: teamtitle,
-                    widget: string,
-                    required: false,
-                  },
-                  {
-                    label: Team cards,
-                    name: team,
-                    widget: list,
-                    fields:
-                      [
-                        {
-                          label: Name,
-                          name: teaamname,
-                          widget: string,
-                          required: false,
-                        },
-                        {
-                          label: Designation,
-                          name: teamdesignation,
-                          widget: string,
-                          required: false,
-                        },
-                        { label: Image, name: teamimg, widget: image },
-                      ],
-                  },
-                ],
-            }
+          - { label: Title, name: teamtitle, widget: string }
+          - { label: Team Cards, name: teams, widget: list, fields: [ { label: Name, name: teaamname, widget: string }, { label: Designation, name: teamdesignation, widget: string }, { label: Profile Image, name: teamimg, widget: image } ] }
       - file: src/data/bod.md
         label: Leadership Team
         name: bod

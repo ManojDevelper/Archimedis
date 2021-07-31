@@ -3,7 +3,7 @@
   background: #f5f8ff;
   padding: 7vw 10vw 10.2877697841727vw 10vw;
 }
-#facility p {
+#facility h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -12,7 +12,7 @@
   text-align: center;
   color: #200e32;
 }
-#facility p:nth-child(2) {
+#facility h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -64,6 +64,7 @@
   font-size: 2.87769784172662vw;
   line-height: 3.59712230215827vw;
   color: #200e32;
+  text-align: left;
 }
 #facility_container_cards_matter #c_c_matter {
   font-family: Manrope;
@@ -136,7 +137,7 @@
     background: #f5f8ff;
     padding: 13.0232558139535vw 8vw;
   }
-  #facility p {
+  #facility h1 {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
@@ -147,7 +148,7 @@
     color: #200e32;
     margin-top: 0;
   }
-  #facility p:nth-child(2) {
+  #facility h2 {
     font-size: 3.4vw;
     line-height: 5.5vw;
     width: 85vw;

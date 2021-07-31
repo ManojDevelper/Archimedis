@@ -8,12 +8,9 @@ const homeTeamPreview = ({ entry, getAsset }) => {
 
     if (data.hasOwnProperty('teams')) {
         if (data.teams) {
-            data.teams.map(teamss => {
-                teamss.team.map(teamItem => {
-                    var getImage = getAsset(teamItem.teamimg);
-                    teamItem.teamimg = getImage.toString();
-                    return teamItem;
-                })
+            data.teams.length > 0 && data.teams.map(teamss => {
+                var getImage = getAsset(teamss.teamimg);
+                teamss.teamimg = getImage.toString();
                 return teamss;
             });
         }
@@ -22,6 +19,7 @@ const homeTeamPreview = ({ entry, getAsset }) => {
     return (
         <div>
             <Team
+                teamtitle={teamPre.teamtitle}
                 teams={data.teams}
             />
         </div>

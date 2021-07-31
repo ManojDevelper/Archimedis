@@ -3,7 +3,7 @@
   background: white;
   padding: 7vw 10vw 10.2877697841727vw 10vw;
 }
-#fservice p {
+#fservice h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -12,7 +12,7 @@
   text-align: center;
   color: #200e32;
 }
-#fservice p:nth-child(2) {
+#fservice h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -68,6 +68,7 @@
   font-size: 2.87769784172662vw;
   line-height: 3.59712230215827vw;
   color: #200e32;
+  text-align: left;
 }
 #fservice_container_cards_matter #c_c_matter {
   font-family: Manrope;
@@ -279,7 +280,7 @@
     width: 100%;
     padding: 40vw 6vw 23.3333333333333vw 6vw;
   }
-  #fservice p {
+  #fservice h1 {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
@@ -290,7 +291,7 @@
     color: #200e32;
     margin-top: 0;
   }
-  #fservice p:nth-child(2) {
+  #fservice h2 {
     font-size: 3.4vw;
     line-height: 5.5vw;
     width: 84vw;

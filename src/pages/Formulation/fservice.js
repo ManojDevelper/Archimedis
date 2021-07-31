@@ -8,8 +8,8 @@ export const Fservice = ({fservices}) => {
     <>
       {fservices && fservices.map(fservicess =>
         <div id="fservice">
-          <p>{fservicess.fservicetitle}</p>
-          <p>{fservicess.fservicedesc}</p>
+          <h1>{fservicess.fservicetitle}</h1>
+          <h2>{fservicess.fservicedesc}</h2>
           {fservicess.fservicecards.map(fservicecardss =>
             <div id="fservice_container_main" key={fservicecardss.id}>
               <div id="fservice_container">

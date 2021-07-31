@@ -3,7 +3,7 @@
   background: white;
   padding: 5vw 10.9352517985612vw 13.0215827338129vw 8.70503597122302vw;
 }
-#wedo p {
+#wedo h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -51,6 +51,7 @@
   font-size: 3.45323741007194vw;
   line-height: 4.74820143884892vw;
   color: #200e32;
+  text-align: left;
 }
 #wedo_container_cards_matter p {
   font-family: Manrope;
@@ -124,7 +125,7 @@
     background: white;
     padding: 20vw 8vw;
   }
-  #wedo p {
+  #wedo h1 {
     font-size: 8vw;
   }
   #wedo_container_cards_matter p {

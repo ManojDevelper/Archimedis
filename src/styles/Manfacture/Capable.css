@@ -3,7 +3,7 @@
   background: #f5f8ff;
   padding: 10.2877697841727vw 10vw;
 }
-#capable p {
+#capable h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -12,7 +12,7 @@
   text-align: center;
   color: #200e32;
 }
-#capable p:nth-child(2) {
+#capable h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -69,6 +69,7 @@ display: none;
   font-size: 2.87769784172662vw;
   line-height: 3.59712230215827vw;
   color: #200e32;
+  text-align: left;
 }
 #capable_container_cards_matter #c_c_matter {
   font-family: Manrope;
@@ -161,7 +162,7 @@ display: none;
     background: white;
     padding: 20vw 8vw;
   }
-  #capable p {
+  #capable h1 {
     font-size: 8vw;
   }
   #capable_container_cards_matter #c_c_matter {
@@ -249,12 +250,12 @@ display: none;
     width: 100%;
     padding: 20vw 8vw;
   }
-  #capable p {
+  #capable h1 {
     font-size: 6.04651162790698vw;
     margin-top: 13.7209302325581vw;
     line-height: normal;
   }
-  #capable p:nth-child(2) {
+  #capable h2 {
     font-size: 3.4vw;
     line-height: 5.5vw;
     width: 84vw;

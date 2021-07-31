@@ -6,13 +6,12 @@ export const Qualityassurance = ({ qualityassurance }) => {
 
   return (
     <>
-
       <div id="Qualityassurance">
         {qualityassurance && qualityassurance.map(qualityassurances =>
           <>
             <div id="quality_matter" key={qualityassurances.id}>
-              <p id="Qualityassurance_title">{qualityassurances.title}</p>
-              <p id="Qualityassurance_desc">{qualityassurances.description}</p>
+              <h1 id="Qualityassurance_title">{qualityassurances.title}</h1>
+              <h2 id="Qualityassurance_desc">{qualityassurances.description}</h2>
               <div id="Qualityassurance_container">
                 {qualityassurances.qualityassuranceminicontainer.map(qualityassuranceminicontainers =>
                   <>

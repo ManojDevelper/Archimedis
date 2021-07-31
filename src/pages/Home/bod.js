@@ -24,7 +24,7 @@ export const Team2 = ({ teams2 }) => {
                                         <p id="designation">{teams.teamdesignation}</p>
                                     </div>
                                     <div id="team_container_cards_block2">
-                                        <a href={teams.linkdin} id="team_container_cards_block2_container" target="_blank">
+                                        <a href={teams.linkdin} id="team_container_cards_block2_container" target="_blank" rel="noopener noreferrer">
                                             <img src={btn1} alt="img" id="btnnormal" />
                                             <img src={btn2} alt="img" id="btnhover" />
                                         </a>

@@ -8,8 +8,8 @@ export const Quality = ({ Quality }) => {
     <>
       {Quality && Quality.map(qualitys =>
         <div id="quality" key={qualitys.id}>
-          <p id="q_title">{qualitys.title}</p>
-          <p id="q_desc">{qualitys.description}</p>
+          <h1 id="q_title">{qualitys.title}</h1>
+          <h2 id="q_desc">{qualitys.description}</h2>
           <div id="quality_container">
             <div id="quality_container_b1">
               <img src={qualitys.image.publicURL} alt="img" />

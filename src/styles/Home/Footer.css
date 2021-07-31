@@ -44,16 +44,21 @@
   height: fit-content;
   margin: auto;
   margin-top: 6.61870503597122vw;
+  display: flex;
 }
-#footer_container_bottom_icons img {
+#footer_container_bottom_icons a {
   width: 1.72661870503597vw;
   height: 1.72661870503597vw;
   margin: 0;
   margin-left: 1.72661870503597vw;
   cursor: pointer;
 }
-#footer_container_bottom_icons img:first-child {
+#footer_container_bottom_icons a:first-child {
   margin-left: 0;
+}
+#footer_container_bottom_icons a img {
+  width: 100%;
+  height: 100%;
 }
 #footer_container_bottom p {
   font-family: Manrope;
@@ -119,7 +124,7 @@
     height: 100%;
     border-radius: 2vw;
   }
-  #footer_container_bottom_icons img {
+  #footer_container_bottom_icons a {
     width: 5vw;
     height: 5vw;
     margin: 0;

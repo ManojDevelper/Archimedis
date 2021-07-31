@@ -8,8 +8,8 @@ export const Capable = ({ Capabilities }) => {
     <>
       {Capabilities && Capabilities.map(Capabilitiess =>
         <div id="capable">
-          <p>{Capabilitiess.capabilitiestitle}</p>
-          <p>{Capabilitiess.capabilitiesdesc}</p>
+          <h1>{Capabilitiess.capabilitiestitle}</h1>
+          <h2>{Capabilitiess.capabilitiesdesc}</h2>
           <div id="capable_container">
             {Capabilitiess.capabilitiescards.map(capabilitiescardss =>
               <>

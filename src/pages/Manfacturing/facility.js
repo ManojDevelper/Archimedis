@@ -8,8 +8,8 @@ export const Facility = ({ Facility }) => {
     <>
       {Facility && Facility.map(Facilitys =>
         <div id="facility" key={Facilitys.id}>
-          <p>{Facilitys.title}</p>
-          <p>{Facilitys.description}</p>
+          <h1>{Facilitys.title}</h1>
+          <h2>{Facilitys.description}</h2>
           <div id="facility_container">
             {Facilitys.Facilitycards.map(Facilitycardss =>
               <>

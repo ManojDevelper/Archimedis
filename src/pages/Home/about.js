@@ -6,7 +6,7 @@ export const About = ({ abouttitle, aboutdesc, aboutImgs }) => {
 
   return (
     <>
-      <div id="about">
+      <div id="about"z>
         <h1>{abouttitle}</h1>
         <img src={aboutImgs} alt="img" />
         <h2 id="about_dec">{aboutdesc}</h2>

@@ -8,8 +8,8 @@ export const Industry = ({ industry }) => {
     <>
       {industry && industry.map(industrys =>
         <div id="industry">
-          <p>{industrys.title}</p>
-          <p>{industrys.description}</p>
+          <h1>{industrys.title}</h1>
+          <h2>{industrys.description}</h2>
           <div id="industry_container">
             {industrys && industrys.industrycards.map(industrycardss =>
               <>

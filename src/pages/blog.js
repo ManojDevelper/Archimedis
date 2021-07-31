@@ -1,6 +1,8 @@
 import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 import "../styles/Home/Blogs.css";
+import Contact from "./Home/contact";
+import Footer from "./Home/footer";
 
 
 const BlogPage = ({ data }) => {
@@ -36,6 +38,8 @@ const BlogPage = ({ data }) => {
           }
         </div>
       </div>
+      <Contact/>
+      <Footer/>
     </Fragment>
   )
 }

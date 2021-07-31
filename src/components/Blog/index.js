@@ -7,6 +7,8 @@ import {
   BlogContent,
   TagsList
 } from './styles';
+import Contact from "../../pages/Home/contact";
+import Footer from "../../pages/Home/footer";
 
 export const BlogPost = ({
   fields,
@@ -64,6 +66,8 @@ export const BlogPost = ({
           </TagsList>
         }
       </BlogContainer>
+      <Contact/>
+      <Footer/>
     </Fragment>
   )
 }

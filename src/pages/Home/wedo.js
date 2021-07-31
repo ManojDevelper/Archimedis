@@ -7,7 +7,7 @@ export const Wedo = ({ wedotitle, wedo, html }) => {
   return (
     <>
       <div id="wedo">
-        <p>{wedotitle}</p>
+        <h1>{wedotitle}</h1>
         <div id="wedo_container">
           {wedo && wedo.map(wedos =>
             <div id="wedo_container_cards" key={wedos.id}>

@@ -2,30 +2,28 @@ import React, { useState, useEffect } from "react";
 import "../../styles/Home/Team.css";
 import btnarrow from "../../images/btnarrow.svg";
 import { graphql, useStaticQuery } from "gatsby";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
-export const Team = ({ teams }) => {
+export const Team = ({ teamtitle, teams }) => {
 
   return (
     <>
       <div id="team">
-        {teams && teams.map(teamss =>
-          <div key={teamss.id}>
-            <h1>{teamss.teamtitle}</h1>
-            <div id="team_container">
-              {teamss && teamss.team.map(teams =>
-                <div id="team_container_cards" key={teams.id}>
-                  <div id="team_container_cards_block1">
-                    <img src={teams.teamimg.publicURL} alt="img" />
-                    <p>{teams.teaamname}</p>
-                    <p id="designation">{teams.teamdesignation}</p>
-                  </div>
+        <div>
+          <h1>{teamtitle}</h1>
+          <div id="team_container">
+            {teams && teams.map(teams =>
+              <div id="team_container_cards" key={teams.id}>
+                <div id="team_container_cards_block1">
+                  <img src={teams.teamimg.publicURL} alt="img" />
+                  <p>{teams.teaamname}</p>
+                  <p id="designation">{teams.teamdesignation}</p>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
-        )}
-        <Link to="/Home/bod" id="linktbn"><button>View More<img src={btnarrow} alt="btnimg"/></button></Link>
+        </div>
+        <Link to="/Home/bod" id="linktbn"><button>View More<img src={btnarrow} alt="btnimg" /></button></Link>
       </div>
     </>
   );
@@ -38,10 +36,8 @@ const TeamPrev = props => {
           id
           childMarkdownRemark {
             frontmatter {
+              teamtitle
               teams {
-                id
-                teamtitle
-                team {
                   id
                   teaamname
                   teamdesignation
@@ -49,7 +45,6 @@ const TeamPrev = props => {
                     publicURL
                   }
                 }
-              }
             }
           }
         }
@@ -64,6 +59,7 @@ const TeamPrev = props => {
       {
         data.file &&
         <Team
+          teamtitle={teamPre.teamtitle}
           teams={teamPre.teams}
         />
       }

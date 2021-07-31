@@ -3,7 +3,7 @@
   background:white;
   padding: 7vw 10vw 10.2877697841727vw 10vw;
 }
-#industry p {
+#industry h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -12,7 +12,7 @@
   text-align: center;
   color: #200e32;
 }
-#industry p:nth-child(2) {
+#industry h2 {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -63,6 +63,7 @@
   font-size: 2.87769784172662vw;
   line-height: 3.59712230215827vw;
   color: #200e32;
+  text-align: left;
 }
 #industry_container_cards_matter #c_c_matter {
   font-family: Manrope;
@@ -143,7 +144,7 @@
     background: #f5f8ff;
     padding: 13.0232558139535vw 8vw;
   }
-  #industry p {
+  #industry h1 {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
@@ -154,7 +155,7 @@
     color: #200e32;
     margin-top: 0;
   }
-  #industry p:nth-child(2) {
+  #industry h2 {
     font-size: 3.4vw;
     line-height: 5.5vw;
     width: 84vw;

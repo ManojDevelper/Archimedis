@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import "../../styles/Home/Footer.css";
 import img1 from "../../images/linkdin.svg";
 import img2 from "../../images/facebook.svg";
-import img3 from "../../images/insta.svg";
-import img4 from "../../images/twitter.svg";
 import img5 from "../../images/youtube.svg";
 import { graphql, useStaticQuery, Link } from "gatsby";
 
@@ -30,11 +28,9 @@ export const Footer = ({ footer }) => {
                     </div>
                     <div id="footer_container_bottom">
                         <div id="footer_container_bottom_icons">
-                            <img src={img1} alt="img" />
-                            <img src={img2} alt="img" />
-                            <img src={img3} alt="img" />
-                            <img src={img4} alt="img" />
-                            <img src={img5} alt="img" />
+                            <a href="https://in.linkedin.com/company/archimedis-healthcare-private-limited" target="_blank" rel="noopener noreferrer"><img src={img1} alt="img" /></a>
+                            <a href="https://www.facebook.com/Archimedis-Healthcare-Private-Limited-701554783269319" target="_blank" rel="noopener noreferrer"><img src={img2} alt="img" /></a>
+                            <a href="https://www.youtube.com/channel/UCFPUJdjRjqnEPCfuJhZsErw" target="_blank" rel="noopener noreferrer"><img src={img5} alt="img" /></a>
                         </div>
                         <p>Copyright © 2021 Archimedis. All rights reserved.</p>
                     </div>
