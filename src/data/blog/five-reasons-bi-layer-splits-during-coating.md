@@ -21,7 +21,7 @@ seo:
 ---
 <!--StartFragment-->
 
-Bi-layer tablets are not only difficult to compress. They also carry an inherent risk of splitting during coating. Our experience uncovers five factors that can help reduce the risk.
+Bi-layer tablets are not only difficult to compress. They also carry an inherent risk of splitting during coating. Our experience uncovers five factors that can help reduce the risk
 
 <!--EndFragment--><!--StartFragment-->
 
