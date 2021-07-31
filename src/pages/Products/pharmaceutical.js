@@ -20,7 +20,11 @@ export const Pharmaceutical = ({ pharmaceutical }) => {
                   </div>
                 </div>
                 <div id="pharmaceutical_container_cards_block2">
+                {(pharmaceuticalcardss.Image.publicURL) ? 
                   <img src={pharmaceuticalcardss.Image.publicURL} alt="img" />
+                  :
+                  <img src={pharmaceuticalcardss.Image} alt="img" />
+                }
                 </div>
               </div>
             )}

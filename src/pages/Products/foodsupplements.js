@@ -21,7 +21,11 @@ export const Foodsupplements = ({ foodsupliments }) => {
                     </div>
                   </div>
                   <div id="foodsupplements_container_cards_block2">
+                  {(foodsuplimentscardss.Image.publicURL) ? 
                     <img src={foodsuplimentscardss.Image.publicURL} alt="img" />
+                    :
+                    <img src={foodsuplimentscardss.Image} alt="img" />
+                  }
                   </div>
                 </div>
               </>

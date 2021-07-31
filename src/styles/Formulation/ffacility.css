@@ -139,7 +139,7 @@
     color: #200e32;
     margin-top: 0;
   }
-  #ffacility p:nth-child(2) {
+  #ffacility h2 {
     font-size: 3.4vw;
     line-height: 5.5vw;
     width: 84vw;

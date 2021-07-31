@@ -17,7 +17,11 @@ export const Casestudy = ({ Casestudy }) => {
               <>
                 <div className="casestudy_card" id={Casestudycardss.Casestudyblockid} key={Casestudycardss.id}>
                   <div id="casestudy_card_b1">
+                  {(Casestudycardss.image.publicURL) ? 
                     <img src={Casestudycardss.image.publicURL} alt="img" />
+                    :
+                    <img src={Casestudycardss.image} alt="img" />
+                  }
                   </div>
                   <div id="casestudy_card_b2">
                     <p>{Casestudycardss.Casestudyname}</p>

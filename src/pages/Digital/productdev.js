@@ -17,7 +17,11 @@ export const Productdev = ({ prodev }) => {
                   <>
                     <div className="productdev_container_card1" id={prodevminicontainers.pdcontid} key={prodevminicontainers.id}>
                       <div id="productdev_container_card1_block1">
-                        <img src={prodevminicontainers.Image.publicURL} alt="img" />
+                        {(prodevminicontainers.Image.publicURL) ?
+                          <img src={prodevminicontainers.Image.publicURL} alt="img" />
+                          :
+                          <img src={prodevminicontainers.Image} alt="img" />
+                        }
                         <p id="p4_c_dis">{prodevminicontainers.title}</p>
                       </div>
                       <div id="productdev_container_card1_block2">

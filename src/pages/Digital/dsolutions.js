@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../styles/Digital/dsolutions.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const Dsolutions = ({dsolution}) => {
+export const Dsolutions = ({ dsolution }) => {
     console.log(dsolution)
 
     return (
@@ -23,7 +23,11 @@ export const Dsolutions = ({dsolution}) => {
                                             </div>
                                         </div>
                                         <div id="dsolutions_container_cards_block2">
-                                            <img src={dsolutioncardss.Image.publicURL} alt="img" />
+                                            {(dsolutioncardss.Image.publicURL) ?
+                                                <img src={dsolutioncardss.Image.publicURL} alt="img" />
+                                                :
+                                                <img src={dsolutioncardss.Image} alt="img" />
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -35,7 +39,11 @@ export const Dsolutions = ({dsolution}) => {
                                             {dsolutioncardss.dsolutionminicards.map(dsolutionminicardss =>
                                                 <>
                                                     <div id="dsolutionsassurance_container_card1" key={dsolutionminicardss.id}>
-                                                        <img src={dsolutionminicardss.dsolutionminicardsimg.publicURL} alt="img" />
+                                                        {(dsolutionminicardss.dsolutionminicardsimg.publicURL) ?
+                                                            <img src={dsolutionminicardss.dsolutionminicardsimg.publicURL} alt="img" />
+                                                            :
+                                                            <img src={dsolutionminicardss.dsolutionminicardsimg} alt="img" />
+                                                        }
                                                         <p id="p4_c_dis">{dsolutionminicardss.dsolutionminicardstitle}<span>{dsolutionminicardss.dsolutionminicardstitle2}</span></p>
                                                     </div>
                                                 </>
@@ -49,7 +57,11 @@ export const Dsolutions = ({dsolution}) => {
                                                 {dsolutioncardss.dsolutionminicards2.map(dsolutionminicards2s =>
                                                     <>
                                                         <div id="dash_container_card1" key={dsolutionminicards2s.id}>
-                                                            <img src={dsolutionminicards2s.Image.publicURL} alt="img" />
+                                                            {(dsolutionminicards2s.Image.publicURL) ?
+                                                                <img src={dsolutionminicards2s.Image.publicURL} alt="img" />
+                                                                :
+                                                                <img src={dsolutionminicards2s.Image} alt="img" />
+                                                            }
                                                             <p id="p4_c_dis">{dsolutionminicards2s.minicardd}<span>{dsolutionminicards2s.minicardd2}</span></p>
                                                         </div>
                                                     </>
@@ -112,19 +124,19 @@ const DsolutionsPrev = props => {
           }
         }
      `)
-     useEffect(() => {
+    useEffect(() => {
         if (data.file) {
             setDsolutionsPre(data.file.childMarkdownRemark.frontmatter);
         }
-      }, [data.file]);
+    }, [data.file]);
     return (
         <>
-        {
-            data.file &&
-            <Dsolutions
-                dsolution={DsolutionsPre.dsolution}
-            />
-        }
+            {
+                data.file &&
+                <Dsolutions
+                    dsolution={DsolutionsPre.dsolution}
+                />
+            }
         </>
     )
 }

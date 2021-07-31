@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  repo: sgost/Archimedis
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
 public_folder: "/"
@@ -216,7 +217,17 @@ collections:
         public_folder: "./assets"
         fields:
           - { label: Title, name: teamtitle, widget: string }
-          - { label: Team Cards, name: teams, widget: list, fields: [ { label: Name, name: teaamname, widget: string }, { label: Designation, name: teamdesignation, widget: string }, { label: Profile Image, name: teamimg, widget: image } ] }
+          - {
+              label: Team Cards,
+              name: teams,
+              widget: list,
+              fields:
+                [
+                  { label: Name, name: teaamname, widget: string },
+                  { label: Designation, name: teamdesignation, widget: string },
+                  { label: Profile Image, name: teamimg, widget: image },
+                ],
+            }
       - file: src/data/bod.md
         label: Leadership Team
         name: bod
@@ -267,7 +278,7 @@ collections:
           - { label: Title, name: wedotitle, widget: string, required: false }
           - {
               label: Wedo container,
-              name: patnercarousal,
+              name: wedo,
               widget: list,
               fields:
                 [
@@ -538,7 +549,7 @@ collections:
         create: true
         public_folder: "../assets"
         fields:
-          - { label: Title, name: description, widget: string, required: false }
+          - { label: Title, name: description, widget: string }
       - file: src/data/Manfacturing/capabilities.md
         label: Capabilities
         name: capable
@@ -992,7 +1003,7 @@ collections:
         create: true
         public_folder: "../assets"
         fields:
-          - { label: Title, name: description, widget: string, required: false }
+          - { label: Title, name: description, widget: string}
       - file: src/data/Products/pharmaceutical.md
         label: Products Pharmaceutical
         name: pharmaceutical

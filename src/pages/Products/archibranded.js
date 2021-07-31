@@ -23,7 +23,11 @@ export const Archibranded = ({ archibrand }) => {
                                         </div>
                                     </div>
                                     <div id="archibranded_container_cards_block2">
+                                    {(archibrandcardss.Image.publicURL) ? 
                                         <img src={archibrandcardss.Image.publicURL} alt="img" />
+                                        :
+                                        <img src={archibrandcardss.Image} alt="img" />
+                                    }
                                     </div>
                                 </div>
                             </>

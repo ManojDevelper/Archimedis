@@ -9,7 +9,7 @@ const homeWedoPreview = ({ entry, getAsset }) => {
         if (data.wedo) {
             data.wedo.map(wedos => {
                 var getImage = getAsset(wedos.wedoimg);
-                wedos.image = getImage.toString();
+                wedos.wedoimg = getImage.toString();
                 return Wedo;
             });
         }

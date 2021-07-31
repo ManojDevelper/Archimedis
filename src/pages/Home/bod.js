@@ -19,7 +19,10 @@ export const Team2 = ({ teams2 }) => {
                             {teamssr && teamssr.team.map(teams =>
                                 <div id="team_container_cards" key={teams.id}>
                                     <div id="team_container_cards_block1">
-                                        <img src={teams.teamimg.publicURL} alt="img" />
+                                        {(teams.teamimg.publicURL) ?
+                                            (<img src={teams.teamimg.publicURL} alt="img" />)
+                                            :
+                                            (<img src={teams.teamimg} alt="img" />)}
                                         <p>{teams.teaamname}</p>
                                         <p id="designation">{teams.teamdesignation}</p>
                                     </div>

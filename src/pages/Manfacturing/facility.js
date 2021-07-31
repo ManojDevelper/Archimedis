@@ -19,17 +19,21 @@ export const Facility = ({ Facility }) => {
                       <h1 id="c_c_title">{Facilitycardss.title}</h1>
                       <p id="c_c_matter">{Facilitycardss.description}</p>
                       <div id="facility_container_cards_block">
-                      {(Facilitycardss.description1 === "") ? (<></>) : (<li>{Facilitycardss.description1} <span style={{fontWeight: `lighter`}}>{Facilitycardss.descriptionSpan1}</span></li>)}
-                        {(Facilitycardss.description2 === "") ? (<></>) : (<li>{Facilitycardss.description2} <span style={{fontWeight: `lighter`}}>{Facilitycardss.descriptionSpan2}</span></li>)}
-                        {(Facilitycardss.description3 === "") ? (<></>) : (<li>{Facilitycardss.description3} <span style={{fontWeight: `lighter`}}>{Facilitycardss.descriptionSpan3}</span></li>)}
-                        {(Facilitycardss.description4 === "") ? (<></>) : (<li>{Facilitycardss.description4} <span style={{fontWeight: `lighter`}}>{Facilitycardss.descriptionSpan4}</span></li>)}
-                        {(Facilitycardss.description5 === "") ? (<></>) : (<li>{Facilitycardss.description5} <span style={{fontWeight: `lighter`}}>{Facilitycardss.descriptionSpan5}</span></li>)}
-                        
+                        {(Facilitycardss.description1 === "") ? (<></>) : (<li>{Facilitycardss.description1} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan1}</span></li>)}
+                        {(Facilitycardss.description2 === "") ? (<></>) : (<li>{Facilitycardss.description2} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan2}</span></li>)}
+                        {(Facilitycardss.description3 === "") ? (<></>) : (<li>{Facilitycardss.description3} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan3}</span></li>)}
+                        {(Facilitycardss.description4 === "") ? (<></>) : (<li>{Facilitycardss.description4} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan4}</span></li>)}
+                        {(Facilitycardss.description5 === "") ? (<></>) : (<li>{Facilitycardss.description5} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan5}</span></li>)}
+
                       </div>
                     </div>
                   </div>
                   <div id="facility_container_cards_block2">
-                    <img src={Facilitycardss.fimage.publicURL} alt="img" />
+                    {(Facilitycardss.fimage.publicURL) ?
+                      <img src={Facilitycardss.fimage.publicURL} alt="img" />
+                      :
+                      <img src={Facilitycardss.fimage} alt="img" />
+                    }
                   </div>
                 </div>
               </>

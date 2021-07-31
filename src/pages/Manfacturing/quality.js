@@ -12,7 +12,11 @@ export const Quality = ({ Quality }) => {
           <h2 id="q_desc">{qualitys.description}</h2>
           <div id="quality_container">
             <div id="quality_container_b1">
-              <img src={qualitys.image.publicURL} alt="img" />
+              {(qualitys.image.publicURL) ?
+                <img src={qualitys.image.publicURL} alt="img" />
+                :
+                <img src={qualitys.image} alt="img" />
+              }
             </div>
             <div id="quality_container_b2">
               <p>{qualitys.description1}</p>

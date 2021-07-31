@@ -27,7 +27,11 @@ export const Industry = ({ industry }) => {
                     </div>
                   </div>
                   <div id="industry_container_cards_block2">
-                    <img src={industrycardss.Image.publicURL} alt="img" />
+                    {(industrycardss.Image.publicURL) ?
+                      <img src={industrycardss.Image.publicURL} alt="img" />
+                      :
+                      <img src={industrycardss.Image} alt="img" />
+                    }
                   </div>
                 </div>
               </>

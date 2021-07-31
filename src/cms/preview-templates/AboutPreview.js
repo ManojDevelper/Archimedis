@@ -5,7 +5,7 @@ import { About } from "../../pages/Home/about";
 const AboutPreview = ({ entry, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
-    var image = entry.getIn(['data', 'aboutImgs']);
+    var image = entry.getIn(['data', 'aboutImg']);
     var getImage = getAsset(image);
     if (getImage) {
         var AboutImage = getImage.toString();

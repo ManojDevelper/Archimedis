@@ -12,9 +12,9 @@ export const Standout = ({ title, description, Standoutcontainer }) => {
         <div id="standout_container">
           {Standoutcontainer && Standoutcontainer.map(Standoutcontainers =>
             <>
-              {Standoutcontainers.standimage !== null &&
+              {Standoutcontainers.standimage &&
                 <div id="standout_card1" key={Standoutcontainers.id}>
-                  {(Standoutcontainers.standimage !== null)
+                  {(Standoutcontainers.standimage.publicURL)
                     ? (<img src={Standoutcontainers.standimage.publicURL} alt="img" />) :
                     (<img src={Standoutcontainers.standimage} alt="img" />)}
                   <p id="p4_c_dis">{Standoutcontainers.standname}</p>

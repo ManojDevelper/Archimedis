@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../../styles/Formulation/fservice.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const Fservice = ({fservices}) => {
-  
+export const Fservice = ({ fservices }) => {
+
   return (
     <>
       {fservices && fservices.map(fservicess =>
@@ -19,16 +19,20 @@ export const Fservice = ({fservices}) => {
                       <h1 id="c_c_title">{fservicecardss.fservicecardtitle}</h1>
                       <p id="c_c_matter">{fservicecardss.fservicecarddesc}</p>
                       <p id="c_c_matter">{fservicecardss.fc}
-                      {fservicecardss.fli.map(flis =>
-                      <>
-                      <li key={flis.id}>{flis.list}</li>
-                      </>
-                      )}</p>
-                      
+                        {fservicecardss.fli.map(flis =>
+                          <>
+                            <li key={flis.id}>{flis.list}</li>
+                          </>
+                        )}</p>
+
                     </div>
                   </div>
                   <div id="fservice_container_cards_block2">
-                    <img src={fservicecardss.fservicepic.publicURL} alt="img" />
+                    {(fservicecardss.fservicepic.publicURL) ?
+                      <img src={fservicecardss.fservicepic.publicURL} alt="img" />
+                      :
+                      <img src={fservicecardss.fservicepic} alt="img" />
+                    }
                   </div>
                 </div>
 
@@ -40,7 +44,11 @@ export const Fservice = ({fservices}) => {
                     {fservicecardss.fserviceminicards.map(fserviceminicardsss =>
                       <>
                         <div id="fserviceassurance_container_card1">
-                          <img src={fserviceminicardsss.fserviceminicardsimg.publicURL} alt="img" />
+                          {(fserviceminicardsss.fserviceminicardsimg.publicURL) ?
+                            <img src={fserviceminicardsss.fserviceminicardsimg.publicURL} alt="img" />
+                            :
+                            <img src={fserviceminicardsss.fserviceminicardsimg} alt="img" />
+                          }
                           <p id="p4_c_dis">{fserviceminicardsss.fserviceminicardstitle}</p>
                         </div>
                       </>
@@ -101,14 +109,14 @@ const FServiceprev = props => {
       setFServicepre(data.file.childMarkdownRemark.frontmatter);
     }
   }, [data.file]);
-  return(
+  return (
     <>
-    {
-      data.file &&
-      <Fservice
-        fservices={FServicepre.fservices}
-      />
-    }
+      {
+        data.file &&
+        <Fservice
+          fservices={FServicepre.fservices}
+        />
+      }
     </>
   )
 }

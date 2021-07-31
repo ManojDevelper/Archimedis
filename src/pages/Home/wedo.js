@@ -19,7 +19,9 @@ export const Wedo = ({ wedotitle, wedo, html }) => {
                 </div>
               </div>
               <div id="wedo_container_cards_block2">
+              {(wedos.wedoimg.publicURL) ? (
                 <img src={wedos.wedoimg.publicURL} alt="img" />
+              ) : (<img src={wedos.wedoimg} alt="img" />)}
               </div>
             </div>
           )}

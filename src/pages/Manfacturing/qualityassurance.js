@@ -17,7 +17,11 @@ export const Qualityassurance = ({ qualityassurance }) => {
                   <>
                     <div id="Qualityassurance_container_card1" key={qualityassuranceminicontainers.id}>
                       <div id="Qualityassurance_container_card1_block1">
-                        <img src={qualityassuranceminicontainers.image.publicURL} alt="img" />
+                        {(qualityassuranceminicontainers.image.publicURL) ?
+                          <img src={qualityassuranceminicontainers.image.publicURL} alt="img" />
+                          :
+                          <img src={qualityassuranceminicontainers.image} alt="img" />
+                        }
                         <p id="p4_c_dis">{qualityassuranceminicontainers.title}</p>
                       </div>
                       <div id="Qualityassurance_container_card1_block2">

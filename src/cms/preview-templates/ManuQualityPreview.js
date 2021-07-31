@@ -8,8 +8,8 @@ const ManuQualityPreview = ({ entry, getAsset }) => {
     if (data.hasOwnProperty('Quality')) {
         if (data.Quality) {
             data.Quality.map(Qualitys => {
-                var getImage = getAsset(Qualitys.Image);
-                Qualitys.Image = getImage.toString();
+                var getImage = getAsset(Qualitys.image);
+                Qualitys.image = getImage.toString();
                 return Qualitys;
             })
         }

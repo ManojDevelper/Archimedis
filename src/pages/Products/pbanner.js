@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Products/pbanner.css";
 import Nav from "../nav";
 import Top2 from "../../components/Taketop";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Pbanner = () => {
-    const data = useStaticQuery(graphql`
+export const Pbanner = ({description}) => {
+  return (
+    <>            <Nav />
+      <div id="pbanner">
+        <div id="pbanner_container">
+          <h1>{description}</h1>
+        </div>
+      </div>
+      <Top2 link="/products/" />
+    </>
+  );
+};
+
+const PBannerPre = () => {
+  const [PbannerPr, setPbannerPr] = useState({});
+  const data = useStaticQuery(graphql`
     query{
-        Pbanner: file(relativePath: {eq: "Products/pbanner.md"}) {
+        file(relativePath: {eq: "Products/pbanner.md"}) {
             childMarkdownRemark {
               frontmatter {
                 description
@@ -16,15 +30,20 @@ const Pbanner = () => {
           }
         }
      `)
-    return (
-        <>            <Nav />
-            <div id="pbanner">
-                <div id="pbanner_container">
-                    <h1>{data.Pbanner.childMarkdownRemark.frontmatter.description}</h1>
-                </div>
-            </div>
-            <Top2 link="/products/" />
-        </>
-    );
-};
-export default Pbanner;
+  useEffect(() => {
+    if (data.file) {
+      setPbannerPr(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
+  return (
+    <>
+      {
+        data.file &&
+        <Pbanner
+          description={PbannerPr.description}
+        />
+      }
+    </>
+  )
+}
+export default PBannerPre;
