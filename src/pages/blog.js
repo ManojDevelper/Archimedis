@@ -4,6 +4,7 @@ import "../styles/blog.css";
 import Contact from "./Home/contact";
 import Footer from "./Home/footer";
 import SEO from "../components/seo";
+import Nav from "./nav";
 
 const BlogPage = ({ data }) => {
 
@@ -13,6 +14,7 @@ const BlogPage = ({ data }) => {
 
   return (
     <Fragment>
+    <Nav/>
     <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords}/>
       <div className="blogListContainer">
         <div id="blog">

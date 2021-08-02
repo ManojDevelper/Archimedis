@@ -25,7 +25,8 @@ export const Casestudy = ({ Casestudy }) => {
                   </div>
                   <div id="casestudy_card_b2">
                     <p>{Casestudycardss.Casestudyname}</p>
-                    <Link to="../Formulation/Casecompo/"><button id="csbtn">View Case Study<img src={arrow} alt="img" id="blod_btn1" /><img src={arrow2} alt="img" id="blod_btn2" /></button></Link>
+                    <p>{Casestudycardss.Casestudydesc}</p>
+                    <Link to={Casestudycardss.mainlink}><button id="csbtn">View Case Study<img src={arrow} alt="img" id="blod_btn1" /><img src={arrow2} alt="img" id="blod_btn2" /></button></Link>
                   </div>
                 </div>
               </>
@@ -51,6 +52,7 @@ const CasestudyPrev = () => {
                     id
                     Casestudyname
                     Casestudydesc
+                    mainlink
                     Casestudyblockid
                     image {
                       publicURL
