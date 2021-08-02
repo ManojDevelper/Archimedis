@@ -1,134 +1,154 @@
 #blog #casestudy {
-    width: 100%;
-    background: none;
+  width: 100%;
+  background: none;
+}
+#blog #casestudy .casestudy_card {
+  margin-top: 0;
+  padding-top: 0;
+}
+#blog #blogtitle #h2 {
+  font-family: Manrope;
+  line-height: 47px;
+  width: 302px;
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  opacity: 0.7;
+  border-bottom: 6px solid #cccccc;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+#blog #blogtitle #h2:nth-child(2) {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  color: #200e32;
+  opacity: 1;
+  border-bottom: 8px solid #22bdef;
+}
+.casestudy_card #casestudy_card_b1 img {
+  width: 20.0719424460432vw;
+  height: 16.4748201438849vw;
+  border-radius: 0.575539568345324vw;
+  margin: 0;
+}
+#casestudy_card_b2 {
+  margin: auto 0 auto 3.88489208633094vw;
+  height: fit-content;
+}
+#casestudy #casestudy_card_b2 p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.43884892086331vw;
+  line-height: 2.30215827338129vw;
+  color: #200e32;
+  width: 47.6978417266187vw;
+}
+#casestudy #casestudy_card_b2 p:nth-child(2) {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 1.58273381294964vw;
+  color: #444444;
+  opacity: 0.8;
+  margin-top: 0.863309352517986vw;
+}
+#casestudy #casestudy_card_b2 #csbtn {
+  width: 14.9640287769784vw;
+  height: 3.45323741007194vw;
+  background: #2d307b;
+  border-radius: 0.575539568345324vw;
+  outline: none;
+  border: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.15107913669065vw;
+  line-height: 2.15827338129496vw;
+  color: #ffffff;
+  position: relative;
+  padding-right: 2vw;
+  margin-top: 2.23021582733813vw;
+  transition: 0.5s ease-in-out;
+}
+#blod_btn2 {
+  display: none;
+}
+#casestudy #casestudy_card_b2 #csbtn:hover {
+  width: 15.5vw;
+}
+#casestudy #casestudy_card_b2 #csbtn img {
+  width: 1.72661870503597vw;
+  height: 1.72661870503597vw;
+  position: absolute;
+  right: 1.3vw;
+  top: 0.9vw;
+}
+@media (max-width: 750px) {
+  #casestudy h1 {
+    font-size: 6.04651162790698vw;
+    line-height: normal;
   }
-  #blog #casestudy .casestudy_card{
-    margin-top: 0;
-    padding-top: 0;
+  #casestudy_container {
+    margin-top: 12.4302325581395vw;
   }
   .casestudy_card #casestudy_card_b1 img {
-    width: 20.0719424460432vw;
-    height: 16.4748201438849vw;
-    border-radius: 0.575539568345324vw;
+    width: 27.906976744186vw;
+    height: 22.7906976744186vw;
+    border-radius: 2vw;
     margin: 0;
   }
+  .casestudy_card {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 12vw;
+    padding: 0;
+  }
   #casestudy_card_b2 {
-    margin: auto 0 auto 3.88489208633094vw;
-    height: fit-content;
+    margin: 0;
   }
   #casestudy #casestudy_card_b2 p {
+    width: 83.2558139534884vw;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.25581395348837vw;
+    line-height: 5.58139534883721vw;
+    color: #200e32;
+    margin-top: 3.88372093023256vw;
+  }
+  #casestudy #casestudy_card_b2 p:nth-child(2) {
+    display: none;
+  }
+  #casestudy #casestudy_card_b2 #csbtn {
+    width: 33.2558139534884vw;
+    height: 7.44186046511628vw;
+    background: transparent;
+    border-radius: none;
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.43884892086331vw;
-    line-height: 2.30215827338129vw;
-    color: #200e32;
-    width: 47.6978417266187vw;
-  }
-  #casestudy #casestudy_card_b2 p:nth-child(2) {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.15107913669065vw;
-    line-height: 1.58273381294964vw;
-    color: #444444;
-    opacity: 0.8;
-    margin-top: 0.863309352517986vw;
-  }
-  #casestudy #casestudy_card_b2 #csbtn {
-    width: 14.9640287769784vw;
-    height: 3.45323741007194vw;
-    background: #2d307b;
-    border-radius: 0.575539568345324vw;
-    outline: none;
-    border: none;
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.15107913669065vw;
-    line-height: 2.15827338129496vw;
-    color: #ffffff;
-    position: relative;
-    padding-right: 2vw;
-    margin-top: 2.23021582733813vw;
-    transition: 0.5s ease-in-out;
+    font-size: 3.25581395348837vw;
+    line-height: 6.97674418604651vw;
+    color: #437fec;
+    padding: 0 5vw 0 0;
   }
   #blod_btn2 {
+    display: flex;
+  }
+  #blod_btn1 {
     display: none;
   }
   #casestudy #casestudy_card_b2 #csbtn:hover {
-    width: 15.5vw;
+    width: 34vw;
   }
   #casestudy #casestudy_card_b2 #csbtn img {
-    width: 1.72661870503597vw;
-    height: 1.72661870503597vw;
-    position: absolute;
-    right: 1.3vw;
-    top: 0.9vw;
+    width: 4.65116279069767vw;
+    height: 4.65116279069767vw;
+    right: -1vw;
+    top: 1.5vw;
   }
-  @media (max-width: 750px) {
-    #casestudy h1 {
-      font-size: 6.04651162790698vw;
-      line-height: normal;
-    }
-    #casestudy_container {
-      margin-top: 12.4302325581395vw;
-    }
-    .casestudy_card #casestudy_card_b1 img {
-      width: 27.906976744186vw;
-      height: 22.7906976744186vw;
-      border-radius: 2vw;
-      margin: 0;
-    }
-    .casestudy_card {
-      flex-direction: column;
-      margin: 0;
-      margin-top: 12vw;
-      padding: 0;
-    }
-    #casestudy_card_b2 {
-      margin: 0;
-    }
-    #casestudy #casestudy_card_b2 p {
-      width: 83.2558139534884vw;
-      font-family: Manrope;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 3.25581395348837vw;
-      line-height: 5.58139534883721vw;
-      color: #200e32;
-      margin-top: 3.88372093023256vw;
-    }
-    #casestudy #casestudy_card_b2 p:nth-child(2) {
-      display: none;
-    }
-    #casestudy #casestudy_card_b2 #csbtn {
-      width: 33.2558139534884vw;
-      height: 7.44186046511628vw;
-      background: transparent;
-      border-radius: none;
-      font-family: Manrope;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 3.25581395348837vw;
-      line-height: 6.97674418604651vw;
-      color: #437fec;
-      padding: 0 5vw 0 0;
-    }
-    #blod_btn2 {
-      display: flex;
-    }
-    #blod_btn1 {
-      display: none;
-    }
-    #casestudy #casestudy_card_b2 #csbtn:hover {
-      width: 34vw;
-    }
-    #casestudy #casestudy_card_b2 #csbtn img {
-      width: 4.65116279069767vw;
-      height: 4.65116279069767vw;
-      right: -1vw;
-      top: 1.5vw;
-    }
-  }
-  
+}

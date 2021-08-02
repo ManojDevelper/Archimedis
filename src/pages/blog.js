@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
-import "../styles/Home/Blogs.css";
+import "../styles/blog.css";
 import Contact from "./Home/contact";
 import Footer from "./Home/footer";
 import SEO from "../components/seo";
@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
       <div className="blogListContainer">
         <div id="blog">
           <div id="blogtitle">
-            <Link to="/blog" id="h1" activeStyle={{ color: `skyBlue` }}>Blogs</Link><h1 id="h1">/</h1><Link to="/casestudy" id="h1" activeStyle={{ color: `skyBlue` }}>CaseStudy</Link>
+            <Link to="/blog" id="h1">Blogs</Link><Link to="/casestudy" id="h1" activeStyle={{ color: `skyBlue` }}>Case Studies</Link>
           </div>
           {
             blogList && blogList.map(blogItem => {

@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
-  repo: ahpl-webmaster/ui-archimedis.global
+  repo: sgost/Archimedis
+  # repo: ahpl-webmaster/ui-archimedis.global
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
 public_folder: "/"
@@ -1120,7 +1121,7 @@ collections:
       - label: Author Image
         name: author_image
         widget: image
-      - { name: author, label: Author, default: "ContentConcepts" }
+      - { name: author, label: Author }
       - { name: bio, label: Bio }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: date, default: "" }
@@ -1149,7 +1150,7 @@ collections:
       - label: Author Image
         name: author_image
         widget: image
-      - { name: author, label: Author, default: "ContentConcepts" }
+      - { name: author, label: Author }
       - { name: bio, label: Bio }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: date, default: "" }

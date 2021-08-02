@@ -21,7 +21,7 @@ const CasePage = ({ data }) => {
       <div className="blogListContainer">
         <div id="blog">
           <div id="blogtitle">
-            <Link to="/blog" id="h1" activeStyle={{ color: `skyBlue` }}>Blogs</Link><h1 id="h1">/</h1><Link to="/casestudy" id="h1" activeStyle={{ color: `skyBlue` }}>CaseStudy</Link>
+            <Link to="/blog" id="h2">Blogs</Link><Link to="/casestudy" id="h2">Case Studies</Link>
           </div>
           {
             blogList && blogList.map(blogItem => {

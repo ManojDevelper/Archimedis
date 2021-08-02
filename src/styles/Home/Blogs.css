@@ -7,8 +7,8 @@
   padding: 8vw 0 8vw 0;
   background: #f5f8ff;
 }
-#blog #blogtitle{
-  display:flex;
+#blog #blogtitle {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -17,15 +17,21 @@
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
-  font-size: 2.87769784172662vw;
-  line-height: 3.9568345323741vw;
-  text-align: center;
+  font-size: 28px;
+  line-height: 47px;
   color: #200e32;
+  border-bottom: 8px solid #22BDEF;
+  width: 302px;
+  text-align: center;
   text-decoration: none;
 }
 #blog #blogtitle #h1:nth-child(2) {
-  font-weight: lighter;
-  font-size: 5vw;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #200e32;
+  opacity: 0.7;
+  border-bottom: 6px solid #CCCCCC;
 }
 #blog h1 {
   font-family: Manrope;
@@ -46,7 +52,7 @@
   margin-top: 5vw;
   padding: 1.3vw 1.3vw 0.7vw 1.3vw;
 }
-#blog_card:hover{
+#blog_card:hover {
   box-shadow: 0px 0px 2.15827338129496vw rgb(23 23 99 / 9%);
   border-radius: 1.2vw;
   padding: 1.3vw 1.3vw 0.7vw 1.3vw;
@@ -107,7 +113,7 @@
   }
   #blog_container {
     margin-top: 20vw;
-}
+  }
   #blog h1 {
     font-family: Manrope;
     font-style: normal;
