@@ -1,19 +1,19 @@
-.blogListContainer{
+.blogListContainer {
   padding-top: 12vw;
 }
-.blogListContainer #blog{
+.blogListContainer #blog {
   padding: 0;
 }
 #blog #casestudy {
   width: 100%;
   background: white;
-  padding:5vw 0;
+  padding: 5vw 0;
 }
 #blog #casestudy .casestudy_card {
   margin-top: 0;
   padding-top: 0;
 }
-#blog #blogtitle{
+#blog #blogtitle {
   background: white;
   padding-bottom: 8vw;
 }
@@ -99,7 +99,7 @@
   top: 0.9vw;
 }
 @media (max-width: 750px) {
-  #blog #blogtitle{
+  #blog #blogtitle {
     padding-top: 10vw;
   }
   #blog #blogtitle #h2 {
@@ -129,6 +129,10 @@
   }
   #casestudy_container {
     margin-top: 12.4302325581395vw;
+    padding: 0 5vw;
+  }
+  #casestudy_container:first-child {
+    margin-top: 0;
   }
   .casestudy_card #casestudy_card_b1 img {
     width: 27.906976744186vw;

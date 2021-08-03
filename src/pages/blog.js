@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => {
       <div className="blogListContainer">
         <div id="blog">
           <div id="blogtitle">
-            <Link to="/blog" id="h1">Blogs</Link><Link to="/casestudy" id="h1" activeStyle={{ color: `skyBlue` }}>Case Studies</Link>
+            <Link to="/blog" id="h1">Blogs</Link><Link to="/casestudy" id="h1" >Case Studies</Link>
           </div>
           {
             blogList && blogList.map(blogItem => {
