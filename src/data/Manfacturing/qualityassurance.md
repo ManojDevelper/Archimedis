@@ -66,7 +66,7 @@ qualityassurance:
     },
     {
       id: 2,
-      title: "Quality Assurance",
+      title: "Quality Control",
       description: "From raw material induction to in-process testing to finished product testing, Quality Control department plays an important role at every stage of the product life cycle. The identity, purity, stability and potency of the products is established and ensured through rigorous adherence to predetermined specifications of globally approved Pharmacopeia (USP, BP and IP).",
       qualityassuranceminicontainer:
         [
