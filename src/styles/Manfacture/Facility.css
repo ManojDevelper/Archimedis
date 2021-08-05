@@ -111,6 +111,13 @@
 .facility_container_cards:nth-child(4) #facility_container_cards_block2 {
   border: 0.215827338129496vw solid #8c90ff;
 }
+.facility_container_cards:nth-child(5) #facility_container_cards_block {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+#facility_container_cards_block {
+  margin-top: 1vw;
+}
 #facility_container_cards_block li {
   font-family: Manrope;
   font-style: normal;
@@ -128,8 +135,47 @@
 #facility_container_cards_block
   #facility_container_cards_block_card_container_blocks
   img {
-  width: 112px;
-  height: 112px;
+  width: 8.05755395683453vw;
+  height: 8.05755395683453vw;
+}
+#fnblock {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5vw;
+}
+#fnblock #fnblock1 {
+  width: fit-content;
+  height: fit-content;
+  background: #c3f0ff;
+  border-radius: 0.575539568345324vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.935251798561151vw 1.07913669064748vw;
+}
+#fnblock #fnblock1:nth-child(2) {
+  background: #ffebcd;
+  margin-left: 2.44604316546763vw;
+}
+#fnblock #fnblock1 p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.15107913669065vw;
+  line-height: 2.15827338129496vw;
+  color: #18191f;
+}
+#fnblock #fnblock1 p1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.43884892086331vw;
+  line-height: 2.15827338129496vw;
+  color: #1a80e0;
+}
+#fnblock #fnblock1:nth-child(2) p1 {
+  color: #e85435;
 }
 @media (max-width: 750px) {
   #facility {
@@ -253,5 +299,18 @@
   }
   .facility_container_cards:nth-child(4) #facility_container_cards_matter {
     margin: 10vw 0 auto 0;
+  }
+  #fnblock #fnblock1 {
+    width: 50%;
+    height: 15vw;
+    border-radius: 2vw;
+  }
+  #fnblock #fnblock1 p {
+    font-size: 2.7vw;
+    line-height: 7vw;
+  }
+  #fnblock #fnblock1 p1 {
+    font-size: 3vw;
+    line-height: inherit;
   }
 }

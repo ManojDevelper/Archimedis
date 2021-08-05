@@ -24,7 +24,17 @@ export const Facility = ({ Facility }) => {
                         {(Facilitycardss.description3 === "") ? (<></>) : (<li>{Facilitycardss.description3} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan3}</span></li>)}
                         {(Facilitycardss.description4 === "") ? (<></>) : (<li>{Facilitycardss.description4} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan4}</span></li>)}
                         {(Facilitycardss.description5 === "") ? (<></>) : (<li>{Facilitycardss.description5} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan5}</span></li>)}
-
+                        {(Facilitycardss.description6 === "") ? (<></>) : (<li>{Facilitycardss.description6} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan6}</span></li>)}
+                        {(Facilitycardss.description7 === "") ? (<></>) : (<li>{Facilitycardss.description7} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan7}</span></li>)}
+                        {(Facilitycardss.description8 === "") ? (<></>) : (<li>{Facilitycardss.description8} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan8}</span></li>)}
+                      </div>
+                      <div id="fnblock">
+                        {Facilitycardss && Facilitycardss.fnblock.map(fnblocks =>
+                          <div id="fnblock1" key={fnblocks.id}>
+                            <p>{fnblocks.fnblocknme}</p>
+                            <p1>{fnblocks.fnblockmtr}</p1>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -66,11 +76,22 @@ const FacilityPrev = props => {
                     description3
                     description4
                     description5
+                    description6
+                    description7
+                    description8
                     descriptionSpan1
                     descriptionSpan2
                     descriptionSpan3
                     descriptionSpan4
                     descriptionSpan5
+                    descriptionSpan6
+                    descriptionSpan7
+                    descriptionSpan8
+                    fnblock{
+                      id
+                      fnblocknme
+                      fnblockmtr
+                    }
                     fimage {
                       publicURL
                     }

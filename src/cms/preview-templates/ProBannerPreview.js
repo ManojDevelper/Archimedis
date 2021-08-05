@@ -9,7 +9,7 @@ const ProBannerPreview = ({ entry }) => {
     return (
         <div>
             <Pbanner
-                 description={data.description}
+                description={data.description}
             />
         </div>
     );
