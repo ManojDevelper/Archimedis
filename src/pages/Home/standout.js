@@ -41,11 +41,6 @@ const StandoutPrev = props => {
                   id
                   standname
                   standimage {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
                     publicURL
                   }
                 }
