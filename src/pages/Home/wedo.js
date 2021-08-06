@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/Home/Wedo.css";
 import arrow from "../../images/arow.svg";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 
 export const Wedo = ({ wedotitle, wedo, html }) => {
   return (
@@ -15,13 +15,13 @@ export const Wedo = ({ wedotitle, wedo, html }) => {
                 <div id="wedo_container_cards_matter">
                   <h1>{wedos.wedoname}</h1>
                   <p>{wedos.wedodesc}</p>
-                  <button>View More<img src={arrow} alt="img" /></button>
+                  <Link to={wedos.link}><button>View More<img src={arrow} alt="img" /></button></Link>
                 </div>
               </div>
               <div id="wedo_container_cards_block2">
-              {(wedos.wedoimg.publicURL) ? (
-                <img src={wedos.wedoimg.publicURL} alt="img" />
-              ) : (<img src={wedos.wedoimg} alt="img" />)}
+                {(wedos.wedoimg.publicURL) ? (
+                  <img src={wedos.wedoimg.publicURL} alt="img" />
+                ) : (<img src={wedos.wedoimg} alt="img" />)}
               </div>
             </div>
           )}
@@ -43,6 +43,7 @@ const WedoPrev = props => {
                 id
                 wedoname
                 wedodesc
+                link
                 wedoimg {
                   publicURL
                 }
