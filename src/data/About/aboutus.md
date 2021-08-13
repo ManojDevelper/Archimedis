@@ -1,0 +1,8 @@
+---
+abouttitle: "About Us"
+aboutdesc: "We are a healthcare company with years of expertise in pharmaceutical industry. We satiate business needs for various segments with expertise in pharmaceutical manufacturing, contract manufacturing and digital offerings."
+aboutdesc2: "Archimedis, our family-owned and family-operated enterprise established in 2014, stands on the firm ground of strong ethics and rich experience.Another successful venture from its Board of Directors, Safetab Life Science is a reputed name in the industry. Safetab has been doing business with leading pharmaceutical organisations in India, since 2006. Archimedis signifies a step ahead and operates with a global vision. Ease of doing business with us starts with our strategic location. Located in Chennai (India), our plant is at a convenient distance from both, the sea-port and the airport. While growing globally, we have made it a point to protect the environment around us and have strictly non-polluting operations. This has resulted in the enrichment of the ecosystem holding all the elements in the right balance."
+aboutdesc3: "Archimedis excels as a, but isn’t limited to, Pharmaceutical Manufacturing Organisation, specialising in non-beta lactam-based products in solid oral dosage forms (Tablets, Capsules and Dry Syrup). With a vision to enhance human life globally, we skilfully combine robust process, capable people and latest technology to deliver consistent formulations. Our motto is to architect medicine with passion so that humanity continues to thrive.
+"
+aboutImg: ../assets/about.png
+---

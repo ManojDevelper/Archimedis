@@ -1,0 +1,73 @@
+#aboutus {
+  width: 100%;
+  padding: 10.7913669064748vw 16.1870503597122vw 0 16.1870503597122vw;
+}
+#aboutus h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.87769784172662vw;
+  line-height: 5.17985611510791vw;
+  text-align: center;
+  color: #18191f;
+}
+#aboutus #about_dec {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.29496402877698vw;
+  line-height: 2.58992805755396vw;
+  color: #18191f;
+  width: 52.8057553956835vw;
+  margin: auto;
+  margin-top: 0.935251798561151vw;
+  opacity: 0.8;
+  text-align: center;
+}
+#aboutus img {
+  margin:4.67625899280576vw 0 0 0;
+}
+#aboutdescription_container {
+  width: 100%;
+  height: 39.4244604316547vw;
+  background: #f5f8ff;
+  padding:6.0431654676259vw 7.48201438848921vw;
+  margin:5.32374100719424vw 0 0 0;
+}
+#aboutdescription_container p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.29496402877698vw;
+  line-height: 2.58992805755396vw;
+  text-align: center;
+  color: #18191f;
+}
+#aboutdescription_container p:nth-child(2) {
+  margin-top:2vw;
+}
+@media (max-width: 750px) {
+  #aboutus {
+    padding: 33vw 3vw 0 3vw;
+  }
+  #aboutus h1 {
+    font-size: 7vw;
+    line-height: unset;
+  }
+  #aboutus img {
+    margin-top: 8vw;
+  }
+  #aboutus #about_dec {
+    font-size: 3vw;
+    line-height: 6vw;
+    width: 90vw;
+  }
+  #aboutdescription_container {
+    height: fit-content;
+  }
+  #aboutdescription_container p {
+    font-size: 3vw;
+    line-height: 6vw;
+    text-align: justify;
+  }
+}

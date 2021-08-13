@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#Mildstone {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6.90647482014388vw 0;
+}
+#Mildstone h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.16546762589928vw;
+  line-height: 4.31654676258993vw;
+  text-align: center;
+  color: #200e32;
+  margin: 0.4vw 0;
+}
+#Mildstone h2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 2.01438848920863vw;
+  text-align: center;
+  color: #200e32;
+}
+#Mildstone_container {
+  width: fit-content;
+  background: url("../../data/assets/about_mildstone.svg");
+  display: grid;
+  grid-template-columns: auto;
+  gap: 14.0287769784173vw;
+  background-size: 93.5251798561151vw auto;
+  background-repeat: no-repeat;
+  margin-top: 8.99280575539568vw;
+}
+#Mildstone_container_block {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: fit-content;
+  gap: 23.9568345323741vw;
+  margin: 0 auto;
+}
+#Mildstone_container_block:nth-child(2) {
+  grid-template-columns: repeat(2, auto);
+}
+#Mildstone_container_blocks {
+  width: 14.9640287769784vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Mildstone_container_blocks:nth-child(2) h1 {
+  color: #eb5b9b;
+}
+#Mildstone_container_blocks:nth-child(3) h1 {
+  color: #2083e3;
+}
+#Mildstone_container_block:nth-child(2) #Mildstone_container_blocks {
+  flex-direction: column-reverse;
+}
+#Mildstone_container_blocks img {
+  width: 6.33093525179856vw;
+  height: 6.33093525179856vw;
+}
+#Mildstone_container_block:nth-child(2) #Mildstone_container_blocks img {
+  margin: 1.07913669064748vw 0 0 0;
+}
+#Mildstone_container_blocks h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.43884892086331vw;
+  line-height: 1.94244604316547vw;
+  text-align: center;
+  color: #2083e3;
+}
+#Mildstone_container_block:nth-child(2) #Mildstone_container_blocks h1 {
+  color: #ec5f3e;
+}
+#Mildstone_container_block:nth-child(2)
+  #Mildstone_container_blocks:nth-child(2)
+  h1 {
+  color: #5e65d8;
+}
+#Mildstone_container_blocks p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15107913669065vw;
+  line-height: 1.58273381294964vw;
+  text-align: center;
+  color: #000000;
+}
+@media (max-width: 750px) {
+  #Mildstone_container {
+    background: none;
+    padding: 11vw 13.2374100719424vw;
+  }
+  #Mildstone h1 {
+    font-size: 7vw;
+    line-height: unset;
+  }
+  #Mildstone h2 {
+    font-size: 3vw;
+    width: 70vw;
+    line-height: initial;
+}
+  #Mildstone_container_block {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #Mildstone_container_blocks{
+      width: 80vw;
+  }
+  #Mildstone_container_blocks img {
+    width: 20vw;
+    height: 20vw;
+}
+#Mildstone_container_blocks h1 {
+    font-size: 4vw;
+    line-height: normal;
+    margin:3vw 0;
+}
+#Mildstone_container_blocks p {
+    font-size: 4vw;
+    line-height: initial;
+}
+#Mildstone_container_block:nth-child(2) {
+    grid-template-columns: auto;
+}
+#Mildstone_container_block:nth-child(2) #Mildstone_container_blocks {
+    flex-direction: column;
+  }
+}

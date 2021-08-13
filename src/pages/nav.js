@@ -42,7 +42,7 @@ function Navbars() {
                     </div>
                     <Nav id="navbarResponsive">
                         <ul id="nav_b1">
-                            <li id="nav_links"><Nav.Link href="/home/#about" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Nav.Link></li>
+                            <li id="nav_links"><Nav.Link href="/about/" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Nav.Link></li>
                             <li id="nav_links"><Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients<span>|</span></Nav.Link></li>
                             <li id="nav_links"><Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog<span>|</span></Nav.Link></li>
                             <li id="nav_links"><Nav.Link id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link></li>
