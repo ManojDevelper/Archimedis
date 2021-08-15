@@ -1,35 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import "../../styles/About/Ourvalues.css";
-import b1 from "../../data/assets/1.svg";
-import b2 from "../../data/assets/2.svg";
-import b3 from "../../data/assets/3.svg";
-import b4 from "../../data/assets/4.svg";
 
-const Ourvalues = () => {
+export const Ourvalues = ({ title, ourValues }) => {
     return (
         <>
             <div id="Ourvalues">
-                <h1>Our Values</h1>
+                <h1>{title}</h1>
                 <div id="Ourvalues_container">
-                    <div id="Ourvalues_container_block1">
-                        <img src={b1} alt="img" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sociis adipiscing morbi eget pharetra. Convallis ut blandit feugiat mollis auctor.</p>
-                    </div>
-                    <div id="Ourvalues_container_block1">
-                        <img src={b2} alt="img" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sociis adipiscing morbi eget pharetra. Convallis ut blandit feugiat mollis auctor.</p>
-                    </div>
-                    <div id="Ourvalues_container_block1">
-                        <img src={b3} alt="img" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sociis adipiscing morbi eget pharetra. Convallis ut blandit feugiat mollis auctor.</p>
-                    </div>
-                    <div id="Ourvalues_container_block1">
-                        <img src={b4} alt="img" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sociis adipiscing morbi eget pharetra. Convallis ut blandit feugiat mollis auctor.</p>
-                    </div>
+                    {ourValues && ourValues.map(ourValuess =>
+                        <div id="Ourvalues_container_block1">
+                            <img src={ourValuess.image.publicURL} alt="img" />
+                            <p>{ourValuess.description}</p>
+                        </div>
+                    )}
                 </div>
             </div>
         </>
     );
 };
-export default Ourvalues;
+
+const OurvaluesPrev = () => {
+    const [OurvaluesPre, setOurvaluesPre] = useState({});
+    const data = useStaticQuery(graphql`
+      query{
+          file(relativePath: {eq: "About/ourvalues.md"}) {
+              id
+              childMarkdownRemark {
+                frontmatter {
+                  title
+                  ourValues {
+                    id
+                    description
+                    image {
+                        publicURL
+                      }
+                  }
+                }
+              }
+            }
+          }
+       `)
+    useEffect(() => {
+        if (data.file) {
+            setOurvaluesPre(data.file.childMarkdownRemark.frontmatter);
+        }
+    }, [data.file]);
+    return (
+        <>
+            {
+                data.file &&
+                <Ourvalues
+                    title={OurvaluesPre.title}
+                    ourValues={OurvaluesPre.ourValues}
+                />
+            }
+        </>
+    )
+}
+export default OurvaluesPrev;
+

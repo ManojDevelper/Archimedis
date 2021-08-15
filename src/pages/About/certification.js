@@ -1,26 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import "../../styles/About/Certifications.css";
-import b1 from "../../data/assets/about_certi1.svg";
-import b2 from "../../data/assets/about_certi2.svg";
-import b3 from "../../data/assets/about_certi3.svg";
 
-const Certification = () => {
+export const Certification = ({ title, certificationImages }) => {
   return (
     <>
       <div id="Certifications">
-        <h1>Certifications</h1>
+        <h1>{title}</h1>
         <div id="Certifications_container">
-          <div id="Certifications_container_block1">
-            <img src={b1} alt="img" />
-          </div>
-          <div id="Certifications_container_block1">
-            <img src={b2} alt="img" />
-          </div><div id="Certifications_container_block1">
-            <img src={b3} alt="img" />
-          </div>
+          {certificationImages && certificationImages.map(certificationImagess =>
+            <div id="Certifications_container_block1">
+              <img src={certificationImagess.icon.publicURL} alt="img" />
+            </div>
+          )}
         </div>
       </div>
     </>
   );
 };
-export default Certification;
+const CertificationPrev = () => {
+  const [CertificationPre, setCertificationPre] = useState({});
+  const data = useStaticQuery(graphql`
+    query{
+        file(relativePath: {eq: "About/certification.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                title
+                certificationImages {
+                  id
+                  icon {
+                      publicURL
+                    }
+                }
+              }
+            }
+          }
+        }
+     `)
+  useEffect(() => {
+    if (data.file) {
+      setCertificationPre(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
+  return (
+    <>
+      {
+        data.file &&
+        <Certification
+          title={CertificationPre.title}
+          certificationImages={CertificationPre.certificationImages}
+        />
+      }
+    </>
+  )
+}
+export default CertificationPrev;

@@ -103,6 +103,7 @@
   #Mildstone_container {
     background: none;
     padding: 11vw 13.2374100719424vw;
+    gap: 14.0287769784173vw;
   }
   #Mildstone h1 {
     font-size: 7vw;
@@ -112,31 +113,32 @@
     font-size: 3vw;
     width: 70vw;
     line-height: initial;
-}
+  }
   #Mildstone_container_block {
     display: grid;
     grid-template-columns: auto;
   }
-  #Mildstone_container_blocks{
-      width: 80vw;
+  #Mildstone_container_blocks {
+    width: 80vw;
   }
   #Mildstone_container_blocks img {
     width: 20vw;
     height: 20vw;
-}
-#Mildstone_container_blocks h1 {
+  }
+  #Mildstone_container_blocks h1 {
     font-size: 4vw;
     line-height: normal;
-    margin:3vw 0;
-}
-#Mildstone_container_blocks p {
+    margin: 3vw 0;
+  }
+  #Mildstone_container_blocks p {
     font-size: 4vw;
     line-height: initial;
-}
-#Mildstone_container_block:nth-child(2) {
+  }
+  #Mildstone_container_block:nth-child(2) {
     grid-template-columns: auto;
-}
-#Mildstone_container_block:nth-child(2) #Mildstone_container_blocks {
+    margin-top: 10vw;
+  }
+  #Mildstone_container_block:nth-child(2) #Mildstone_container_blocks {
     flex-direction: column;
   }
 }

@@ -16,11 +16,12 @@ const Aboutbanner = () => {
           }
         }
      `)
+     const description = data.Dbanner.childMarkdownRemark.frontmatter.AboutDescription;
     return (
         <>            <Nav />
             <div id="dbanner">
                 <div id="dbanner_container">
-                    <h1>{data.Dbanner.childMarkdownRemark.frontmatter.AboutDescription}</h1>
+                    <h1>{description}</h1>
                 </div>
             </div>
             <Top2 link="/digital/" />
