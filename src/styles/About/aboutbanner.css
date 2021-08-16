@@ -1,12 +1,13 @@
-#dbanner {
+#abanner {
   width: 100%;
   height: 45vw;
   background: url("../../data/assets/aboutBanner.svg.svg");
   background-repeat: no-repeat;
   display: flex;
   margin-top: 3vw;
+  background-size: 100% 49vw;
 }
-#dbanner_container {
+#abanner_container {
   width: 51vw;
   height: 18.7769784172662vw;
   background: #22bdef;
@@ -16,7 +17,7 @@
   align-items: center;
   padding-left: 1vw;
 }
-#dbanner_container h1 {
+#abanner_container h1 {
   font-family: Manrope;
   font-style: normal;
   font-weight: 600;
@@ -29,22 +30,22 @@
   margin: auto;
 }
 @media (max-width: 992px) {
-  #dbanner {
+  #abanner {
     margin-top: 85px;
   }
 }
 @media (max-width: 750px) {
-  #dbanner {
+  #abanner {
     height: 43.0232558139535vw;
   }
-  #dbanner_container {
+  #abanner_container {
     width: 84.4186046511628vw;
     height: 29.7674418604651vw;
     background: #22bdef;
     margin: auto auto -22.5vw auto;
     padding: 0 1vw;
   }
-  #dbanner_container h1 {
+  #abanner_container h1 {
     text-align: center;
     font-size: 3.2vw;
     line-height: 6.4vw;

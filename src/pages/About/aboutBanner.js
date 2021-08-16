@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from "gatsby";
 const Aboutbanner = () => {
   const data = useStaticQuery(graphql`
     query{
-        Dbanner: file(relativePath: {eq: "About/aboutbanner.md"}) {
+        Abanner: file(relativePath: {eq: "About/aboutbanner.md"}) {
             childMarkdownRemark {
               frontmatter {
                 AboutDescription
@@ -16,11 +16,11 @@ const Aboutbanner = () => {
           }
         }
      `)
-  const description = data.Dbanner.childMarkdownRemark.frontmatter.AboutDescription;
+  const description = data.Abanner.childMarkdownRemark.frontmatter.AboutDescription;
   return (
     <>            <Nav />
-      <div id="dbanner">
-        <div id="dbanner_container">
+      <div id="abanner">
+        <div id="abanner_container">
           <h1>{description}</h1>
         </div>
       </div>

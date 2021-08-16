@@ -29,18 +29,16 @@ const About = () => {
   const seoData = data.file.childMarkdownRemark.frontmatter;
   return (
     <>
-      <div id="formulation">
-        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
-        <Nav />
-        <Aboutbanner />
-        <Aboutus/>
-        <Certification/>
-        <Aboutstatus/>
-        <Ourvalues/>
-        <Mildstone/>
-        <Contact/>
-        <Footer/>
-      </div>
+      <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
+      <Nav />
+      <Aboutbanner />
+      <Aboutus />
+      <Certification />
+      <Aboutstatus />
+      <Ourvalues />
+      <Mildstone />
+      <Contact />
+      <Footer />
     </>
   )
 }
