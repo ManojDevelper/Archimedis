@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../../styles/Home/About.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const About = ({ abouttitle, aboutdesc, aboutImgs }) => {
+export const About = ({ abouttitle, aboutdesc }) => {
 
   return (
     <>
       <div id="about">
         <h1>{abouttitle}</h1>
-        <img src={aboutImgs} alt="img" />
         <h2 id="about_dec">{aboutdesc}</h2>
       </div>
     </>

@@ -20,7 +20,97 @@ collections:
           widget: string,
           required: false,
         }
-
+  - label: About Us
+    name: About
+    files:
+      - file: src/data/About/seo.md
+        label: SEO
+        name: seoAboutus
+        create: true
+        fields:
+          - { label: Title, name: title }
+          - { label: Description, name: description }
+          - { label: Keywords, name: keywords, widget: list }
+      - file: src/data/About/aboutbanner.md
+        label: Banner
+        name: aboutbanner
+        fields:
+          - { label: Title, name: AboutDescription }
+      - file: src/data/About/aboutus.md
+        label: About Us
+        name: aboutus
+        fields:
+          - { label: Title, name: abouttitle }
+          - { label: Description, name: aboutdesc }
+          - { label: Description Para1, name: aboutdesc2 }
+          - { label: Description Para2, name: aboutdesc3 }
+          - { label: About Image, name: aboutImg, widget: image }
+      - file: src/data/About/aboutstatus.md
+        label: About Status
+        name: aboutstatus
+        fields:
+          - {
+              label: Aboutstatus,
+              name: Aboutstatus,
+              widget: list,
+              fields:
+                [
+                  { label: ID, name: id, default: 1 },
+                  { label: Title, name: title },
+                  { label: Description, name: description },
+                  { label: Icon, name: icon, widget: image },
+                ],
+            }
+      - file: src/data/About/certification.md
+        label: Certification
+        name: certification
+        fields:
+          - { label: Title, name: title }
+          - {
+              label: Certification,
+              name: certificationImages,
+              widget: list,
+              fields:
+                [
+                  { label: ID, name: id, default: 1 },
+                  { label: Icon, name: icon, widget: image },
+                ],
+            }
+      - file: src/data/About/mildstone.md
+        label: Mildstone
+        name: mildstone
+        fields:
+          - { label: Title, name: title }
+          - { label: Description, name: description }
+          - {
+              label: Mildstone,
+              name: mildstone,
+              widget: list,
+              fields:
+                [
+                  { label: ID, name: id, default: 1 },
+                  { label: Title, name: title },
+                  { label: Description, name: description },
+                  { label: Date, name: date },
+                  { label: Icon, name: mildstonecontainericon, widget: image },
+                ],
+            }
+      - file: src/data/About/ourvalues.md
+        label: Our Values
+        name: ourvalues
+        fields:
+          - { label: Title, name: title }
+          - {
+              label: Our Values,
+              name: ourValues,
+              widget: list,
+              fields:
+                [
+                  { label: ID, name: id, default: 1 },
+                  { label: Description, name: description },
+                  { label: Icon, name: image, widget: image },
+                ],
+            }
   - label: Landing
     name: landing
     files:
@@ -1010,7 +1100,7 @@ collections:
         create: true
         public_folder: "../assets"
         fields:
-          - { label: Title, name: description, widget: string}
+          - { label: Title, name: description, widget: string }
       - file: src/data/Products/pharmaceutical.md
         label: Products Pharmaceutical
         name: pharmaceutical

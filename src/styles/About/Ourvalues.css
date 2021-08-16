@@ -25,7 +25,7 @@
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 11.8705035971223vw 9.13669064748201vw;
+  gap: 0vw 9.13669064748201vw;
   margin: 6.83453237410072vw 0 0 0;
 }
 #Ourvalues_container_block1 {

@@ -31,6 +31,11 @@ import ProDsolutionsPreview from "./preview-templates/ProDsolutionsPreview";
 import ProDevPreview from "./preview-templates/ProDevPreview";
 import homeTeamPreview from "./preview-templates/homeTeamPreview";
 import homeTeam2Preview from "./preview-templates/homeTeam2Preview";
+import AboutstatusPreview from "./preview-templates/AboutstatusPreview";
+import AboutUsPreview from "./preview-templates/AboutUsPreview";
+import CertificationPreview from "./preview-templates/CertificationPreview";
+import MildstonePreview from "./preview-templates/MildstonePreview";
+import OurvaluesPreview from "./preview-templates/OurvaluesPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -89,3 +94,8 @@ CMS.registerPreviewTemplate("dsolutions", withStyledComponentsRendered(ProDsolut
 CMS.registerPreviewTemplate("productdev", withStyledComponentsRendered(ProDevPreview));
 CMS.registerPreviewTemplate("team", withStyledComponentsRendered(homeTeamPreview));
 CMS.registerPreviewTemplate("bod", withStyledComponentsRendered(homeTeam2Preview));
+CMS.registerPreviewTemplate("aboutStatus", withStyledComponentsRendered(AboutstatusPreview));
+CMS.registerPreviewTemplate("aboutus", withStyledComponentsRendered(AboutUsPreview));
+CMS.registerPreviewTemplate("certification", withStyledComponentsRendered(CertificationPreview));
+CMS.registerPreviewTemplate("mildstone", withStyledComponentsRendered(MildstonePreview));
+CMS.registerPreviewTemplate("ourvalues", withStyledComponentsRendered(OurvaluesPreview));

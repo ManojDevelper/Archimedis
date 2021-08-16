@@ -49,6 +49,7 @@
 @media (max-width: 750px) {
   #aboutus {
     padding: 33vw 3vw 0 3vw;
+    background: #f5f8ff
   }
   #aboutus h1 {
     font-size: 7vw;
@@ -64,6 +65,7 @@
   }
   #aboutdescription_container {
     height: fit-content;
+    margin: 0;
   }
   #aboutdescription_container p {
     font-size: 3vw;

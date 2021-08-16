@@ -2,24 +2,25 @@ import React, { useState, useEffect } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import "../../styles/About/Mildstone.css";
 
-const Mildstone = ({ mildstonetitle, mildstonedescription, mildstonemain }) => {
+export const Mildstone = ({ title, description, mildstone }) => {
     return (
         <>
             <div id="Mildstone">
-                <h1>{mildstonetitle}</h1>
-                <h2>{mildstonedescription}</h2>
+                <h1>{title}</h1>
+                <h2>{description}</h2>
                 <div id="Mildstone_container">
-                    {mildstonemain && mildstonemain.map(mildstonemains =>
-                        <div id="Mildstone_container_block" key={mildstonemains.id}>
-                            {mildstonemains && mildstonemains.mildstonecontainer.map(mildstonecontainers =>
-                                <div id="Mildstone_container_blocks" key={mildstonecontainers.id}>
-                                    <img src={mildstonecontainers.mildstonecontainericon.publicURL} alt="img" />
-                                    <h1>{mildstonecontainers.title}</h1>
-                                    <p>{mildstonecontainers.description}</p>
+                    <div id="Mildstone_container_block">
+                        {mildstone && mildstone.map(mildstones =>
+                            <div id="Mildstone_container_blocks" key={mildstones.id}>
+                                <p id="date">{mildstones.date}</p>
+                                <img src={mildstones.mildstonecontainericon.publicURL} alt="img" />
+                                <div>
+                                    <h1>{mildstones.title}</h1>
+                                    <p>{mildstones.description}</p>
                                 </div>
-                            )}
-                        </div>
-                    )}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </>
@@ -33,19 +34,17 @@ const MildstonePrev = () => {
               id
               childMarkdownRemark {
                 frontmatter {
-                    mildstoneTitle
-                    mildstonedescription
-                    mildstonemain {
-                        id
-                        mildstonecontainer {
+                    title
+                    description
+                    mildstone {
                             id
                             title
                             description
+                            date
                             mildstonecontainericon {
                                 publicURL
                             }
                         }
-                    }
                 }
               }
             }
@@ -61,9 +60,9 @@ const MildstonePrev = () => {
             {
                 data.file &&
                 <Mildstone
-                    mildstonetitle={MildstonePre.mildstoneTitle}
-                    mildstonedescription={MildstonePre.mildstonedescription}
-                    mildstonemain={MildstonePre.mildstonemain}
+                    title={MildstonePre.title}
+                    description={MildstonePre.description}
+                    mildstone={MildstonePre.mildstone}
                 />
             }
         </>
