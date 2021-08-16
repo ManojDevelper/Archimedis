@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Aboutstatus } from "../../pages/About/aboutstatus";
+import { Aboutstatus } from "../../pages/About/aboutStatus";
 
 const AboutstatusPreview = ({ entry, getAsset }) => {
 
