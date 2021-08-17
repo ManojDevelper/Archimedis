@@ -1,7 +1,8 @@
 backend:
   name: github
   branch: main
-  repo: ahpl-webmaster/ui-archimedis.global
+  # repo: ahpl-webmaster/ui-archimedis.global
+  repo: sgost/Archimedis
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
 public_folder: "/"
@@ -40,10 +41,10 @@ collections:
         name: aboutus
         public_folder: "../assets"
         fields:
-          - { label: Title, name: abouttitle, required: false }
-          - { label: Description, name: aboutdesc, required: false }
-          - { label: Description Para1, name: aboutdesc2, required: false }
-          - { label: Description Para2, name: aboutdesc3, required: false }
+          - { label: Title, name: title, required: false }
+          - { label: Description, name: description, required: false }
+          - { label: Description Para1, name: description2, required: false }
+          - { label: Description Para2, name: description3, required: false }
           - { label: About Image, name: aboutImg, widget: image, required: false }
       - file: src/data/About/aboutstatus.md
         label: About Status

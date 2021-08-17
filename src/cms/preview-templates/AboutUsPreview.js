@@ -5,7 +5,7 @@ import { Aboutus } from "../../pages/About/aboutus";
 const AboutUsPreview = ({ entry, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
-    var image = entry.getIn(['data', 'aboutImgs']);
+    var image = entry.getIn(['data', 'aboutImg']);
     var getImage = getAsset(image);
     if (getImage) {
         var AboutImage = getImage.toString();
@@ -13,11 +13,11 @@ const AboutUsPreview = ({ entry, getAsset }) => {
 
     return (
         <Aboutus
-            abouttitle={data.abouttitle}
-            aboutdesc={data.aboutdesc}
-            aboutdesc2={data.aboutdesc2}
-            aboutdesc3={data.aboutdesc3}
-            aboutImgs={AboutImage}
+            title={data.title}
+            description={data.description}
+            description2={data.description2}
+            description3={data.description3}
+            aboutImg={AboutImage}
         />
     );
 };

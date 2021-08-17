@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import "../../styles/About/Aboutus.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const Aboutus = ({ abouttitle, aboutdesc, aboutImgs, aboutdesc2, aboutdesc3 }) => {
+export const Aboutus = ({ title, description, aboutImg, description2, description3 }) => {
 
   return (
     <>
       <div id="aboutus">
-        <h1>{abouttitle}</h1>
-        <h2 id="about_dec">{aboutdesc}</h2>
-        <img src={aboutImgs} alt="img" />
+        <h1>{title}</h1>
+        <h2 id="about_dec">{description}</h2>
+        <img src={aboutImg} alt="img" />
       </div>
-      <div id="aboutdescription_container">
-        <p>{aboutdesc2}</p>
-        <p>{aboutdesc3}</p>
+      <div id="descriptionription_container">
+        <p>{description2}</p>
+        <p>{description3}</p>
       </div>
     </>
   );
@@ -26,10 +26,10 @@ const AboutUsPrev = props => {
             id
             childMarkdownRemark {
               frontmatter {
-                  abouttitle
-                  aboutdesc
-                  aboutdesc2
-                  aboutdesc3
+                  title
+                  description
+                  description2
+                  description3
                   aboutImg {
                     publicURL
                 }
@@ -54,11 +54,11 @@ const AboutUsPrev = props => {
       {
         data.file &&
         <Aboutus
-          abouttitle={aboutPre.abouttitle}
-          aboutdesc={aboutPre.aboutdesc}
-          aboutdesc2={aboutPre.aboutdesc2}
-          aboutdesc3={aboutPre.aboutdesc3}
-          aboutImgs={AboutImage}
+          title={aboutPre.title}
+          description={aboutPre.description}
+          description2={aboutPre.description2}
+          description3={aboutPre.description3}
+          aboutImg={AboutImage}
         />
       }
     </>
