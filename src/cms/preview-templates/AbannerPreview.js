@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Aboutbanner } from "../../pages/Formulation/aboutBanner";
+import { Aboutbanner } from "../../pages/About/aboutBanner";
 
 const AbannerPreview = ({ entry }) => {
 
