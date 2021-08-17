@@ -1,8 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   branch: main
-  # repo: ahpl-webmaster/ui-archimedis.global
-  repo: sgost/Archimedis
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
 public_folder: "/"
@@ -43,9 +41,9 @@ collections:
         fields:
           - { label: Title, name: title, required: false }
           - { label: Description, name: description, required: false }
+          - { label: About Image, name: aboutImg, widget: image, required: false }
           - { label: Description Para1, name: description2, required: false }
           - { label: Description Para2, name: description3, required: false }
-          - { label: About Image, name: aboutImg, widget: image, required: false }
       - file: src/data/About/aboutstatus.md
         label: About Status
         name: aboutstatus
