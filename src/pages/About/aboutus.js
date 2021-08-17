@@ -11,7 +11,7 @@ export const Aboutus = ({ title, description, aboutImg, description2, descriptio
         <h2 id="about_dec">{description}</h2>
         <img src={aboutImg} alt="img" />
       </div>
-      <div id="descriptionription_container">
+      <div id="aboutdescription_container">
         <p>{description2}</p>
         <p>{description3}</p>
       </div>
@@ -34,7 +34,6 @@ const AboutUsPrev = props => {
                     publicURL
                 }
               }
-              html
             }
           }
 }`)
