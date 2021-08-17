@@ -1,7 +1,6 @@
 backend:
   name: github
   branch: main
-  # repo: sgost/Archimedis
   repo: ahpl-webmaster/ui-archimedis.global
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
@@ -26,7 +25,6 @@ collections:
       - file: src/data/About/seo.md
         label: SEO
         name: seoAboutus
-        create: true
         fields:
           - { label: Title, name: title }
           - { label: Description, name: description }
@@ -34,20 +32,23 @@ collections:
       - file: src/data/About/aboutbanner.md
         label: Banner
         name: aboutbanner
+        public_folder: "../assets"
         fields:
           - { label: Title, name: AboutDescription }
       - file: src/data/About/aboutus.md
         label: About Us
         name: aboutus
+        public_folder: "../assets"
         fields:
-          - { label: Title, name: abouttitle }
-          - { label: Description, name: aboutdesc }
-          - { label: Description Para1, name: aboutdesc2 }
-          - { label: Description Para2, name: aboutdesc3 }
-          - { label: About Image, name: aboutImg, widget: image }
+          - { label: Title, name: abouttitle, required: false }
+          - { label: Description, name: aboutdesc, required: false }
+          - { label: Description Para1, name: aboutdesc2, required: false }
+          - { label: Description Para2, name: aboutdesc3, required: false }
+          - { label: About Image, name: aboutImg, widget: image, required: false }
       - file: src/data/About/aboutstatus.md
         label: About Status
         name: aboutstatus
+        public_folder: "../assets"
         fields:
           - {
               label: Aboutstatus,
@@ -56,16 +57,17 @@ collections:
               fields:
                 [
                   { label: ID, name: id, default: 1 },
-                  { label: Title, name: title },
-                  { label: Description, name: description },
-                  { label: Icon, name: icon, widget: image },
+                  { label: Title, name: title, required: false },
+                  { label: Description, name: description, required: false },
+                  { label: Icon, name: icon, widget: image, required: false },
                 ],
             }
       - file: src/data/About/certification.md
         label: Certification
         name: certification
+        public_folder: "../assets"
         fields:
-          - { label: Title, name: title }
+          - { label: Title, name: title, required: false }
           - {
               label: Certification,
               name: certificationImages,
@@ -73,15 +75,16 @@ collections:
               fields:
                 [
                   { label: ID, name: id, default: 1 },
-                  { label: Icon, name: icon, widget: image },
+                  { label: Icon, name: icon, widget: image, required: false },
                 ],
             }
       - file: src/data/About/mildstone.md
         label: Mildstone
         name: mildstone
+        public_folder: "../assets"
         fields:
-          - { label: Title, name: title }
-          - { label: Description, name: description }
+          - { label: Title, name: title, required: false }
+          - { label: Description, name: description, required: false }
           - {
               label: Mildstone,
               name: mildstone,
@@ -89,15 +92,16 @@ collections:
               fields:
                 [
                   { label: ID, name: id, default: 1 },
-                  { label: Title, name: title },
-                  { label: Description, name: description },
-                  { label: Date, name: date },
-                  { label: Icon, name: mildstonecontainericon, widget: image },
+                  { label: Title, name: title, required: false },
+                  { label: Description, name: description, required: false },
+                  { label: Date, name: date, required: false },
+                  { label: Icon, name: mildstonecontainericon, widget: image, required: false },
                 ],
             }
       - file: src/data/About/ourvalues.md
         label: Our Values
         name: ourvalues
+        public_folder: "../assets"
         fields:
           - { label: Title, name: title }
           - {
@@ -106,9 +110,9 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: ID, name: id, default: 1 },
-                  { label: Description, name: description },
-                  { label: Icon, name: image, widget: image },
+                  { label: ID, name: id, default: 1, required: false },
+                  { label: Description, name: description, required: false },
+                  { label: Icon, name: image, widget: image, required: false },
                 ],
             }
   - label: Landing
@@ -144,6 +148,7 @@ collections:
         label: Status
         name: status
         create: true
+        public_folder: "./assets"
         fields:
           - {
               label: Status,

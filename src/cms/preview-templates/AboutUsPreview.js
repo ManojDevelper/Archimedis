@@ -12,15 +12,13 @@ const AboutUsPreview = ({ entry, getAsset }) => {
     }
 
     return (
-        <div>
-            <Aboutus
-                abouttitle={data.abouttitle}
-                aboutdesc={data.aboutdesc}
-                aboutdesc2={data.aboutdesc2}
-                aboutdesc3={data.aboutdesc3}
-                aboutImgs={AboutImage}
-            />
-        </div>
+        <Aboutus
+            abouttitle={data.abouttitle}
+            aboutdesc={data.aboutdesc}
+            aboutdesc2={data.aboutdesc2}
+            aboutdesc3={data.aboutdesc3}
+            aboutImgs={AboutImage}
+        />
     );
 };
 

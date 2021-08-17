@@ -10,7 +10,11 @@ export const Certification = ({ title, certificationImages }) => {
         <div id="Certifications_container">
           {certificationImages && certificationImages.map(certificationImagess =>
             <div id="Certifications_container_block1">
+            {certificationImagess.icon.publicURL ? 
               <img src={certificationImagess.icon.publicURL} alt="img" />
+              :
+              <img src={certificationImagess.icon} alt="img" />
+            }
             </div>
           )}
         </div>

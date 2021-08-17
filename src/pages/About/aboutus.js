@@ -31,13 +31,7 @@ const AboutUsPrev = props => {
                   aboutdesc2
                   aboutdesc3
                   aboutImg {
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
                     publicURL
-                    extension
                 }
               }
               html
@@ -50,10 +44,10 @@ const AboutUsPrev = props => {
     }
   }, [data.file]);
   let AboutImage;
-  if (data.file.childMarkdownRemark.frontmatter.aboutImg.extension === "svg" && data.file.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src !== null) {
+  if (data.file.childMarkdownRemark.frontmatter.aboutImg.publicURL) {
     AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg.publicURL;
   } else {
-    AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg.childImageSharp.fluid.src;
+    AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg;
   }
   return (
     <>

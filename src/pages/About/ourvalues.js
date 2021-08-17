@@ -10,7 +10,11 @@ export const Ourvalues = ({ title, ourValues }) => {
                 <div id="Ourvalues_container">
                     {ourValues && ourValues.map(ourValuess =>
                         <div id="Ourvalues_container_block1">
+                        {ourValuess.image.publicURL ?
                             <img src={ourValuess.image.publicURL} alt="img" />
+                            :
+                            <img src={ourValuess.image} alt="img" />
+                        }
                             <p>{ourValuess.description}</p>
                         </div>
                     )}

@@ -11,14 +11,21 @@ export const Mildstone = ({ title, description, mildstone }) => {
                 <div id="Mildstone_container">
                     <div id="Mildstone_container_block">
                         {mildstone && mildstone.map(mildstones =>
-                            <div id="Mildstone_container_blocks" key={mildstones.id}>
-                                <p id="date">{mildstones.date}</p>
-                                <img src={mildstones.mildstonecontainericon.publicURL} alt="img" />
-                                <div>
-                                    <h1>{mildstones.title}</h1>
-                                    <p>{mildstones.description}</p>
+                            <>
+                                <div id="Mildstone_container_blocks" key={mildstones.id}>
+                                    <p id="date">{mildstones.date}</p>
+                                    {mildstones.mildstonecontainericon.publicURL ?
+                                    <img src={mildstones.mildstonecontainericon.publicURL} alt="img" />
+                                    :
+                                    <img src={mildstones.mildstonecontainericon} alt="img" />
+                                    }
+                                    <div>
+                                        <h1>{mildstones.title}</h1>
+                                        <p>{mildstones.description}</p>
+                                    </div>
+                                    <div id="dotted_line"></div>
                                 </div>
-                            </div>
+                            </>
                         )}
                     </div>
                 </div>

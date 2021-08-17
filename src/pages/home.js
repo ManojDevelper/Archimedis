@@ -42,8 +42,8 @@ const Home = () => {
         <Wedo />
         <Status />
         <Standout />
-        <Online />
         <Clints />
+        <Online />
         <About />
         <Team />
         <Blogs />
