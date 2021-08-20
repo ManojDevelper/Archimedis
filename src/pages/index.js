@@ -11,10 +11,13 @@ const IndexPage = () => {
         buttonText="Accept!!"
         cookieName="Archimedis"
         style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#ffffff", fontSize: "16px", background: "#2d307b", width: "180.999999999999px", height: "48px",  borderRadius: "8px" }}
+        buttonStyle={{ color: "#2d307b", fontSize: "16px", background: "white", width: "180.999999999999px", height: "48px", borderRadius: "8px", fontStyle: "normal", fontWeight: "bold" }}
         expires={30}
+        enableDeclineButton
+        declineButtonText="Decline"
+        declineButtonStyle={{fontSize: "16px", background: "none"}}
       >
-        <span style={{fontSize: `18px`}}>This website uses cookies to enhance the user experience.</span>
+        <span style={{ fontSize: `18px` }}>This website uses cookies to enhance the user experience.</span>
       </CookieConsent>
     </>
   )
