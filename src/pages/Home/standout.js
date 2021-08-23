@@ -11,7 +11,7 @@ export const Standout = ({ title, description, Standoutcontainer }) => {
         <h2>{description}</h2>
         <div id="standout_container">
           {Standoutcontainer && Standoutcontainer.map(Standoutcontainers =>
-            <>
+            <div key={Standoutcontainers.id}>
               {Standoutcontainers.standimage &&
                 <div id="standout_card1" key={Standoutcontainers.id}>
                   {(Standoutcontainers.standimage.publicURL)
@@ -20,7 +20,7 @@ export const Standout = ({ title, description, Standoutcontainer }) => {
                   <p id="p4_c_dis">{Standoutcontainers.standname}</p>
                 </div>
               }
-            </>
+            </div>
           )}
         </div>
       </div>

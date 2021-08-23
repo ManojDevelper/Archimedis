@@ -41,14 +41,14 @@ function Navbars() {
                         </Navbar.Toggle>
                     </div>
                     <Nav id="navbarResponsive">
-                        <ul id="nav_b1">
-                            <li id="nav_links"><Nav.Link href="/about/" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Nav.Link></li>
-                            <li id="nav_links"><Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients<span>|</span></Nav.Link></li>
-                            <li id="nav_links"><Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog<span>|</span></Nav.Link></li>
-                            <li id="nav_links"><Nav.Link id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link></li>
-                        </ul>
-                        <ul id="nav_b2">
-                            <li id="nav_links"><Link to="/formulation/" id="nav_main_link" activeClassName='active'>Formulations<div id="mark"></div>
+                        <div id="nav_b1">
+                            <div id="nav_links"><Nav.Link href="/about/" id="nav_main_link" activeclassname='active'>About Us<span>|</span></Nav.Link></div>
+                            <div id="nav_links"><Nav.Link href="/home/#patners" id="nav_main_link" activeclassname='active'>Our Clients<span>|</span></Nav.Link></div>
+                            <div id="nav_links"><Nav.Link href="/blog" id="nav_main_link" activeclassname='active'>Blog<span>|</span></Nav.Link></div>
+                            <div id="nav_links"><Nav.Link id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link></div>
+                        </div>
+                        <div id="nav_b2">
+                            <div id="nav_links"><Link to="/formulation/" id="nav_main_link" activeclassname='active'>Formulations<div id="mark"></div>
                                 <div id="nav_add_menu">
                                     <div id="nav_manu_container">
                                         <div id="nav_manu_container_card">
@@ -76,8 +76,8 @@ function Navbars() {
                                         </div>
                                     </div>
                                 </div></Link>
-                            </li>
-                            <li id="nav_links"><Link to="/manfacture/" id="nav_main_link" activeClassName='active'>Manufacturing<div></div>
+                            </div>
+                            <div id="nav_links"><Link to="/manfacture/" id="nav_main_link" activeclassname='active'>Manufacturing<div></div>
                                 <div id="mark"></div><div id="nav_add_menu">
                                     <div id="nav_manu_container">
                                         <div id="nav_manu_container_card">
@@ -109,8 +109,8 @@ function Navbars() {
                                             <Link to="/manfacture/#ERP" id="nav_sub_link">ERP</Link>
                                         </div>
                                     </div>
-                                </div></Link></li>
-                            <li id="nav_links"><Link to="/products/" id="nav_main_link" activeClassName='active'>Products<div></div>
+                                </div></Link></div>
+                            <div id="nav_links"><Link to="/products/" id="nav_main_link" activeclassname='active'>Products<div></div>
                                 <div id="mark"></div><div id="nav_add_menu">
                                     <div id="nav_manu_container">
                                         <div id="nav_manu_container_card">
@@ -135,8 +135,8 @@ function Navbars() {
                                             <Link to="/products/" id="nav_sub_link">Visit Our Store</Link> */}
                                         </div>
                                     </div>
-                                </div></Link></li>
-                            <li id="nav_links"><Link to="/digital/" id="nav_main_link" activeClassName='active'>Digital<div></div>
+                                </div></Link></div>
+                            <div id="nav_links"><Link to="/digital/" id="nav_main_link" activeclassname='active'>Digital<div></div>
                                 <div id="mark"></div><div id="nav_add_menu">
                                     <div id="nav_manu_container">
                                         <div id="nav_manu_container_card">
@@ -164,70 +164,70 @@ function Navbars() {
                                             <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Training</Link>
                                         </div>
                                     </div>
-                                </div></Link></li>
-                        </ul>
+                                </div></Link></div>
+                        </div>
                     </Nav>
                     <Nav id="navbarResponsive2">
                         <div id="nav_b1">
                             {!hide ?
-                                <p id="main_top_link"><Nav.Link href="/home" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHide(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHide(false)}><img src={minus} alt="img" /></span></p>}
+                                <p id="main_top_link"><Nav.Link href="/home" id="main_top_links" activeclassname='active'>Home</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHide(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeclassname='active'>Home</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHide(false)}><img src={minus} alt="img" /></span></p>}
                             {!hide ? null : (
                                 <>
-                                    <Nav.Link href="/about/" id="nav_main_link" activeClassName='active'>About Us</Nav.Link>
-                                    <Nav.Link href="/home/#team" id="nav_main_link" activeClassName='active'>Our People</Nav.Link>
-                                    <Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients</Nav.Link>
-                                    <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog</Nav.Link>
-                                    <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link>
+                                    <Nav.Link href="/about/" id="nav_main_link" activeclassname='active'>About Us</Nav.Link>
+                                    <Nav.Link href="/home/#team" id="nav_main_link" activeclassname='active'>Our People</Nav.Link>
+                                    <Nav.Link href="/home/#patners" id="nav_main_link" activeclassname='active'>Our Clients</Nav.Link>
+                                    <Nav.Link href="/blog" id="nav_main_link" activeclassname='active'>Blog</Nav.Link>
+                                    <Nav.Link href="" id="nav_main_link" activeclassname='active' onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link>
                                 </>
                             )}
                         </div>
                         <div id="nav_b1">
                             {!hides ?
-                                <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={minus} alt="img" /></span></p>}
+                                <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeclassname='active'>Formulations</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeclassname='active'>Formulations</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={minus} alt="img" /></span></p>}
                             {!hides ? null : (
                                 <>
-                                    <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeClassName='active'>Services </Nav.Link>
-                                    <Nav.Link href="/formulation/#fserviceassurance" id="nav_main_link" activeClassName='active'>Infrastructure</Nav.Link>
-                                    <Nav.Link href="/formulation/#casestudy" id="nav_main_link" activeClassName='active'>Case Studies</Nav.Link>
+                                    <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeclassname='active'>Services </Nav.Link>
+                                    <Nav.Link href="/formulation/#fserviceassurance" id="nav_main_link" activeclassname='active'>Infrastructure</Nav.Link>
+                                    <Nav.Link href="/formulation/#casestudy" id="nav_main_link" activeclassname='active'>Case Studies</Nav.Link>
                                 </>
                             )}
                         </div>
                         <div id="nav_b1">
                             {!hidess ?
-                                <p id="main_top_link"><Nav.Link href="/manfacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidess(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidess(false)}><img src={minus} alt="img" /></span></p>}
+                                <p id="main_top_link"><Nav.Link href="/manfacture" id="main_top_links" activeclassname='active'>Manufacturing</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidess(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeclassname='active'>Manufacturing</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidess(false)}><img src={minus} alt="img" /></span></p>}
                             {!hidess ? null : (
                                 <>
-                                    <Nav.Link href="/manfacture/#capable" id="nav_main_link" activeClassName='active'>Capability</Nav.Link>
-                                    <Nav.Link href="/manfacture/#quality" id="nav_main_link" activeClassName='active'>Quality</Nav.Link>
-                                    <Nav.Link href="/manfacture/#facility" id="nav_main_link" activeClassName='active'>Facility</Nav.Link>
-                                    <Nav.Link href="/manfacture/#industry" id="nav_main_link" activeClassName='active'>Industry 4.0</Nav.Link>
+                                    <Nav.Link href="/manfacture/#capable" id="nav_main_link" activeclassname='active'>Capability</Nav.Link>
+                                    <Nav.Link href="/manfacture/#quality" id="nav_main_link" activeclassname='active'>Quality</Nav.Link>
+                                    <Nav.Link href="/manfacture/#facility" id="nav_main_link" activeclassname='active'>Facility</Nav.Link>
+                                    <Nav.Link href="/manfacture/#industry" id="nav_main_link" activeclassname='active'>Industry 4.0</Nav.Link>
                                 </>
                             )}
                         </div>
                         <div id="nav_b1">
                             {!hidesss ?
-                                <p id="main_top_link"><Nav.Link href="/products" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidesss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidesss(false)}><img src={minus} alt="img" /></span></p>}
+                                <p id="main_top_link"><Nav.Link href="/products" id="main_top_links" activeclassname='active'>Products</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidesss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeclassname='active'>Products</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidesss(false)}><img src={minus} alt="img" /></span></p>}
                             {!hidesss ? null : (
                                 <>
-                                    <Nav.Link href="/products/#pharmaceutical" id="nav_main_link" activeClassName='active'>Pharmaceutical</Nav.Link>
-                                    <Nav.Link href="/products/#foodsupplements" id="nav_main_link" activeClassName='active'>Food Supplements</Nav.Link>
-                                    <Nav.Link href="/products/#archibranded" id="nav_main_link" activeClassName='active'>Archimedis Branded</Nav.Link>
+                                    <Nav.Link href="/products/#pharmaceutical" id="nav_main_link" activeclassname='active'>Pharmaceutical</Nav.Link>
+                                    <Nav.Link href="/products/#foodsupplements" id="nav_main_link" activeclassname='active'>Food Supplements</Nav.Link>
+                                    <Nav.Link href="/products/#archibranded" id="nav_main_link" activeclassname='active'>Archimedis Branded</Nav.Link>
                                 </>
                             )}
                         </div>
                         <div id="nav_b1">
                             {!hidessss ?
-                                <p id="main_top_link"><Nav.Link href="/digital" id="main_top_links" activeClassName='active'>Digital</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidessss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Digital</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidessss(false)}><img src={minus} alt="img" /></span></p>}
+                                <p id="main_top_link"><Nav.Link href="/digital" id="main_top_links" activeclassname='active'>Digital</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidessss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeclassname='active'>Digital</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidessss(false)}><img src={minus} alt="img" /></span></p>}
                             {!hidessss ? null : (
                                 <>
-                                    <Nav.Link href="/digital/#dsolutions" id="nav_main_link" activeClassName='active'>Solutions</Nav.Link>
-                                    <Nav.Link href="/digital/#productdev" id="nav_main_link" activeClassName='active'>Product Development</Nav.Link>
-                                    <Nav.Link href="/digital/#Quality&Compliance" id="nav_main_link" activeClassName='active'>Quality & Compliance</Nav.Link>
+                                    <Nav.Link href="/digital/#dsolutions" id="nav_main_link" activeclassname='active'>Solutions</Nav.Link>
+                                    <Nav.Link href="/digital/#productdev" id="nav_main_link" activeclassname='active'>Product Development</Nav.Link>
+                                    <Nav.Link href="/digital/#Quality&Compliance" id="nav_main_link" activeclassname='active'>Quality & Compliance</Nav.Link>
                                 </>
                             )}
                         </div>
                         <div id="nav_b1">
-                            <p id="main_top_link"><Nav.Link href="" id="main_top_links" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact us</Nav.Link></p>
+                            <p id="main_top_link"><Nav.Link href="" id="main_top_links" activeclassname='active' onClick={() => setContact(false)} role="presentation">Contact us</Nav.Link></p>
                             <div id="navlogoimg">
                                 <img src={nav1} alt="src" />
                                 <img src={nav2} alt="src" />

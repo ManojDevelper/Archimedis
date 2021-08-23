@@ -12,41 +12,39 @@ export const Facility = ({ Facility }) => {
           <h2>{Facilitys.description}</h2>
           <div id="facility_container">
             {Facilitys.Facilitycards.map(Facilitycardss =>
-              <>
-                <div className="facility_container_cards" id={Facilitycardss.facilityid} key={Facilitycardss.id}>
-                  <div id="facility_container_cards_block1">
-                    <div id="facility_container_cards_matter">
-                      <h1 id="c_c_title">{Facilitycardss.title}</h1>
-                      <p id="c_c_matter">{Facilitycardss.description}</p>
-                      <div id="facility_container_cards_block">
-                        {(Facilitycardss.description1 === "") ? (<></>) : (<li>{Facilitycardss.description1} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan1}</span></li>)}
-                        {(Facilitycardss.description2 === "") ? (<></>) : (<li>{Facilitycardss.description2} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan2}</span></li>)}
-                        {(Facilitycardss.description3 === "") ? (<></>) : (<li>{Facilitycardss.description3} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan3}</span></li>)}
-                        {(Facilitycardss.description4 === "") ? (<></>) : (<li>{Facilitycardss.description4} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan4}</span></li>)}
-                        {(Facilitycardss.description5 === "") ? (<></>) : (<li>{Facilitycardss.description5} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan5}</span></li>)}
-                        {(Facilitycardss.description6 === "") ? (<></>) : (<li>{Facilitycardss.description6} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan6}</span></li>)}
-                        {(Facilitycardss.description7 === "") ? (<></>) : (<li>{Facilitycardss.description7} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan7}</span></li>)}
-                        {(Facilitycardss.description8 === "") ? (<></>) : (<li>{Facilitycardss.description8} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan8}</span></li>)}
-                      </div>
-                      <div id="fnblock">
-                        {Facilitycardss && Facilitycardss.fnblock.map(fnblocks =>
-                          <div id="fnblock1" key={fnblocks.id}>
-                            <p>{fnblocks.fnblocknme}</p>
-                            <p1>{fnblocks.fnblockmtr}</p1>
-                          </div>
-                        )}
-                      </div>
+              <div className="facility_container_cards" id={Facilitycardss.facilityid} key={Facilitycardss.id}>
+                <div id="facility_container_cards_block1">
+                  <div id="facility_container_cards_matter">
+                    <h1 id="c_c_title">{Facilitycardss.title}</h1>
+                    <p id="c_c_matter">{Facilitycardss.description}</p>
+                    <div id="facility_container_cards_block">
+                      {(Facilitycardss.description1 === "") ? (<></>) : (<li>{Facilitycardss.description1} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan1}</span></li>)}
+                      {(Facilitycardss.description2 === "") ? (<></>) : (<li>{Facilitycardss.description2} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan2}</span></li>)}
+                      {(Facilitycardss.description3 === "") ? (<></>) : (<li>{Facilitycardss.description3} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan3}</span></li>)}
+                      {(Facilitycardss.description4 === "") ? (<></>) : (<li>{Facilitycardss.description4} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan4}</span></li>)}
+                      {(Facilitycardss.description5 === "") ? (<></>) : (<li>{Facilitycardss.description5} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan5}</span></li>)}
+                      {(Facilitycardss.description6 === "") ? (<></>) : (<li>{Facilitycardss.description6} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan6}</span></li>)}
+                      {(Facilitycardss.description7 === "") ? (<></>) : (<li>{Facilitycardss.description7} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan7}</span></li>)}
+                      {(Facilitycardss.description8 === "") ? (<></>) : (<li>{Facilitycardss.description8} <span style={{ fontWeight: `lighter` }}>{Facilitycardss.descriptionSpan8}</span></li>)}
+                    </div>
+                    <div id="fnblock">
+                      {Facilitycardss && Facilitycardss.fnblock.map(fnblocks =>
+                        <div id="fnblock1" key={fnblocks.id}>
+                          <p>{fnblocks.fnblocknme}</p>
+                          <p1>{fnblocks.fnblockmtr}</p1>
+                        </div>
+                      )}
                     </div>
                   </div>
-                  <div id="facility_container_cards_block2">
-                    {(Facilitycardss.fimage.publicURL) ?
-                      <img src={Facilitycardss.fimage.publicURL} alt="img" />
-                      :
-                      <img src={Facilitycardss.fimage} alt="img" />
-                    }
-                  </div>
                 </div>
-              </>
+                <div id="facility_container_cards_block2">
+                  {(Facilitycardss.fimage.publicURL) ?
+                    <img src={Facilitycardss.fimage.publicURL} alt="img" />
+                    :
+                    <img src={Facilitycardss.fimage} alt="img" />
+                  }
+                </div>
+              </div>
             )}
           </div>
         </div>

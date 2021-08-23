@@ -8,13 +8,13 @@ export const Certification = ({ title, certificationImages }) => {
       <div id="Certifications">
         <h1>{title}</h1>
         <div id="Certifications_container">
-          {certificationImages && certificationImages.map(certificationImagess =>
-            <div id="Certifications_container_block1">
-            {certificationImagess.icon.publicURL ? 
-              <img src={certificationImagess.icon.publicURL} alt="img" />
-              :
-              <img src={certificationImagess.icon} alt="img" />
-            }
+          {certificationImages && certificationImages.map((certificationImagess, i) =>
+            <div id="Certifications_container_block1" ke={i}>
+              {certificationImagess.icon.publicURL ?
+                <img src={certificationImagess.icon.publicURL} alt="img" />
+                :
+                <img src={certificationImagess.icon} alt="img" />
+              }
             </div>
           )}
         </div>

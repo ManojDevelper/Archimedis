@@ -7,8 +7,8 @@ export const Aboutstatus = ({ Aboutstatus }) => {
     <>
       <div id="aboutstatus">
         <div id="aboutstatus_container">
-          {Aboutstatus && Aboutstatus.map(Aboutstatuss =>
-            <div id="aboutstatus_container_block1">
+          {Aboutstatus && Aboutstatus.map((Aboutstatuss, i) =>
+            <div id="aboutstatus_container_block1" key={i}>
               <img src={Aboutstatuss.icon.publicURL} alt="img" />
               <h1>{Aboutstatuss.title}</h1>
               <p>{Aboutstatuss.description}</p>

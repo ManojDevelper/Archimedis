@@ -12,23 +12,21 @@ export const Foodsupplements = ({ foodsupliments }) => {
           <p>{foodsuplimentss.description}</p>
           <div id="foodsupplements_container">
             {foodsuplimentss.foodsuplimentscards.map(foodsuplimentscardss =>
-              <>
-                <div className="foodsupplements_container_cards" id={foodsuplimentscardss.foodsuplimentsid} key={foodsuplimentscardss.id}>
-                  <div id="foodsupplements_container_cards_block1">
-                    <div id="foodsupplements_container_cards_matter">
-                      <h1 id="c_c_title">{foodsuplimentscardss.title}</h1>
-                      <p id="c_c_matter">{foodsuplimentscardss.description}</p>
-                    </div>
+              <div className="foodsupplements_container_cards" id={foodsuplimentscardss.foodsuplimentsid} key={foodsuplimentscardss.id}>
+                <div id="foodsupplements_container_cards_block1">
+                  <div id="foodsupplements_container_cards_matter">
+                    <h1 id="c_c_title">{foodsuplimentscardss.title}</h1>
+                    <p id="c_c_matter">{foodsuplimentscardss.description}</p>
                   </div>
-                  <div id="foodsupplements_container_cards_block2">
-                  {(foodsuplimentscardss.Image.publicURL) ? 
+                </div>
+                <div id="foodsupplements_container_cards_block2">
+                  {(foodsuplimentscardss.Image.publicURL) ?
                     <img src={foodsuplimentscardss.Image.publicURL} alt="img" />
                     :
                     <img src={foodsuplimentscardss.Image} alt="img" />
                   }
-                  </div>
                 </div>
-              </>
+              </div>
             )}
           </div>
         </div>

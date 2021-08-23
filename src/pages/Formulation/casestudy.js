@@ -10,12 +10,12 @@ export const Casestudy = ({ Casestudy }) => {
   return (
     <>
       {Casestudy && Casestudy.map(Casestudys =>
-        <div id="casestudy">
+        <div id="casestudy" key={Casestudys.id}>
           <h1>{Casestudys.Casestudytitle}</h1>
           <div id="casestudy_container">
             {Casestudys && Casestudys.Casestudycards.map(Casestudycardss =>
-              <>
-                <div className="casestudy_card" id={Casestudycardss.Casestudyblockid} key={Casestudycardss.id}>
+              <div key={Casestudycardss.id}>
+                <div className="casestudy_card" id={Casestudycardss.Casestudyblockid}>
                   <div id="casestudy_card_b1">
                   {(Casestudycardss.image.publicURL) ? 
                     <img src={Casestudycardss.image.publicURL} alt="img" />
@@ -29,7 +29,7 @@ export const Casestudy = ({ Casestudy }) => {
                     <Link to={Casestudycardss.mainlink}><button id="csbtn">View Case Study<img src={arrow} alt="img" id="blod_btn1" /><img src={arrow2} alt="img" id="blod_btn2" /></button></Link>
                   </div>
                 </div>
-              </>
+              </div>
             )}
           </div>
         </div>

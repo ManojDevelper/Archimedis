@@ -13,8 +13,8 @@ export const Archibranded = ({ archibrand }) => {
                     <h2>{archibrands.description}</h2>
                     <div id="archibranded_container">
                         {archibrands.archibrandcards.map(archibrandcardss =>
-                            <>
-                                <div className="archibranded_container_cards" id={archibrandcardss.archibrandid} key={archibrandcardss.id}>
+                            <div key={archibrandcardss.id}>
+                                <div className="archibranded_container_cards" id={archibrandcardss.archibrandid}>
                                     <div id="archibranded_container_cards_block1">
                                         <div id="archibranded_container_cards_matter">
                                             <p>{archibrandcardss.title}</p>
@@ -30,7 +30,7 @@ export const Archibranded = ({ archibrand }) => {
                                     }
                                     </div>
                                 </div>
-                            </>
+                            </div>
                         )}
                     </div>
                 </div>
@@ -74,7 +74,7 @@ const ArchiBrandedPrev = props => {
         <>
             {
                 data.file &&
-                <Archibranded
+                <Archibranded 
                     archibrand={ArchiBrandedPre.archibrand}
                 />
             }
