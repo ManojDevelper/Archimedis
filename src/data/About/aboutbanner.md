@@ -1,3 +1,3 @@
 ---
-AboutDescription: "Welcome to Archimedis Healthcare …where passions come to life."
+AboutDescription: "Welcome to Archimedis Healthcare, Where passions come to life."
 ---
