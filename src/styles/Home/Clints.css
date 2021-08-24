@@ -16,6 +16,8 @@
   line-height: 3.9568345323741vw;
   text-align: center;
   color: #200e32;
+  width: 52.5179856115vw;
+  margin: auto;
 }
 #clints_container_main {
   width: 100%;
@@ -146,10 +148,10 @@
     margin-top: 6.5vw;
   }
   #clints h1 {
-    font-size: 6.5vw;
-    line-height: 9vw;
+    font-size: 4.5vw;
+    line-height: 8vw;
     margin: auto;
-    width: 60vw;
+    width: 100%;
   }
   #clints_container_main_b1 h1 {
     font-size: 4vw;
@@ -161,7 +163,7 @@
     margin-top: 4vw;
   }
   #clints_container_main {
-    padding: 8vw 4vw;
+    padding: 1vw 4vw 8vw 4vw;
     margin-top: 0vw;
     border-radius: 2vw;
   }

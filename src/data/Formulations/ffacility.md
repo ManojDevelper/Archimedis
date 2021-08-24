@@ -25,7 +25,7 @@ Ffacility:
             id: 3,
             Ffacilityblockid: "StabilityChamber",
             Ffacilityname: "Stability Chamber",
-            Ffacilitydesc: "Stability studies are conducted by the analytical research and development team for their new developed products encompassing the following conditions:",
+            Ffacilitydesc: "The crux of the stability studies performed. This forms the cradle where various environmental conditions are artificially created to which the medicines might be exposed. They are useful in providing insights to the atmospheric conditions by accelerating the exposure and any adverse effects they may cause.",
             ffacilitypic: "../assets/fp2_c10.png",
           },
         ],

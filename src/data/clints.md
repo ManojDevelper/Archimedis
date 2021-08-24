@@ -1,5 +1,5 @@
 ---
-clintstitle: "Here’s What Our Clients Say"
+clintstitle: "Don't just take our word for it, hear what our clients have to say"
 clints: 
   [
       {

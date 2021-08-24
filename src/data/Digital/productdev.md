@@ -100,7 +100,7 @@ prodev:
             id: 6,
             pdcontid: "Design",
             title: "Training",
-            title2: "All employees are trained periodically to enhance the knowledge and skills of employees by providing information and instruction on how to better perform specific tasks. The training includes induction training at the time of new recruitment followed by cGMP training, SOP Training and on job training.",
+            title2: "Periodic training of all employees to enhance their knowledge and skills. The training includes induction training at the time of new recruitment followed by cGMP training, SOP Training and on job training.",
             Image: "../assets/qc15.svg",
           },
         ],

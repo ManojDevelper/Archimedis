@@ -62,13 +62,18 @@ const Contact = () => {
         data.append("organization", organization);
         data.append("message", message);
 
-        var url = "https://script.google.com/macros/s/AKfycbyXc8omZG7quzksXGSRktMgsQiWy7L79FoorEqBg_aEmtzpWBOHn8kkPsdllbtu_3d1/exec";
+        var url = "https://script.google.com/macros/s/AKfycbxYdscsoikCHWAa4eXk8xYDspZs0y_F4YN7E1tH1Vz-KhdF0h7VjdTO_T_sdgPwfwjK/exec";
 
         await fetch(url, {
             method: 'POST',
             body: data,
             mode: 'no-cors',
         }).then(function (response) {
+            setName()
+            setPhone()
+            setEmail()
+            setOrganization()
+            setMessage()
             setDisabled(false);
         }).catch(function (err) {
             setDisabled(false);
@@ -138,7 +143,7 @@ const Contact = () => {
                             <textarea type="text" placeholder="What do you want to talk to us about?" value={message} onChange={e => setMessage(e.target.value)} />
                         </div>
                         <div className="button">
-                            {name.length < 3, !email || (!/\S+@\S+\.\S+/.test(email)), !phone || phone.length < 10, !organization || organization.length < 3 ?
+                            {name.length < 3 || !email || (!/\S+@\S+\.\S+/.test(email)) || !phone || phone.length < 10 || !organization || organization.length < 3 ?
                                 <button onClick={signUpp}>SEND MESSAGE</button>
                                 :
                                 <button onClick={onFinish}>SEND MESSAGE</button>
