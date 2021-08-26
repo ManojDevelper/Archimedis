@@ -297,6 +297,12 @@ collections:
               required: false,
             }
           - {
+              label: Description2,
+              name: description2,
+              widget: string,
+              required: false,
+            }
+          - {
               label: Standoutcontainer,
               name: Standoutcontainer,
               widget: list,

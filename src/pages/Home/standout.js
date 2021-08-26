@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../styles/Home/Standout.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const Standout = ({ title, description, Standoutcontainer }) => {
+export const Standout = ({ title, description, description2, Standoutcontainer }) => {
 
   return (
     <>
@@ -23,6 +23,7 @@ export const Standout = ({ title, description, Standoutcontainer }) => {
             </div>
           )}
         </div>
+        <p>{description2}</p>
       </div>
     </>
   );
@@ -37,6 +38,7 @@ const StandoutPrev = props => {
             frontmatter {
                 title
                 description
+                description2
                 Standoutcontainer {
                   id
                   standname
@@ -60,6 +62,7 @@ const StandoutPrev = props => {
         <Standout
           title={standoutPre.title}
           description={standoutPre.description}
+          description2={standoutPre.description2}
           Standoutcontainer={standoutPre.Standoutcontainer}
         />
       }

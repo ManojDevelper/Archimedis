@@ -21,6 +21,7 @@ const homeStandoutPreview = ({ entry, getAsset }) => {
             <Standout
                 title={data.title}
                 description={data.description}
+                description2={data.description2}
                 Standoutcontainer={data.Standoutcontainer}
             />
         </div>
