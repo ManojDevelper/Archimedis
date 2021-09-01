@@ -1,10 +1,11 @@
 ---
-title: The driving and guiding core which helps us transform and keep up with the ever-changing times.
-description: Manuscript editing, proofreading services in India at affordable
-  prices (starts at INR 1.5) for students, researchers and publishers.
+title: Pharma company - Pharmaceutical digital solution for ERP, Smart dispensing
+description: Archimedis provides the digital solution for ERP, smart dispensing,
+  Environmental monitoring, product development with quality compliance
 keywords:
-  - Solutions
-  - Product Development
-  - Quality & Compliance
-  - ""
+  - ERP solution
+  - pharma digital
+  - pharmaceutical digital product
+  - Environmental monitoring
+  - Quality compliance
 ---
