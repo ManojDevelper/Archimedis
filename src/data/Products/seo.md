@@ -1,9 +1,14 @@
 ---
-title: Manuscript editing services in India. Cheap and best manuscript editing ratesFrom our cache of diverse remedies for your ailments, a few needed to deserve a special mention. Go ahead, take a look.
-description: From our cache of diverse remedies for your ailments, a few needed to deserve a special mention. Go ahead, take a look.
+title: "Products - Therapeutic areas, OTC,  Flagship and Prescription drugs "
+description: "Archimedis offers pharmaceutical products in therapeutic areas,
+  OTC, Flagship drugs - food supplements -Vitamin D, Bone collagen, Lola and
+  Branded products - Fertility enhancer, hand sanitizer "
 keywords:
-  - Pharmaceutical
-  - Food Supplements
-  - Archimedis Branded
-  - ""
+  - Archimedis
+  - Pharma products
+  - OTC products
+  - flagship drugs
+  - food supplements
+  - Vitamin D
+  - hand sanitizer manufacturing company
 ---
