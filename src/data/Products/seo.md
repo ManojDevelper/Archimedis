@@ -1,8 +1,8 @@
 ---
 title: "Products - Therapeutic areas, OTC,  Flagship and Prescription drugs "
-description: "\\Archimedis offers pharmaceutical products in therapeutic areas,
+description: "Archimedis offers pharmaceutical products in therapeutic areas,
   OTC, Flagship drugs - food supplements -Vitamin D, Bone collagen, Lola and
-  Branded products - Fertility enhancer, hand sanitiser "
+  Branded products - Fertility enhancer, hand sanitizer "
 keywords:
   - Archimedis
   - Pharma products
