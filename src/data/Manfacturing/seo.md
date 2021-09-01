@@ -1,9 +1,11 @@
 ---
-title: The hub, equipped with all requisite infrastructure, where our myriad ideas and projects actually materialise and take form.
-description: The hub, equipped with all requisite infrastructure, where our myriad ideas and projects actually materialise and take form.
+title: "Pharmaceutical Tablets, Capsules, Dry Syrup contract Manufacturer "
+description: "Fastest growing pharmaceutical contract manufacturing company in
+  India offers tablets, capsules and dry syrup at an affordable price with
+  quality assurance "
 keywords:
-  - Capabilities
-  - Quality
-  - Facility
-  - Industry
+  - Tablets Manufacturer
+  - capsules manufacturing company
+  - dry syrup manufacturer
+  - contract manufacturing company
 ---
