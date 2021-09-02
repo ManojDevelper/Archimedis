@@ -1,5 +1,5 @@
 ---
-author_image: ../assets/t4.png
+author_image: ../assets/Durai-Swamy-Rajan-Director.png
 author: ContentConcepts
 bio: Manuscript Editing Services
 title: Five Reasons Bi-layer Splits During Coating

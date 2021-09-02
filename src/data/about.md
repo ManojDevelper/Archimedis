@@ -1,5 +1,5 @@
 ---
 abouttitle: "Get to Know Us"
 aboutdesc: "We aspire to further enhance life on earth by formulating scientific & digital innovations.  We passionately architect medicine and digital systems so that planet earth continues to thrive."
-aboutImg: assets/about.png
+aboutImg: assets/Archimedis-Directors.png
 ---

@@ -10,7 +10,7 @@ teams2:
             id: 1,
             teaamname: "Duraisamy Rajan Palani",
             teamdesignation: "President & CEO",
-            teamimg: "assets/t4.png",
+            teamimg: "assets/Durai-Swamy-Rajan-Director.png",
             linkdin: "https://in.linkedin.com/in/duraipalani",
           },
           {

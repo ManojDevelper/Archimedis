@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Casestudycompo.css";
-import img1 from "../../data/assets/t4.png";
+import img1 from "../../data/assets/Durai-Swamy-Rajan-Director.png";
 import bco1 from "../../data/assets/b_co_i1.png";
 import bco2 from "../../data/assets/b_co_i2.png";
 import Contact from "../Home/contact";

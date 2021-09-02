@@ -1,5 +1,5 @@
 ---
-author_image: ../assets/t4.png
+author_image: ../assets/Durai-Swamy-Rajan-Director.png
 author: What is Lorem Ipsum?
 bio: First to develop and complete BE study for Metoprolol - Ivabradine
   Hydrochloride Tablets in India (product is approved by central Drug Control of

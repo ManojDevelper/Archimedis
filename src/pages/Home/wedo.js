@@ -44,6 +44,7 @@ const WedoPrev = props => {
                 wedoname
                 wedodesc
                 link
+                alttag
                 wedoimg {
                   publicURL
                 }

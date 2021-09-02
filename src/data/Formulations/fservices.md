@@ -13,7 +13,7 @@ fservices:
             fservicecardtitle: "Formulation Development",
             fservicecarddesc: "Formulation development is instrumental in bridging the gap between discovering a drug substance to an actual commercial drug product. With our proficient formulation team tackling the difficulties of formulations, such as determining the most appropriate route for drug delivery or be it the optimisation of the formulation’s characteristics based on processing requirements, becomes a child’s play.",
             fserviceminicardsmaintitle: "Infrastructure Facilities",
-            fservicepic: "../assets/fp2_c2.png",
+            fservicepic: "../assets/Formulation-development.png",
             fserviceminicards:
               [
                 {
@@ -67,7 +67,7 @@ fservices:
             fservicecarddesc: "Our experienced and well-qualified team effectively incorporates analytical methods such as assay, dissolution testing and related substances analysis for our newly developed finished products. All the methods used are cost effective and reproducible.
 ",
             fserviceminicardsmaintitle: "Infrastructure Facilities",
-            fservicepic: "../assets/fp2_c1.png",
+            fservicepic: "../assets/Analytical-Method-development.png",
             fserviceminicards:
               [
                 {
@@ -134,7 +134,7 @@ fservices:
             fservicecardid: "AnalyticalMethodValidation",
             fservicecardtitle: "Analytical Method Validation",
             fservicecarddesc: "We are confident about our developed methods thanks to our knowledgeable ARD team that performs validations as per our validation protocol, in adherence to the International Council for Harmonization of Technical Requirements for Pharmaceuticals for Human Use (ICH) guidelines. Based on the inputs, stability is prepared indicating standard test procedure (STP) for regular analysis.",
-            fservicepic: "../assets/fp2_c3.png",
+            fservicepic: "../assets/Analytical-Method-validation.png",
             fserviceminicards: [],
             fc: "",
             fli: []
@@ -144,7 +144,7 @@ fservices:
             fservicecardid: "RegulatoryAffairs",
             fservicecardtitle: "Regulatory Affairs",
             fservicecarddesc: "Regulation in healthcare involves in-depth evaluation to withhold the standards of public health, drug registration, marketing authorization, import and export and pharmacovigilance. We possess veterans in the field of regulatory affairs that take care of the development plan, supervising-writing/reviewing and assembling and submission management, which helps in completing these complex tasks with ease.",
-            fservicepic: "../assets/fp2_c4.png",
+            fservicepic: "../assets/Regulatory-Affairs.png",
             fserviceminicards: [],
             fc: "",
             fli: []
@@ -154,7 +154,7 @@ fservices:
             fservicecardid: "StabilityStudies",
             fservicecardtitle: "Stability Studies",
             fservicecarddesc: "Stability studies are conducted by the analytical research and development team for their new developed products encompassing the ",
-            fservicepic: "../assets/fp2_c5.png",
+            fservicepic: "../assets/Stability-Studies.png",
             fserviceminicards: [],
             fc: "Following Conditions:",
             fli: 
@@ -173,26 +173,6 @@ fservices:
                 },
               ]
           },
-          # {
-          #   id: 6,
-          #   fservicecardid: "BEStudies",
-          #   fservicecardtitle: "BE Studies",
-          #   fservicecarddesc: "BE studies stand for bioequivalence studies which are used to demonstrate therapeutic equivalence between two drugs. BE studies can save a lot of time and money for the cost of development and play an instrumental role in developing new drug formulations of existing drugs.",
-          #   fservicepic: "../assets/fp2_c6.png",
-          #   fserviceminicards: [],
-          #   fc: "",
-          #   fli: []
-          # },
-          # {
-          #   id: 7,
-          #   fservicecardid: "ClinicalTrials",
-          #   fservicecardtitle: "Clinical Trials",
-          #   fservicecarddesc: "Clinical trials are conducted by our experts with extensive care to ensure utmost safety and efficacy of the drugs. These trials are the stepping stones for achieving the regulatory approvals for which thorough investigations are conducted.",
-          #   fservicepic: "../assets/fp2_c7.png",
-          #   fserviceminicards: [],
-          #   fc: "",
-          #   fli: []
-          # },
         ],
     },
   ]

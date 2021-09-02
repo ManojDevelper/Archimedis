@@ -4,15 +4,15 @@ certificationImages:
   [
       {
           id: 1,
-          icon: "../assets/about_certi1.svg",
+          icon: "../assets/MHRA-certified-organisation.svg",
       },
       {
           id: 2,
-          icon: "../assets/about_certi2.svg",
+          icon: "../assets/WHO-GMP-certified.svg",
       },
       {
           id: 3,
-          icon: "../assets/about_certi3.svg",
+          icon: "../assets/UL-Certified.svg",
       },
   ]
 ---
