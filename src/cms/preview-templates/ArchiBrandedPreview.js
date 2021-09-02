@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Archibranded } from "../../pages/Products/archibranded";
+import "../../styles/Products/Archibranded.css";
 
-const ProArchiBrandedPreview = ({ entry, getAsset }) => {
+const ArchiBrandedPrev = ({ entry, getAsset }) => {
 
     const data = entry.getIn(["data"]).toJS();
     if (data.hasOwnProperty('archibrand')) {
@@ -27,11 +28,11 @@ const ProArchiBrandedPreview = ({ entry, getAsset }) => {
     );
 };
 
-ProArchiBrandedPreview.propTypes = {
+ArchiBrandedPrev.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
     getAsset: PropTypes.func,
 };
 
-export default ProArchiBrandedPreview;
+export default ArchiBrandedPrev;

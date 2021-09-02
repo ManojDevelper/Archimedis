@@ -1,24 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { MBanner } from "../../pages/Manfacturing/mbanner";
+import { Dbanner } from "../../pages/Digital/dbanner";
 
-const MBannerPreview = ({ entry }) => {
+const DBannerPreview = ({ entry }) => {
 
     const data = entry.getIn(["data"]).toJS();
 
     return (
         <div>
-            <MBanner
+            <Dbanner
                 description={data.description}
             />
         </div>
     );
 };
 
-MBannerPreview.propTypes = {
+DBannerPreview.propTypes = {
     entry: PropTypes.shape({
         getIn: PropTypes.func,
     }),
 };
 
-export default MBannerPreview;
+export default DBannerPreview;

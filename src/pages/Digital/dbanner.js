@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Digital/dbanner.css";
 import Nav from "../nav";
 import Top2 from "../../components/Taketop";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Dbanner = () => {
-    const data = useStaticQuery(graphql`
+export const Dbanner = ({description}) => {
+    return (
+        <>            <Nav />
+            <div id="dbanner">
+                <div id="dbanner_container">
+                    <h1>{description}</h1>
+                </div>
+            </div>
+            <Top2 link="/digital/" />
+        </>
+    );
+};
+const DBannerPre = props => {
+  const [DbannerPre, setDbannerPre] = useState({});
+  const data = useStaticQuery(graphql`
     query{
-        Dbanner: file(relativePath: {eq: "Digital/dbanner.md"}) {
+        file(relativePath: {eq: "Digital/dbanner.md"}) {
             childMarkdownRemark {
               frontmatter {
                 description
@@ -16,15 +29,20 @@ const Dbanner = () => {
           }
         }
      `)
-    return (
-        <>            <Nav />
-            <div id="dbanner">
-                <div id="dbanner_container">
-                    <h1>{data.Dbanner.childMarkdownRemark.frontmatter.description}</h1>
-                </div>
-            </div>
-            <Top2 link="/digital/" />
-        </>
-    );
-};
-export default Dbanner;
+  useEffect(() => {
+    if (data.file) {
+      setDbannerPre(data.file.childMarkdownRemark.frontmatter);
+    }
+  }, [data.file]);
+  return (
+    <>
+      {
+        data.file &&
+        <Dbanner
+          description={DbannerPre.description}
+        />
+      }
+    </>
+  )
+}
+export default DBannerPre;

@@ -20,11 +20,11 @@ import fServicePreview from "./preview-templates/fServicePreview";
 import ManuCapablePreview from "./preview-templates/ManuCapablePreview";
 import ManuFFacilityPreview from "./preview-templates/ManuFFacilityPreview";
 import ManuIndustryPreview from "./preview-templates/ManuIndustryPreview";
-import ManuBannerPreview from "./preview-templates/ManuBannerPreview";
+import MBannerPreview from "./preview-templates/ManuBannerPreview";
 import ManuQualityPreview from "./preview-templates/ManuQualityPreview";
 import ManuQAssurancePreview from "./preview-templates/ManuQAssurancePreview";
 import ProBannerPreview from "./preview-templates/ProBannerPreview";
-import ProArchiBrandedPreview from "./preview-templates/ProArchiBrandedPreview";
+import ArchiBrandedPreview from "./preview-templates/ArchiBrandedPreview";
 import ProFoodSupplyPreview from "./preview-templates/ProFoodSupplyPreview";
 import ProPharmaceuticalPreview from "./preview-templates/ProPharmaceuticalPreview";
 import ProDsolutionsPreview from "./preview-templates/ProDsolutionsPreview";
@@ -37,6 +37,7 @@ import AboutUsPreview from "./preview-templates/AboutUsPreview";
 import CertificationPreview from "./preview-templates/CertificationPreview";
 import MildstonePreview from "./preview-templates/MildstonePreview";
 import OurvaluesPreview from "./preview-templates/OurvaluesPreview";
+import DBannerPreview from "./preview-templates/DBannerPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -83,11 +84,11 @@ CMS.registerPreviewTemplate("fservice", withStyledComponentsRendered(fServicePre
 CMS.registerPreviewTemplate("capable", withStyledComponentsRendered(ManuCapablePreview));
 CMS.registerPreviewTemplate("facility", withStyledComponentsRendered(ManuFFacilityPreview));
 CMS.registerPreviewTemplate("industry", withStyledComponentsRendered(ManuIndustryPreview));
-CMS.registerPreviewTemplate("mbanner", withStyledComponentsRendered(ManuBannerPreview));
+CMS.registerPreviewTemplate("mbanner", withStyledComponentsRendered(MBannerPreview));
 CMS.registerPreviewTemplate("quality", withStyledComponentsRendered(ManuQualityPreview));
 CMS.registerPreviewTemplate("qualityassurance", withStyledComponentsRendered(ManuQAssurancePreview));
 CMS.registerPreviewTemplate("pbanner", withStyledComponentsRendered(ProBannerPreview));
-CMS.registerPreviewTemplate("archibranded", withStyledComponentsRendered(ProArchiBrandedPreview));
+CMS.registerPreviewTemplate("archibranded", withStyledComponentsRendered(ArchiBrandedPreview));
 CMS.registerPreviewTemplate("foodsupplements", withStyledComponentsRendered(ProFoodSupplyPreview));
 CMS.registerPreviewTemplate("pharmaceutical", withStyledComponentsRendered(ProPharmaceuticalPreview));
 CMS.registerPreviewTemplate("foodsupplements", withStyledComponentsRendered(ProFoodSupplyPreview));
@@ -101,3 +102,4 @@ CMS.registerPreviewTemplate("aboutus", withStyledComponentsRendered(AboutUsPrevi
 CMS.registerPreviewTemplate("certification", withStyledComponentsRendered(CertificationPreview));
 CMS.registerPreviewTemplate("mildstone", withStyledComponentsRendered(MildstonePreview));
 CMS.registerPreviewTemplate("ourvalues", withStyledComponentsRendered(OurvaluesPreview));
+CMS.registerPreviewTemplate("dbanner", withStyledComponentsRendered(DBannerPreview));

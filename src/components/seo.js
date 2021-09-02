@@ -79,6 +79,7 @@ function SEO({ description, lang, meta, title, keywords, SchemaMarkup }) {
       ].concat(meta)}
     >
         <script type="application/ld+json">{JSON.stringify(SchemaMarkup)}</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172499235-1"></script>
     </Helmet>
   )
 }

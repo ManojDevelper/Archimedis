@@ -14,4 +14,4 @@ Disallow:
 Disallow: /src/
 Disallow: /gatsby-config.js/
 Disallow: /path
-Sitemap: https://archifidi.netlify.app/sitemap
+Sitemap: https://www.archimedis.global/sitemap

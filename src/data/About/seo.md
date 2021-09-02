@@ -1,10 +1,12 @@
 ---
-title: The driving and guiding core which helps us transform and keep up with the ever-changing times.
-description: Manuscript editing, proofreading services in India at affordable
-  prices (starts at INR 1.5) for students, researchers and publishers.
+title: "About Archimedis - pharmaceutical company values and certification "
+description: Archimedis global WHO GMP, MHRA certified and leading contract
+  pharmaceutical organisation in Chennai, India, provides quality products and
+  services.
 keywords:
-  - Solutions
-  - Product Development
-  - Quality & Compliance
-  - ""
+  - Archimedis Values
+  - Certification
+  - pharmaceutical  company
+  - Who Gmp certified pharma company
+  - MHRA certified  pharma company
 ---

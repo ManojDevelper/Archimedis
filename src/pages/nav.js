@@ -42,7 +42,7 @@ function Navbars() {
                     </div>
                     <Nav id="navbarResponsive">
                         <div id="nav_b1">
-                            <div id="nav_links"><Nav.Link href="/about/" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Nav.Link></div>
+                            <div id="nav_links"><Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Nav.Link></div>
                             <div id="nav_links"><Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients<span>|</span></Nav.Link></div>
                             <div id="nav_links"><Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog<span>|</span></Nav.Link></div>
                             <div id="nav_links"><Nav.Link id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link></div>
@@ -173,7 +173,7 @@ function Navbars() {
                                 <p id="main_top_link"><Nav.Link href="/home" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHide(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHide(false)}><img src={minus} alt="img" /></span></p>}
                             {!hide ? null : (
                                 <>
-                                    <Nav.Link href="/about/" id="nav_main_link" activeClassName='active'>About Us</Nav.Link>
+                                    <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About Us</Nav.Link>
                                     <Nav.Link href="/home/#team" id="nav_main_link" activeClassName='active'>Our People</Nav.Link>
                                     <Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients</Nav.Link>
                                     <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog</Nav.Link>

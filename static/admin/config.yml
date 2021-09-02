@@ -684,7 +684,7 @@ collections:
         create: true
         public_folder: "../assets"
         fields:
-          - { label: Title, name: description, widget: string }
+          - { label: Title, name: description }
       - file: src/data/Manfacturing/capabilities.md
         label: Capabilities
         name: capable
