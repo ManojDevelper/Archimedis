@@ -5,4 +5,5 @@ description2: "Archimedis, our family-owned and family-operated enterprise estab
 description3: "Archimedis excels as a, but isn’t limited to, Pharmaceutical Manufacturing Organisation, specialising in non-beta lactam-based products in solid oral dosage forms (Tablets, Capsules and Dry Syrup). With a vision to enhance human life globally, we skilfully combine robust process, capable people and latest technology to deliver consistent formulations. Our motto is to architect medicine with passion so that humanity continues to thrive.
 "
 aboutImg: ../assets/Archimedis-Directors.png
+alttag: Archimedis Director
 ---

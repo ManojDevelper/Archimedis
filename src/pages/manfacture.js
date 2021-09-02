@@ -25,12 +25,24 @@ const Manfacturing = () => {
     }
   }
 `);
-
+const schema = {
+  "@context": "http://www.schema.org",
+  "@type": "product",
+  "brand": "Archimedis",
+  "name": "Manufacturing Product ",
+  "image": "https://archimedis.global/manufacture/",
+  "description": ":Fastest growing pharmaceutical contract manufacturing company in India offers tablets, capsules and dry syrup at an affordable price with quality assurance ",
+  "aggregateRating": {
+    "@type": "aggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "6"
+  }
+}
   const seoData = data.file.childMarkdownRemark.frontmatter;
   return (
     <>
       <div id="manfacturing">
-        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
+        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} SchemaMarkup={schema}/>
         <MBanner />
         <Capable />
         <Quality />

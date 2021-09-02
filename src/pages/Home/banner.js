@@ -3,7 +3,7 @@ import "../../styles/Home/Banner.css";
 import img1 from "../../images/play_btn.svg";
 import img2 from "../../images/medal.svg";
 import { graphql, useStaticQuery } from "gatsby";
-import Typewriter from "typewriter-effect";
+import Typed from 'react-typed';
 import Top from "../../components/Taketop";
 import Contact from "./contact";
 import close from "../../images/navclose.svg";
@@ -12,7 +12,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 
-export const Banner = ({ title, description, boxdescription }) => {
+export const Banner = ({ title, description, boxdescription, bannertyping }) => {
 
     const [bcontact, setBcontact] = useState(true)
     const [open, setOpen] = React.useState(false);
@@ -31,33 +31,17 @@ export const Banner = ({ title, description, boxdescription }) => {
                     <div id="banner_container_matter">
                         <div id="banner_title">
                             <div id="static-txt">{title}</div>
-                            <Typewriter id="Typewriter"
-                                options={{
-                                    loop: true,
-                                }}
-                                onInit={(typewriter) => {
-                                    typewriter.typeString("Consistency")
-                                        .pauseFor(2000)
-                                        .deleteAll()
-                                        .pauseFor(500)
-                                        .typeString("Life Science")
-                                        .pauseFor(2000)
-                                        .deleteAll()
-                                        .pauseFor(500)
-                                        .typeString("Digital Transformation")
-                                        .pauseFor(2000)
-                                        .deleteAll()
-                                        .pauseFor(500)
-                                        .typeString("Client Success")
-                                        .pauseFor(2000)
-                                        .deleteAll()
-                                        .pauseFor(500)
-                                        .typeString("Clarity")
-                                        .pauseFor(2000)
-                                        .deleteAll()
-                                        .start()
-                                }}
-                            />
+                            {
+                                bannertyping &&
+                                <Typed
+                                    strings={bannertyping && bannertyping}
+                                    typeSpeed={60}
+                                    backSpeed={60}
+                                    backDelay={1200}
+                                    loop
+                                    className="typeAnimation"
+                                />
+                            }
                         </div>
                         <p id="banner_desc">{description}</p>
                         <div id="banner_btn_container">
@@ -113,6 +97,7 @@ const BannerPrev = props => {
                 title
                 description
                 boxdescription
+                bannertyping
               }
             }
           }
@@ -130,6 +115,7 @@ const BannerPrev = props => {
                     title={bannerPre.title}
                     description={bannerPre.description}
                     boxdescription={bannerPre.boxdescription}
+                    bannertyping={bannerPre.bannertyping}
                 />
             }
         </>

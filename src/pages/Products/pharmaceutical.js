@@ -21,9 +21,9 @@ export const Pharmaceutical = ({ pharmaceutical }) => {
                 </div>
                 <div id="pharmaceutical_container_cards_block2">
                   {(pharmaceuticalcardss.Image.publicURL) ?
-                    <img src={pharmaceuticalcardss.Image.publicURL} alt="img" />
+                    <img src={pharmaceuticalcardss.Image.publicURL} alt={pharmaceuticalcardss.alt_tag} />
                     :
-                    <img src={pharmaceuticalcardss.Image} alt="img" />
+                    <img src={pharmaceuticalcardss.Image} alt={pharmaceuticalcardss.alt_tag} />
                   }
                 </div>
               </div>
@@ -51,6 +51,7 @@ const PharmaceuticalPrev = props => {
                   title
                   description
                   pharmaceuticalid
+                  alt_tag
                   Image {
                     publicURL
                   }

@@ -17,6 +17,7 @@ const AboutUsPreview = ({ entry, getAsset }) => {
             description={data.description}
             description2={data.description2}
             description3={data.description3}
+            alttag={data.alttag}
             aboutImg={AboutImage}
         />
     );

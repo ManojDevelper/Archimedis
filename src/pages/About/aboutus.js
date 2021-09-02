@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import "../../styles/About/Aboutus.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const Aboutus = ({ title, description, aboutImg, description2, description3 }) => {
+export const Aboutus = ({ title, description, aboutImg, description2, description3, alttag }) => {
 
   return (
     <>
       <div id="aboutus">
         <h1>{title}</h1>
         <h2 id="about_dec">{description}</h2>
-        <img src={aboutImg} alt="img" />
+        <img src={aboutImg} alt={alttag} />
       </div>
       <div id="aboutdescription_container">
         <p>{description2}</p>
@@ -30,6 +30,7 @@ const AboutUsPrev = props => {
                   description
                   description2
                   description3
+                  alttag
                   aboutImg {
                     publicURL
                 }
@@ -57,6 +58,7 @@ const AboutUsPrev = props => {
           description={aboutPre.description}
           description2={aboutPre.description2}
           description3={aboutPre.description3}
+          alttag={aboutPre.alttag}
           aboutImg={AboutImage}
         />
       }

@@ -65,7 +65,7 @@ prodev:
             id: 1,
             pdcontid: "GxP",
             title: "GxP Compliance (QMS / SOPs)",
-            title2: "Dedicated Quality Assurance Department, independently reporting to the management, functions to implement and monitor the compliance to cGMP requirements through out the processes ",
+            title2: "Dedicated Quality Assurance Department, independently reporting to the management, functions to implement and monitor the compliance to cGMP requirements Throughout the processes ",
             Image: "../assets/qc11.svg",
           },
           {

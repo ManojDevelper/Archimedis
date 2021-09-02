@@ -13,6 +13,7 @@ Ffacility:
             Ffacilityname: "R&D Pilot Plant",
             Ffacilitydesc: "The sector of the plant where lab scale formulas are transformed into a viable product. This is achieved by structuring a liable and practical procedure to manufacture the product.",
             ffacilitypic: "../assets/R-and-D-Pilot-Plant.png",
+            alt_tag: "Drug research and development",
           },
           {
             id: 2,
@@ -20,6 +21,7 @@ Ffacility:
             Ffacilityname: "Analytical Lab",
             Ffacilitydesc: "Our analytical lab is spacious and well-equipped with facilities. Analysts are well-trained to be capable of handling instruments such as HPLC, dissolution test apparatus, ultra-micro balance and many other sophisticated instruments. All instruments are regularly calibrated and maintained properly to be ready for use. The chemicals have a separate chemical store to keep the stocks with even amenities in the lab to keep the used chemicals.",
             ffacilitypic: "../assets/Analytical-Lab.png",
+            alt_tag: "Analytical Lab",
           },
           {
             id: 3,
@@ -27,6 +29,7 @@ Ffacility:
             Ffacilityname: "Stability Chamber",
             Ffacilitydesc: "The crux of the stability studies performed. This forms the cradle where various environmental conditions are artificially created to which the medicines might be exposed. They are useful in providing insights to the atmospheric conditions by accelerating the exposure and any adverse effects they may cause.",
             ffacilitypic: "../assets/Stability-Chamber.png",
+            alt_tag: "Stability Chamber",
           },
         ],
     },

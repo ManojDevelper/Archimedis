@@ -15,9 +15,9 @@ export const Ffacility = ({ Ffacility }) => {
                 <div className="ffacility_container_cards" id={Ffacilitycardss.Ffacilityblockid} key={Ffacilitycardss.id}>
                   <div id="ffacility_container_cards_block2">
                   {(Ffacilitycardss.ffacilitypic.publicURL) ? 
-                    <img src={Ffacilitycardss.ffacilitypic.publicURL} alt="img" />
+                    <img src={Ffacilitycardss.ffacilitypic.publicURL} alt={Ffacilitycardss.alt_tag} />
                     :
-                    <img src={Ffacilitycardss.ffacilitypic} alt="img" />
+                    <img src={Ffacilitycardss.ffacilitypic} alt={Ffacilitycardss.alt_tag} />
                   }
                   </div>
                   <div id="ffacility_container_cards_block1">
@@ -51,6 +51,7 @@ const FfacilityPrev = props => {
                     Ffacilityblockid
                     Ffacilitydesc
                     Ffacilityname
+                    alt_tag
                       ffacilitypic {
                       publicURL
                     }

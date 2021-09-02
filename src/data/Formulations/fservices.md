@@ -14,6 +14,7 @@ fservices:
             fservicecarddesc: "Formulation development is instrumental in bridging the gap between discovering a drug substance to an actual commercial drug product. With our proficient formulation team tackling the difficulties of formulations, such as determining the most appropriate route for drug delivery or be it the optimisation of the formulation’s characteristics based on processing requirements, becomes a child’s play.",
             fserviceminicardsmaintitle: "Infrastructure Facilities",
             fservicepic: "../assets/Formulation-development.png",
+            alt_tag: "Pharma formulation development",
             fserviceminicards:
               [
                 {
@@ -57,7 +58,6 @@ fservices:
                   fserviceminicardsimg: "../assets/fssi11.svg",
                 },
               ],
-            fc: "",
             fli: []
           },
           {
@@ -68,6 +68,7 @@ fservices:
 ",
             fserviceminicardsmaintitle: "Infrastructure Facilities",
             fservicepic: "../assets/Analytical-Method-development.png",
+            alt_tag: "Pharma Analytical Method development",
             fserviceminicards:
               [
                 {
@@ -126,7 +127,6 @@ fservices:
                   fserviceminicardsimg: "../assets/fs2113.svg",
                 },
               ],
-            fc: "",
             fli: []
           },
           {
@@ -135,8 +135,8 @@ fservices:
             fservicecardtitle: "Analytical Method Validation",
             fservicecarddesc: "We are confident about our developed methods thanks to our knowledgeable ARD team that performs validations as per our validation protocol, in adherence to the International Council for Harmonization of Technical Requirements for Pharmaceuticals for Human Use (ICH) guidelines. Based on the inputs, stability is prepared indicating standard test procedure (STP) for regular analysis.",
             fservicepic: "../assets/Analytical-Method-validation.png",
+            alt_tag: "Analytical method validation company",
             fserviceminicards: [],
-            fc: "",
             fli: []
           },
           {
@@ -145,18 +145,18 @@ fservices:
             fservicecardtitle: "Regulatory Affairs",
             fservicecarddesc: "Regulation in healthcare involves in-depth evaluation to withhold the standards of public health, drug registration, marketing authorization, import and export and pharmacovigilance. We possess veterans in the field of regulatory affairs that take care of the development plan, supervising-writing/reviewing and assembling and submission management, which helps in completing these complex tasks with ease.",
             fservicepic: "../assets/Regulatory-Affairs.png",
+            alt_tag: " Regulatory Affairs organisation",
             fserviceminicards: [],
-            fc: "",
             fli: []
           },
           {
             id: 5,
             fservicecardid: "StabilityStudies",
             fservicecardtitle: "Stability Studies",
-            fservicecarddesc: "Stability studies are conducted by the analytical research and development team for their new developed products encompassing the ",
+            fservicecarddesc: "Stability studies are conducted by the analytical research and development team for their new developed products encompassing the Following Conditions:",
             fservicepic: "../assets/Stability-Studies.png",
+            alt_tag: "Pharmaceutical Stability Studies",
             fserviceminicards: [],
-            fc: "Following Conditions:",
             fli: 
               [
                 {

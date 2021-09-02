@@ -16,9 +16,9 @@ export const Team = ({ teamtitle, teams }) => {
               <div id="team_container_cards" key={teams.id}>
                 <div id="team_container_cards_block1">
                   {(teams.teamimg.publicURL) ?
-                    (<img src={teams.teamimg.publicURL} alt="img" />)
+                    (<img src={teams.teamimg.publicURL} alt={teams.alt_tag} />)
                     :
-                    (<img src={teams.teamimg} alt="img" />)}
+                    (<img src={teams.teamimg} alt={teams.alt_tag} />)}
                   <p>{teams.teaamname}</p>
                   <p id="designation">{teams.teamdesignation}</p>
                 </div>
@@ -44,6 +44,7 @@ const TeamPrev = props => {
                   id
                   teaamname
                   teamdesignation
+                  alt_tag
                   teamimg {
                     publicURL
                   }

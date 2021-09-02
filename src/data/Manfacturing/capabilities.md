@@ -13,6 +13,7 @@ Capabilities:
             capabilitiescardtitle: "Tablets",
             capabilitiescarddesc: "Archimedis understands the crucial role every parameter – size and shape, coating and thickness – plays in the stability and effectiveness of a tablet. Our R&D and manufacturing departments work diligently to achieve the accurate molecular formulation, preserving the complete potential of the medicine.",
             image: ../assets/Tablets-Manufacturer.png,
+            alt_tag: "Tablet Manufacturing Company",
             capabilitiesminicards:
               [
                 {
@@ -38,6 +39,7 @@ Capabilities:
             capabilitiescardtitle: "Capsules",
             capabilitiescarddesc: "Capsules manufacturing is an intricate process that must include proficiency and expertise in parameters like the toughness and thickness of the capsule, coloring, preservation, lubrication, and surface treatment. We at Archimedis exactly attain the required specification with accuracy and sophistication that is achieved through advanced equipment.",
             image: ../assets/Capsules-Manufacturing-Company.png,
+            alt_tag: "Capsules Manufacturer",
             capabilitiesminicards:
               [
                 {
@@ -63,6 +65,7 @@ Capabilities:
             capabilitiescardtitle: "Dry Powder",
             capabilitiescarddesc: "Fill Weight Accuracy and Sealing Quality are the ultimate quantifiers of a dry powder sachet’s stability. Archimedis hosts a state-of-the-art Pakona Horizontal Filling machine that imparts important characteristics to the products, such as Accuracy of Fill Weight, Four- side Leak-proof Sealing, Wide Range of Fill Weight - 1 to 50 grams",
             image: ../assets/Dry-Powder.png,
+            alt_tag: "Dry Powder Organisatuion",
             capabilitiesminicards:
               [
                 {
@@ -86,6 +89,7 @@ Capabilities:
             capabilitiescardtitle: "Commercial Scale",
             capabilitiescarddesc: "Archimedis has built extensive capacity to manufacture commercial scale batches of any volume. We are backed by a robust mechanism that maintains the accuracy of formulation, while ensuring a swift pace of manufacturing. Devoid of human intervention, the system also blocks any impurity from entering into the medicines.",
             image: ../assets/Commercial-Scale.png,
+            alt_tag: "Commercial Scale",
             capabilitiesminicards: [],
           },
         ],

@@ -4,7 +4,7 @@ Facility:
     {
       id: 1,
       title: "Facility",
-      description: "Archimedis has the best-in-class warehouse that houses well-defined systems and processes. The purity and smooth transfer of material are ensured through three important systems Quarantine,temperature and Humidity Control & Dispensing",
+      description: "Archimedis has the best-in-class warehouse that houses well-defined systems and processes. The purity and smooth transfer of material are ensured through three important systems Quarantine, Temperature and Humidity Control & Dispensing",
       Facilitycards:
         [
           {
@@ -35,7 +35,7 @@ Facility:
             id: 2,
             facilityid: "packing",
             title: "Packing",
-            description: "Packaging is elemental in maintaining the stability of the medicines. It prevents the molecules from disintegrating thus safeguarding their utility and the trust in the brand. It is important to choose the right material of the right thickness suitable to the specific molecular composition. We at Archimedis understand these facts and have the following systems in place for packaging",
+            description: "Packaging is elemental in maintaining the stability of the medicines. It prevents the molecules from disintegrating thus safeguarding their utility and the trust in the brand. It is important to choose the right material of the right thickness suitable to the specific molecular composition. We at Archimedis understand these facts and have the following systems in place for packaging:",
             description1: "Auto-Cartonator",
             description2: "Pharma Code Reader",
             description3: "Counterfeit Bar Coding",

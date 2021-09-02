@@ -20,8 +20,8 @@ export const Wedo = ({ wedotitle, wedo, html }) => {
               </div>
               <div id="wedo_container_cards_block2">
                 {(wedos.wedoimg.publicURL) ? (
-                  <img src={wedos.wedoimg.publicURL} alt="img" />
-                ) : (<img src={wedos.wedoimg} alt="img" />)}
+                  <img src={wedos.wedoimg.publicURL} alt={wedos.alt_tag} />
+                ) : (<img src={wedos.wedoimg} alt={wedos.alt_tag} />)}
               </div>
             </div>
           )}
@@ -44,7 +44,7 @@ const WedoPrev = props => {
                 wedoname
                 wedodesc
                 link
-                alttag
+                alt_tag
                 wedoimg {
                   publicURL
                 }

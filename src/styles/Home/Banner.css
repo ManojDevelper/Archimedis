@@ -23,7 +23,7 @@ button {
   background-position: center right 4.17985611510791vw;
   padding: 8.77697841726619vw 0 9.85611510791367vw 0;
 }
-#banner_container .Typewriter__cursor {
+#banner_container .typed-cursor{
   color: #f8569e;
   margin: 0;
   padding: 0;

@@ -18,7 +18,7 @@ foodsupliments:
             id: 2,
             foodsuplimentsid: "BoneCollagen",
             title: "Bone Collagen",
-            description: "Collagen is the most abundant protein found in the human body. It is the building block to that gives structure and strength.  A deficiency of collagen in the body can lead to bone disorders such osteoporosis. Try our bone collagen supplements and witness by yourselves increase in Bone Mass Density (BMD) and bone strength. Available in Rosehip variant too.",
+            description: "Collagen is the most abundant protein found in the human body. It is the building block to that gives structure and strength.  A deficiency of collagen in the body can lead to bone disorders such osteoporosis. Try our bone collagen supplements and witness for you selves an increase in Bone Mass Density (BMD) and bone strength. Available in Rosehip variant too.",
             Image: ../assets/foo_i2.png,
           },
           {

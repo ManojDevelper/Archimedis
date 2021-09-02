@@ -23,9 +23,9 @@ export const Capable = ({ Capabilities }) => {
                         {capabilitiescardss.capabilitiesminicards.map(capabilitiesminicardss =>
                           <div id="capable_container_cards_block_card_container_blocks">
                             {(capabilitiesminicardss.image.publicURL) ?
-                              <img src={capabilitiesminicardss.image.publicURL} alt="img" />
+                              <img src={capabilitiesminicardss.image.publicURL} alt={capabilitiesminicardss.alt_tag} />
                               :
-                              <img src={capabilitiesminicardss.image} alt="img" />
+                              <img src={capabilitiesminicardss.image} alt={capabilitiesminicardss.alt_tag} />
                             }
                             <p>{capabilitiesminicardss.capabilitiesminicardstitle}</p>
                           </div>
@@ -66,6 +66,7 @@ const CapablePrev = props => {
                 capabilitiescardtitle
                 capabilitiescardid
                 capabilitiescarddesc
+                alt_tag
                 image {
                   publicURL
                 }

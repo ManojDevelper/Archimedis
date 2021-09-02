@@ -31,11 +31,21 @@ const Home = () => {
     }
   `);
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Archimedis ",
+    "url": "https://www.archimedis.global",
+    "logo": "https://www.archimedis.global",
+    "address": { "@type": "PostalAddress", "streetAddress": "C-27, SIPCOT Industrial park, Irungattukottai, Sriperumbudur", "addressLocality": "Chennai", "addressRegion": "Tamilnadu", "postalCode": "602117", "addressCountry": "India" },
+    "contactPoint": { "@type": "ContactPoint", "contactType": "contact", "telephone": "044 47171111", "email": "care@archimedis.net" },
+  }
+
   const seoData = data.file.childMarkdownRemark.frontmatter;
   return (
     <>
       <div id="home">
-        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
+        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} SchemaMarkup={schema} />
         <Nav />
         <Banner />
         <Patners />

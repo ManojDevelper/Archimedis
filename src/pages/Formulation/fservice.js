@@ -19,7 +19,7 @@ export const Fservice = ({ fservices }) => {
                       <div id="fservice_container_cards_matter">
                         <h1 id="c_c_title">{fservicecardss.fservicecardtitle}</h1>
                         <p id="c_c_matter">{fservicecardss.fservicecarddesc}</p>
-                        <p id="c_c_matter">{fservicecardss.fc}
+                        <p id="c_c_matter">
                           {fservicecardss.fli.map(flis =>
                             <>
                               <li key={flis.id}>{flis.list}</li>
@@ -30,9 +30,9 @@ export const Fservice = ({ fservices }) => {
                     </div>
                     <div id="fservice_container_cards_block2">
                       {(fservicecardss.fservicepic.publicURL) ?
-                        <img src={fservicecardss.fservicepic.publicURL} alt="img" />
+                        <img src={fservicecardss.fservicepic.publicURL} alt={fservicecardss.alt_tag} />
                         :
-                        <img src={fservicecardss.fservicepic} alt="img" />
+                        <img src={fservicecardss.fservicepic} alt={fservicecardss.alt_tag} />
                       }
                     </div>
                   </div>
@@ -84,6 +84,7 @@ const FServiceprev = props => {
                 fservicecardtitle
                 fservicecarddesc
                 fserviceminicardsmaintitle
+                alt_tag
                 fservicepic {
                   publicURL
                   }
@@ -94,7 +95,6 @@ const FServiceprev = props => {
                     publicURL
                   }
                 }
-                fc
                 fli{
                   id
                   list

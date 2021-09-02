@@ -23,12 +23,26 @@ const Products = () => {
     }
   }
 `);
+  const schema = {
+    "@context": "http://www.schema.org",
+    "@type": "product",
+    "brand": "Archimedis",
+    "name": "Archimedis Product ",
+    "image": "https://archimedis.global/products/",
+    "description": ": Archimedis offers pharmaceutical products in therapeutic areas, OTC, Flagship drugs - food supplements -Vitamin D, Bone collagen, Lola and Branded products - Fertility enhancer and hand sanitizer",
+    "aggregateRating": {
+      "@type": "aggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "6"
+    }
+
+  }
 
   const seoData = data.file.childMarkdownRemark.frontmatter;
   return (
     <>
       <div id="products">
-        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
+        <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} SchemaMarkup={schema}/>
         <Pbanner />
         <Pharmaceutical />
         <Foodsupplements />

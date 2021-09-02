@@ -15,7 +15,7 @@ const IndexPage = () => {
         expires={30}
         enableDeclineButton
         declineButtonText="Decline"
-        declineButtonStyle={{fontSize: "16px", background: "none"}}
+        declineButtonStyle={{ fontSize: "16px", background: "none" }}
       >
         <span style={{ fontSize: `18px` }}>This website uses cookies to enhance the user experience.</span>
       </CookieConsent>
