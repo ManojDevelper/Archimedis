@@ -9,7 +9,11 @@ export const Aboutstatus = ({ Aboutstatus }) => {
         <div id="aboutstatus_container">
           {Aboutstatus && Aboutstatus.map((Aboutstatuss, i) =>
             <div id="aboutstatus_container_block1" key={i}>
+            {(Aboutstatuss.icon.publicURL) ? 
               <img src={Aboutstatuss.icon.publicURL} alt="img" />
+              :
+              <img src={Aboutstatuss.icon} alt="img" />
+            }
               <h1>{Aboutstatuss.title}</h1>
               <p>{Aboutstatuss.description}</p>
             </div>

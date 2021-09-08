@@ -5,19 +5,6 @@ publish_mode: editorial_workflow
 media_folder: "src/data/assets"
 public_folder: "/"
 collections:
-  - label: Test
-    name: pages
-    folder: src/data
-    create: true
-    fields:
-      - { label: Title, name: title, widget: string, required: false }
-      - { label: Heading, name: headding, widget: string, required: false }
-      - {
-          label: Description,
-          name: description,
-          widget: string,
-          required: false,
-        }
   - label: About Us
     name: About
     files:
@@ -29,14 +16,14 @@ collections:
           - { label: Description, name: description }
           - { label: Keywords, name: keywords, widget: list }
       - file: src/data/About/aboutbanner.md
-        label: Banner
-        name: aboutbanner
+        label: About Banner
+        name: aboutBanner
         public_folder: "../assets"
         fields:
           - { label: Title, name: AboutDescription }
       - file: src/data/About/aboutus.md
         label: About Us
-        name: aboutus
+        name: aboutUs
         public_folder: "../assets"
         fields:
           - { label: Title, name: title, required: false }
@@ -979,7 +966,7 @@ collections:
           - { label: Title, name: description, widget: string, required: false }
       - file: src/data/Digital/dsolution.md
         label: Digital Solution
-        name: dsolution
+        name: dsolutions
         create: true
         public_folder: "../assets"
         fields:
@@ -1291,7 +1278,8 @@ collections:
     label: Case Study
     label_singular: "CaseStudy"
     folder: src/data/CaseStudy
-    public_folder: "../assets"
+    media_folder: ''
+    public_folder: ''
     slug: "{{slug}}"
     create: true
     nested:

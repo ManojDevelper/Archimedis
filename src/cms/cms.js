@@ -97,8 +97,8 @@ CMS.registerPreviewTemplate("productdev", withStyledComponentsRendered(ProDevPre
 CMS.registerPreviewTemplate("team", withStyledComponentsRendered(homeTeamPreview));
 CMS.registerPreviewTemplate("bod", withStyledComponentsRendered(homeTeam2Preview));
 CMS.registerPreviewTemplate("aboutBanner", withStyledComponentsRendered(AbannerPreview));
-CMS.registerPreviewTemplate("aboutStatus", withStyledComponentsRendered(AboutstatusPreview));
-CMS.registerPreviewTemplate("aboutus", withStyledComponentsRendered(AboutUsPreview));
+CMS.registerPreviewTemplate("aboutstatus", withStyledComponentsRendered(AboutstatusPreview));
+CMS.registerPreviewTemplate("aboutUs", withStyledComponentsRendered(AboutUsPreview));
 CMS.registerPreviewTemplate("certification", withStyledComponentsRendered(CertificationPreview));
 CMS.registerPreviewTemplate("mildstone", withStyledComponentsRendered(MildstonePreview));
 CMS.registerPreviewTemplate("ourvalues", withStyledComponentsRendered(OurvaluesPreview));
