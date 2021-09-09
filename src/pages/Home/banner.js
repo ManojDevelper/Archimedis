@@ -12,7 +12,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 
-export const Banner = ({ title, description, boxDescription, bannerTyping }) => {
+export const Banner = ({ title, description, description2, boxDescription, bannerTyping }) => {
 
     const [bcontact, setBcontact] = useState(true)
     const [open, setOpen] = React.useState(false);
@@ -44,8 +44,9 @@ export const Banner = ({ title, description, boxDescription, bannerTyping }) => 
                             }
                         </div>
                         <p id="banner_desc">{description}</p>
+                        <p id="banner_desc">{description2}</p>
                         <div id="banner_btn_container">
-                            <button onClick={handleClickOpen}><img src={img1} alt="img" />Watch Video</button>
+                            <button onClick={handleClickOpen}><img src={img1} alt="img" />Take a Tour</button>
                             <Dialog
                                 open={open}
                                 onClose={handleClose}
@@ -96,6 +97,7 @@ const BannerPrev = props => {
               frontmatter {
                 title
                 description
+                description2
                 boxDescription
                 bannerTyping
               }
@@ -114,6 +116,7 @@ const BannerPrev = props => {
                 <Banner
                     title={bannerPre.title}
                     description={bannerPre.description}
+                    description2={bannerPre.description2}
                     boxDescription={bannerPre.boxDescription}
                     bannerTyping={bannerPre.bannerTyping}
                 />

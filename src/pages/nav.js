@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Nav.css';
 import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "gatsby"
 import Logo from "../images/navlogo.png";
 import ham from "../images/ham.svg";
 import close from "../images/navclose.svg";
@@ -13,6 +12,7 @@ import nav3 from "../images/navinsta.svg";
 import nav5 from "../images/navtwitter.svg";
 import nav6 from "../images/navyoutube.svg";
 import Contact from "./Home/contact";
+import { graphql, useStaticQuery, Link } from "gatsby";
 
 function Navbars() {
     const [hide, setHide] = useState("")
@@ -21,6 +21,32 @@ function Navbars() {
     const [hidesss, setHidesss] = useState("")
     const [hidessss, setHidessss] = useState("")
     const [contact, setContact] = useState(true)
+
+    const data = useStaticQuery(graphql`
+    query{
+        file(relativePath: {eq: "footer.md"}) {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                footer {
+                  id
+                  title
+                  link
+                  footercontainer {
+                    id
+                    description
+                    Link
+                    subconteiner{
+                        id
+                        head
+                        links
+                    }
+                  }
+                }
+              }
+            }
+          }
+    }`)
 
     return (
         <>
@@ -42,129 +68,42 @@ function Navbars() {
                     </div>
                     <Nav id="navbarResponsive">
                         <div id="nav_b1">
-                            <div id="nav_links"><Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Nav.Link></div>
-                            <div id="nav_links"><Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients<span>|</span></Nav.Link></div>
-                            <div id="nav_links"><Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog<span>|</span></Nav.Link></div>
-                            <div id="nav_links"><Nav.Link id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link></div>
+                            <div id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Link></div>
+                            <div id="nav_links"><Link to="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients<span>|</span></Link></div>
+                            <div id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Blog<span>|</span></Link></div>
+                            <div id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</p></div>
                         </div>
                         <div id="nav_b2">
-                            <div id="nav_links"><Link to="/formulation/" id="nav_main_link" activeClassName='active'>Formulations<div id="mark"></div>
-                                <div id="nav_add_menu">
-                                    <div id="nav_manu_container">
-                                        <div id="nav_manu_container_card">
-                                            <h1>Services</h1>
-                                            <Link to="/formulation/#Formulationdev" id="nav_sub_link">Formulation Development</Link>
-                                            <Link to="/formulation/#AnalyticalMethod" id="nav_sub_link">Analytical Method Development</Link>
-                                            <Link to="/formulation/#AnalyticalMethodValidation" id="nav_sub_link">Analytical Method Validation</Link>
-                                            <Link to="/formulation/#RegulatoryAffairs" id="nav_sub_link">Regulatory Affairs</Link>
-                                            <Link to="/formulation/#StabilityStudies" id="nav_sub_link">Stability Studies</Link>
-                                            {/* <Link to="/formulation/#BEStudies" id="nav_sub_link">BE Studies</Link>
-                                            <Link to="/formulation/#ClinicalTrials" id="nav_sub_link">Clinical Trials</Link> */}
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Infrastructure</h1>
-                                            <Link to="/formulation/#R&D" id="nav_sub_link">R&D Pilot Plant</Link>
-                                            <Link to="/formulation/#AnalyticalLab" id="nav_sub_link">Analytical Lab</Link>
-                                            <Link to="/formulation/#StabilityChamber" id="nav_sub_link">Stability Chamber</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Case Studies</h1>
-                                            <Link to="/formulation/#IvabradineMetoprolol" id="nav_sub_link">Ivabradine + Metoprolol</Link>
-                                            <Link to="/formulation/#Cerebroprotein" id="nav_sub_link">Cerebroprotein</Link>
-                                            <Link to="/formulation/#VitaminD3" id="nav_sub_link">Vitamin D3 Water Soluble</Link>
-                                            <Link to="/formulation/#Asvagandha" id="nav_sub_link">Asvagandha (UK Clinical Trial)</Link>
-                                        </div>
-                                    </div>
-                                </div></Link>
-                            </div>
-                            <div id="nav_links"><Link to="/manfacture/" id="nav_main_link" activeClassName='active'>Manufacturing<div></div>
-                                <div id="mark"></div><div id="nav_add_menu">
-                                    <div id="nav_manu_container">
-                                        <div id="nav_manu_container_card">
-                                            <h1>Capability</h1>
-                                            <Link to="/manfacture/#tablets" id="nav_sub_link">Tablets</Link>
-                                            <Link to="/manfacture/#Capsules" id="nav_sub_link">Capsules</Link>
-                                            <Link to="/manfacture/#Powder" id="nav_sub_link">Dry Syrup / Sachet</Link>
-                                            {/* <Link to="/manfacture/#Clinicaltrail" id="nav_sub_link">Clinical Trial Supplies</Link> */}
-                                            <Link to="/manfacture/#Commercial" id="nav_sub_link">Commercial Scale</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Quality</h1>
-                                            <Link to="/manfacture/#Qualityassurance" id="nav_sub_link">Quality Assurance</Link>
-                                            <Link to="" id="nav_sub_link">QC & Microbiology Labs</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Facility</h1>
-                                            <Link to="/manfacture/#Manufacturing" id="nav_sub_link">Manufacturing</Link>
-                                            <Link to="/manfacture/#packing" id="nav_sub_link">Packing</Link>
-                                            <Link to="/manfacture/#Warehouse" id="nav_sub_link">Warehouse</Link>
-                                            <Link to="/manfacture/#AirHandling" id="nav_sub_link">Air Handling Units (AHUs)</Link>
-                                            <Link to="/manfacture/#WaterPurification" id="nav_sub_link">Water Purification</Link>
-                                            <Link to="/manfacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Industry 4.0</h1>
-                                            <Link to="/manfacture/#smart" id="nav_sub_link">Smart Dispensing</Link>
-                                            <Link to="/manfacture/#Environment" id="nav_sub_link">Environment Monitoring</Link>
-                                            <Link to="/manfacture/#ERP" id="nav_sub_link">ERP</Link>
-                                        </div>
-                                    </div>
-                                </div></Link></div>
-                            <div id="nav_links"><Link to="/products/" id="nav_main_link" activeClassName='active'>Products<div></div>
-                                <div id="mark"></div><div id="nav_add_menu">
-                                    <div id="nav_manu_container">
-                                        <div id="nav_manu_container_card">
-                                            <h1>Pharmaceutical</h1>
-                                            <Link to="/products/#Therapeutic" id="nav_sub_link">Therapeutic Areas</Link>
-                                            <Link to="/products/#Prescription" id="nav_sub_link">Prescription Drugs</Link>
-                                            <Link to="/products/#OTC" id="nav_sub_link">OTC</Link>
-                                            <Link to="/products/#Flagship" id="nav_sub_link">Flagship Products</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Food Supplements</h1>
-                                            <Link to="/products/#VitaminD" id="nav_sub_link">Vitamin D</Link>
-                                            <Link to="/products/#BoneCollagen" id="nav_sub_link">Bone Collagen</Link>
-                                            <Link to="/products/#Lola" id="nav_sub_link">Lola</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Archimedis Branded</h1>
-                                            <Link to="/products/#PCOS" id="nav_sub_link">PCOS (Fertility Enhancer)</Link>
-                                            <Link to="/products/#NasalIrrigation" id="nav_sub_link">Nasal Irrigation</Link>
-                                            <Link to="/products/#HandSanitizers" id="nav_sub_link">Hand Sanitizers</Link>
-                                            {/* <Link to="/products/" id="nav_sub_link">All Products</Link>
-                                            <Link to="/products/" id="nav_sub_link">Visit Our Store</Link> */}
-                                        </div>
-                                    </div>
-                                </div></Link></div>
-                            <div id="nav_links"><Link to="/digital/" id="nav_main_link" activeClassName='active'>Digital<div></div>
-                                <div id="mark"></div><div id="nav_add_menu">
-                                    <div id="nav_manu_container">
-                                        <div id="nav_manu_container_card">
-                                            <h1>Solutions</h1>
-                                            <Link to="/digital/#Formulationdev" id="nav_sub_link">ERP for Life Sciences</Link>
-                                            <Link to="/digital/#SmartDispensing" id="nav_sub_link">Smart Dispensing</Link>
-                                            <Link to="/digital/#EnvironmentalMonitoring" id="nav_sub_link">Environmental Monitoring</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Product Development</h1>
-                                            <Link to="/digital/#productdev" id="nav_sub_link">Design / UX</Link>
-                                            <Link to="/digital/#productdev" id="nav_sub_link">Engineering & Development</Link>
-                                            <Link to="/digital/#productdev" id="nav_sub_link">Test Automation</Link>
-                                            <Link to="/digital/#Design" id="nav_sub_link">DevOps (CI/CD)</Link>
-                                            <Link to="/digital/#Design" id="nav_sub_link">Product Support Helpdesk</Link>
-                                            <Link to="/digital/#Design" id="nav_sub_link">Product Management</Link>
-                                        </div>
-                                        <div id="nav_manu_container_card">
-                                            <h1>Quality & Compliance</h1>
-                                            <Link to="/digital/#Quality&Compliance" id="nav_sub_link">GxP Compliance (QMS / SOPs)</Link>
-                                            <Link to="/digital/#Quality&Compliance" id="nav_sub_link">IT Quality Assurance</Link>
-                                            <Link to="/digital/#Quality&Compliance" id="nav_sub_link">Computerized System Validation (CSV)</Link>
-                                            <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Risk-based Validation</Link>
-                                            <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Part 11 / Annex 11 Assessment</Link>
-                                            <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Training</Link>
-                                        </div>
-                                    </div>
-                                </div></Link></div>
+                            {data.file.childMarkdownRemark.frontmatter.footer.map(footerItem =>
+                                <>
+                                    {
+                                        footerItem.title === "Archimedis" ?
+                                            ("")
+                                            :
+                                            <>
+                                                {
+                                                    footerItem.title === "Contact" ?
+                                                        ("")
+                                                        :
+                                                        <div id="nav_links"><Link to={footerItem.link} id="nav_main_link" activeClassName='active'>{footerItem.title}<div id="mark"></div>
+                                                            <div id="nav_add_menu">
+                                                                <div id="nav_manu_container">
+                                                                    {footerItem.footercontainer.map(footercontainers =>
+                                                                        <div id="nav_manu_container_card">
+                                                                            <h1>{footercontainers.description}</h1>
+                                                                            {footercontainers.subconteiner.map(subconteiners =>
+                                                                                <Link to={subconteiners.links} id="nav_sub_link" key={subconteiners.id}>{subconteiners.head}</Link>
+                                                                            )}
+                                                                        </div>
+                                                                    )}
+                                                                </div>
+                                                            </div></Link>
+                                                        </div>
+                                                }
+                                            </>
+                                    }
+                                </>
+                            )}
                         </div>
                     </Nav>
                     <Nav id="navbarResponsive2">

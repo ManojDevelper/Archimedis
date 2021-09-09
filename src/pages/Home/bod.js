@@ -10,14 +10,14 @@ export const Team2 = ({ teams2 }) => {
     console.log(teams2)
     return (
         <>
-            <div id="team">
+            <div id="team" className="team">
                 <Link to="/#team" id="backarrow"><img src={backarrow} alt="backarrow" />Back</Link>
-                {teams2 && teams2.map(teamssr =>
-                    <div key={teamssr.id}>
+                {teams2 && teams2.map((teamssr, i) =>
+                    <div key={i}>
                         <h1>{teamssr.teamtitle}</h1>
                         <div id="team_container">
-                            {teamssr && teamssr.team.map(teams =>
-                                <div id="team_container_cards" key={teams.id}>
+                            {teamssr && teamssr.team.map((teams, i) =>
+                                <div id="team_container_cards" key={i}>
                                     <div id="team_container_cards_block1">
                                         {(teams.teamimg.publicURL) ?
                                             (<img src={teams.teamimg.publicURL} alt="img" />)
@@ -50,10 +50,8 @@ const Team2Prev = props => {
           childMarkdownRemark {
             frontmatter {
                 teams2 {
-                id
                 teamtitle
                 team {
-                  id
                   teaamname
                   teamdesignation
                   linkdin

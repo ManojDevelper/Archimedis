@@ -15,14 +15,18 @@ export const Patners = ({ Patnertitle, patnerdescription, patnercarousal }) => {
             <h2>{patnerdescription}</h2>
           </div>
           <Carousel interval={10000000} id="carousss">
-            {patnercarousal && patnercarousal.map(patnercarousalItem =>
-              <Carousel.Item key={patnercarousalItem.id} id="carousss2">
+            {patnercarousal && patnercarousal.map((patnercarousalItem, i) =>
+              <Carousel.Item key={i} id="carousss2">
                 <div id="patners_container_carousal" className="active-content">
-                  {patnercarousalItem && patnercarousalItem.patners.map(patnerss =>
-                    <div id="patners_container_carousal_container" key={patnerss.id}>
-                      {patnerss && patnerss.patnerimage.map(patnerimages =>
-                        <div id="patners_container_carousal_container_container" key={patnerimages.id}>
-                          <img src={patnerimages.image.publicURL} alt="img" />
+                  {patnercarousalItem && patnercarousalItem.patners.map((patnerss, i) =>
+                    <div id="patners_container_carousal_container" key={i}>
+                      {patnerss && patnerss.patnerimage.map((patnerimages, i) =>
+                        <div id="patners_container_carousal_container_container" key={i}>
+                          {patnerimages.image.publicURL ?
+                            <img src={patnerimages.image.publicURL} alt="img" />
+                            :
+                            <img src={patnerimages.image} alt="img" />
+                          }
                         </div>
                       )}
                     </div>
@@ -41,17 +45,13 @@ const PatnerPrev = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: {eq: "patners.md"}) {
-        id
         childMarkdownRemark {
           frontmatter {
             Patnertitle
             patnerdescription
             patnercarousal {
-              id
               patners {
-                id
                 patnerimage {
-                  id
                   image {
                     publicURL
                   }

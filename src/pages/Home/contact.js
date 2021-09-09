@@ -103,7 +103,7 @@ const Contact = () => {
                     <div className="contact_img_block">
                         <div id="contact_img_block_top">
                             <p>Reach Us</p>
-                            <p>Fill up the form and we will get back to you within 24 hours</p>
+                            <p>Fill the form</p>
                         </div>
                         <div id="contact_img_block_bottom">
                             <div id="contact_img_block_bottom_blocks">

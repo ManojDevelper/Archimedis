@@ -64,10 +64,12 @@
   width: fit-content;
   height: fit-content;
   margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 #nav_b1 #nav_main_link {
   font-family: Manrope;
-  padding: 0 8px 0 8px;
+  padding: 0 0.575539568345324vw 0 0.575539568345324vw;
   font-style: normal;
   font-weight: normal;
   font-size: 0.863309352517986vw;

@@ -54,7 +54,7 @@ export const BlogPost = ({
             Tagged with
             {
               tags.map((type, i, arr) => {
-                let divider = i<arr.length-1 && <>, </>;
+                let divider = i < arr.length - 1 && <>, </>;
                 return (
                   <span key={type}>{type}{divider}</span>
                 )
@@ -66,8 +66,8 @@ export const BlogPost = ({
           </TagsList>
         }
       </BlogContainer>
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </Fragment>
   )
 }
@@ -78,8 +78,8 @@ const Blog = ({ data }) => {
 
   const seoData = post.frontmatter.seo;
 
-    const authorImage = post.frontmatter.author_image.publicURL;
-    const preview_Image = post.frontmatter.previewImage.publicURL;
+  const authorImage = post.frontmatter.author_image.publicURL;
+  const preview_Image = post.frontmatter.previewImage.publicURL;
 
   return (
     <Fragment>
@@ -97,7 +97,7 @@ const Blog = ({ data }) => {
         preview={false}
       />
     </Fragment>
-    )
+  )
 }
 
 export default Blog

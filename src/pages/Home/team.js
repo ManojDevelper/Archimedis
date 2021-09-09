@@ -26,7 +26,7 @@ export const Team = ({ teamtitle, teams }) => {
             )}
           </div>
         </div>
-        <Link to="/Home/bod" id="linktbn"><button>View More<img src={btnarrow} alt="btnimg" /></button></Link>
+        <Link to="/Home/bod" id="linktbn"><button>Leadership team<img src={btnarrow} alt="btnimg" /></button></Link>
       </div>
     </>
   );
