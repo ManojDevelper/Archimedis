@@ -41,7 +41,7 @@ footer:
     },
     {
       id: 2,
-      title: "Formulation R&D",
+      title: "Formulation",
       link: "/formulation",
       footercontainer:
         [

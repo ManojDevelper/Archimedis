@@ -133,6 +133,9 @@
     font-size: 3vw;
     margin-top: 8vw;
   }
+  #team button:hover {
+    width: 41vw;
+  }
   #team button img {
     display: none;
   }

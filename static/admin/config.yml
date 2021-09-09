@@ -377,6 +377,7 @@ collections:
                           required: false,
                         },
                         { label: Image, name: teamimg, widget: image },
+                        { label: Social Link, name: linkdin },
                       ],
                   },
                 ],
@@ -411,7 +412,7 @@ collections:
                 ],
             }
       - file: src/data/footer.md
-        label: Footer
+        label: Footer & Nav Links
         name: footer
         create: true
         fields:
@@ -428,6 +429,12 @@ collections:
                     required: false,
                   },
                   {
+                    label: Main Link,
+                    name: link,
+                    widget: string,
+                    required: false,
+                  },
+                  {
                     label: FooterContainer,
                     name: footercontainer,
                     widget: list,
@@ -438,6 +445,23 @@ collections:
                           name: description,
                           widget: string,
                           required: false,
+                        },
+                        {
+                          label: Link,
+                          name: Link,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Sub Link Container,
+                          name: subconteiner,
+                          widget: list,
+                          required: false,
+                          fields:
+                            [
+                              { label: Sub Link Title, name: head },
+                              { label: Sub Links Of All Blocks, name: links },
+                            ],
                         },
                       ],
                   },
@@ -878,7 +902,17 @@ collections:
                           widget: string,
                           required: false,
                         },
-                        {label: Block, name: fnblock, widget: list, fields: [{label: ID, name: id, default: "1"}, {label: Name, name: fnblocknme}, {label: Precentage, name: fnblockmtr}]},
+                        {
+                          label: Block,
+                          name: fnblock,
+                          widget: list,
+                          fields:
+                            [
+                              { label: ID, name: id, default: "1" },
+                              { label: Name, name: fnblocknme },
+                              { label: Precentage, name: fnblockmtr },
+                            ],
+                        },
                         { label: Image, name: fimage, widget: image },
                       ],
                   },
@@ -1356,8 +1390,8 @@ collections:
     label: Case Study
     label_singular: "CaseStudy"
     folder: src/data/CaseStudy
-    media_folder: '/CaseStudy/'
-    public_folder: '../assets'
+    media_folder: "/CaseStudy/"
+    public_folder: "../assets"
     slug: "{{slug}}"
     create: true
     nested:
@@ -1367,12 +1401,17 @@ collections:
       - label: Author Image
         name: author_image
         widget: image
-        media_folder: '/CaseStudy/'
+        media_folder: "/CaseStudy/"
       - { name: author, label: Author }
       - { name: bio, label: Bio }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: date, default: "" }
-      - { name: previewImage, label: Preview Image, widget: image, media_folder: '/CaseStudy/' }
+      - {
+          name: previewImage,
+          label: Preview Image,
+          widget: image,
+          media_folder: "/CaseStudy/",
+        }
       - { name: excerpt, label: Excerpt }
       - { name: tags, label: Tags, widget: list }
       - { name: body, label: Body, widget: markdown }
