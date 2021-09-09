@@ -138,13 +138,13 @@ collections:
             }
           - {
               label: Description2,
-              name: boxdescription,
+              name: boxDescription,
               widget: string,
               required: false,
             }
           - {
               label: Typed Words,
-              name: bannertyping,
+              name: bannerTyping,
               widget: list,
               required: false,
             }

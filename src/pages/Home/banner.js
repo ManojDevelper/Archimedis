@@ -12,7 +12,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 
-export const Banner = ({ title, description, boxdescription, bannertyping }) => {
+export const Banner = ({ title, description, boxDescription, bannerTyping }) => {
 
     const [bcontact, setBcontact] = useState(true)
     const [open, setOpen] = React.useState(false);
@@ -32,9 +32,9 @@ export const Banner = ({ title, description, boxdescription, bannertyping }) => 
                         <div id="banner_title">
                             <div id="static-txt">{title}</div>
                             {
-                                bannertyping &&
+                                bannerTyping &&
                                 <Typed
-                                    strings={bannertyping && bannertyping}
+                                    strings={bannerTyping && bannerTyping}
                                     typeSpeed={60}
                                     backSpeed={60}
                                     backDelay={1200}
@@ -69,14 +69,14 @@ export const Banner = ({ title, description, boxdescription, bannertyping }) => 
                                 <img src={img2} alt="img" />
                             </div>
                             <div id="banner_mini_container_matter">
-                                <p>{boxdescription}</p>
+                                <p>{boxDescription}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <Top link="/home/" />
+            <Top link="/" />
             {!bcontact ? (
                 <div id="navcont">
                     <img src={close} alt="img" id="contclose" onClick={() => setBcontact(true)} role="presentation" />
@@ -96,8 +96,8 @@ const BannerPrev = props => {
               frontmatter {
                 title
                 description
-                boxdescription
-                bannertyping
+                boxDescription
+                bannerTyping
               }
             }
           }
@@ -114,8 +114,8 @@ const BannerPrev = props => {
                 <Banner
                     title={bannerPre.title}
                     description={bannerPre.description}
-                    boxdescription={bannerPre.boxdescription}
-                    bannertyping={bannerPre.bannertyping}
+                    boxDescription={bannerPre.boxDescription}
+                    bannerTyping={bannerPre.bannerTyping}
                 />
             }
         </>

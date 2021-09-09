@@ -25,7 +25,7 @@ function Navbars() {
     return (
         <>
             <Navbar id="nav" collapseOnSelect={true} expand="lg" >
-                <Nav.Link href="/" id="logo_link"><img src={Logo} alt="img" /></Nav.Link>
+                <Link to="/" id="logo_link"><img src={Logo} alt="img" /></Link>
                 <Navbar.Toggle className="toggle" >
                     <div id="toggle" aria-controls="basic-navbar-nav" className="ntbtn">
                         <img src={ham} alt="img" />

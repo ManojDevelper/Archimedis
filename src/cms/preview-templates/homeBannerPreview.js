@@ -11,8 +11,8 @@ const homeBannerPreview = ({ entry }) => {
             <Banner
                 title={data.title}
                 description={data.description}
-                boxdescription={data.boxdescription}
-                bannertyping={data.bannertyping}
+                boxDescription={data.boxDescription}
+                bannerTyping={data.bannerTyping}
             />
         </div>
     );

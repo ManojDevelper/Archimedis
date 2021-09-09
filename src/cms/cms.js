@@ -88,7 +88,7 @@ CMS.registerPreviewTemplate("mbanner", withStyledComponentsRendered(MBannerPrevi
 CMS.registerPreviewTemplate("quality", withStyledComponentsRendered(ManuQualityPreview));
 CMS.registerPreviewTemplate("qualityassurance", withStyledComponentsRendered(ManuQAssurancePreview));
 CMS.registerPreviewTemplate("pbanner", withStyledComponentsRendered(ProBannerPreview));
-CMS.registerPreviewTemplate("archibranded", withStyledComponentsRendered(ArchiBrandedPreview));
+CMS.registerPreviewTemplate("archibrand", withStyledComponentsRendered(ArchiBrandedPreview));
 CMS.registerPreviewTemplate("foodsupplements", withStyledComponentsRendered(ProFoodSupplyPreview));
 CMS.registerPreviewTemplate("pharmaceutical", withStyledComponentsRendered(ProPharmaceuticalPreview));
 CMS.registerPreviewTemplate("foodsupplements", withStyledComponentsRendered(ProFoodSupplyPreview));
