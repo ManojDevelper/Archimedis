@@ -193,7 +193,6 @@ collections:
               widget: string,
               required: false,
             }
-          - { label: aboutImg, name: aboutImg, widget: image }
       - file: src/data/blogs.md
         label: Blogs
         name: blogs
@@ -784,23 +783,102 @@ collections:
                           required: false,
                         },
                         {
-                          label: Description,
+                          label: Bullet Point Title,
                           name: description,
                           widget: string,
                           required: false,
                         },
                         {
-                          label: Description2,
+                          label: Bullet Point Title2,
                           name: description2,
                           widget: string,
                           required: false,
                         },
                         {
-                          label: Description3,
+                          label: Bullet Point Title3,
                           name: description3,
                           widget: string,
                           required: false,
                         },
+                        {
+                          label: Bullet Point Title4,
+                          name: description4,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Title5,
+                          name: description5,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Title6,
+                          name: description6,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Title7,
+                          name: description7,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Title8,
+                          name: description8,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 1,
+                          name: descriptionSpan1,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 2,
+                          name: descriptionSpan2,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 3,
+                          name: descriptionSpan3,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 4,
+                          name: descriptionSpan4,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 5,
+                          name: descriptionSpan5,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 6,
+                          name: descriptionSpan6,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 7,
+                          name: descriptionSpan7,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Bullet Point Description 8,
+                          name: descriptionSpan8,
+                          widget: string,
+                          required: false,
+                        },
+                        {label: Block, name: fnblock, widget: list, fields: [{label: ID, name: id, default: "1"}, {label: Name, name: fnblocknme}, {label: Precentage, name: fnblockmtr}]},
                         { label: Image, name: fimage, widget: image },
                       ],
                   },

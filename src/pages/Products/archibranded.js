@@ -13,22 +13,20 @@ export const Archibranded = ({ archibrand }) => {
                     <h2>{archibrands.description}</h2>
                     <div id="archibranded_container">
                         {archibrands.archibrandcards.map(archibrandcardss =>
-                            <div key={archibrandcardss.id}>
-                                <div className="archibranded_container_cards" id={archibrandcardss.archibrandid}>
-                                    <div id="archibranded_container_cards_block1">
-                                        <div id="archibranded_container_cards_matter">
-                                            <p>{archibrandcardss.title}</p>
-                                            <h2>{archibrandcardss.description}</h2>
-                                            <button>View More<img src={arrow} alt="img" /></button>
-                                        </div>
+                            <div className="archibranded_container_cards" key={archibrandcardss.id} id={archibrandcardss.archibrandid}>
+                                <div id="archibranded_container_cards_block1">
+                                    <div id="archibranded_container_cards_matter">
+                                        <p>{archibrandcardss.title}</p>
+                                        <h2>{archibrandcardss.description}</h2>
+                                        <button>View More<img src={arrow} alt="img" /></button>
                                     </div>
-                                    <div id="archibranded_container_cards_block2">
-                                    {(archibrandcardss.Image.publicURL) ? 
+                                </div>
+                                <div id="archibranded_container_cards_block2">
+                                    {(archibrandcardss.Image.publicURL) ?
                                         <img src={archibrandcardss.Image.publicURL} alt="img" />
                                         :
                                         <img src={archibrandcardss.Image} alt="img" />
                                     }
-                                    </div>
                                 </div>
                             </div>
                         )}
@@ -74,7 +72,7 @@ const ArchiBrandedPrev = props => {
         <>
             {
                 data.file &&
-                <Archibranded 
+                <Archibranded
                     archibrand={ArchiBrandedPre.archibrand}
                 />
             }
