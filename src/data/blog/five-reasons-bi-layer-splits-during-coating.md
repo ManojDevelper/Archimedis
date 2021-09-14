@@ -1,10 +1,10 @@
 ---
-author_image: ../assets/c_prof1.png
+author_image: palani-director.png
 author: any One
 bio: The Art of Drug Design
 title: The Art of Drug Design
 date: 2021-03-13T18:30:00.000Z
-previewImage: ../assets/blog_1.png
+previewImage: blog_1.png
 excerpt: Bi-layer tablets are not only difficult to compress.  They also carry
   an inherent risk of splitting during coating.  Our experience uncovers five
   factors that can help reduce the risk.
@@ -112,3 +112,5 @@ Bi-layer tablets are not only difficult to compress. They also carry an inherent
 Bi-layer tablets are not only difficult to compress. They also carry an inherent risk of splitting during coating. Our experience uncovers five factors that can help reduce the risk.
 
 <!--EndFragment-->
+
+![image alt](fbanner.png "Image Title")
