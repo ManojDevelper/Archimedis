@@ -1,10 +1,10 @@
 ---
-author_image: ../assets/cs_i3.png
+author_image: palani-director.png
 author: anyone
 bio: Water Soluble Vitamin D capsule (major commercial success for client)
 title: Water Soluble Vitamin D capsule (major commercial success for client)
 date: 2021-03-13T18:30:00.000Z
-previewImage: ../assets/cs_i3.png
+previewImage: cs_i4.png
 excerpt: Water Soluble Vitamin D capsule (major commercial success for client)
 tags:
   - Water Soluble Vitamin D capsule (major commercial success for client)
@@ -19,3 +19,5 @@ seo:
 Water Soluble Vitamin D capsule (major commercial success for client)
 
 <!--EndFragment-->
+
+![a](fbanner.png "a")

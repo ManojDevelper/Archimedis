@@ -12,7 +12,7 @@ export const Blogs = ({ blogtitle, blogs }) => {
           {blogs && blogs.map(blogItem =>
             <Link id="blog_card" key={blogItem.id} to={blogItem.link}>
               <div id="blog_card_b1">
-                {(blogItem.blogimg !== null && blogItem.blogimg.childImageSharp)
+                {(blogItem.blogimg.publicURL)
                   ? (<img src={blogItem.blogimg.publicURL} alt="img" />) :
                   (<img src={blogItem.blogimg} alt="img" />)}
               </div>
