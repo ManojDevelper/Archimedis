@@ -156,7 +156,7 @@ collections:
         fields:
           - { label: Title, name: Patnertitle, widget: string, required: false }
           - { label: Description, name: patnerdescription, widget: string, required: false }
-          - { label: Patner Carousal, name: patnercarousal, widget: list, fields: [{label: Carousal Slides, name: patners, widget: list, fields: [{label: Logo Container, name: patnerimage, widget: list, fields: [{label: Logo, name: image, widget: image}]}]}] }
+          - { label: patners, name: patnercarousal, widget: list, fields: [{label: Carousal Slides, name: patners, widget: list, fields: [{label: Logo Container, name: patnerimage, widget: list, fields: [{label: Logo, name: image, widget: image}]}]}] }
       - file: src/data/status.md
         label: Status
         name: status

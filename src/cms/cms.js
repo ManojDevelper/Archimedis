@@ -38,7 +38,7 @@ import CertificationPreview from "./preview-templates/CertificationPreview";
 import MildstonePreview from "./preview-templates/MildstonePreview";
 import OurvaluesPreview from "./preview-templates/OurvaluesPreview";
 import DBannerPreview from "./preview-templates/DBannerPreview";
-import patnersPreview from "./preview-templates/patnersPreview";
+import homePatnersPreview from "./preview-templates/homePatnersPreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -104,4 +104,4 @@ CMS.registerPreviewTemplate("certification", withStyledComponentsRendered(Certif
 CMS.registerPreviewTemplate("mildstone", withStyledComponentsRendered(MildstonePreview));
 CMS.registerPreviewTemplate("ourvalues", withStyledComponentsRendered(OurvaluesPreview));
 CMS.registerPreviewTemplate("dbanner", withStyledComponentsRendered(DBannerPreview));
-CMS.registerPreviewTemplate("patners", withStyledComponentsRendered(patnersPreview));
+CMS.registerPreviewTemplate("patners", withStyledComponentsRendered(homePatnersPreview));

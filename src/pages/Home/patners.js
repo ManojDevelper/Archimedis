@@ -40,7 +40,7 @@ export const Patners = ({ Patnertitle, patnerdescription, patnercarousal }) => {
     </>
   );
 };
-const PatnerPrev = () => {
+const PatnerPrev = props => {
   const [patnerPre, setPatnerPre] = useState({});
   const data = useStaticQuery(graphql`
     query {
