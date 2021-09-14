@@ -24,6 +24,20 @@ module.exports = {
         component: require.resolve(`./src/components/Layout/index.js`),
       },
     },
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -50,7 +64,6 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -83,29 +96,19 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 800,
-            },
-          },
-        ],
-        plugins: [
-          `gatsby-remark-reading-time`,
-          // ...
-        ],
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    `gatsby-plugin-netlify`,
+      `gatsby-remark-reading-time`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    `gatsby-plugin-netlify`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
