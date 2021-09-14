@@ -13,7 +13,7 @@ export const Blogs = ({ blogtitle, blogs }) => {
             <Link id="blog_card" key={blogItem.id} to={blogItem.link}>
               <div id="blog_card_b1">
                 {(blogItem.blogimg !== null && blogItem.blogimg.childImageSharp)
-                  ? (<img src={blogItem.blogimg.childImageSharp.fluid.src} alt="img" />) :
+                  ? (<img src={blogItem.blogimg.publicURL} alt="img" />) :
                   (<img src={blogItem.blogimg} alt="img" />)}
               </div>
               <div id="blog_card_b2">
@@ -44,11 +44,6 @@ const BlogPrev = props => {
                 blogcarddate
                 link
                 blogimg {
-                  childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
                   publicURL
                 }
               }

@@ -15,6 +15,7 @@ seo:
     - Cerebroprotein tablets (Development complete; pending commercialization)
 ---
 <!--StartFragment-->
+![](../assets/cs_i4.png)
 
 Cerebroprotein tablets (Development complete; pending commercialization)
 

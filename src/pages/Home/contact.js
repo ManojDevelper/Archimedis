@@ -11,11 +11,6 @@ const Contact = () => {
     const [phone, setPhone] = useState("")
     const [organization, setOrganization] = useState("")
     const [description, setDescription] = useState("")
-    console.log(name)
-    console.log(email)
-    console.log(phone)
-    console.log(organization)
-    console.log(description)
     const success = () => {
         message.success({
             content: 'Hello there! Thank you for reaching out. We will get back to you as quick as humanly possible.',

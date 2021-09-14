@@ -152,9 +152,11 @@ collections:
         label: Patners
         name: patners
         create: true
+        public_folder: "./assets"
         fields:
           - { label: Title, name: Patnertitle, widget: string, required: false }
           - { label: Description, name: patnerdescription, widget: string, required: false }
+          - { label: Patner Carousal, name: patnercarousal, widget: list, fields: [{label: Carousal Slides, name: patners, widget: list, fields: [{label: Logo Container, name: patnerimage, widget: list, fields: [{label: Logo, name: image, widget: image}]}]}] }
       - file: src/data/status.md
         label: Status
         name: status
@@ -1409,7 +1411,6 @@ collections:
       - label: Author Image
         name: author_image
         widget: image
-        media_folder: "/CaseStudy/"
       - { name: author, label: Author }
       - { name: bio, label: Bio }
       - { name: title, label: Title }
@@ -1418,7 +1419,6 @@ collections:
           name: previewImage,
           label: Preview Image,
           widget: image,
-          media_folder: "/CaseStudy/",
         }
       - { name: excerpt, label: Excerpt }
       - { name: tags, label: Tags, widget: list }

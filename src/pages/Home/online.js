@@ -32,13 +32,6 @@ const OnlinePrev = props => {
                   onlinedesc
                   onlineimg {
                     publicURL
-                    extension
-                    childImageSharp {
-                      fluid {
-                        src
-                      }
-                    }
-                    publicURL
                   }
                 }
               }
@@ -51,10 +44,10 @@ const OnlinePrev = props => {
   }, [data.file]);
 
   let OnlineImage;
-  if (data.file.childMarkdownRemark.frontmatter.onlineimg !== null && data.file.childMarkdownRemark.frontmatter.onlineimg.childImageSharp.fluid.src !== null) {
+  if (data.file.childMarkdownRemark.frontmatter.onlineimg.publicURL) {
     OnlineImage = data.file.childMarkdownRemark.frontmatter.onlineimg.publicURL;
   } else {
-    OnlineImage = data.file.childMarkdownRemark.frontmatter.onlineimg.childImageSharp.fluid.src;
+    OnlineImage = data.file.childMarkdownRemark.frontmatter.onlineimg;
   }
 
   return (
