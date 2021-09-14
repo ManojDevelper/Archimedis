@@ -34,6 +34,11 @@ module.exports = {
           `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              withWebp: true,
+              quality: 50,
+            }
           },
         ],
       },
@@ -102,7 +107,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
-      `gatsby-remark-reading-time`,
+    `gatsby-remark-reading-time`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
