@@ -367,6 +367,7 @@
     transition: 0.5s ease-in-out;
     margin-top: 19px;
     padding-left: 0;
+    margin-right:auto;
   }
   #navbarResponsive2 #nav_b1 #nav_main_link:nth-child(2) {
   margin-top: 10px;
