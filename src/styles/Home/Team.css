@@ -206,10 +206,16 @@
     display: block;
   }
   #team_container_cards_block2_container img {
-    width: 18vw;
+    width: 15vw;
   }
   #team_container_cards_block2 {
     width: 100%;
     margin-top: 3vw;
   }
+  #team_container_cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 }

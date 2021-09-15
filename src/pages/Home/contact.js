@@ -98,7 +98,7 @@ const Contact = () => {
                     <div className="contact_img_block">
                         <div id="contact_img_block_top">
                             <p>Reach Us</p>
-                            <p>Fill the form</p>
+                            <p>Eager to explore more, reach out to us by filling up this form!</p>
                         </div>
                         <div id="contact_img_block_bottom">
                             <div id="contact_img_block_bottom_blocks">

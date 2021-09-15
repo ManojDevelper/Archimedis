@@ -6,7 +6,7 @@
   position: relative;
 }
 #patners .carousel-control-prev-icon {
-  background-image: url("../../images/next.svg"); 
+  background-image: url("../../images/next.svg");
   background-color: transparent;
   background-size: 0.5vw;
 }
@@ -15,23 +15,23 @@
   background-color: transparent;
   background-size: 0.5vw;
 }
-#patners a.carousel-control-next{
+#patners a.carousel-control-next {
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
-  top:15vw;
+  top: 15vw;
   right: 7vw;
-  border: 0.107913669064748vw solid #22BDEF;
+  border: 0.107913669064748vw solid #22bdef;
   border-radius: 2.15827338129496vw;
   background-color: transparent;
 }
-#patners a.carousel-control-prev{
+#patners a.carousel-control-prev {
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
-  top:15vw;
+  top: 15vw;
   left: 7vw;
-  border: 0.107913669064748vw solid #22BDEF;
+  border: 0.107913669064748vw solid #22bdef;
   border-radius: 2.15827338129496vw;
   background-color: transparent;
 }
@@ -53,15 +53,15 @@
   border-radius: 50%;
   opacity: 1;
 }
-.carousal_img_arrow2{
+.carousal_img_arrow2 {
   width: 2.73381294964029vw;
   height: 2.73381294964029vw;
   position: absolute;
   right: 6vw;
-  top:58%;
+  top: 58%;
   cursor: pointer;
 }
-.active-carousal_img_arrow2{
+.active-carousal_img_arrow2 {
   transform: rotate(180deg);
 }
 #patners_container_matter h1 {
@@ -112,8 +112,8 @@
   transition: 0.5s ease-in-out;
   box-shadow: none;
 }
-#patners_container_carousal_container img{
-    margin: auto;
+#patners_container_carousal_container img {
+  margin: auto;
 }
 #patners_container_carousal_container:nth-child(1) img {
   width: 7.62589928057554vw;
@@ -124,14 +124,18 @@
   height: 2.44604316546763vw;
 }
 #patners_container_carousal_container:nth-child(3) img {
+  width: 7.48201438848921vw;
+  height: 4.1726618705036vw;
+}
+#patners_container_carousal_container:nth-child(3)
+  #patners_container_carousal_container_container:nth-child(2)
+  img {
   width: 3.70863309352518vw;
   height: 4.53237410071942vw;
 }
-#patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container:nth-child(2) img{
-    width: 8.63309352517986vw;
-    height: 2.66187050359712vw;
-  }
-#patners_container_carousal_container:nth-child(3) img:nth-child(3) {
+#patners_container_carousal_container:nth-child(3)
+  #patners_container_carousal_container_container:nth-child(3)
+  img {
   width: 3.88489208633094vw;
   height: 4.82014388489209vw;
 }
@@ -143,164 +147,219 @@
   width: 9.64028776978417vw;
   height: 3.88489208633094vw;
 }
-#patners_container_carousal_container:nth-child(4) #patners_container_carousal_container_container:nth-child(2) img{
+#patners_container_carousal_container:nth-child(4)
+  #patners_container_carousal_container_container:nth-child(2)
+  img {
   width: 8.63309352517986vw;
   height: 3.59712230215827vw;
 }
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(1) img{
+#patners
+  #patners_container
+  #carousss
+  #carousss2:nth-child(2)
+  #patners_container_carousal_container:nth-child(1)
+  img {
   width: 9.49640287769784vw;
   height: 3.66906474820144vw;
 }
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(2) #patners_container_carousal_container_container:first-child img{
-  width: 7.48201438848921vw;
-  height: 4.1726618705036vw;
+#patners
+  #patners_container
+  #carousss
+  #carousss2:nth-child(2)
+  #patners_container_carousal_container:nth-child(2)
+  #patners_container_carousal_container_container:first-child
+  img {
+  width: 8.63309352517986vw;
+  height: 2.66187050359712vw;
 }
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(2) #patners_container_carousal_container_container:nth-child(2) img{
+#patners
+  #patners_container
+  #carousss
+  #carousss2:nth-child(2)
+  #patners_container_carousal_container:nth-child(2)
+  #patners_container_carousal_container_container:nth-child(2)
+  img {
   width: 5.25179856115108vw;
   height: 5.25179856115108vw;
 }
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container img{
+#patners
+  #patners_container
+  #carousss
+  #carousss2:nth-child(2)
+  #patners_container_carousal_container:nth-child(3)
+  #patners_container_carousal_container_container
+  img {
   width: 4.82014388489209vw;
   height: 5.68345323741007vw;
 }
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container:nth-child(1){
-display: none;
+#patners
+  #patners_container
+  #carousss
+  #carousss2:nth-child(2)
+  #patners_container_carousal_container:nth-child(3)
+  #patners_container_carousal_container_container:nth-child(1) {
+  display: none;
 }
-@media (max-width:750px){
+@media (max-width: 750px) {
   #patners {
     padding: 15vw 8vw 8.5vw 8vw;
-}
+  }
   #patners_container_matter h1 {
     font-size: 5vw;
     line-height: 5.7vw;
     width: 50vw;
     margin: auto;
-}
-#patners_container_matter h2 {
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.29496402877698vw;
-  line-height: inherit;
-  text-align: center;
-  color: #200e32;
-  font-size: 3.5vw;
-  width: 100%;
-  margin-top: 3vw;
-}
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(1){
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-#patners_container_carousal {
-  height: fit-content;
-  width: 100%;
-  margin: unset;
-  margin-top: 10vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: unset;
-  align-items: unset;
-}
-#patners_container_carousal_container {
-  display: grid;
-  width: fit-content;
-  height: fit-content;
-}
-#patners_container_carousal_container:nth-child(1){
-  width: fit-content;
-  height: fit-content;
-  grid-row: 2/3;
-  grid-column: 1/2;
-  margin-left: 1.72661870503597vw;
-}
-#patners_container_carousal_container:nth-child(3){
-  grid-row: 1/3;
-  grid-column: 2/3;
-}
-#patners_container_carousal_container:last-child {
-  grid-column: 3/4;
-  margin-left: 5vw;
-}
-#patners_container_carousal_container_container {
-  width: 25vw;
-  height: 15vw;
-  box-shadow: 0px 2.15827338129496vw 2.87769784172662vw rgb(212 217 232 / 20%);
-  border-radius: 2vw;
-  margin-top: 5vw;
-  display: flex;
-  background: white;
-}
-#patners .carousel-control-next-icon {
-display: none;
-}
-#patners a.carousel-control-next{
-  display: none;
-}
-#patners .carousel-indicators li {
-  width: 1.2vw;
-  height: 1.2vw;
-  border-bottom: unset;
-  background: white;
-  border-radius: 50%;
-  border: 0.4vw solid #22bdef;
-  margin-left: 2vw;
-}
-#patners .carousel-indicators .active {
-  background: #2d307b;
-  border: 0.4vw solid #2d307b;
-  border-radius: 50%;
-}
-#patners .carousel-indicators {
-  bottom: 7vw;
-}
-#patners_container_carousal_container:nth-child(1) img {
-  width: 17vw;
-  height: 6vw;
-}
-#patners_container_carousal_container:nth-child(2) img {
-  width: 17vw;
-  height: 6vw;
-}
-#patners_container_carousal_container:nth-child(3) img {
-  width: 8vw;
-  height: 10vw;
-}
-#patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container:nth-child(2) img{
-  width: 17vw;
-  height: 6vw;
   }
-#patners_container_carousal_container:nth-child(3) img:nth-child(3) {
-  width: 10vw;
-  height: 4.82014388489209vw;
-}
-#patners_container_carousal_container:nth-child(4) img {
-  width: 15vw;
-  height: 5vw;
-}
-#patners_container_carousal_container:nth-child(5) img {
-  width: 20vw;
-  height: 12vw;
-}
-#patners_container_carousal_container:nth-child(4) #patners_container_carousal_container_container:nth-child(2) img{
-  width: 23vw;
-  height: 9vw;
-}
-#patners #patners_container #carousss a.carousel-control-next {
-  display: none;
-}
-#patners #patners_container #carousss a.carousel-control-prev {
-  display: none;
-}
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(1) #patners_container_carousal_container_container:nth-child(1){
-  display: flex;
+  #patners_container_matter h2 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.29496402877698vw;
+    line-height: inherit;
+    text-align: center;
+    color: #200e32;
+    font-size: 3.5vw;
+    width: 100%;
+    margin-top: 3vw;
   }
-  #patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container:nth-child(1){
+  #patners
+    #patners_container
+    #carousss
+    #carousss2:nth-child(2)
+    #patners_container_carousal_container:nth-child(1) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  #patners_container_carousal {
+    height: fit-content;
+    width: 100%;
+    margin: unset;
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: unset;
+    align-items: unset;
+  }
+  #patners_container_carousal_container {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+  }
+  #patners_container_carousal_container:nth-child(1) {
+    width: fit-content;
+    height: fit-content;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 1.72661870503597vw;
+  }
+  #patners_container_carousal_container:nth-child(3) {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  #patners_container_carousal_container:last-child {
+    grid-column: 3/4;
+    margin-left: 5vw;
+  }
+  #patners_container_carousal_container_container {
+    width: 25vw;
+    height: 15vw;
+    box-shadow: 0px 2.15827338129496vw 2.87769784172662vw rgb(212 217 232 / 20%);
+    border-radius: 2vw;
+    margin-top: 5vw;
     display: flex;
-    }
-    #patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(1) #patners_container_carousal_container_container:nth-child(1) {
-      display: none;
+    background: white;
+  }
+  #patners .carousel-control-next-icon {
+    display: none;
+  }
+  #patners a.carousel-control-next {
+    display: none;
+  }
+  #patners .carousel-indicators li {
+    width: 1.2vw;
+    height: 1.2vw;
+    border-bottom: unset;
+    background: white;
+    border-radius: 50%;
+    border: 0.4vw solid #22bdef;
+    margin-left: 2vw;
+  }
+  #patners .carousel-indicators .active {
+    background: #2d307b;
+    border: 0.4vw solid #2d307b;
+    border-radius: 50%;
+  }
+  #patners .carousel-indicators {
+    bottom: 7vw;
+  }
+  #patners_container_carousal_container:nth-child(1) img {
+    width: 17vw;
+    height: 6vw;
+  }
+  #patners_container_carousal_container:nth-child(2) img {
+    width: 17vw;
+    height: 6vw;
+  }
+  #patners_container_carousal_container:nth-child(3) img {
+    width: 15vw;
+    height: 15vw;
+  }
+  #patners_container_carousal_container:nth-child(3)
+    #patners_container_carousal_container_container:nth-child(2)
+    img {
+    width: 8vw;
+    height: 10vw;
+  }
+  #patners_container_carousal_container:nth-child(3)
+    #patners_container_carousal_container_container:nth-child(3)
+    img {
+    width: 8vw;
+    height: 10vw;
+  }
+  #patners_container_carousal_container:nth-child(4) img {
+    width: 15vw;
+    height: 5vw;
+  }
+  #patners_container_carousal_container:nth-child(5) img {
+    width: 20vw;
+    height: 12vw;
+  }
+  #patners_container_carousal_container:nth-child(4)
+    #patners_container_carousal_container_container:nth-child(2)
+    img {
+    width: 23vw;
+    height: 9vw;
+  }
+  #patners #patners_container #carousss a.carousel-control-next {
+    display: none;
+  }
+  #patners #patners_container #carousss a.carousel-control-prev {
+    display: none;
+  }
+  #patners
+    #patners_container
+    #carousss
+    #carousss2:nth-child(2)
+    #patners_container_carousal_container:nth-child(1)
+    #patners_container_carousal_container_container:nth-child(1) {
+    display: flex;
+  }
+  #patners
+    #patners_container
+    #carousss
+    #carousss2:nth-child(2)
+    #patners_container_carousal_container:nth-child(3)
+    #patners_container_carousal_container_container:nth-child(1) {
+    display: flex;
+  }
+  #patners
+    #patners_container
+    #carousss
+    #carousss2:nth-child(2)
+    #patners_container_carousal_container:nth-child(1)
+    #patners_container_carousal_container_container:nth-child(1) {
+    display: none;
   }
   #carousss2:nth-child(2) #patners_container_carousal {
     display: flex;
@@ -308,26 +367,49 @@ display: none;
     width: fit-content;
     height: 82vw;
     padding-top: 10vw;
-}
-#carousss2:nth-child(1) #patners_container_carousal {
-  padding-left: 1vw;
-}
-#carousss2:nth-child(1) #patners_container_carousal #patners_container_carousal_container{
-  margin-left: 0;
-}
-#carousss2:nth-child(1) #patners_container_carousal #patners_container_carousal_container #patners_container_carousal_container_container{
-  margin-top: 3vw;
-}
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(2) #patners_container_carousal_container_container:first-child img {
-  width: 15vw;
-  height: 15vw;
-}
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(2) #patners_container_carousal_container_container:nth-child(2) img {
-  width: 10vw;
-  height: 10vw;
-}
-#patners #patners_container #carousss #carousss2:nth-child(2) #patners_container_carousal_container:nth-child(3) #patners_container_carousal_container_container img {
-  width: 15vw;
-  height: 10vw;
-}
+  }
+  #carousss2:nth-child(1) #patners_container_carousal {
+    padding-left: 1vw;
+  }
+  #carousss2:nth-child(1)
+    #patners_container_carousal
+    #patners_container_carousal_container {
+    margin-left: 0;
+  }
+  #carousss2:nth-child(1)
+    #patners_container_carousal
+    #patners_container_carousal_container
+    #patners_container_carousal_container_container {
+    margin-top: 3vw;
+  }
+  #patners
+    #patners_container
+    #carousss
+    #carousss2:nth-child(2)
+    #patners_container_carousal_container:nth-child(2)
+    #patners_container_carousal_container_container:first-child
+    img {
+    width: 17vw;
+    height: 6vw;
+  }
+  #patners
+    #patners_container
+    #carousss
+    #carousss2:nth-child(2)
+    #patners_container_carousal_container:nth-child(2)
+    #patners_container_carousal_container_container:nth-child(2)
+    img {
+    width: 10vw;
+    height: 10vw;
+  }
+  #patners
+    #patners_container
+    #carousss
+    #carousss2:nth-child(2)
+    #patners_container_carousal_container:nth-child(3)
+    #patners_container_carousal_container_container
+    img {
+    width: 15vw;
+    height: 10vw;
+  }
 }
