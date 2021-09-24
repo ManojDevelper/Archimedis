@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 import backarrow from "../../images/backarrow.svg"
 
 export const Team2 = ({ teams2 }) => {
-  console.log(teams2)
+
   return (
     <>
       <div id="team" className="team">

@@ -174,7 +174,6 @@ function Navbars() {
                             {!hide ? null : (
                                 <>
                                     <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About Us</Nav.Link>
-                                    <Nav.Link href="/home/#team" id="nav_main_link" activeClassName='active'>Our People</Nav.Link>
                                     <Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients</Nav.Link>
                                     <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog</Nav.Link>
                                     <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link>
