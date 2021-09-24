@@ -9,8 +9,8 @@ export const Blogs = ({ blogtitle, blogs }) => {
       <div id="blog">
         <h1>{blogtitle}</h1>
         <div id="blog_container">
-          {blogs && blogs.map(blogItem =>
-            <Link id="blog_card" key={blogItem.id} to={blogItem.link}>
+          {blogs && blogs.map((blogItem, i) =>
+            <Link id="blog_card" key={i} to={blogItem.link}>
               <div id="blog_card_b1">
                 {(blogItem.blogimg.publicURL)
                   ? (<img src={blogItem.blogimg.publicURL} alt="img" />) :

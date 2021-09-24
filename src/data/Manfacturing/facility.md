@@ -57,7 +57,7 @@ Facility:
           },
           {
             id: 3,
-            facilityid: "Warehouse",
+            facilityid: "Adherence",
             title: "Adherence",
             description: "Uni-directional layout setup to ensure smooth transfer of materials and avoid any chance of mixing materials at any stage. Maintenance and continuous monitoring of temperature and humidity throughout the warehouse. In addition, the following facilities are set up to control any chance of material contaminations",
             description1: "Quarantine:",

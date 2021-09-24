@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import "../../styles/Formulation/fservice.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -6,13 +6,13 @@ export const Fservice = ({ fservices }) => {
 
   return (
     <>
-      {fservices && fservices.map(fservicess =>
-        <div id="fservice" key={fservicess.id}>
+      {fservices && fservices.map((fservicess, i) =>
+        <div id="fservice" key={i}>
           <h1>{fservicess.fservicetitle}</h1>
           <h2>{fservicess.fservicedesc}</h2>
           <div>
-            {fservicess.fservicecards.map(fservicecardss =>
-              <div id="fservice_container_main" key={fservicecardss.id}>
+            {fservicess.fservicecards.map((fservicecardss, i) =>
+              <div id="fservice_container_main" key={i}>
                 <div id="fservice_container">
                   <div className="fservice_container_cards" id={fservicecardss.fservicecardid}>
                     <div id="fservice_container_cards_block1">
@@ -42,8 +42,8 @@ export const Fservice = ({ fservices }) => {
                   <div id="fservice_matter">
                     <p id="fserviceassurance_title">{fservicecardss.fserviceminicardsmaintitle}</p>
                     <div id="fserviceassurance_container">
-                      {fservicecardss.fserviceminicards.map(fserviceminicardsss =>
-                        <>
+                      {fservicecardss.fserviceminicards.map((fserviceminicardsss, i) =>
+                        <Fragment key={i}>
                           <div id="fserviceassurance_container_card1">
                             {(fserviceminicardsss.fserviceminicardsimg.publicURL) ?
                               <img src={fserviceminicardsss.fserviceminicardsimg.publicURL} alt="img" />
@@ -52,7 +52,7 @@ export const Fservice = ({ fservices }) => {
                             }
                             <p id="p4_c_dis">{fserviceminicardsss.fserviceminicardstitle}</p>
                           </div>
-                        </>
+                        </Fragment>
                       )}
                     </div>
                   </div>
@@ -67,7 +67,7 @@ export const Fservice = ({ fservices }) => {
 }
 
 const FServiceprev = props => {
-  const [FServicepre, setFServicepre] = useState({})
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: {eq: "Formulations/fservices.md"}) {
@@ -106,11 +106,9 @@ const FServiceprev = props => {
       }
     }
   `)
-  useEffect(() => {
-    if (data.file) {
-      setFServicepre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+
+      const FServicepre = data.file.childMarkdownRemark.frontmatter;
+   
   return (
     <>
       {

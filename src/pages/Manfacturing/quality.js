@@ -6,8 +6,8 @@ export const Quality = ({ Quality }) => {
 
   return (
     <>
-      {Quality && Quality.map(qualitys =>
-        <div id="quality" key={qualitys.id}>
+      {Quality && Quality.map((qualitys, i) =>
+        <div id="quality" key={i}>
           <h1 id="q_title">{qualitys.title}</h1>
           <h2 id="q_desc">{qualitys.description}</h2>
           <div id="quality_container">

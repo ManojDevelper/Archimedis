@@ -7,8 +7,8 @@ export const Productdev = ({ prodev }) => {
   return (
     <>
       <div id="productdev">
-        {prodev && prodev.map(prodevs =>
-          <div id="quality_matter">
+        {prodev && prodev.map((prodevs, i) =>
+          <div id="quality_matter" key={i}>
             <p className={prodevs.pdclass} id={prodevs.pdid}>{prodevs.title}</p>
             <p id="productdev_desc">{prodevs.description}</p>
             <div id="productdev_container">

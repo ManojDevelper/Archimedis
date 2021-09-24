@@ -1,7 +1,13 @@
 #Qualityassurance {
   width: 100%;
   height: fit-content;
-  padding: 9.64028776978417vw 11.4388489208633vw;
+  
+}
+#Qualityassurance #Quality_Assurance{
+  padding: 9.64028776978417vw 11.4388489208633vw 5vw 11.4388489208633vw;
+}
+#Qualityassurance #Quality_Control{
+  padding: 0vw 11.4388489208633vw 9.64028776978417vw 11.4388489208633vw;
 }
 #Qualityassurance #Qualityassurance_title {
   font-family: Manrope;
@@ -107,19 +113,19 @@
   margin: 0;
   margin-top: 1vw;
 }
-#Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_desc {
+#Qualityassurance .quality_matter:nth-child(2) #Qualityassurance_desc {
   width: 100%;
 }
 #Qualityassurance
-  #quality_matter:nth-child(2)
+  .quality_matter:nth-child(2)
   #Qualityassurance_container_card1 {
   padding: 1vw;
 }
-#Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_title {
+#Qualityassurance .quality_matter:nth-child(2) #Qualityassurance_title {
   margin-top: 10vw;
 }
 #Qualityassurance
-  #quality_matter:nth-child(2)
+  .quality_matter:nth-child(2)
   #Qualityassurance_container
   #Qualityassurance_container_card1
   #Qualityassurance_container_card1_block1
@@ -127,7 +133,7 @@
   margin: auto;
 }
 #Qualityassurance
-  #quality_matter:nth-child(2)
+  .quality_matter:nth-child(2)
   #Qualityassurance_container
   #Qualityassurance_container_card1
   #Qualityassurance_container_card1_block1
@@ -135,7 +141,7 @@
   display: none;
 }
 #Qualityassurance
-  #quality_matter:nth-child(2)
+  .quality_matter:nth-child(2)
   #Qualityassurance_container
   #Qualityassurance_container_card1
   #Qualityassurance_container_card1_block2
@@ -147,7 +153,7 @@
   font-size: 0.935251798561151vw;
 }
 #Qualityassurance
-  #quality_matter:nth-child(2)
+  .quality_matter:nth-child(2)
   #Qualityassurance_container
   #Qualityassurance_container_card1:nth-child(2)
   #Qualityassurance_container_card1_block2
@@ -159,6 +165,12 @@
   #Qualityassurance {
     width: 100%;
     padding: 13.4883720930233vw 3vw;
+  }
+  #Qualityassurance #Quality_Assurance{
+    padding: 0;
+  }
+  #Qualityassurance #Quality_Control{
+    padding: 0vw;
   }
   #Qualityassurance #Qualityassurance_title {
     font-family: Manrope;
@@ -225,7 +237,7 @@
     text-align: left;
     color: #200e32;
   }
-  #Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_title {
+  #Qualityassurance .quality_matter:nth-child(2) #Qualityassurance_title {
     margin-top: 36.7441860465116vw;
   }
   #Qualityassurance
@@ -234,7 +246,7 @@
     p {
     width: 100%;
   }
-  #Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_container {
+  #Qualityassurance .quality_matter:nth-child(2) #Qualityassurance_container {
     margin: auto;
     margin-top: 14.1860465116279vw;
     text-align: center;
@@ -245,7 +257,7 @@
     width: fit-content;
 }
   #Qualityassurance
-    #quality_matter:nth-child(2)
+    .quality_matter:nth-child(2)
     #Qualityassurance_container_card1 {
     height: 30vw;
     padding: 4.18604651162791vw 2.7906976744186vw;
@@ -256,7 +268,7 @@
     flex-direction: column;
   }
   #Qualityassurance
-  #quality_matter:nth-child(2)
+  .quality_matter:nth-child(2)
   #Qualityassurance_container
   #Qualityassurance_container_card1
   #Qualityassurance_container_card1_block2
@@ -269,7 +281,7 @@
   line-height: 3.72093023255814vw;
   text-align: center;
 }
-#Qualityassurance #quality_matter:nth-child(2) #Qualityassurance_container #Qualityassurance_container_card1:nth-child(2) #Qualityassurance_container_card1_block2 #p4_c_dis2 {
+#Qualityassurance .quality_matter:nth-child(2) #Qualityassurance_container #Qualityassurance_container_card1:nth-child(2) #Qualityassurance_container_card1_block2 #p4_c_dis2 {
   width: 100%;
 }
 }

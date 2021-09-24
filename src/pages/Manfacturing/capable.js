@@ -6,13 +6,13 @@ export const Capable = ({ Capabilities }) => {
 
   return (
     <>
-      {Capabilities && Capabilities.map(Capabilitiess =>
-        <div id="capable">
+      {Capabilities && Capabilities.map((Capabilitiess, i) =>
+        <div id="capable" key={i}>
           <h1>{Capabilitiess.capabilitiestitle}</h1>
           <h2>{Capabilitiess.capabilitiesdesc}</h2>
           <div id="capable_container">
-            {Capabilitiess.capabilitiescards.map(capabilitiescardss =>
-              <div className="capable_container_cards" id={capabilitiescardss.capabilitiescardid === "tablets" ? "tablets" : capabilitiescardss.capabilitiescardid === "Capsules" ? "Capsules" :  capabilitiescardss.capabilitiescardid === "Powder" ? "Powder" : capabilitiescardss.capabilitiescardid === "Commercial" ? "Commercial" : "Commercial"}>
+            {Capabilitiess.capabilitiescards.map((capabilitiescardss, i) =>
+              <div className="capable_container_cards" key={i} id={capabilitiescardss.capabilitiescardid === "tablets" ? "tablets" : capabilitiescardss.capabilitiescardid === "Capsules" ? "Capsules" :  capabilitiescardss.capabilitiescardid === "Powder" ? "Powder" : capabilitiescardss.capabilitiescardid === "Commercial" ? "Commercial" : "Commercial"}>
                 <div id="capable_container_cards_block1">
                   <div id="capable_container_cards_matter">
                     <h1 id="c_c_title">{capabilitiescardss.capabilitiescardtitle}</h1>
@@ -20,8 +20,8 @@ export const Capable = ({ Capabilities }) => {
                     <div id="capable_container_cards_block">
                       <p id="block_title">Available as</p>
                       <div id="capable_container_cards_block_card_container">
-                        {capabilitiescardss.capabilitiesminicards.map(capabilitiesminicardss =>
-                          <div id="capable_container_cards_block_card_container_blocks">
+                        {capabilitiescardss.capabilitiesminicards.map((capabilitiesminicardss, i) =>
+                          <div id="capable_container_cards_block_card_container_blocks" key={i}>
                             {(capabilitiesminicardss.image.publicURL) ?
                               <img src={capabilitiesminicardss.image.publicURL} alt={capabilitiesminicardss.alt_tag} />
                               :

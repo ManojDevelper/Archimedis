@@ -9,8 +9,8 @@ export const Wedo = ({ wedotitle, wedo, html }) => {
       <div id="wedo">
         <h1>{wedotitle}</h1>
         <div id="wedo_container">
-          {wedo && wedo.map(wedos =>
-            <div id="wedo_container_cards" key={wedos.id}>
+          {wedo && wedo.map((wedos, i) =>
+            <div id="wedo_container_cards" key={i}>
               <div id="wedo_container_cards_block1">
                 <div id="wedo_container_cards_matter">
                   <h1>{wedos.wedoname}</h1>

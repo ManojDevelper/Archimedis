@@ -11,8 +11,8 @@ export const Industry = ({ industry }) => {
           <h1>{industrys.title}</h1>
           <h2>{industrys.description}</h2>
           <div id="industry_container">
-            {industrys && industrys.industrycards.map(industrycardss =>
-              <div className="industry_container_cards" id={industrycardss.industryid} key={industrycardss.id}>
+            {industrys && industrys.industrycards.map((industrycardss, i) =>
+              <div className="industry_container_cards" id={industrycardss.industryid} key={i}>
                 <div id="industry_container_cards_block1">
                   <div id="industry_container_cards_matter">
                     <h1 id="c_c_title">{industrycardss.title}</h1>

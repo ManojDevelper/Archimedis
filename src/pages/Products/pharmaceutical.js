@@ -6,13 +6,13 @@ export const Pharmaceutical = ({ pharmaceutical }) => {
 
   return (
     <>
-      {pharmaceutical && pharmaceutical.map(pharmaceuticals =>
-        <div id="pharmaceutical" key={pharmaceuticals.id}>
+      {pharmaceutical && pharmaceutical.map((pharmaceuticals, i) =>
+        <div id="pharmaceutical" key={i}>
           <p>{pharmaceuticals.title}</p>
           <p>{pharmaceuticals.description}</p>
           <div id="pharmaceutical_container">
-            {pharmaceuticals.pharmaceuticalcards.map(pharmaceuticalcardss =>
-              <div className="pharmaceutical_container_cards" id={pharmaceuticalcardss.pharmaceuticalid} key={pharmaceuticalcardss.id}>
+            {pharmaceuticals.pharmaceuticalcards.map((pharmaceuticalcardss, i) =>
+              <div className="pharmaceutical_container_cards" id={pharmaceuticalcardss.pharmaceuticalid} key={i}>
                 <div id="pharmaceutical_container_cards_block1">
                   <div id="pharmaceutical_container_cards_matter">
                     <h1 id="c_c_title">{pharmaceuticalcardss.title}</h1>

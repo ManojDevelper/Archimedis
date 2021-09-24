@@ -7,13 +7,13 @@ export const Archibranded = ({ archibrand }) => {
 
     return (
         <>
-            {archibrand && archibrand.map(archibrands =>
-                <div id="archibranded" key={archibrands.id}>
+            {archibrand && archibrand.map((archibrands, i) =>
+                <div id="archibranded" key={i}>
                     <h1>{archibrands.title}</h1>
                     <h2>{archibrands.description}</h2>
                     <div id="archibranded_container">
-                        {archibrands.archibrandcards.map(archibrandcardss =>
-                            <div className="archibranded_container_cards" key={archibrandcardss.id} id={archibrandcardss.archibrandid}>
+                        {archibrands.archibrandcards.map((archibrandcardss, id) =>
+                            <div className="archibranded_container_cards" key={i} id={archibrandcardss.archibrandid}>
                                 <div id="archibranded_container_cards_block1">
                                     <div id="archibranded_container_cards_matter">
                                         <p>{archibrandcardss.title}</p>

@@ -9,12 +9,12 @@ export const Casestudy = ({ Casestudy }) => {
 
   return (
     <>
-      {Casestudy && Casestudy.map(Casestudys =>
-        <div id="casestudy" key={Casestudys.id}>
+      {Casestudy && Casestudy.map((Casestudys, i) =>
+        <div id="casestudy" key={i}>
           <h1>{Casestudys.Casestudytitle}</h1>
           <div id="casestudy_container">
-            {Casestudys && Casestudys.Casestudycards.map(Casestudycardss =>
-              <div key={Casestudycardss.id}>
+            {Casestudys && Casestudys.Casestudycards.map((Casestudycardss, i) =>
+              <div key={i}>
                 <div className="casestudy_card" id={Casestudycardss.Casestudyblockid}>
                   <div id="casestudy_card_b1">
                   {(Casestudycardss.image.publicURL) ? 
@@ -38,7 +38,7 @@ export const Casestudy = ({ Casestudy }) => {
   );
 };
 const CasestudyPrev = () => {
-  const [casestudypre, setCasestudypre] = useState({});
+
   const data = useStaticQuery(graphql`
     query{
         file(relativePath: {eq: "Formulations/casestudy.md"}) {
@@ -64,11 +64,7 @@ const CasestudyPrev = () => {
           }
         }
      `)
-  useEffect(() => {
-    if (data.file) {
-      setCasestudypre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+      const casestudypre = data.file.childMarkdownRemark.frontmatter;
   return (
     <>
       {

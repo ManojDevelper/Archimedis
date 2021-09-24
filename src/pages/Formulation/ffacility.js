@@ -6,13 +6,13 @@ export const Ffacility = ({ Ffacility }) => {
 
   return (
     <>
-      {Ffacility && Ffacility.map(Ffacilitys =>
-        <div id="ffacility" key={Ffacilitys.id}>
+      {Ffacility && Ffacility.map((Ffacilitys, i) =>
+        <div id="ffacility" key={i}>
           <h1>{Ffacilitys.Ffacilitytitle}</h1>
           <h2>{Ffacilitys.Ffacilitydis}</h2>
           <div id="ffacility_container">
-            {Ffacilitys.Ffacilitycards.map(Ffacilitycardss =>
-                <div className="ffacility_container_cards" id={Ffacilitycardss.Ffacilityblockid} key={Ffacilitycardss.id}>
+            {Ffacilitys.Ffacilitycards.map((Ffacilitycardss, i) =>
+                <div className="ffacility_container_cards" id={Ffacilitycardss.Ffacilityblockid} key={i}>
                   <div id="ffacility_container_cards_block2">
                   {(Ffacilitycardss.ffacilitypic.publicURL) ? 
                     <img src={Ffacilitycardss.ffacilitypic.publicURL} alt={Ffacilitycardss.alt_tag} />
@@ -35,7 +35,7 @@ export const Ffacility = ({ Ffacility }) => {
   );
 };
 const FfacilityPrev = props => {
-  const [Ffacilityss, setFfacilityss] = useState({});
+  
   const data = useStaticQuery(graphql`
     query{
         file(relativePath: {eq: "Formulations/ffacility.md"}) {
@@ -62,11 +62,8 @@ const FfacilityPrev = props => {
           }
         }
      `)
-  useEffect(() => {
-    if (data.file) {
-      setFfacilityss(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+
+      const Ffacilityss = data.file.childMarkdownRemark.frontmatter;
   return (
     <>
       {
