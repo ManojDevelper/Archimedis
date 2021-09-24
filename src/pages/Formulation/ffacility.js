@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Formulation/ffacility.css";
 import { graphql, useStaticQuery } from "gatsby";
 

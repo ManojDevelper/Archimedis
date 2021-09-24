@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import "../../styles/Products/pharmaceutical.css";
 
@@ -35,7 +35,7 @@ export const Pharmaceutical = ({ pharmaceutical }) => {
   );
 };
 const PharmaceuticalPrev = props => {
-  const [PharmaceuticalPre, setPharmaceuticalPre] = useState({});
+
   const data = useStaticQuery(graphql`
   query{
       file(relativePath: {eq: "Products/pharmaceutical.md"}) {
@@ -62,11 +62,9 @@ const PharmaceuticalPrev = props => {
         }
       }
    `)
-  useEffect(() => {
-    if (data.file) {
-      setPharmaceuticalPre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+  
+      const PharmaceuticalPre = data.file.childMarkdownRemark.frontmatter;
+
   return (
     <>
       {

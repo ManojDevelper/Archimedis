@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import "../../styles/About/Mildstone.css";
 
@@ -32,7 +32,7 @@ export const Mildstone = ({ title, description, mildstone }) => {
     );
 };
 const MildstonePrev = () => {
-    const [MildstonePre, setMildstonePre] = useState({});
+    
     const data = useStaticQuery(graphql`
       query{
           file(relativePath: {eq: "About/mildstone.md"}) {
@@ -55,11 +55,9 @@ const MildstonePrev = () => {
             }
           }
        `)
-    useEffect(() => {
-        if (data.file) {
-            setMildstonePre(data.file.childMarkdownRemark.frontmatter);
-        }
-    }, [data.file]);
+   
+            const MildstonePre = data.file.childMarkdownRemark.frontmatter;
+
     return (
         <>
             {

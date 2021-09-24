@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Products/foodsupplements.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -12,7 +12,7 @@ export const Foodsupplements = ({ foodsupliments }) => {
           <p>{foodsuplimentss.description}</p>
           <div id="foodsupplements_container">
             {foodsuplimentss.foodsuplimentscards.map((foodsuplimentscardss, i) =>
-              <div className="foodsupplements_container_cards" id={i} key={foodsuplimentscardss.id}>
+              <div className="foodsupplements_container_cards" id={foodsuplimentscardss.foodsuplimentsid} key={i}>
                 <div id="foodsupplements_container_cards_block1">
                   <div id="foodsupplements_container_cards_matter">
                     <h1 id="c_c_title">{foodsuplimentscardss.title}</h1>
@@ -35,7 +35,7 @@ export const Foodsupplements = ({ foodsupliments }) => {
   );
 };
 const FoodsupplementsPrev = props => {
-  const [FoodsupplementsPre, setFoodsupplementsPre] = useState({});
+
   const data = useStaticQuery(graphql`
     query{
         file(relativePath: {eq: "Products/foodsuplements.md"}) {
@@ -61,11 +61,9 @@ const FoodsupplementsPrev = props => {
           }
         }
      `)
-  useEffect(() => {
-    if (data.file) {
-      setFoodsupplementsPre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+
+      const FoodsupplementsPre = data.file.childMarkdownRemark.frontmatter;
+
   return (
     <>
       {

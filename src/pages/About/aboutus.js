@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/About/Aboutus.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -19,7 +19,7 @@ export const Aboutus = ({ title, description, aboutImg, description2, descriptio
   );
 };
 const AboutUsPrev = props => {
-  const [aboutPre, setAboutPre] = useState({});
+
   const data = useStaticQuery(graphql`
   query{
     file(relativePath: {eq: "About/aboutus.md"}) {
@@ -38,11 +38,9 @@ const AboutUsPrev = props => {
             }
           }
 }`)
-  useEffect(() => {
-    if (data.file) {
-      setAboutPre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+
+      const aboutPre = data.file.childMarkdownRemark.frontmatter;
+
   let AboutImage;
   if (data.file.childMarkdownRemark.frontmatter.aboutImg.publicURL) {
     AboutImage = data.file.childMarkdownRemark.frontmatter.aboutImg.publicURL;

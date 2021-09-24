@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Products/Archibranded.css";
 import arrow from "../../images/arow.svg";
 import { graphql, useStaticQuery } from "gatsby";
@@ -37,7 +37,7 @@ export const Archibranded = ({ archibrand }) => {
     );
 };
 const ArchiBrandedPrev = props => {
-    const [ArchiBrandedPre, setArchiBrandedPre] = useState({});
+
     const data = useStaticQuery(graphql`
     query{
         file(relativePath: {eq: "Products/archibrand.md"}) {
@@ -63,11 +63,9 @@ const ArchiBrandedPrev = props => {
           }
         }
      `)
-    useEffect(() => {
-        if (data.file) {
-            setArchiBrandedPre(data.file.childMarkdownRemark.frontmatter);
-        }
-    }, [data.file]);
+
+            const ArchiBrandedPre = data.file.childMarkdownRemark.frontmatter;
+
     return (
         <>
             {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Digital/productdev.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -12,8 +12,8 @@ export const Productdev = ({ prodev }) => {
             <p className={prodevs.pdclass} id={prodevs.pdid}>{prodevs.title}</p>
             <p id="productdev_desc">{prodevs.description}</p>
             <div id="productdev_container">
-              {prodevs && prodevs.prodevminicontainer.map(prodevminicontainers =>
-                <div className="productdev_container_card1" id={prodevminicontainers.pdcontid} key={prodevminicontainers.id}>
+              {prodevs && prodevs.prodevminicontainer.map((prodevminicontainers, i) =>
+                <div className="productdev_container_card1" id={prodevminicontainers.pdcontid} key={i}>
                   <div id="productdev_container_card1_block1">
                     {(prodevminicontainers.Image.publicURL) ?
                       <img src={prodevminicontainers.Image.publicURL} alt="img" />
@@ -36,7 +36,7 @@ export const Productdev = ({ prodev }) => {
   );
 };
 const ProductdevPrev = () => {
-  const [ProductdevPre, setProductdevPre] = useState({});
+
   const data = useStaticQuery(graphql`
     query{
         file(relativePath: {eq: "Digital/productdev.md"}) {
@@ -64,11 +64,9 @@ const ProductdevPrev = () => {
           }
         }
      `)
-  useEffect(() => {
-    if (data.file) {
-      setProductdevPre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+
+      const ProductdevPre = data.file.childMarkdownRemark.frontmatter;
+
   return (
     <>
       {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Manfacture/Industry.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -40,7 +40,7 @@ export const Industry = ({ industry }) => {
 };
 
 const IndustryPre = props => {
-  const [IndustryPre, setIndustryPre] = useState({});
+
   const data = useStaticQuery(graphql`
     query {
         file(relativePath: {eq: "Manfacturing/industry.md"}) {
@@ -70,11 +70,9 @@ const IndustryPre = props => {
           }
     }
   `)
-  useEffect(() => {
-    if (data.file) {
-      setIndustryPre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+
+      const IndustryPre = data.file.childMarkdownRemark.frontmatter;
+  
   return (
     <>
       {

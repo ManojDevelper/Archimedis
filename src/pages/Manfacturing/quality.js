@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Manfacture/Quality.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -30,7 +30,7 @@ export const Quality = ({ Quality }) => {
   );
 };
 const QualityPrev = () => {
-  const [QualityPre, setQualityPre] = useState({});
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: {eq: "Manfacturing/quality.md"}) {
@@ -52,11 +52,9 @@ const QualityPrev = () => {
       }
     }
   `)
-  useEffect(() => {
-    if (data.file) {
-      setQualityPre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+  
+      const QualityPre = data.file.childMarkdownRemark.frontmatter;
+ 
   return (
     <>
       {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Manfacture/Facility.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -53,7 +53,7 @@ export const Facility = ({ Facility }) => {
   );
 };
 const FacilityPrev = props => {
-  const [facilityPre, setfacilityPre] = useState({});
+  
   const data = useStaticQuery(graphql`
     query {
         file(relativePath: {eq: "Manfacturing/facility.md"}) {
@@ -100,11 +100,9 @@ const FacilityPrev = props => {
           }
     }
   `)
-  useEffect(() => {
-    if (data.file) {
-      setfacilityPre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+
+      const facilityPre = data.file.childMarkdownRemark.frontmatter;
+
   return (
     <>
       {

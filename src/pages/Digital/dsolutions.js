@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Digital/dsolutions.css";
 import { graphql, useStaticQuery } from "gatsby";
 
 export const Dsolutions = ({ dsolution }) => {
-    console.log(dsolution)
 
     return (
         <>
@@ -78,7 +77,7 @@ export const Dsolutions = ({ dsolution }) => {
 }
 
 const DsolutionsPrev = props => {
-    const [DsolutionsPre, setDsolutionsPre] = useState({});
+    
     const data = useStaticQuery(graphql`
     query{
         file(relativePath: {eq: "Digital/dsolution.md"}) {
@@ -122,11 +121,9 @@ const DsolutionsPrev = props => {
           }
         }
      `)
-    useEffect(() => {
-        if (data.file) {
-            setDsolutionsPre(data.file.childMarkdownRemark.frontmatter);
-        }
-    }, [data.file]);
+
+            const DsolutionsPre = data.file.childMarkdownRemark.frontmatter;
+      
     return (
         <>
             {

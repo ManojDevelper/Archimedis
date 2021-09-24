@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/Manfacture/Capable.css";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -50,7 +50,7 @@ export const Capable = ({ Capabilities }) => {
   );
 };
 const CapablePrev = props => {
-  const [CapablePre, setCapablePre] = useState({});
+  
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: {eq: "Manfacturing/capabilities.md"}) {
@@ -84,11 +84,9 @@ const CapablePrev = props => {
       }
     }
   `)
-  useEffect(() => {
-    if (data.file) {
-      setCapablePre(data.file.childMarkdownRemark.frontmatter);
-    }
-  }, [data.file]);
+  
+      const CapablePre = data.file.childMarkdownRemark.frontmatter;
+ 
   return (
     <>
       {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import "../../styles/About/Ourvalues.css";
 
@@ -25,7 +25,7 @@ export const Ourvalues = ({ title, ourValues }) => {
 };
 
 const OurvaluesPrev = () => {
-    const [OurvaluesPre, setOurvaluesPre] = useState({});
+   
     const data = useStaticQuery(graphql`
       query{
           file(relativePath: {eq: "About/ourvalues.md"}) {
@@ -45,11 +45,9 @@ const OurvaluesPrev = () => {
             }
           }
        `)
-    useEffect(() => {
-        if (data.file) {
-            setOurvaluesPre(data.file.childMarkdownRemark.frontmatter);
-        }
-    }, [data.file]);
+    
+            const OurvaluesPre = data.file.childMarkdownRemark.frontmatter;
+    
     return (
         <>
             {

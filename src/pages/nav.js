@@ -97,7 +97,7 @@ function Navbars() {
                                             <h1><Link to="/manfacture/#facility" style={{textDecoration: `none`, color: `#200e32` }}>Facility</Link></h1>
                                             <Link to="/manfacture/#Manufacturing" id="nav_sub_link">Manufacturing</Link>
                                             <Link to="/manfacture/#packing" id="nav_sub_link">Packing</Link>
-                                            <Link to="/manfacture/#Warehouse" id="nav_sub_link">Adherence</Link>
+                                            <Link to="/manfacture/#Adherence" id="nav_sub_link">Adherence</Link>
                                             <Link to="/manfacture/#AirHandling" id="nav_sub_link">Air Handling Units (AHUs)</Link>
                                             <Link to="/manfacture/#WaterPurification" id="nav_sub_link">Water Purification</Link>
                                             <Link to="/manfacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
