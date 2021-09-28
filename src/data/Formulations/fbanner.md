@@ -1,4 +1,3 @@
 ---
-Formulationsdescription: We flex science and bring pharmaceutical and
-  nutraceutical products from lab to life.
+Formulationsdescription: We advance pharmaceutical and nutraceutical formulations from lab to life.
 ---
