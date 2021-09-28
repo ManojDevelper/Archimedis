@@ -36,9 +36,9 @@ prodev:
       - id: 5
         pdcontid: ProductSupport
         title: Support Helpdesk
-        title2: Superior support ensures right usage of the product and often leads to
-          client referral. We can shape your client perceptions of the product
-          through awesome support helpdesk.
+        title2: Superior product support ensures right usage; shapes perceptions; and
+          often leads to client referral. We can help your clients succeed with
+          your product through awesome support helpdesk.
         Image: ../assets/pd15.svg
       - id: 6
         pdcontid: ProductManagement
