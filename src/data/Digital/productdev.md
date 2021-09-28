@@ -10,14 +10,15 @@ prodev:
       - id: 1
         pdcontid: Design
         title: MVP / Prototype
-        title2: Your idea needs a shape that people can touch and feel.  Communicate
-          your idea with well-designed UX design and wireframes.
+        title2: Your idea needs a shape that people can touch and feel.  We can help you
+          communicate your idea with well-designed UX design and wireframes.
         Image: ../assets/pd11.svg
       - id: 2
         pdcontid: Engineering&Development
-        title: Engineering & Development
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title: Development
+        title2: From technical design to selecting the right technology stalk, product
+          development can be daunting. We can help you engineer your product to
+          perfection.
         Image: ../assets/pd12.svg
       - id: 3
         pdcontid: TestAutomation
