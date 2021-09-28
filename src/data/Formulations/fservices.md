@@ -109,13 +109,13 @@ fservices:
       - id: 4
         fservicecardid: RegulatoryAffairs
         fservicecardtitle: Regulatory Affairs
-        fservicecarddesc: Regulation in healthcare involves in-depth evaluation to
-          withhold the standards of public health, drug registration, marketing
-          authorization, import and export and pharmacovigilance. We possess
-          veterans in the field of regulatory affairs that take care of the
-          development plan, supervising-writing/reviewing and assembling and
-          submission management, which helps in completing these complex tasks
-          with ease.
+        fservicecarddesc: Regulatory agencies perform in-depth evaluation to withhold
+          the standards of public health, drug registration, marketing
+          authorization, import and export and pharmacovigilance. Our regulatory
+          affairs team plays a bridging role between regulatory agencies and our
+          R&D teams.  Each product dossier submitted is a testimony to the
+          team's hard work behind gathering and compiling product development
+          data and their knowledge of international dossier requirements.
         fservicepic: ../assets/Regulatory-Affairs.png
         alt_tag: " Regulatory Affairs organisation"
         fserviceminicards: []
@@ -123,17 +123,20 @@ fservices:
       - id: 5
         fservicecardid: StabilityStudies
         fservicecardtitle: Stability Studies
-        fservicecarddesc: "Stability studies are conducted by the analytical research
-          and development team for their new developed products encompassing the
-          Following Conditions:"
+        fservicecarddesc: "Stability Studies are essential in determining the expiry of
+          the drug products.  They help extrapolate how drug products retain
+          their characteristics during transportation and storage before they
+          reach the beneficiary. Stable products improve confidence on the
+          formulation and packaging. Our R&D team is well versed and equipped
+          with the following types of stability studies:"
         fservicepic: ../assets/Stability-Studies.png
         alt_tag: Pharmaceutical Stability Studies
         fserviceminicards: []
         fli:
           - id: 1
-            list: Long term
+            list: Long Term Stability
           - id: 2
-            list: Intermediate
+            list: Intermediate Stability
           - id: 3
-            list: Accelerated
+            list: Accelerated Stability
 ---
