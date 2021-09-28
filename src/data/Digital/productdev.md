@@ -22,27 +22,30 @@ prodev:
         Image: ../assets/pd12.svg
       - id: 3
         pdcontid: TestAutomation
-        title: Test Automation
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title: Continuous QA
+        title2: Quality markets products. We can build automated test suites so your
+          product can evolve business-relevant and worry-free.
         Image: ../assets/pd13.svg
       - id: 4
         pdcontid: DevOps
         title: DevOps (CI/CD)
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title2: Changes shape products. How soon the changes become integral to the
+          product is defined by DevOps.  We can build a continous pipeline so
+          you can see, test and release the changes faster.
         Image: ../assets/pd14.svg
       - id: 5
         pdcontid: ProductSupport
-        title: Product Support Helpdesk
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title: Support Helpdesk
+        title2: Superior product support ensures right usage; shapes perceptions; and
+          often leads to client referral. We can help your clients succeed with
+          your product through awesome support helpdesk.
         Image: ../assets/pd15.svg
       - id: 6
         pdcontid: ProductManagement
         title: Product Management
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title2: "Digital products need a goal-oriented roadmap, feature prioritization,
+          sprint planning and execution. Our Product Value Stream process can
+          bring all of these. And more. "
         Image: ../assets/pd16.svg
   - id: 2
     pdid: Quality&Compliance
