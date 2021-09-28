@@ -43,8 +43,9 @@ prodev:
       - id: 6
         pdcontid: ProductManagement
         title: Product Management
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title2: "Digital products need a goal-oriented roadmap, feature prioritization,
+          sprint planning and execution. Our Product Value Stream process can
+          bring all of these. And more. "
         Image: ../assets/pd16.svg
   - id: 2
     pdid: Quality&Compliance
