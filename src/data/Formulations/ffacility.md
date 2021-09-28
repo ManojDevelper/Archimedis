@@ -1,37 +1,38 @@
 ---
 Ffacility:
-  [
-    {
-      id: 1,
-      Ffacilitytitle: "Facility",
-      Ffacilitydis: "Built with resourceful systems and backed by fool-proof processes. Singularly and in totality, they maintain the product quality throughout the process and contribute towards maximising the output.",
-      Ffacilitycards:
-        [
-          {
-            id: 1,
-            Ffacilityblockid: "R&D",
-            Ffacilityname: "R&D Pilot Plant",
-            Ffacilitydesc: "The sector of the plant where lab scale formulas are transformed into a viable product. This is achieved by structuring a liable and practical procedure to manufacture the product.",
-            ffacilitypic: "../assets/R-and-D-Pilot-Plant.png",
-            alt_tag: "Drug research and development",
-          },
-          {
-            id: 2,
-            Ffacilityblockid: "AnalyticalLab",
-            Ffacilityname: "Analytical Lab",
-            Ffacilitydesc: "Our analytical lab is spacious and well-equipped with facilities. Analysts are well-trained to be capable of handling instruments such as HPLC, dissolution test apparatus, ultra-micro balance and many other sophisticated instruments. All instruments are regularly calibrated and maintained properly to be ready for use. The chemicals have a separate chemical store to keep the stocks with even amenities in the lab to keep the used chemicals.",
-            ffacilitypic: "../assets/Analytical-Lab.png",
-            alt_tag: "Analytical Lab",
-          },
-          {
-            id: 3,
-            Ffacilityblockid: "StabilityChamber",
-            Ffacilityname: "Stability Chamber",
-            Ffacilitydesc: "The crux of the stability studies performed. This forms the cradle where various environmental conditions are artificially created to which the medicines might be exposed. They are useful in providing insights to the atmospheric conditions by accelerating the exposure and any adverse effects they may cause.",
-            ffacilitypic: "../assets/Stability-Chamber.png",
-            alt_tag: "Stability Chamber",
-          },
-        ],
-    },
-  ]
+  - id: 1
+    Ffacilitytitle: R&D Infrastructure
+    Ffacilitydis: 'Science excites our formulation scientists and analytical
+      chemists.  Our "DSIR Approved" research facility supports their scientific
+      adventure. '
+    Ffacilitycards:
+      - id: 1
+        Ffacilityblockid: R&D
+        Ffacilityname: R&D Pilot Plant
+        Ffacilitydesc: This miniature production facility brings formulations to life -
+          from paper to product. Fully equipped with granulation to coating, it
+          shapes our scientists' ideas and encourages them to push their
+          critical thinking.
+        ffacilitypic: ../assets/R-and-D-Pilot-Plant.png
+        alt_tag: Drug research and development
+      - id: 2
+        Ffacilityblockid: AnalyticalLab
+        Ffacilityname: Analytical R&D Lab
+        Ffacilitydesc: With 5 HPLCs, and other instruments, our analytical R&D lab puts
+          chemistry in action. Our lab lets the analytical chemists experiment
+          with the physical and chemical properties of APIs, excipients and
+          finished goods.
+        ffacilitypic: ../assets/Analytical-Lab.png
+        alt_tag: Analytical Lab
+      - id: 3
+        Ffacilityblockid: StabilityChamber
+        Ffacilityname: Walk-in Stability Chambers
+        Ffacilitydesc: Three walk-in stability chambers facilitate stability studies in
+          different environmental conditions - real-time, accelerate and
+          intermediate. Reputed sensors, uninterrupted power supply and
+          continuous data logging further enhance the reliability and accuracy
+          of stability studies. A back-up stability chamber comes handy in
+          critical situations.
+        ffacilitypic: ../assets/Stability-Chamber.png
+        alt_tag: Stability Chamber
 ---
