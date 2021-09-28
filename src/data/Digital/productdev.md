@@ -35,9 +35,10 @@ prodev:
         Image: ../assets/pd14.svg
       - id: 5
         pdcontid: ProductSupport
-        title: Product Support Helpdesk
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title: Support Helpdesk
+        title2: Superior support ensures right usage of the product and often leads to
+          client referral. We can shape your client perceptions of the product
+          through awesome support helpdesk.
         Image: ../assets/pd15.svg
       - id: 6
         pdcontid: ProductManagement
