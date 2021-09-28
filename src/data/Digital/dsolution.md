@@ -47,8 +47,8 @@ dsolution:
         dsolutioncardtitle: ERP for Life Sciences
         dsolutionminicards:
           - id: 1
-            dsolutionminicardstitle: Supply-Chain
-            dsolutionminicardstitle2: (Warehouse Operations & Management)
+            dsolutionminicardstitle: Supply-Chain Management
+            dsolutionminicardstitle2: ""
             dsolutionminicardsimg: ../assets/ds110.svg
           - id: 2
             dsolutionminicardstitle: Production Planning
