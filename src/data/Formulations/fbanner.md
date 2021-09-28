@@ -1,3 +1,4 @@
 ---
-Formulationsdescription: Formulating Drug Delivery Systems, From Lab to Life.
+Formulationsdescription: We flex science and bring pharmaceutical and
+  nutraceutical products from lab to life.
 ---
