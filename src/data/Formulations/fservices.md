@@ -45,13 +45,15 @@ fservices:
           - id: 8
             fserviceminicardstitle: Perforated Coating Machine
             fserviceminicardsimg: ../assets/fssi11.svg
-      - fserviceminicardsmaintitle: Infrastructure Facilities
+      - fserviceminicardsmaintitle: Analytical R&D Lab
         fli: []
         alt_tag: Pharma Analytical Method development
-        fservicecarddesc: "Our experienced and well-qualified team effectively
-          incorporates analytical methods such as assay, dissolution testing and
-          related substances analysis for our newly developed finished products.
-          All the methods used are cost effective and reproducible. "
+        fservicecarddesc: Deriving from pharmacopeial references such as USP, BP, and
+          Ph. Eur., our analytical chemists develop methods for analyzing input
+          materials and finished goods.  While developing analytical methods for
+          assay, dissolution time, and related substances, they not only focus
+          on the accuracy of the methods – but also pay attention to cost
+          effectiveness and repeatability of methods.
         fservicecardtitle: Analytical Method Development
         fservicecardid: AnalyticalMethod
         id: 2
