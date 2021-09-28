@@ -10,8 +10,8 @@ prodev:
       - id: 1
         pdcontid: Design
         title: MVP / Prototype
-        title2: Your idea needs a shape that people can touch and feel.  Nothing can
-          communicate your idea better than a well-designed UX and wireframes.
+        title2: Your idea needs a shape that people can touch and feel.  Communicate
+          your idea with well-designed UX design and wireframes.
         Image: ../assets/pd11.svg
       - id: 2
         pdcontid: Engineering&Development
