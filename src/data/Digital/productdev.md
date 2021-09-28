@@ -51,23 +51,21 @@ prodev:
     pdid: Quality&Compliance
     pdclass: productdevtitle
     title: Quality & Compliance
-    description: The governing hand which makes sure that intended performance is
-      delivered and products made strictly follow the regulations in place.
+    description: "Sensible Quality & Compliance enhances the value of Digital in
+      Life Sciences.  Play it right with Archimedis. "
     prodevminicontainer:
       - id: 1
         pdcontid: GxP
-        title: GxP Compliance (QMS / SOPs)
-        title2: "Dedicated Quality Assurance Department, independently reporting to the
-          management, functions to implement and monitor the compliance to cGMP
-          requirements Throughout the processes "
+        title: IT QMS
+        title2: Lean and compliant QMS that is loved by the IT teams is a challenging
+          goal. We can help you design and implement one.
         Image: ../assets/qc11.svg
       - id: 2
         pdcontid: QualityAssurance
-        title: IT Quality Assurance
-        title2: "IT-QA monitors and controls systems, thereby, assuring the quality of
-          the software systems: ensuring the computerized processes, procedures
-          as well as standards suitable for the project are implemented
-          correctly. "
+        title: Quality Assurance
+        title2: The gap between QMS design and implementation can increase compliance
+          risks. We can help your IT GxP projects with process tailoring and
+          continuous compliance with the IT QMS.
         Image: ../assets/qc12.svg
       - id: 3
         pdcontid: ComputerizedSystemValidation
