@@ -123,12 +123,13 @@ fservices:
       - id: 5
         fservicecardid: StabilityStudies
         fservicecardtitle: Stability Studies
-        fservicecarddesc: "Stability Studies are essential in determining the expiry of
-          the drug products.  They help extrapolate how drug products retain
-          their characteristics during transportation and storage before they
-          reach the beneficiary. Stable products improve confidence on the
-          formulation and packaging. Our R&D team is well versed and equipped
-          with the following types of stability studies:"
+        fservicecarddesc: "Stability Studies are essential in determining the life of
+          drug products, under different storage conditions.  They help
+          extrapolate how drug products retain their characteristics during
+          transportation and storage before they reach the beneficiary. Stable
+          products improve confidence on the formulation and packaging. Our R&D
+          team is well versed and equipped with the following types of stability
+          studies:"
         fservicepic: ../assets/Stability-Studies.png
         alt_tag: Pharmaceutical Stability Studies
         fserviceminicards: []
