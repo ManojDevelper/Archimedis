@@ -43,7 +43,7 @@ dsolution:
             minicardd: 8. Corporate Functions
             minicardd2: Sales, Finance, Human Resource, Information Technology
             Image: ../assets/map17.svg
-        dsolutioncardid: Formulationdev
+        dsolutioncardid: eCapsule
         dsolutioncardtitle: ERP for Life Sciences
         dsolutionminicards:
           - id: 1
@@ -97,9 +97,10 @@ dsolution:
         dsolutionminicardsmaintitle: Key Features of eCapsule
         id: 1
         Image: ../assets/digital.png
-        dsolutioncarddesc: Meet "eCapsule", our comprehensive digital solution,
-          purpose-built for life sciences organizations.  Be efficient,
-          consistent, agile and compliant - naturally and digitally.
+        dsolutioncarddesc: Meet "eCapsule", our comprehensive digital solution for life
+          sciences organizations.  Built on the world famous Frappe framework,
+          "eCapsule" makes organizations efficient, consistent, agile and
+          compliant - naturally and digitally.
       - id: 2
         dsolutioncardid: SmartDispensing
         dsolutioncardtitle: Smart Dispensing
