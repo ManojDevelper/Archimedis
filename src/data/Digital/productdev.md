@@ -83,17 +83,16 @@ prodev:
         Image: ../assets/qc13.svg
       - id: 5
         pdcontid: Part11
-        title: Part 11 / Annex 11 Assessment
-        title2: All records in electronic form are created, modified, maintained,
-          archived, retrieved, or transmitted under any records comply with the
-          requirements set forth in regulations of USFDA (21 CFR Part 11)
+        title: Part 11 / Annex 11 Compliance
+        title2: Developing and maintaining systems in compliance with Part 11 / Annex 11
+          predicates can be cumbersome. Engage us to assess, and monitor Part 11
+          compliance.
         Image: ../assets/qc14.svg
       - id: 6
         pdcontid: Design
         title: Training
-        title2: Periodic training of all employees to enhance their knowledge and
-          skills. The training includes induction training at the time of new
-          recruitment followed by cGMP training, SOP Training and on job
-          training.
+        title2: Quality & Compliance is an ongoing effort, and solicits everyone's
+          active participation. Let us train your teams on QMS, GxP Best
+          Practices, Validation and Good Documentation Practices.
         Image: ../assets/qc15.svg
 ---
