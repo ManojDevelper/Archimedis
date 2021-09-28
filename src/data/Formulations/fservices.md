@@ -123,17 +123,17 @@ fservices:
       - id: 5
         fservicecardid: StabilityStudies
         fservicecardtitle: Stability Studies
-        fservicecarddesc: "Stability studies are conducted by the analytical research
-          and development team for their new developed products encompassing the
-          Following Conditions:"
+        fservicecarddesc: "Stability Studies are essential in determining the expiry of
+          the drug products.  Our R&D team is well versed and equipped with the
+          following types of stability studies:"
         fservicepic: ../assets/Stability-Studies.png
         alt_tag: Pharmaceutical Stability Studies
         fserviceminicards: []
         fli:
           - id: 1
-            list: Long term
+            list: Long Term Stability
           - id: 2
-            list: Intermediate
+            list: Intermediate Stability
           - id: 3
-            list: Accelerated
+            list: Accelerated Stability
 ---
