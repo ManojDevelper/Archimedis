@@ -29,8 +29,10 @@ Ffacility:
         Ffacilityname: Walk-in Stability Chambers
         Ffacilitydesc: Three walk-in stability chambers facilitate stability studies in
           different environmental conditions - real-time, accelerate and
-          intermediate. Uninterrupted power supply and continuous data logging
-          further enhance the reliability and accuracy of stability studies.
+          intermediate. Reputed sensors, uninterrupted power supply and
+          continuous data logging further enhance the reliability and accuracy
+          of stability studies. A back-up stability chamber comes handy in
+          critical situations.
         ffacilitypic: ../assets/Stability-Chamber.png
         alt_tag: Stability Chamber
 ---
