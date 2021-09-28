@@ -63,39 +63,36 @@ prodev:
       - id: 2
         pdcontid: QualityAssurance
         title: Quality Assurance
-        title2: The gap between QMS design and implementation can increase compliance
-          risks. We can help your IT GxP projects with process tailoring and
-          continuous compliance with the IT QMS.
+        title2: The gap between QMS design and implementation imposes regulatory risks.
+          We can assist your GxP IT projects with process tailoring and
+          continuous compliance.
         Image: ../assets/qc12.svg
       - id: 3
         pdcontid: ComputerizedSystemValidation
-        title: Computerized System Validation (CSV)
-        title2: "All computer systems which are being used for compliance of GMP/GLP
-          requirements validated. The validation for software systems is also
-          carried out as per GAMP 5 guidelines using system implementation life
-          cycle approach. "
+        title: Computerized System Assurance (CSA)
+        title2: Shifting the focus from documentation to critical thinking, CSA
+          re-defines GxP system quality. We can help you step up from CSV to
+          CSA.
         Image: ../assets/qc16.svg
       - id: 4
         pdcontid: Riskbased
         title: Risk-based Validation
-        title2: Risk assessment is carried out to determine the rigor of validation and
-          qualification activities to be performed wherever necessary. Based on
-          the outcome of this assessment, validation and qualification
-          activities are planned.
+        title2: Determining the rigor of validation can unlock value without risking
+          regulatory compliance. Risk-based validation approach needs careful
+          evaluation and execution.
         Image: ../assets/qc13.svg
       - id: 5
         pdcontid: Part11
-        title: Part 11 / Annex 11 Assessment
-        title2: All records in electronic form are created, modified, maintained,
-          archived, retrieved, or transmitted under any records comply with the
-          requirements set forth in regulations of USFDA (21 CFR Part 11)
+        title: Part 11 / Annex 11 Compliance
+        title2: Developing and maintaining systems in compliance with Part 11 / Annex 11
+          predicates can be cumbersome. Engage us to assess, and monitor Part 11
+          compliance.
         Image: ../assets/qc14.svg
       - id: 6
         pdcontid: Design
         title: Training
-        title2: Periodic training of all employees to enhance their knowledge and
-          skills. The training includes induction training at the time of new
-          recruitment followed by cGMP training, SOP Training and on job
-          training.
+        title2: Quality & Compliance is an ongoing effort, and solicits everyone's
+          active participation. Let us train your teams on QMS, GxP Best
+          Practices, Validation and Good Documentation Practices.
         Image: ../assets/qc15.svg
 ---
