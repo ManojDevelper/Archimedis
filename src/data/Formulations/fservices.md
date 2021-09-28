@@ -95,12 +95,13 @@ fservices:
       - id: 3
         fservicecardid: AnalyticalMethodValidation
         fservicecardtitle: Analytical Method Validation
-        fservicecarddesc: We are confident about our developed methods thanks to our
-          knowledgeable ARD team that performs validations as per our validation
-          protocol, in adherence to the International Council for Harmonization
-          of Technical Requirements for Pharmaceuticals for Human Use (ICH)
-          guidelines. Based on the inputs, stability is prepared indicating
-          standard test procedure (STP) for regular analysis.
+        fservicecarddesc: "In line with ICH and other guidelines, our chemists validate
+          analytical methods for robustness, reliability and repeatability.  In
+          their pursuit for accurate, precise and specific methods, they make
+          extensive use of technical literatures and lab instruments.  Developed
+          in-house or externally, validation and verification are part of
+          building confidence in the analytical methods, before they are
+          transferred to the quality control team for routine analysis.\t"
         fservicepic: ../assets/Analytical-Method-validation.png
         alt_tag: Analytical method validation company
         fserviceminicards: []
