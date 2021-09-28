@@ -29,8 +29,9 @@ prodev:
       - id: 4
         pdcontid: DevOps
         title: DevOps (CI/CD)
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title2: Changes shape products. How soon the changes become integral to the
+          product is defined by DevOps.  We can build a continous pipeline so
+          you can see, test and release the changes faster.
         Image: ../assets/pd14.svg
       - id: 5
         pdcontid: ProductSupport
