@@ -8,12 +8,12 @@ fservices:
       - fserviceminicardsmaintitle: R&D Pilot Plant
         fli: []
         alt_tag: Pharma formulation development
-        fservicecarddesc: "Our Formulation Development team possesses extensive
-          expertise to formulate diverse compositions in Oral Solid Dosage
-          forms. Formulation experiments are designed and conducted in the R&D
-          Pilot Plant  which consists of state-of-the-art miniature equipment
-          that mimic commercial scale production.  Rigorous stability studies
-          are conducted to arrive at the best dosage form and packaging. The
+        fservicecarddesc: "Our Formulation Scientists possess extensive expertise in
+          formulating diverse compositions in Oral Solid Dosage forms.
+          Formulation experiments are designed and conducted in the R&D Pilot
+          Plant  which consists of state-of-the-art miniature equipment that
+          mimic commercial scale production.  Rigorous stability studies are
+          conducted to arrive at the best dosage form and packaging. The
           ultimate objective is to optimize the product characteristics so that
           superior healthcare emerges.  "
         fservicecardtitle: Formulation Development
