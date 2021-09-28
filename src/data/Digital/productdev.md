@@ -22,9 +22,9 @@ prodev:
         Image: ../assets/pd12.svg
       - id: 3
         pdcontid: TestAutomation
-        title: Test Automation
-        title2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus arcu
-          viverra netus convallis interdum. "
+        title: Continuous QA
+        title2: Quality markets products. We can build automated test suites so your
+          product can evolve business-relevant and worry-free.
         Image: ../assets/pd13.svg
       - id: 4
         pdcontid: DevOps
