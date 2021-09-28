@@ -2,7 +2,7 @@
 author_image: palani-director.png
 author: ContentConcepts
 bio: Manuscript Editing Services
-title: Five Reasons Bi-layer Splits During Coating
+title: Five Reasons Why Bi-layer Splits During Coating
 date: 2021-02-11T18:30:00.000Z
 previewImage: blog_2.png
 excerpt: Bi-layer tablets are not only difficult to compress.  They also carry
