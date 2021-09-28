@@ -1,170 +1,183 @@
 ---
 Facility:
-  [
-    {
-      id: 1,
-      title: "Facility",
-      description: "Archimedis has the best-in-class warehouse that houses well-defined systems and processes. The purity and smooth transfer of material are ensured through three important systems Quarantine, Temperature and Humidity Control & Dispensing",
-      Facilitycards:
-        [
-          {
-            id: 1,
-            facilityid: "Manufacturing",
-            title: "Manufacturing",
-            description: "Endowed with state-of-the-art equipment to deliver high quality pharmaceutical products with highest efficiency. Whether it is Automatic Compression Machine which gives improved yield; Online sorting & Weight measurement systems; Automatic Coating Machine; Multi-Track Pouch and Alu-Alu Packing Machine for mass production with online camera identification & rejection systems; we don’t compromise on quality for cost. We pride ourselves on being the few manufacturers to have implemented 1D, 2D bar coding with complete traceability; which in turn has enabled us to offer very competitive prices with best-in-class quality.",
-            description1: "",
-            description2: "",
-            description3: "",
-            description4: "",
-            description5: "",
-            description6: "",
-            description7: "",
-            description8: "",
-            descriptionSpan1: "",
-            descriptionSpan2: "",
-            descriptionSpan3: "",
-            descriptionSpan4: "",
-            descriptionSpan5: "",
-            descriptionSpan6: "",
-            descriptionSpan7: "",
-            descriptionSpan8: "",
-            fnblock: [],
-            fimage: ../assets/f_c1.png,
-          },
-          {
-            id: 2,
-            facilityid: "packing",
-            title: "Packing",
-            description: "Packaging is elemental in maintaining the stability of the medicines. It prevents the molecules from disintegrating thus safeguarding their utility and the trust in the brand. It is important to choose the right material of the right thickness suitable to the specific molecular composition. We at Archimedis understand these facts and have the following systems in place for packaging:",
-            description1: "Auto-Cartonator",
-            description2: "Pharma Code Reader",
-            description3: "Counterfeit Bar Coding",
-            description4: "Check Weigher",
-            description5: "",
-            description6: "",
-            description7: "",
-            description8: "",
-            descriptionSpan1: "",
-            descriptionSpan2: "",
-            descriptionSpan3: "",
-            descriptionSpan4: "",
-            descriptionSpan5: "",
-            descriptionSpan6: "",
-            descriptionSpan7: "",
-            descriptionSpan8: "",
-            fnblock: [],
-            fimage: ../assets/f_c2.png,
-          },
-          {
-            id: 3,
-            facilityid: "Adherence",
-            title: "Adherence",
-            description: "Uni-directional layout setup to ensure smooth transfer of materials and avoid any chance of mixing materials at any stage. Maintenance and continuous monitoring of temperature and humidity throughout the warehouse. In addition, the following facilities are set up to control any chance of material contaminations",
-            description1: "Quarantine:",
-            description2: "Dispensing Facility:",
-            description3: "",
-            description4: "",
-            description5: "",
-            description6: "",
-            description7: "",
-            description8: "",
-            descriptionSpan1: "The incoming material is quarantined safely from the approved material using tools like demarcation, visual colour pallets, legible labels and separation of areas.
-              ",
-            descriptionSpan2: "The transfer of material from the store to manufacturing is conducted in completely isolated booths, where only material can enter, conducted under the supervision of the QA team.",
-            descriptionSpan3: "",
-            descriptionSpan4: "",
-            descriptionSpan5: "",
-            descriptionSpan6: "",
-            descriptionSpan7: "",
-            descriptionSpan8: "",
-            fnblock: [],
-            fimage: ../assets/f_c3.png,
-          },
-          {
-            id: 6,
-            facilityid: "AirHandling",
-            title: "Air Handling Units (AHUs)",
-            description: "Heating Ventilation and Air Conditioning (HVAC) units are spread throughout the premises of the manufacturing, storage, testing and all the other areas of the factory. No cross contamination of materials at any stage is ensured by dedicated AHUs for each process area. Integrated four-level filtration process, with at least 20 air changes per hour.",
-            description1: "",
-            description2: "",
-            description3: "",
-            description4: "",
-            description5: "",
-            description6: "",
-            description7: "",
-            description8: "",
-            descriptionSpan1: "",
-            descriptionSpan2: "",
-            descriptionSpan3: "",
-            descriptionSpan4: "",
-            descriptionSpan5: "",
-            descriptionSpan6: "",
-            descriptionSpan7: "",
-            descriptionSpan8: "",
-            fnblock: 
-              [
-                {
-                  id: 1,
-                  fnblocknme: "Exemplary Accuracy from",
-                  fnblockmtr: "10 µ to 0.3 µ",
-                },
-                {
-                  id: 2,
-                  fnblocknme: "Unprecedented Efficiency",
-                  fnblockmtr: "up to 99.998%",
-                },
-              ],
-            fimage: ../assets/f_c10.png,
-          },
-          {
-            id: 4,
-            facilityid: "WaterPurification",
-            title: "Water Purification",
-            description: "Water purity is the underlying principle of high-quality production so we make sure to achieve the clear, colourless, odourless and tasteless liquid that’s mandated as per cGMP. The exclusively designed Water Generation System goes through a series of purification processes such as:",
-            description1: "Chlorination",
-            description2: "Multi-grade Sand Filtration",
-            description3: "Activated Carbon Filter",
-            description4: "De-chlorination",
-            description5: "De-Alkalisation",
-            description6: "De-Mineralisation",
-            description7: "UV Treatment",
-            description8: "Ultra-Filtration",
-            descriptionSpan1: "",
-            descriptionSpan2: "",
-            descriptionSpan3: "",
-            descriptionSpan4: "",
-            descriptionSpan5: "",
-            descriptionSpan6: "",
-            descriptionSpan7: "",
-            descriptionSpan8: "",
-            fnblock: [],
-            fimage: ../assets/f_c5.png,
-          },
-          {
-            id: 5,
-            facilityid: "approvals",
-            title: "Regulatory Approvals",
-            description: "Regulatory approvals refer to the permission to manufacture products in the facilities (as per the terms of the agreement and applicable law) based on any approval, permit or certification of a Regulatory Authority. We pride ourselves on having achieved the following notable approvals:",
-            description1: "UK Medicines and Healthcare products regulatory approvals (UK MHRA)",
-            description2: "UL approval for OTC products",
-            description3: "FDA Philippines for Tablet lines",
-            description4: "FSSAI approval",
-            description5: "WHO GMP approval",
-            description6: "",
-            description7: "",
-            description8: "",
-            descriptionSpan1: "",
-            descriptionSpan2: "",
-            descriptionSpan3: "",
-            descriptionSpan4: "",
-            descriptionSpan5: "",
-            descriptionSpan6: "",
-            descriptionSpan7: "",
-            descriptionSpan8: "",
-            fnblock: [],
-            fimage: ../assets/f_c4.png,
-          },
-        ],
-    },
-  ]
+  - id: 1
+    title: Facility
+    description: Archimedis has the best-in-class warehouse that houses well-defined
+      systems and processes. The purity and smooth transfer of material are
+      ensured through three important systems Quarantine, Temperature and
+      Humidity Control & Dispensing
+    Facilitycards:
+      - fnblock: []
+        descriptionSpan1: ""
+        descriptionSpan2: ""
+        descriptionSpan3: ""
+        descriptionSpan4: ""
+        descriptionSpan5: ""
+        descriptionSpan6: ""
+        descriptionSpan7: ""
+        descriptionSpan8: ""
+        fimage: ../assets/f_c1.png
+        description1: ""
+        description2: ""
+        description3: ""
+        title: Manufacturing
+        description4: ""
+        description5: ""
+        description6: ""
+        id: 1
+        description7: ""
+        description8: ""
+        description: Endowed with state-of-the-art equipment to deliver high quality
+          pharmaceutical products with highest efficiency. Whether it is
+          Automatic Compression Machine which gives improved yield; Online
+          sorting & Weight measurement systems; Automatic Coating Machine;
+          Multi-Track Pouch and Alu-Alu Packing Machine for mass production with
+          online camera identification & rejection systems; we don’t compromise
+          on quality for cost. We pride ourselves on being the few manufacturers
+          to have implemented 1D, 2D bar coding with complete traceability;
+          which in turn has enabled us to offer very competitive prices with
+          best-in-class quality.
+        facilityid: Manufacturing
+      - fnblock: []
+        descriptionSpan1: ""
+        descriptionSpan2: ""
+        descriptionSpan3: ""
+        descriptionSpan4: ""
+        descriptionSpan5: ""
+        descriptionSpan6: ""
+        descriptionSpan7: ""
+        descriptionSpan8: ""
+        fimage: ../assets/f_c2.png
+        description1: Auto-Cartonator
+        description2: Pharma Code Reader
+        description3: Counterfeit Bar Coding
+        title: Packing
+        description4: Check Weigher
+        description5: ""
+        description6: ""
+        id: 2
+        description7: ""
+        description8: ""
+        description: "Packaging is elemental in maintaining the stability of the
+          medicines. It prevents the molecules from disintegrating thus
+          safeguarding their utility and the trust in the brand. It is important
+          to choose the right material of the right thickness suitable to the
+          specific molecular composition. We at Archimedis understand these
+          facts and have the following systems in place for packaging:"
+        facilityid: packing
+      - fnblock: []
+        descriptionSpan1: "The incoming material is quarantined safely from the approved
+          material using tools like demarcation, visual colour pallets, legible
+          labels and separation of areas. "
+        descriptionSpan2: The transfer of material from the store to manufacturing is
+          conducted in completely isolated booths, where only material can
+          enter, conducted under the supervision of the QA team.
+        descriptionSpan3: ""
+        descriptionSpan4: ""
+        descriptionSpan5: ""
+        descriptionSpan6: ""
+        descriptionSpan7: ""
+        descriptionSpan8: ""
+        fimage: ../assets/f_c3.png
+        description1: "Quarantine:"
+        description2: "Dispensing Facility:"
+        description3: ""
+        title: Warehouse
+        description4: ""
+        description5: ""
+        description6: ""
+        id: 3
+        description7: ""
+        description8: ""
+        description: Uni-directional layout setup to ensure smooth transfer of materials
+          and avoid any chance of mixing materials at any stage. Maintenance and
+          continuous monitoring of temperature and humidity throughout the
+          warehouse. In addition, the following facilities are set up to control
+          any chance of material contaminations
+        facilityid: Adherence
+      - fnblock:
+          - id: 1
+            fnblocknme: Exemplary Accuracy from
+            fnblockmtr: 10 µ to 0.3 µ
+          - id: 2
+            fnblocknme: Unprecedented Efficiency
+            fnblockmtr: up to 99.998%
+        descriptionSpan1: ""
+        descriptionSpan2: ""
+        descriptionSpan3: ""
+        descriptionSpan4: ""
+        descriptionSpan5: ""
+        descriptionSpan6: ""
+        descriptionSpan7: ""
+        descriptionSpan8: ""
+        fimage: ../assets/f_c10.png
+        description1: ""
+        description2: ""
+        description3: ""
+        title: Air Handling Units (AHUs)
+        description4: ""
+        description5: ""
+        description6: ""
+        id: 6
+        description7: ""
+        description8: ""
+        description: Heating Ventilation and Air Conditioning (HVAC) units are spread
+          throughout the premises of the manufacturing, storage, testing and all
+          the other areas of the factory. No cross contamination of materials at
+          any stage is ensured by dedicated AHUs for each process area.
+          Integrated four-level filtration process, with at least 20 air changes
+          per hour.
+        facilityid: AirHandling
+      - fnblock: []
+        descriptionSpan1: ""
+        descriptionSpan2: ""
+        descriptionSpan3: ""
+        descriptionSpan4: ""
+        descriptionSpan5: ""
+        descriptionSpan6: ""
+        descriptionSpan7: ""
+        descriptionSpan8: ""
+        fimage: ../assets/f_c5.png
+        description1: Chlorination
+        description2: Multi-grade Sand Filtration
+        description3: Activated Carbon Filter
+        title: Water Purification
+        description4: De-chlorination
+        description5: De-Alkalisation
+        description6: De-Mineralisation
+        id: 4
+        description7: UV Treatment
+        description8: Ultra-Filtration
+        description: "Water purity is the underlying principle of high-quality
+          production so we make sure to achieve the clear, colourless, odourless
+          and tasteless liquid that’s mandated as per cGMP. The exclusively
+          designed Water Generation System goes through a series of purification
+          processes such as:"
+        facilityid: WaterPurification
+      - fnblock: []
+        descriptionSpan1: ""
+        descriptionSpan2: ""
+        descriptionSpan3: ""
+        descriptionSpan4: ""
+        descriptionSpan5: ""
+        descriptionSpan6: ""
+        descriptionSpan7: ""
+        descriptionSpan8: ""
+        fimage: ../assets/f_c4.png
+        description1: UK Medicines and Healthcare products regulatory approvals (UK MHRA)
+        description2: UL approval for OTC products
+        description3: FDA Philippines for Tablet lines
+        title: Regulatory Approvals
+        description4: FSSAI approval
+        description5: WHO GMP approval
+        description6: ""
+        id: 5
+        description7: ""
+        description8: ""
+        description: "Regulatory approvals refer to the permission to manufacture
+          products in the facilities (as per the terms of the agreement and
+          applicable law) based on any approval, permit or certification of a
+          Regulatory Authority. We pride ourselves on having achieved the
+          following notable approvals:"
+        facilityid: approvals
 ---
