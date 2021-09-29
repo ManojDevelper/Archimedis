@@ -3,7 +3,7 @@ prodev:
   - id: 1
     pdid: productdevtitle
     pdclass: ""
-    title: Digital Products
+    title: Product Value Stream
     description: Digital products are engines of business growth.  Turn your ideas
       into products with Archimedis Digital.
     prodevminicontainer:
