@@ -1,5 +1,5 @@
 ---
-clintstitle: Testimonials
+clintstitle: Clients Speak
 clints:
   - id: 1
     carousaltitle: Awesome People & Great Facility
