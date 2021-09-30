@@ -20,13 +20,11 @@ clints:
     clintdesignation: "Reputed Government Medical Institution "
     clintimg: assets/c_prof1.png
   - id: 3
-    carousaltitle: Incredible Experience
-    carousalreview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. id
-      integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-      odio in et, lectus sit lorem Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      id integer. Lorem ipsum dolor sit amet, consectetur
-    clintname: Jane Cooper
-    clintdesignation: CEO, ABC Corporation
+    carousaltitle: Trusted Software Vendor
+    carousalreview: "Working in onsite - offshore model, Archimedis team has been
+      developing and maintaining some of our critical software systems for about
+      3 years now.  They are technically competent and very responsive.  "
+    clintname: Product Owner
+    clintdesignation: Top 5 Global Pharma
     clintimg: assets/c_prof1.png
 ---
