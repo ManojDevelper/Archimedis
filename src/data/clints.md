@@ -18,7 +18,7 @@ clints:
       and delivered the project on time and within budget.
     clintname: National Director
     clintdesignation: "Reputed Government Medical Institution "
-    clintimg: assets/c_prof1.png
+    clintimg: assets/doc-lady.png
   - id: 3
     carousaltitle: Trusted Software Vendor
     carousalreview: "Working in onsite - offshore model, Archimedis team has been
