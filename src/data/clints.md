@@ -26,5 +26,5 @@ clints:
       3 years now.  They are technically competent and very responsive.  "
     clintname: Product Owner
     clintdesignation: Top 5 Global Pharma
-    clintimg: assets/c_prof1.png
+    clintimg: assets/exec-3.png
 ---
