@@ -1,4 +1,4 @@
 ---
-description: "Our UK-MHRA Approved & U/L Certified facility where scientific
-  innovation meets engineering excellence. "
+description: "We combine scientific innovation and robust processes with
+  engineering excellence to deliver superior quality - consistently. "
 ---
