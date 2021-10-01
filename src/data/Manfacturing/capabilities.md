@@ -46,8 +46,8 @@ Capabilities:
             capabilitiesminicardstitle: Strips
             image: ../assets/m_c1_i3.png
       - id: 3
-        capabilitiescardid: Powder
-        capabilitiescardtitle: Sachet (Dry Syrup Powder)
+        capabilitiescardid: Sachet
+        capabilitiescardtitle: Sachets (Dry Syrup Powder)
         capabilitiescarddesc: Fill Weight Accuracy and Sealing Quality are the ultimate
           quantifiers of a dry powder sachet’s stability. Our horizontal and
           vertical sachet machines are precisely engineered to achieve Accurate
@@ -60,7 +60,7 @@ Capabilities:
             capabilitiesminicardstitle: Sachets
             image: ../assets/m_c3_i1.png
       - id: 5
-        capabilitiescardid: Commercial
+        capabilitiescardid: Capacity
         capabilitiescardtitle: Capacity
         capabilitiescarddesc: Archimedis capacity to manufacture pilot scale, process
           validation batches, launch quantity and commercial scale. We are
