@@ -47,13 +47,12 @@ Capabilities:
             image: ../assets/m_c1_i3.png
       - id: 3
         capabilitiescardid: Powder
-        capabilitiescardtitle: Dry Powder
+        capabilitiescardtitle: Sachets (Dry Syrup / Powder)
         capabilitiescarddesc: Fill Weight Accuracy and Sealing Quality are the ultimate
-          quantifiers of a dry powder sachet’s stability. Archimedis hosts a
-          state-of-the-art Pakona Horizontal Filling machine that imparts
-          important characteristics to the products, such as Accuracy of Fill
-          Weight, Four- side Leak-proof Sealing, Wide Range of Fill Weight - 1
-          to 50 grams
+          quantifiers of a dry powder sachet’s stability. Our horizontal and
+          vertical sachet machines are precisely engineered to achieve Accurate
+          Fill Weight, Four-side Leak-proof Sealing, and a Wide Range of Fill
+          Weight - 1 to 50 grams.
         image: ../assets/Dry-Powder.png
         alt_tag: Dry Powder Organisatuion
         capabilitiesminicards:
