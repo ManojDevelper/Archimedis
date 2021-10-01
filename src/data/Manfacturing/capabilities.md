@@ -61,7 +61,7 @@ Capabilities:
             image: ../assets/m_c3_i1.png
       - id: 5
         capabilitiescardid: Capacity
-        capabilitiescardtitle: Manufacturing Capacity
+        capabilitiescardtitle: Installed Capacity
         capabilitiescarddesc: Archimedis has capacity to manufacture pilot scale,
           process validation batches, launch quantity and commercial scale. We
           are backed by a robust mechanism that maintains the accuracy of
