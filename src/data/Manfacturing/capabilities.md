@@ -49,7 +49,7 @@ Capabilities:
         capabilitiescardid: Sachet
         capabilitiescardtitle: Sachets (Dry Syrup Powder)
         capabilitiescarddesc: Fill Weight Accuracy and Sealing Quality are the ultimate
-          quantifiers of a dry powder sachet’s stability. Our horizontal and
+          qualifiers of a dry powder sachet’s stability. Our horizontal and
           vertical sachet machines are precisely engineered to achieve Accurate
           Fill Weight, Four-side Leak-proof Sealing, and a Wide Range of Fill
           Weight - 1 to 50 grams.
