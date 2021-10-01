@@ -500,53 +500,6 @@ collections:
               widget: string,
               required: false,
             }
-      - file: src/data/Formulations/casestudy.md
-        label: Casestudy
-        name: casestudy
-        create: true
-        public_folder: "../assets"
-        fields:
-          - {
-              label: Casestudy,
-              name: Casestudy,
-              widget: list,
-              fields:
-                [
-                  {
-                    label: Title,
-                    name: Casestudytitle,
-                    widget: string,
-                    required: false,
-                  },
-                  {
-                    label: Casestudycards,
-                    name: Casestudycards,
-                    widget: list,
-                    fields:
-                      [
-                        {
-                          label: Title,
-                          name: Casestudyblockid,
-                          widget: string,
-                          required: false,
-                        },
-                        {
-                          label: Description,
-                          name: Casestudyname,
-                          widget: string,
-                          required: false,
-                        },
-                        {
-                          label: Date,
-                          name: Casestudydesc,
-                          widget: string,
-                          required: false,
-                        },
-                        { label: Image, name: image, widget: image },
-                      ],
-                  },
-                ],
-            }
       - file: src/data/Formulations/ffacility.md
         label: Facility
         name: ffacility

@@ -15,20 +15,16 @@
 }
 #blog #blogtitle {
   background: white;
-  padding-bottom: 8vw;
+  padding-bottom: 4vw;
 }
 #blog #blogtitle #h2 {
   font-family: Manrope;
-  line-height: 3.38129496402878vw;
-  width: 21.8050541516245vw;
-  text-align: center;
-  text-decoration: none;
-  color: gray;
-  opacity: 0.7;
-  border-bottom: 0.433212996389892vw solid #cccccc;
   font-style: normal;
-  font-weight: 600;
-  font-size: 2.02166064981949vw;
+  font-weight: 800;
+  font-size: 2.87769784172662vw;
+  line-height: 3.9568345323741vw;
+  text-align: center;
+  color: #200e32;
 }
 #blog #blogtitle #h2:nth-child(2) {
   font-style: normal;
@@ -103,17 +99,8 @@
     padding-top: 10vw;
   }
   #blog #blogtitle #h2 {
-    font-family: Manrope;
-    line-height: 6vw;
-    width: 40vw;
-    text-align: center;
-    text-decoration: none;
-    color: gray;
-    opacity: 0.7;
-    border-bottom: 0.433212996389892vw solid #cccccc;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5vw;
+    font-size: 6.04651162790698vw;
+    line-height: normal;
   }
   #blog #blogtitle #h2:nth-child(2) {
     font-style: normal;

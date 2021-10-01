@@ -71,6 +71,42 @@
   margin: 0;
   margin-top: 0.79136690647482vw;
 }
+#dsolutions_container_cards_matter #banner_btn_container {
+  margin-top: 2.15827338129496vw;
+}
+#dsolutions_container_cards_matter #banner_btn_container button {
+  font-family: Manrope !important;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1.15107913669065vw;
+  color: #ffffff;
+  width: 14.1007194244604vw;
+  height: 3.45323741007194vw;
+  background: #2d307b;
+  border-radius: 0.571428571428571vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#dsolutions_container_cards_matter #banner_btn_container button:hover {
+  width: 15vw;
+}
+#dsolutions_container_cards_matter #banner_btn_container button:nth-child(2) {
+  color: black;
+  background: transparent;
+  outline: none;
+  margin-left: 1.72661870503597vw;
+  border: 0.0719424460431655vw solid rgba(45, 48, 123, 0.8);
+  box-sizing: border-box;
+  border-radius: 0.575539568345324vw;
+  color: rgba(45, 48, 123, 0.8);
+  transition: 0.5s ease-in-out;
+}
+#dsolutions_container_cards_matter #banner_btn_container button:nth-child(2):hover {
+  border: 0.0719424460431655vw solid #f8569e;
+  color: #f8569e;
+}
 #dsolutions_container_cards_matter button img {
   width: 1.72661870503597vw;
   height: 1.72661870503597vw;
@@ -619,5 +655,24 @@
   #dsolutions_matter2 #dsolutionsassurance_container2 {
     margin-top: 6.66666666666667vw;
     background: unset;
+  }
+  #dsolutions_container_cards_matter #banner_btn_container {
+    margin:6vw auto auto auto;
+    width:fit-content;
+  }
+  #dsolutions_container_cards_matter #banner_btn_container button {
+    font-size: 3vw;
+    width: 36.8vw;
+    height: 9.8vw;
+    background: #2d307b;
+    border-radius: 1.3vw;
+    padding:0;
+  }
+  #dsolutions_container_cards_matter #banner_btn_container button:hover {
+    width: 37.3vw;
+  }
+  #dsolutions_container_cards_matter #banner_btn_container button:nth-child(2) {
+    border-radius: 1.3vw;
+    margin-left: 4vw;
   }
 }

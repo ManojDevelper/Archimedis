@@ -1,0 +1,19 @@
+#home #bbanner {
+  display: none;
+}
+#home .blogListContainer {
+  background: #f5f8ff;
+  padding:12vw 0;
+}
+#home .blogListContainer #blog {
+    background: #f5f8ff;
+  }
+
+#home .blogListContainer #blog h1 {
+  display: none;
+}
+#home .blogListContainer #blog h1:nth-child(2) {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+}

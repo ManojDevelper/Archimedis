@@ -2,6 +2,63 @@
     padding: 0;
     margin: 0;
   }
+  /*==============banner===============*/
+  #bbanner {
+    width: 100%;
+    height: 45vw;
+    background: url("../data/assets/fbanner.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: 3vw;
+  }
+  #bbanner_container {
+    width: 51vw;
+    height: 18.7769784172662vw;
+    background: #22bdef;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+  }
+  #bbanner_container h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.87769784172662vw;
+    line-height: 3.9568345323741vw;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 43.7410071942446vw;
+    margin: auto;
+  }
+  @media (max-width: 992px) {
+    #bbanner {
+      margin-top: 85px;
+    }
+  }
+  @media (max-width: 750px) {
+    #bbanner {
+      height: 43.0232558139535vw;
+    }
+    #bbanner_container {
+      width: 84.4186046511628vw;
+      height: 29.7674418604651vw;
+      background: #22bdef;
+      margin: auto auto -22.5vw auto;
+      padding-left: 0;
+    }
+    #bbanner_container h1 {
+      text-align: center;
+      font-size: 4.65116279069767vw;
+      line-height: 6.51162790697674vw;
+      width: 100%;
+    }
+  }
+
+  /*==============================*/
   .blogListContainer #blog {
     width: 100%;
     padding: 8vw 0 8vw 0;
@@ -13,28 +70,20 @@
     justify-content: center;
     align-items: center;
   }
-  .blogListContainer #blog #blogtitle #h1 {
+  .blogListContainer #blog h1 {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
-    line-height: 3.38129496402878vw;
-    color: #200e32;
-    border-bottom: 0.577617328519856vw solid #22BDEF;
-    width: 21.8050541516245vw;
+    font-size: 44px;
+    line-height: 60px;
     text-align: center;
-    text-decoration: none;
-    font-size: 2.02166064981949vw;
+    color: #222222;
   }
-  .blogListContainer #blog #blogtitle #h1:nth-child(2) {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.02166064981949vw;
-    color: #200e32;
-    opacity: 0.7;
-    border-bottom: 0.433212996389892vw solid #CCCCCC;
+  .blogListContainer #blog h1:nth-child(2) {
+    display:none;
   }
   .blogListContainer #blog_container {
-    margin-top: 6.90647482014388vw;
+    margin-top: 4vw;
   }
   .blogListContainer #blog_card {
     display: flex;
@@ -96,19 +145,14 @@
       padding: 17vw 8vw;
       background: white;
     }
-    .blogListContainer #blog #blogtitle #h1 {
-      line-height: 7vw;
-      border-bottom: 0.577617328519856vw solid #22BDEF;
-      width: 35vw;
-      font-size:4vw ;
-    }
-    .blogListContainer #blog #blogtitle #h1:nth-child(2) {
+    .blogListContainer #blog h1 {
+      font-family: Manrope;
       font-style: normal;
-      font-weight: 600;
-      font-size: 3.2vw;
+      font-weight: 800;
+      font-size: 7vw;
+      line-height: 3.9568345323741vw;
+      text-align: center;
       color: #200e32;
-      opacity: 0.7;
-      border-bottom: 0.433212996389892vw solid #CCCCCC;
     }
     .blogListContainer #blog_card {
       margin-top: 9.5vw;

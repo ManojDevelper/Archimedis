@@ -4,10 +4,7 @@ import "../styles/Home/Blogs.css";
 import "../styles/casestudy.css";
 import arrow from "../images/arow.svg";
 import arrow2 from "../images/blog_btn_blue.svg";
-import Contact from "./Home/contact";
-import Footer from "./Home/footer";
 import SEO from "../components/seo";
-import Nav from "./nav";
 
 
 const CasePage = ({ data }) => {
@@ -18,13 +15,12 @@ const CasePage = ({ data }) => {
 
   return (
     <Fragment>
-      <Nav />
       <SEO title={seoData.title} description={seoData.description} keywords={seoData.keywords} />
       <div className="blogListContainer">
         <div id="blog">
           <div id="blogtitle">
-            <Link to="/blog" id="h2">Blogs</Link><Link to="/casestudy" id="h2">Case Studies</Link>
-          </div>
+            <h1 id="h2">Case Studies</h1>
+            </div>
           {
             blogList && blogList.map(blogItem => {
               return (
@@ -50,43 +46,8 @@ const CasePage = ({ data }) => {
           }
         </div>
       </div>
-      <Contact />
-      <Footer />
     </Fragment>
   )
 }
 
 export default CasePage
-
-export const pageQuery = graphql`
-  query {
-    caseData: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/src/data/(CaseStudy)\\/.*\\\\.md$/"}}, sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            excerpt
-            author
-            previewImage {
-              publicURL
-            }
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
-    seoData: file(relativePath: {eq: "seoBlog.md"}) {
-      childMarkdownRemark {
-        frontmatter {
-          title
-          description
-          keywords
-        }
-      }
-    }
-  }
-`

@@ -85,6 +85,9 @@
 #navbarResponsive #nav_b1 #nav_links .active {
   font-weight: bold;
 }
+#navbarResponsive #nav_b1 #nav_links:nth-child(2) .active {
+  color:red;
+}
 #navbarResponsive #nav_b1 #nav_links .active span {
   font-weight: normal;
 }

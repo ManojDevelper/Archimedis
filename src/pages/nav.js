@@ -42,10 +42,10 @@ function Navbars() {
                     </Nav>
                     <Nav id="navbarResponsive">
                         <Nav id="nav_b1">
-                            <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About Us<span>|</span></Link></Nav>
-                            <Nav id="nav_links"><Link to="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients<span>|</span></Link></Nav>
-                            <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Blog<span>|</span></Link></Nav>
-                            <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact Us</p></Nav>
+                            <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About<span>|</span></Link></Nav>
+                            <Nav id="nav_links"><Link to="/home/#patners" id="nav_main_link" activeClassName='active'>Clients<span>|</span></Link></Nav>
+                            <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Insights<span>|</span></Link></Nav>
+                            <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact</p></Nav>
                         </Nav>
                         <Nav id="nav_b2">
                             <Nav id="nav_links"><Link to="/formulation/" id="nav_main_link" activeClassName='active'>Formulations<Nav id="mark"></Nav>
@@ -69,10 +69,10 @@ function Navbars() {
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
                                             <h1><Link to="/formulation/#casestudy" style={{textDecoration: `none`, color: `#200e32` }}>Case Studies</Link></h1>
-                                            <Link to="/formulation/#IvabradineMetoprolol" id="nav_sub_link">Ivabradine + Metoprolol</Link>
-                                            <Link to="/formulation/#Cerebroprotein" id="nav_sub_link">Cerebroprotein</Link>
-                                            <Link to="/formulation/#VitaminD3" id="nav_sub_link">Vitamin D3 Water Soluble</Link>
-                                            <Link to="/formulation/#Asvagandha" id="nav_sub_link">Asvagandha (UK Clinical Trial)</Link>
+                                            <Link to="/CaseStudy/cerebroprotein-tablets-development-complete-pending-commercialization/" id="nav_sub_link">Cerebroprotein</Link>
+                                            <Link to="/CaseStudy/first-to-develop-and-complete-be-study-for-metoprolol-ivabradine-hydrochloride-tablets-in-india-product-is-approved-by-central-drug-control-of-india/" id="nav_sub_link">Ivabradine + Metoprolol</Link>
+                                            <Link to="/CaseStudy/water-soluble-vitamin-d-capsule-major-commercial-success-for-client/" id="nav_sub_link">Vitamin D3 Water Soluble</Link>
+                                            <Link to="/CaseStudy/multiple-myoinositol-combination-sachets-for-pcod-infertility-treatment/" id="nav_sub_link">Asvagandha (UK Clinical Trial)</Link>
                                         </Nav>
                                     </Nav>
                                 </Nav></Link>
