@@ -2,10 +2,8 @@
 Facility:
   - id: 1
     title: Facility
-    description: Archimedis has the best-in-class warehouse that houses well-defined
-      systems and processes. The purity and smooth transfer of material are
-      ensured through three important systems Quarantine, Temperature and
-      Humidity Control & Dispensing
+    description: "Located on a one-acre land parcel, our 60,000 Sq. Ft plant is
+      designed & built to meet stringent international GMP standards. "
     Facilitycards:
       - fnblock: []
         descriptionSpan1: ""
@@ -20,7 +18,7 @@ Facility:
         description1: ""
         description2: ""
         description3: ""
-        title: Manufacturing
+        title: Production
         description4: ""
         description5: ""
         description6: ""
@@ -37,7 +35,7 @@ Facility:
           to have implemented 1D, 2D bar coding with complete traceability;
           which in turn has enabled us to offer very competitive prices with
           best-in-class quality.
-        facilityid: Manufacturing
+        facilityid: Production
       - fnblock: []
         descriptionSpan1: ""
         descriptionSpan2: ""
