@@ -120,9 +120,14 @@
   .quality_matter:nth-child(2)
   #Qualityassurance_container_card1 {
   padding: 1vw;
+  background: #2D307B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #Qualityassurance .quality_matter:nth-child(2) #Qualityassurance_title {
-  margin-top: 10vw;
+  margin-top: 5vw;
 }
 #Qualityassurance
   .quality_matter:nth-child(2)
@@ -151,6 +156,7 @@
   margin: 1vw auto;
   font-weight: 500;
   font-size: 0.935251798561151vw;
+  color: #ffffff;
 }
 #Qualityassurance
   .quality_matter:nth-child(2)

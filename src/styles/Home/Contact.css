@@ -176,8 +176,10 @@
 }
 .contact_message2 #select p:hover {
   padding: 0.5vw 1vw;
-  background: #e0dcdc;
+  background: #2d307b;
   transition: 0.5s ease-in-out;
+  color: #ffffff;
+  font-weight: bold;
 }
 .contact_message {
   display: flex;

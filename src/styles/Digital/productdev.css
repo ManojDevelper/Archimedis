@@ -1,26 +1,16 @@
-#productdev {
+.productdev {
   width: 100%;
   height: fit-content;
 }
-#productdev #quality_matter {
+.productdev .quality_matter {
   background: #f5f8ff;
   padding: 9.64028776978417vw 0;
 }
-#productdev #quality_matter:nth-child(2) {
+#QualityAndCompliance .quality_matter{
   background: white;
   padding: 10vw 0;
 }
-#productdev #productdevtitle {
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 3.16546762589928vw;
-  line-height: 4.74820143884892vw;
-  text-align: center;
-  color: #200e32;
-  margin-top: 0;
-}
-#productdev .productdevtitle {
+.productdev .quality_matter p {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -29,7 +19,7 @@
   text-align: center;
   color: #200e32;
 }
-#productdev #productdev_desc {
+.productdev .quality_matter #productdev_desc {
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -65,7 +55,7 @@
   width: 3.45323741007194vw;
   height: 3.45323741007194vw;
 }
-#productdev #productdev_container .productdev_container_card1 p {
+.productdev #productdev_container .productdev_container_card1 p {
   width: 12vw;
   font-family: Manrope;
   font-style: normal;
@@ -76,22 +66,22 @@
   color: #200e32;
   margin: auto 0 auto 1vw;
 }
-#productdev #productdev_container #productdev_container_card1:nth-child(4) p {
+.productdev #productdev_container #productdev_container_card1:nth-child(4) p {
   width: 100%;
 }
-#productdev #productdev_container #productdev_container_card1:nth-child(5) p {
+.productdev #productdev_container #productdev_container_card1:nth-child(5) p {
   width: 100%;
 }
-#productdev #productdev_container #productdev_container_card1:nth-child(6) p {
+.productdev #productdev_container #productdev_container_card1:nth-child(6) p {
   width: 100%;
 }
-#productdev #productdev_container #productdev_container_card1:nth-child(7) p {
+.productdev #productdev_container #productdev_container_card1:nth-child(7) p {
   width: 27vw;
 }
-#productdev #productdev_container #productdev_container_card1:nth-child(9) p {
+.productdev #productdev_container #productdev_container_card1:nth-child(9) p {
   width: 100%;
 }
-#productdev #productdev_container .productdev_container_card1 #p4_c_dis2 {
+.productdev #productdev_container .productdev_container_card1 #p4_c_dis2 {
   width: 21.294964028777vw;
   font-family: Manrope;
   font-style: normal;
@@ -105,13 +95,13 @@
   margin-right: 0;
 }
 @media (max-width: 750px) {
-  #productdev {
+  .productdev {
     width: 100%;
   }
-  #productdev #quality_matter {
+  .productdev .quality_matter {
     padding: 13.4883720930233vw 3vw;
   }
-  #productdev #productdevtitle {
+  .productdev #productdevtitle {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
@@ -122,7 +112,7 @@
     color: #200e32;
     margin-top: 0;
   }
-  #productdev .productdevtitle {
+  .productdev .quality_matter p {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
@@ -133,7 +123,7 @@
     color: #200e32;
     margin-top: 0;
   }
-  #productdev #productdev_desc {
+  .productdev .quality_matter #productdev_desc {
     font-size: 3.4vw;
     line-height: 5.5vw;
     width: 84vw;
@@ -145,14 +135,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:3.72093023255814vw;
-    padding: 0;
+    padding: 0 3vw;
     width: 100%;
   }
-  #productdev .productdev_container_card1 img {
+  .productdev .productdev_container_card1 img {
     width: 8.37209302325581vw;
     height: 8.37209302325581vw;
   }
-  #productdev #productdev_container .productdev_container_card1 p {
+  .productdev #productdev_container .productdev_container_card1 p {
     width: 100%;
     font-family: Manrope;
     font-style: normal;
@@ -163,7 +153,7 @@
     color: #200e32;
     margin: auto auto auto 2vw;
   }
-  #productdev #productdev_container .productdev_container_card1 #p4_c_dis2 {
+  .productdev #productdev_container .productdev_container_card1 #p4_c_dis2 {
     width: 36.7441860465116vw;
     font-family: Manrope;
     font-style: normal;
@@ -175,13 +165,13 @@
     color: #200e32;
     margin-top: 3vw;
   }
-  #productdev #quality_matter:nth-child(2) {
+  .productdev .quality_matter:nth-child(2) {
     padding: 10vw 3vw;
   }
-  #productdev #quality_matter:nth-child(2) .productdevtitle {
+  .productdev .quality_matter:nth-child(2) .productdevtitle {
     margin-top: 0;
   }
-  #productdev #productdev_container #productdev_container_card1:nth-child(7) p {
+  .productdev #productdev_container #productdev_container_card1:nth-child(7) p {
     width: 100%;
   }
   .productdev_container_card1 {

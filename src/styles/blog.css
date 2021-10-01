@@ -89,8 +89,7 @@
   .blogListContainer2 #blog_card {
     display: flex;
     width: fit-content;
-    margin: auto;
-    margin-top: 5vw;
+    margin: 5vw 5vw 0 5vw;
     padding: 1.3vw 1.3vw 0.7vw 1.3vw;
   }
   .blogListContainer2 #blog_card:hover {
@@ -161,7 +160,7 @@
       color: #200e32;
     }
     .blogListContainer2 #blog_card {
-      margin-top: 9.5vw;
+      margin: 9.5vw 0 0 0;
     }
     .blogListContainer2 #blog_card:nth-child(1) {
       width: 100%;

@@ -68,7 +68,7 @@ function Navbars() {
                                             <Link to="/formulation/#StabilityChamber" id="nav_sub_link">Walk-in Stablity chamber</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/formulation/#casestudy" style={{ textDecoration: `none`, color: `#200e32` }}>Case Studies</Link></h1>
+                                            <h1><Link to="/formulation/#caseStudy" style={{ textDecoration: `none`, color: `#200e32` }}>Case Studies</Link></h1>
                                             <Link to="/CaseStudy/cerebroprotein-tablets-development-complete-pending-commercialization/" id="nav_sub_link">Cerebroprotein</Link>
                                             <Link to="/CaseStudy/first-to-develop-and-complete-be-study-for-metoprolol-ivabradine-hydrochloride-tablets-in-india-product-is-approved-by-central-drug-control-of-india/" id="nav_sub_link">Ivabradine + Metoprolol</Link>
                                             <Link to="/CaseStudy/water-soluble-vitamin-d-capsule-major-commercial-success-for-client/" id="nav_sub_link">Vitamin D3 Water Soluble</Link>
@@ -89,7 +89,7 @@ function Navbars() {
                                             <Link to="/manfacture/#InstalledCapacity" id="nav_sub_link">Installed Capacity</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#Qualityassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Scrolling error</Link></h1>
+                                            <h1><Link to="/manfacture/#Qualityassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality</Link></h1>
                                             <Link to="/manfacture/#Quality_Assurance" id="nav_sub_link">Quality Assurance</Link>
                                             <Link to="/manfacture/#Quality_Control" id="nav_sub_link">Quality Control</Link>
                                         </Nav>
@@ -97,7 +97,7 @@ function Navbars() {
                                             <h1><Link to="/manfacture/#facility" style={{ textDecoration: `none`, color: `#200e32` }}>Facility</Link></h1>
                                             <Link to="/manfacture/#Manufacturing" id="nav_sub_link">Manufacturing</Link>
                                             <Link to="/manfacture/#packing" id="nav_sub_link">Packing</Link>
-                                            <Link to="/manfacture/#Adherence" id="nav_sub_link">Warehouse</Link>
+                                            <Link to="/manfacture/#Adherence" id="nav_sub_link">Adherence</Link>
                                             <Link to="/manfacture/#AirHandling" id="nav_sub_link">Air Handling Units (AHUs)</Link>
                                             <Link to="/manfacture/#WaterPurification" id="nav_sub_link">Water Purification</Link>
                                             <Link to="/manfacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
@@ -155,10 +155,10 @@ function Navbars() {
                                             <Link to="/digital/#Design" id="nav_sub_link">Product Management</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/digital/#Quality&Compliance" style={{ textDecoration: `none`, color: `#200e32` }}>Sectional Match</Link></h1>
-                                            <Link to="/digital/#Quality&Compliance" id="nav_sub_link">GxP Compliance (QMS / SOPs)</Link>
-                                            <Link to="/digital/#Quality&Compliance" id="nav_sub_link">IT Quality Assurance</Link>
-                                            <Link to="/digital/#Quality&Compliance" id="nav_sub_link">Computerized System Validation (CSV)</Link>
+                                            <h1><Link to="/digital/#QualityAndCompliance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality & Compliance</Link></h1>
+                                            <Link to="/digital/#QualityAndCompliance" id="nav_sub_link">GxP Compliance (QMS / SOPs)</Link>
+                                            <Link to="/digital/#QualityAndCompliance" id="nav_sub_link">IT Quality Assurance</Link>
+                                            <Link to="/digital/#QualityAndCompliance" id="nav_sub_link">Computerized System Validation (CSV)</Link>
                                             <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Risk-based Validation</Link>
                                             <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Part 11 / Annex 11 Assessment</Link>
                                             <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Training</Link>
@@ -176,6 +176,7 @@ function Navbars() {
                                     <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About</Nav.Link>
                                     <Nav.Link href="/#patners" id="nav_main_link" activeClassName='active'>Clients</Nav.Link>
                                     <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Insights</Nav.Link>
+                                    <p id="nav_main_link" activeClassName='active'>Gallery</p>
                                     <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact</Nav.Link>
                                 </>
                             )}
@@ -185,9 +186,9 @@ function Navbars() {
                                 <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={minus} alt="img" /></span></p>}
                             {!hides ? null : (
                                 <>
-                                    <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeClassName='active'>R&D Services </Nav.Link>
-                                    <Nav.Link href="/formulation/#fserviceassurance" id="nav_main_link" activeClassName='active'>Infrastructure</Nav.Link>
-                                    <Nav.Link href="/formulation/#casestudy" id="nav_main_link" activeClassName='active'>Case Studies</Nav.Link>
+                                    <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeClassName='active'>R&D Services</Nav.Link>
+                                    <Nav.Link href="/formulation/#fserviceassurance" id="nav_main_link" activeClassName='active'>R&D Infrastructure</Nav.Link>
+                                    <Nav.Link href="/formulation/#caseStudy" id="nav_main_link" activeClassName='active'>Case Studies</Nav.Link>
                                 </>
                             )}
                         </Nav>
@@ -219,9 +220,9 @@ function Navbars() {
                                 <p id="main_top_link"><Nav.Link href="/digital" id="main_top_links" activeClassName='active'>Digital</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidessss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/digital" id="main_top_links" activeClassName='active'>Digital</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidessss(false)}><img src={minus} alt="img" /></span></p>}
                             {!hidessss ? null : (
                                 <>
-                                    <Nav.Link href="/digital/#dsolutions" id="nav_main_link" activeClassName='active'>Solutions</Nav.Link>
-                                    <Nav.Link href="/digital/#productdev" id="nav_main_link" activeClassName='active'>Product Development</Nav.Link>
-                                    <Nav.Link href="/digital/#Quality&Compliance" id="nav_main_link" activeClassName='active'>Quality & Compliance</Nav.Link>
+                                    <Nav.Link href="/digital/#dsolutions" id="nav_main_link" activeClassName='active'>Digital Solutions</Nav.Link>
+                                    <Nav.Link href="/digital/#productdev" id="nav_main_link" activeClassName='active'>Product Value Stream</Nav.Link>
+                                    <Nav.Link href="/digital/#QualityAndCompliance" id="nav_main_link" activeClassName='active'>Quality & Compliance</Nav.Link>
                                 </>
                             )}
                         </Nav>

@@ -42,7 +42,7 @@ footer:
     {
       id: 2,
       title: "Formulation",
-      link: "/formulation",
+      link: "/formulation/",
       footercontainer:
         [
           { 
@@ -144,7 +144,7 @@ footer:
     {
       id: 3,
       title: "Manufacturing",
-      link: "/manfacture",
+      link: "/manfacture/",
       footercontainer:
         [
           { 
@@ -259,7 +259,7 @@ footer:
     {
       id: 4,
       title: "Products",
-      link: "/products",
+      link: "/products/",
       footercontainer:
         [
           { 
@@ -341,7 +341,7 @@ footer:
     {
       id: 5,
       title: "Digital",
-      link: "/digital",
+      link: "/digital/",
       footercontainer:
         [
           { 
@@ -408,23 +408,23 @@ footer:
           { 
             id: 3, 
             description: "Quality & Compliance", 
-            Link: "/digital/#Quality&Compliance", 
+            Link: "/digital/#QualityAndCompliance", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "GxP Compliance (QMS / SOPs)",
-                  links: "/digital/#Quality&Compliance"
+                  links: "/digital/#QualityAndCompliance"
                 },
                 {
                   id: 2,
                   head: "IT Quality Assurance",
-                  links: "/digital/#Quality&Compliance"
+                  links: "/digital/#QualityAndCompliance"
                 },
                 {
                   id: 3,
                   head: "Computerized System Validation (CSV)",
-                  links: "/digital/#Quality&Compliance"
+                  links: "/digital/#QualityAndCompliance"
                 },
                 {
                   id: 4,

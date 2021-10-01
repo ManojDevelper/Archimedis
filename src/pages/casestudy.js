@@ -17,7 +17,7 @@ const CasePage = ({ data, title, description, keywords }) => {
   return (
     <Fragment>
       <SEO title={title} description={description} keywords={keywords} />
-      <div className="blogListContainer">
+      <div className="blogListContainer" id="caseStudy">
         <div id="blog">
           <div id="blogtitle">
             <h1 id="h2">Case Studies</h1>
@@ -41,7 +41,7 @@ const CasePage = ({ data, title, description, keywords }) => {
                           <div id="casestudy_card_b2">
                             <p>{blogItem.node.frontmatter.title}</p>
                               <button id="csbtn" onClick={() => setCaseStudys(true)}>
-                                View Case Study
+                                Request Info 
                                 <img src={arrow} alt="img" id="blod_btn1" />
                                 <img src={arrow2} alt="img" id="blod_btn2" />
                               </button>

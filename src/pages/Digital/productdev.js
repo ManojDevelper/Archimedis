@@ -6,10 +6,10 @@ export const Productdev = ({ prodev }) => {
 
   return (
     <>
-      <div id="productdev">
-        {prodev && prodev.map((prodevs, i) =>
-          <div id="quality_matter" key={i}>
-            <p className={prodevs.pdclass} id={prodevs.pdid}>{prodevs.title}</p>
+      {prodev && prodev.map((prodevs, i) =>
+        <div className="productdev" id={prodevs.pdid} key={i}>
+          <div className="quality_matter">
+            <p className={prodevs.pdclass}>{prodevs.title}</p>
             <p id="productdev_desc">{prodevs.description}</p>
             <div id="productdev_container">
               {prodevs && prodevs.prodevminicontainer.map((prodevminicontainers, i) =>
@@ -29,12 +29,11 @@ export const Productdev = ({ prodev }) => {
               )}
             </div>
           </div>
-        )}
-      </div>
-
+        </div>
+      )}
     </>
   );
-};
+}
 const ProductdevPrev = () => {
 
   const data = useStaticQuery(graphql`
@@ -65,7 +64,7 @@ const ProductdevPrev = () => {
         }
      `)
 
-      const ProductdevPre = data.file.childMarkdownRemark.frontmatter;
+  const ProductdevPre = data.file.childMarkdownRemark.frontmatter;
 
   return (
     <>
