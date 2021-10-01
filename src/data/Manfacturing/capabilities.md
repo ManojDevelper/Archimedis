@@ -61,10 +61,10 @@ Capabilities:
             image: ../assets/m_c3_i1.png
       - id: 5
         capabilitiescardid: Capacity
-        capabilitiescardtitle: Capacity
-        capabilitiescarddesc: Archimedis capacity to manufacture pilot scale, process
-          validation batches, launch quantity and commercial scale. We are
-          backed by a robust mechanism that maintains the accuracy of
+        capabilitiescardtitle: Manufacturing Capacity
+        capabilitiescarddesc: Archimedis has capacity to manufacture pilot scale,
+          process validation batches, launch quantity and commercial scale. We
+          are backed by a robust mechanism that maintains the accuracy of
           formulation, while ensuring a swift pace of manufacturing. Devoid of
           human intervention, the system also blocks any impurity from entering
           into the medicines.
