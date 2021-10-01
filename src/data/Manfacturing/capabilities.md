@@ -2,8 +2,8 @@
 Capabilities:
   - id: 1
     capabilitiestitle: Oral Solid Forms
-    capabilitiesdesc: Our MHRA Approved and U/L Certified facility delivers
-      consistent quality in various OSD forms.
+    capabilitiesdesc: Our MHRA Approved and U/L Certified facility delivers various
+      OSD forms with consistent quality at speed.
     capabilitiescards:
       - id: 1
         capabilitiescardid: tablets
@@ -61,12 +61,13 @@ Capabilities:
             image: ../assets/m_c3_i1.png
       - id: 5
         capabilitiescardid: Commercial
-        capabilitiescardtitle: Commercial Scale
-        capabilitiescarddesc: Archimedis has built extensive capacity to manufacture
-          commercial scale batches of any volume. We are backed by a robust
-          mechanism that maintains the accuracy of formulation, while ensuring a
-          swift pace of manufacturing. Devoid of human intervention, the system
-          also blocks any impurity from entering into the medicines.
+        capabilitiescardtitle: Capacity
+        capabilitiescarddesc: Archimedis capacity to manufacture pilot scale, process
+          validation batches, launch quantity and commercial scale. We are
+          backed by a robust mechanism that maintains the accuracy of
+          formulation, while ensuring a swift pace of manufacturing. Devoid of
+          human intervention, the system also blocks any impurity from entering
+          into the medicines.
         image: ../assets/Commercial-Scale.png
         alt_tag: Commercial Scale
         capabilitiesminicards: []
