@@ -1,3 +1,4 @@
 ---
-description: "The hub, equipped with all requisite infrastructure, where our myriad ideas and projects actually materialise and take form."
+description: Our UK-MHRA Approved & U/L Certified facility where scientific
+  innovation meets engineering excellence.
 ---
