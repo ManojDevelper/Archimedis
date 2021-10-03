@@ -10,7 +10,7 @@ import Team from "./Home/team";
 import Clints from "./Home/clints";
 import BlogPage from "./blog";
 import Nav from "./nav";
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import CookieConsent from "react-cookie-consent";
 import "../styles/index.css"
@@ -29,6 +29,7 @@ const schema = {
 }
 
 const seoData = data.HomeSeo.childMarkdownRemark.frontmatter;
+
   return (
     <>
       <div id="home">

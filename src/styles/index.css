@@ -1,18 +1,18 @@
 #home #bbanner {
   display: none;
 }
-#home .blogListContainer {
+#home .blogListContainer2 {
   background: #f5f8ff;
-  padding:12vw 0;
+  padding:10vw 0;
 }
-#home .blogListContainer #blog {
+#home .blogListContainer2 #blog {
     background: #f5f8ff;
   }
 
-#home .blogListContainer #blog h1 {
+#home .blogListContainer2 #blog h1 {
   display: none;
 }
-#home .blogListContainer #blog h1:nth-child(2) {
+#home .blogListContainer2 #blog h1:nth-child(2) {
   display: flex;
   margin: auto;
   width: fit-content;

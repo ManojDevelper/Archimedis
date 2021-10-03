@@ -26,7 +26,7 @@ const BlogPage = ({ data }) => {
           <h1>{BBanner.blogsBannerDescription}</h1>
         </div>
       </div>
-      <div className="blogListContainer">
+      <div className="blogListContainer2">
         <div id="blog">
           <h1>Blogs</h1>
           <h1>Our Latest Thinking</h1>

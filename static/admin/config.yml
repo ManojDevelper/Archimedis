@@ -1319,6 +1319,14 @@ collections:
                   },
                 ],
             }
+  - label: Blogs Banner Text Editor
+    name: BlogsBanner
+    files:
+      - file: src/data/blogsBanner.md
+        label: BlogsBanner
+        name: blogsBanner
+        fields:
+          - { label: Description, name: blogsBannerDescription }
   - name: blog
     label: Blog
     label_singular: "Blog"

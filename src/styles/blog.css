@@ -6,7 +6,7 @@
   #bbanner {
     width: 100%;
     height: 45vw;
-    background: url("../data/assets/fbanner.png");
+    background: url("../images/Blogsbanner.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -36,12 +36,13 @@
   }
   @media (max-width: 992px) {
     #bbanner {
-      margin-top: 85px;
+      margin: 85px 0 0 0;
     }
   }
   @media (max-width: 750px) {
     #bbanner {
       height: 43.0232558139535vw;
+      margin: 85px 0 25vw 0;
     }
     #bbanner_container {
       width: 84.4186046511628vw;
@@ -59,57 +60,62 @@
   }
 
   /*==============================*/
-  .blogListContainer #blog {
+  .blogListContainer2{
+    padding:12vw 0 10vw 0;
+  }
+  .blogListContainer2 #blog {
     width: 100%;
-    padding: 8vw 0 8vw 0;
     background: white;
   }
-  .blogListContainer #blog #blogtitle {
+  .blogListContainer2 #blog #blogtitle {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .blogListContainer #blog h1 {
+  .blogListContainer2 #blog h1 {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
-    font-size: 44px;
-    line-height: 60px;
+    font-size: 3.16546762589928vw;
+    line-height: 4.31654676258993vw;
     text-align: center;
     color: #222222;
   }
-  .blogListContainer #blog h1:nth-child(2) {
+  .blogListContainer2 #blog h1:nth-child(2) {
     display:none;
   }
-  .blogListContainer #blog_container {
+  .blogListContainer2 #blog_container {
     margin-top: 4vw;
   }
-  .blogListContainer #blog_card {
+  .blogListContainer2 #blog_card {
     display: flex;
     width: fit-content;
     margin: auto;
     margin-top: 5vw;
     padding: 1.3vw 1.3vw 0.7vw 1.3vw;
   }
-  .blogListContainer #blog_card:hover {
+  .blogListContainer2 #blog_card:hover {
     box-shadow: 0px 0px 2.15827338129496vw rgb(23 23 99 / 9%);
     border-radius: 1.2vw;
     padding: 1.3vw 1.3vw 0.7vw 1.3vw;
   }
-  .blogListContainer #blog_card:nth-child(1) {
+  .blogListContainer2 #blog_card:nth-child(1) {
     margin-top: 0;
   }
-  .blogListContainer #blog_card #blog_card_b1 img {
+  .blogListContainer2 #blog_card #blog_card_b1 img {
     width: 15.1079136690647vw;
     height: 10.2158273381295vw;
     border-radius: 0.575539568345324vw;
     margin: 0;
   }
-  .blogListContainer #blog_card_b2 {
+  .blogListContainer2 #blog_card_b2 {
     margin-left: 3.88489208633094vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
   }
-  .blogListContainer #blog #blog_card_b2 p {
+  .blogListContainer2 #blog #blog_card_b2 p {
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
@@ -117,7 +123,7 @@
     line-height: 2.37410071942446vw;
     color: #111111;
   }
-  .blogListContainer #blog #blog_card_b2 p:nth-child(2) {
+  .blogListContainer2 #blog #blog_card_b2 p:nth-child(2) {
     font-family: Manrope;
     font-style: normal;
     font-weight: normal;
@@ -129,7 +135,7 @@
     margin-top: 0.863309352517986vw;
     text-align: justify;
   }
-  .blogListContainer #blog #blog_card_b2 p:nth-child(3) {
+  .blogListContainer2 #blog #blog_card_b2 p:nth-child(3) {
     font-family: Manrope;
     font-style: normal;
     font-weight: normal;
@@ -140,12 +146,14 @@
     margin-top: 0.863309352517986vw;
   }
   @media (max-width: 750px) {
-    .blogListContainer #blog {
+    .blogListContainer2{
+      padding:12vw 2vw;
+    }
+    .blogListContainer2 #blog {
       width: 100%;
-      padding: 17vw 8vw;
       background: white;
     }
-    .blogListContainer #blog h1 {
+    .blogListContainer2 #blog h1 {
       font-family: Manrope;
       font-style: normal;
       font-weight: 800;
@@ -154,51 +162,50 @@
       text-align: center;
       color: #200e32;
     }
-    .blogListContainer #blog_card {
+    .blogListContainer2 #blog_card {
       margin-top: 9.5vw;
     }
-    .blogListContainer #blog_card:nth-child(1) {
+    .blogListContainer2 #blog_card:nth-child(1) {
       width: 100%;
     }
-    .blogListContainer #blog_container {
+    .blogListContainer2 #blog_container {
       margin-top: 10vw;
-      padding: 0 3vw;
     }
-    .blogListContainer #blog_container:nth-child(1) {
+    .blogListContainer2 #blog_container:nth-child(1) {
       margin-top: 0;
     }
-    .blogListContainer #blog_card_b1 {
+    .blogListContainer2 #blog_card_b1 {
       width: 30%;
       height: 25vw;
     }
-    .blogListContainer #blog_card_b2 {
+    .blogListContainer2 #blog_card_b2 {
       width: 70%;
     }
-    .blogListContainer #blog_card #blog_card_b1 img {
+    .blogListContainer2 #blog_card #blog_card_b1 img {
       width: 100%;
       height: 100%;
       border-radius: 0.575539568345324vw;
       margin: 0;
     }
-    .blogListContainer #blog_card_b2 {
+    .blogListContainer2 #blog_card_b2 {
       display: flex;
       flex-direction: column;
       text-align: left;
       justify-content: center;
     }
-    .blogListContainer #blog #blog_card_b2 p {
+    .blogListContainer2 #blog #blog_card_b2 p {
       font-size: 3.3vw;
       line-height: inherit;
     }
   
-    .blogListContainer #blog #blog_card_b2 p:nth-child(2) {
+    .blogListContainer2 #blog #blog_card_b2 p:nth-child(2) {
       display: none;
     }
-    .blogListContainer #blog #blog_card_b2 p {
+    .blogListContainer2 #blog #blog_card_b2 p {
       font-size: 3.2vw;
       line-height: 5vw;
     }
-    .blogListContainer #blog #blog_card_b2 p:nth-child(3) {
+    .blogListContainer2 #blog #blog_card_b2 p:nth-child(3) {
       font-size: 2.8vw;
       line-height: inherit;
     }

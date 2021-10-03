@@ -7,12 +7,16 @@ import CasePage from "./casestudy";
 import Contact from "./Home/contact";
 import Footer from "./Home/footer";
 import "../styles/Formulation/Formulation.css";
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 
 const Formulation = ({data}) => {
 
   const seoData = data.FormSeo.childMarkdownRemark.frontmatter;
+
+  const data2 = data.caseData.edges
+
+  const seoData2 = data.seoDatas.childMarkdownRemark.frontmatter
 
   return (
     <>
@@ -22,7 +26,7 @@ const Formulation = ({data}) => {
         <Fbanner />
         <Fservice />
         <Ffacility />
-        <CasePage data={data}/>
+        <CasePage data={data2} title={seoData2.title} description={seoData2.description} keywords={seoData2.keywords}/>
         <Contact />
         <Footer />
       </div>
@@ -53,7 +57,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    seoData: file(relativePath: {eq: "seoBlog.md"}) {
+    seoDatas: file(relativePath: {eq: "seoBlog.md"}) {
       childMarkdownRemark {
         frontmatter {
           title

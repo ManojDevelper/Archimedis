@@ -3,7 +3,7 @@ import "../../styles/Home/Contact.css";
 import img1 from "../../images/c_phone.svg";
 import img2 from "../../images/c_mail.svg";
 import { message } from 'antd';
-import { SmileOutlined } from '@ant-design/icons';
+import { SmileOutlined, DownOutlined } from '@ant-design/icons';
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -11,6 +11,7 @@ const Contact = () => {
     const [phone, setPhone] = useState("")
     const [organization, setOrganization] = useState("")
     const [description, setDescription] = useState("")
+    const [category, setCategory] = useState("")
     const success = () => {
         message.success({
             content: 'Hello there! Thank you for reaching out. We will get back to you as quick as humanly possible.',
@@ -50,6 +51,7 @@ const Contact = () => {
         const data = new FormData();
         data.append("name", name);
         data.append("email", email);
+        data.append("category", category);
         if (phone === undefined) {
             data.append("phone", '-');
         } else {
@@ -79,6 +81,7 @@ const Contact = () => {
             setEmail("");
             setOrganization("");
             setDescription("");
+            setCategory("")
             setErrors(true);
         }).catch(function (err) {
             setErrors(true);
@@ -131,6 +134,22 @@ const Contact = () => {
                                 <input type="text" placeholder="chrisdo@abc.com" value={email} onChange={e => setEmail(e.target.value)} />
                             </div>
                         </div>
+
+                        <div className="contact_message2" style={{ position: `relative` }}>
+                            <span>Category</span>
+                            <input type="text" placeholder="Select Category" value={category} />
+                            <select id="select" onBlur={""} onChange={e => setCategory(e.target.value)}>
+                                <option>R&D Services</option>
+                                <option>Contract Manufacturing</option>
+                                <option>Licensing</option>
+                                <option>Propoganda cum Distribution (PCD)</option>
+                                <option>Digital Services</option>
+                                <option>Others</option>
+                            </select>
+                            <DownOutlined className="icon"/>
+                        </div>
+
+
                         <div className="contact_info_top">
                             <div className="contact_name" style={{ position: `relative` }}>
                                 {(!phone || phone.length < 10) ? (<span style={{ color: (errors.color) }}>Contact Number (optional)</span>) : (<span>Contact Number (optional)</span>)}

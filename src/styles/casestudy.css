@@ -1,5 +1,5 @@
 .blogListContainer {
-  padding-top: 12vw;
+  padding: 12vw 0 5vw 0;
 }
 .blogListContainer #blog {
   padding: 0;
@@ -8,10 +8,14 @@
   width: 100%;
   background: white;
   padding: 5vw 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 #blog #casestudy .casestudy_card {
   margin-top: 0;
   padding-top: 0;
+  display:flex;
 }
 #blog #blogtitle {
   background: white;
@@ -96,7 +100,7 @@
 }
 @media (max-width: 750px) {
   #blog #blogtitle {
-    padding-top: 10vw;
+    padding: 10vw 0;
   }
   #blog #blogtitle #h2 {
     font-size: 6.04651162790698vw;

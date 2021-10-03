@@ -43,7 +43,7 @@ function Navbars() {
                     <Nav id="navbarResponsive">
                         <Nav id="nav_b1">
                             <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About<span>|</span></Link></Nav>
-                            <Nav id="nav_links"><Link to="/home/#patners" id="nav_main_link" activeClassName='active'>Clients<span>|</span></Link></Nav>
+                            <Nav id="nav_links"><Link to="/#patners" id="nav_main_link" activeClassName='active'>Clients<span>|</span></Link></Nav>
                             <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Insights<span>|</span></Link></Nav>
                             <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact</p></Nav>
                         </Nav>
@@ -170,13 +170,13 @@ function Navbars() {
                     <Nav id="navbarResponsive2">
                         <Nav id="nav_b1">
                             {!hide ?
-                                <p id="main_top_link"><Nav.Link href="/home" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHide(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHide(false)}><img src={minus} alt="img" /></span></p>}
+                                <p id="main_top_link"><Nav.Link href="/" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHide(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHide(false)}><img src={minus} alt="img" /></span></p>}
                             {!hide ? null : (
                                 <>
-                                    <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About Us</Nav.Link>
-                                    <Nav.Link href="/home/#patners" id="nav_main_link" activeClassName='active'>Our Clients</Nav.Link>
-                                    <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Blog</Nav.Link>
-                                    <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact Us</Nav.Link>
+                                    <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About</Nav.Link>
+                                    <Nav.Link href="/#patners" id="nav_main_link" activeClassName='active'>Clients</Nav.Link>
+                                    <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Insights</Nav.Link>
+                                    <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact</Nav.Link>
                                 </>
                             )}
                         </Nav>
