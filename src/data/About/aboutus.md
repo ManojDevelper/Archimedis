@@ -1,7 +1,7 @@
 ---
 title: About Us
-description: Established in 2014, Archimedis stands on the firm ground of strong
-  ethics and rich experience.
+description: Established in 2014, Archimedis stands on the firm pillars of
+  strong ethics, superior quality, client focus and rich experience.
 aboutImg: ../assets/Archimedis-Directors.png
 description2: Building on their successful venture “Safetab Life Science”, the
   promoter family incorporated Archimedis in 2014 with a global
