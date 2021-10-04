@@ -1,3 +1,4 @@
 ---
-AboutDescription: Welcome to Archimedis Healthcare..., where passions come to life
+AboutDescription: Architecting healthcare products and digital solutions, one
+  "Eureka!" at a time.
 ---
