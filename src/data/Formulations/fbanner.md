@@ -1,3 +1,4 @@
 ---
-Formulationsdescription: "The backbone of our healthcare company. This is the place where the ‘magic’ happens."
+Formulationsdescription: We flex science to advance pharmaceutical and
+  nutraceutical formulations from lab to life.
 ---
