@@ -42,9 +42,9 @@ function Navbars() {
                     </Nav>
                     <Nav id="navbarResponsive">
                         <Nav id="nav_b1">
-                            <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About<span>|</span></Link></Nav>
-                            <Nav id="nav_links"><Link to="/#patners" id="nav_main_link" activeClassName='active'>Clients<span>|</span></Link></Nav>
-                            <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Insights<span>|</span></Link></Nav>
+                            <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About</Link><span>|</span></Nav>
+                            <Nav id="nav_links"><Link to="/#patners" id="nav_main_link" activeClassName='active'>Clients</Link><span>|</span></Nav>
+                            <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Insights</Link><span>|</span></Nav>
                             <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact</p></Nav>
                         </Nav>
                         <Nav id="nav_b2">
@@ -81,12 +81,12 @@ function Navbars() {
                                 <Nav id="mark"></Nav><Nav id="nav_add_menu">
                                     <Nav id="nav_manu_container">
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#capable" style={{textDecoration: `none`, color: `#200e32` }}>Capability</Link></h1>
+                                            <h1><Link to="/manfacture/#OralSolidForms" style={{textDecoration: `none`, color: `#200e32` }}>Oral Solid Forms</Link></h1>
                                             <Link to="/manfacture/#tablets" id="nav_sub_link">Tablets</Link>
                                             <Link to="/manfacture/#Capsules" id="nav_sub_link">Capsules</Link>
                                             <Link to="/manfacture/#Powder" id="nav_sub_link">Dry Syrup / Sachet</Link>
                                             {/* <Link to="/manfacture/#Clinicaltrail" id="nav_sub_link">Clinical Trial Supplies</Link> */}
-                                            <Link to="/manfacture/#Commercial" id="nav_sub_link">Commercial Scale</Link>
+                                            <Link to="/manfacture/#InstalledCapacity" id="nav_sub_link">Installed Capacity</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
                                             <h1><Link to="/manfacture/#Qualityassurance" style={{textDecoration: `none`, color: `#200e32` }}>Quality</Link></h1>
@@ -103,7 +103,7 @@ function Navbars() {
                                             <Link to="/manfacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#industry" style={{textDecoration: `none`, color: `#200e32` }}>Industry 4.0</Link></h1>
+                                            <h1><Link to="/manfacture/#industry" style={{textDecoration: `none`, color: `#200e32` }}>Smart Factory</Link></h1>
                                             <Link to="/manfacture/#smart" id="nav_sub_link">Smart Dispensing</Link>
                                             <Link to="/manfacture/#Environment" id="nav_sub_link">Environment Monitoring</Link>
                                             <Link to="/manfacture/#ERP" id="nav_sub_link">ERP</Link>

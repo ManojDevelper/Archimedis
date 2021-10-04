@@ -28,7 +28,7 @@ const BlogPage = ({ data }) => {
       </div>
       <div className="blogListContainer2">
         <div id="blog">
-          <h1>Blogs</h1>
+          <h1></h1>
           <h1>Our Latest Thinking</h1>
           {blogList &&
             blogList.map(blogItem => {

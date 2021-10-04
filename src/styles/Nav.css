@@ -58,6 +58,9 @@
 }
 #nav_b1 #nav_links {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #nav_b1 {
   display: flex;
@@ -69,7 +72,6 @@
 }
 #nav_b1 #nav_main_link {
   font-family: Manrope;
-  padding: 0 0.575539568345324vw 0 0.575539568345324vw;
   font-style: normal;
   font-weight: normal;
   font-size: 0.863309352517986vw;
@@ -78,18 +80,19 @@
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+#nav_b1 #nav_links .active{
+  border-bottom:0.2vw solid #22bdef;
 }
 #nav_b1 #nav_links span {
-  margin-left: 1.5vw;
+  margin:0 1.5vw;
+  font-weight: normal;
+  opacity: 0.8;
 }
 #navbarResponsive #nav_b1 #nav_links .active {
   font-weight: bold;
-}
-#navbarResponsive #nav_b1 #nav_links:nth-child(2) .active {
-  color:red;
-}
-#navbarResponsive #nav_b1 #nav_links .active span {
-  font-weight: normal;
 }
 #nav_b2 {
   display: flex;

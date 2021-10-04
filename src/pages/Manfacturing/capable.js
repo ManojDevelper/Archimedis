@@ -7,12 +7,12 @@ export const Capable = ({ Capabilities }) => {
   return (
     <>
       {Capabilities && Capabilities.map((Capabilitiess, i) =>
-        <div id="capable" key={i}>
+        <div id="OralSolidForms" key={i}>
           <h1>{Capabilitiess.capabilitiestitle}</h1>
           <h2>{Capabilitiess.capabilitiesdesc}</h2>
           <div id="capable_container">
             {Capabilitiess.capabilitiescards.map((capabilitiescardss, i) =>
-              <div className="capable_container_cards" key={i} id={capabilitiescardss.capabilitiescardid === "tablets" ? "tablets" : capabilitiescardss.capabilitiescardid === "Capsules" ? "Capsules" :  capabilitiescardss.capabilitiescardid === "Powder" ? "Powder" : capabilitiescardss.capabilitiescardid === "Commercial" ? "Commercial" : "Commercial"}>
+              <div className="capable_container_cards" key={i} id={capabilitiescardss.capabilitiescardid}>
                 <div id="capable_container_cards_block1">
                   <div id="capable_container_cards_matter">
                     <h1 id="c_c_title">{capabilitiescardss.capabilitiescardtitle}</h1>

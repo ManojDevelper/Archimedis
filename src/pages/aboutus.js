@@ -33,10 +33,10 @@ const About = () => {
       <Nav />
       <Aboutbanner />
       <Aboutus />
+      <Mildstone />
       <Certification />
       <Aboutstatus />
       <Ourvalues />
-      <Mildstone />
       <Contact />
       <Footer />
     </>

@@ -46,7 +46,7 @@ export const Banner = ({ title, description, description2, boxDescription, banne
                         <p id="banner_desc">{description}</p>
                         <p id="banner_desc">{description2}</p>
                         <div id="banner_btn_container">
-                            <button onClick={handleClickOpen}><img src={img1} alt="img" />Take a Tour</button>
+                            <button onClick={handleClickOpen}><img src={img1} alt="img" />Facility Tour</button>
                             <Dialog
                                 open={open}
                                 onClose={handleClose}
