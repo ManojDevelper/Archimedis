@@ -3,23 +3,14 @@ title: About Us
 description: Established in 2014, Archimedis stands on the firm ground of strong
   ethics and rich experience.
 aboutImg: ../assets/Archimedis-Directors.png
-description2: Archimedis, our family-owned and family-operated enterprise
-  established in 2014, stands on the firm ground of strong ethics and rich
-  experience.Another successful venture from its Board of Directors, Safetab
-  Life Science is a reputed name in the industry. Safetab has been doing
-  business with leading pharmaceutical organisations in India, since 2006.
-  Archimedis signifies a step ahead and operates with a global vision. Ease of
-  doing business with us starts with our strategic location. Located in Chennai
-  (India), our plant is at a convenient distance from both, the sea-port and the
-  airport. While growing globally, we have made it a point to protect the
-  environment around us and have strictly non-polluting operations. This has
-  resulted in the enrichment of the ecosystem holding all the elements in the
-  right balance.
-description3: Archimedis excels as a, but isn’t limited to, Pharmaceutical
-  Manufacturing Organisation, specialising in non-beta lactam-based products in
-  solid oral dosage forms (Tablets, Capsules and Dry Syrup). With a vision to
-  enhance human life globally, we skilfully combine robust process, capable
-  people and latest technology to deliver consistent formulations. Our motto is
-  to architect medicine with passion so that humanity continues to thrive.
+description2: Building on the trust established by the promoter family’s first
+  life sciences business “Safetab”,  Archimedis was established in 2014 with a
+  global vision.  Archimedis aspires to further enhance human life by
+  consistently formulating scientific and digital innovations into superior
+  quality and affordable healthcare products and digital solutions.
+description3: Science excites Archimedis in so many ways – Formulation Research,
+  Product Development, Manufacturing Excellence and Digital
+  Technologies.  Fuelled by curiosity, we formulate clarity first; and
+  consistency forever.
 alttag: Archimedis Director
 ---
