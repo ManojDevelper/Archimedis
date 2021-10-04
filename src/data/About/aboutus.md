@@ -1,9 +1,7 @@
 ---
 title: About Us
-description: We are a healthcare company with years of expertise in
-  pharmaceutical industry. We satiate business needs for various segments with
-  expertise in pharmaceutical manufacturing, contract manufacturing and digital
-  offerings.
+description: Established in 2014, Archimedis stands on the firm ground of strong
+  ethics and rich experience.
 aboutImg: ../assets/Archimedis-Directors.png
 description2: Archimedis, our family-owned and family-operated enterprise
   established in 2014, stands on the firm ground of strong ethics and rich
