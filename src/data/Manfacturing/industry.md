@@ -2,9 +2,9 @@
 industry:
   - id: 1
     title: Smart Factory
-    description: Industry 4.0 has converged the digital and physical systems.
-      Archimedis facility leverages the ERP platform, smart dispensing, and
-      environmental monitoring systems to realize its Industry 4.0 vision.
+    description: Harnessing the power of digital and physical systems, Archimedis
+      facility leverages the ERP platform, smart dispensing, and environmental
+      monitoring systems to realize its Industry 4.0 vision.
     industrycards:
       - id: 1
         industryid: smart
