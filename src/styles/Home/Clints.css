@@ -21,7 +21,10 @@
 }
 #clints_container_main {
   width: 100%;
-  height: fit-content;
+  height:20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #clints_container_main_b1 h1 {
   font-family: Manrope;
@@ -50,6 +53,7 @@
 #clints_container_main_b2 #clints_container_main_b2_b1 img {
   width: 4.60431654676259vw;
   height: 4.60431654676259vw;
+  border-radius: 30vw;
 }
 #clints_container_main_b2_b2 {
   margin-left: 1.15107913669065vw;
@@ -166,6 +170,7 @@
     padding: 1vw 4vw 8vw 4vw;
     margin-top: 0vw;
     border-radius: 2vw;
+    height:80vw;
   }
   #clints_container_main_b2 #clints_container_main_b2_b1 img {
     width: 20vw;

@@ -1,7 +1,7 @@
 #abanner {
   width: 100%;
   height: 45vw;
-  background: url("../../data/assets/aboutBanner.svg.svg");
+  background: url("../../images/aboutBanner.png");
   background-repeat: no-repeat;
   display: flex;
   margin-top: 3vw;
