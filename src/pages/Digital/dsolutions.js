@@ -1,8 +1,14 @@
-import React from "react"
+import React, { useState } from "react"
 import "../../styles/Digital/dsolutions.css"
 import { graphql, useStaticQuery } from "gatsby"
+import close from "../../images/navclose.svg";
+import '../../styles/Nav.css';
+import Contact from "../../pages/Home/contact";
 
 export const Dsolutions = ({ dsolution }) => {
+
+  const [contactSol, setContactSol] = useState(false)
+
   return (
     <>
       {dsolution &&
@@ -26,7 +32,7 @@ export const Dsolutions = ({ dsolution }) => {
                           {dsolutioncardss.dsolutioncarddesc}
                         </p>
                         <div id="banner_btn_container">
-                          <button>Request a Demo</button>
+                          <button onClick={() => setContactSol(true)} role="presentation">Request a Demo</button>
                           <button>Download Brochure</button>
                         </div>
                       </div>
@@ -122,6 +128,11 @@ export const Dsolutions = ({ dsolution }) => {
             ))}
           </div>
         ))}
+      {contactSol ? (
+        <div id="navcont">
+          <img src={close} alt="img" id="contclose" onClick={() => setContactSol(false)} role="presentation" />
+          <Contact contactSol={contactSol} />
+        </div>) : null}
     </>
   )
 }

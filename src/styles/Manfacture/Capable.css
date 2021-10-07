@@ -372,3 +372,80 @@ display: none;
     margin-top: 5.34883720930233vw;
   }
 }
+
+
+
+
+
+
+
+
+/*====status========*/
+#status {
+  background: #2d307b;
+  width: 100%;
+  padding: 8.46546762589928vw;
+}
+#status_container {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 6.40287769784173vw;
+}
+#status_card1_img_block {
+  text-align: center;
+}
+#status_card1_img_block img {
+  width: 2.30215827338129vw;
+  height: 2.30215827338129vw;
+}
+#status_card1_matter_block {
+  text-align: center;
+}
+#status_card1_matter_block p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.45323741007194vw;
+  line-height: 4.74820143884892vw;
+  text-align: center;
+  color: #22bdef;
+  margin: auto;
+}
+#status_card1_matter_block p span{
+  font-size: 2vw;
+}
+#status_card1_matter_block p:nth-child(2) {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.15107913669065vw;
+  line-height: 1.7vw;
+  color: #ffffff;
+  width: 15.7553956834532vw;
+}
+@media (max-width: 750px) {
+  #status {
+    padding: 8.46546762589928vw 8vw;
+  }
+  #status_card1_img_block img {
+    width: 7vw;
+    height: 7vw;
+  }
+  #status_card1_matter_block p {
+    font-size: 6vw;
+  }
+  #status_card1_matter_block p:nth-child(2) {
+    font-size: 3.2vw;
+    opacity: 1;
+    margin-top: 3.8vw;
+    width: auto;
+  }
+  #status_card1_matter_block {
+    text-align: unset;
+    margin-top: 1vw;
+  }
+  #status_container {
+    gap: 15vw;
+  }
+}

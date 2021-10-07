@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/Manfacture/Capable.css";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const Capable = ({ Capabilities }) => {
+export const Capable = ({ Capabilities, Status }) => {
 
   return (
     <>
@@ -46,11 +46,30 @@ export const Capable = ({ Capabilities }) => {
           </div>
         </div>
       )}
+      <div id="status">
+        <div id="status_container">
+          {Status && Status.map((Statuss, i) => (
+            <div id="status_card1" key={i}>
+              <div id="status_card1_img_block">
+                {Statuss.statusimage.publicURL ? 
+                <img src={Statuss.statusimage.publicURL} alt="img1" />
+                :
+                <img src={Statuss.statusimage} alt="img1" />
+}
+              </div>
+              <div id="status_card1_matter_block">
+                <p>{Statuss.statusnumber}<span>million</span></p>
+                <p>{Statuss.statustitle}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
 const CapablePrev = props => {
-  
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: {eq: "Manfacturing/capabilities.md"}) {
@@ -79,19 +98,27 @@ const CapablePrev = props => {
                 }
               }
             }
+            Status {
+              statusnumber
+              statustitle
+              statusimage {
+                publicURL
+              }
+            }
           }
         }
       }
     }
   `)
-  
-      const CapablePre = data.file.childMarkdownRemark.frontmatter;
- 
+
+  const CapablePre = data.file.childMarkdownRemark.frontmatter;
+
   return (
     <>
       {
         <Capable
           Capabilities={CapablePre.Capabilities}
+          Status={CapablePre.Status}
         />
       }
     </>

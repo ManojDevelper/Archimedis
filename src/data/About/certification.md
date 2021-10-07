@@ -17,5 +17,15 @@ certificationImages:
           icon: "../assets/UL-Certified.svg",
           alt_tag: "U/L Certified Pharmaceutical company",
       },
+      {
+          id: 4,
+          icon: "../assets/dsir.svg",
+          alt_tag: "WHO-GMP certified organisation",
+      },
+      {
+          id: 5,
+          icon: "../assets/stpi.svg",
+          alt_tag: "U/L Certified Pharmaceutical company",
+      },
   ]
 ---

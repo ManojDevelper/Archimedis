@@ -4,6 +4,7 @@ import * as palette from '../../styles/variables';
 export const BlogContainer = styled.div`
   max-width: 700px;
   margin: 48px auto;
+  padding-top:60px;
   @media (max-width: 768px) {
     padding: 24px;
   }

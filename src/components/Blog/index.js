@@ -9,6 +9,7 @@ import {
 } from './styles';
 import Contact from "../../pages/Home/contact";
 import Footer from "../../pages/Home/footer";
+import Nav from "../../pages/nav";
 
 export const BlogPost = ({
   fields,
@@ -26,6 +27,7 @@ export const BlogPost = ({
 
   return (
     <Fragment>
+      <Nav/>
       <BlogContainer>
         <AuthorInfo>
           <div className="author_image">

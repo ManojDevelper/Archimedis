@@ -7,7 +7,7 @@ export const Facility = ({ Facility }) => {
   return (
     <>
       {Facility && Facility.map(Facilitys =>
-        <div id="facility" key={Facilitys.id}>
+        <kakakaka id="facility" key={Facilitys.id}>
           <h1>{Facilitys.title}</h1>
           <h2>{Facilitys.description}</h2>
           <div id="facility_container">
@@ -47,7 +47,7 @@ export const Facility = ({ Facility }) => {
               </div>
             )}
           </div>
-        </div>
+        </kakakaka>
       )}
     </>
   );

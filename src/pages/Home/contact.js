@@ -5,13 +5,13 @@ import img2 from "../../images/c_mail.svg"
 import { message } from "antd"
 import { SmileOutlined, DownOutlined } from "@ant-design/icons"
 
-const Contact = () => {
+const Contact = ({contactSol}) => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
   const [organization, setOrganization] = useState("")
   const [description, setDescription] = useState("")
-  const [category, setCategory] = useState("")
+  const [categorys, setCategorys] = useState("")
   const success = () => {
     message.success({
       content:
@@ -49,6 +49,10 @@ const Contact = () => {
     setErrors(validation())
     warning()
   }
+  
+  const category = contactSol ? "Digital Services" : categorys;
+
+  console.log(category)
 
   const onFinish = async values => {
     const data = new FormData()
@@ -86,7 +90,7 @@ const Contact = () => {
         setEmail("")
         setOrganization("")
         setDescription("")
-        setCategory("")
+        setCategorys("")
         setErrors(true)
       })
       .catch(function (err) {
@@ -168,12 +172,12 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Select Category"
-                value={category}
+                value={contactSol ? "Digital Services" : categorys}
               />
               <select
                 id="select"
                 onBlur={""}
-                onChange={e => setCategory(e.target.value)}
+                onChange={e => setCategorys(e.target.value)}
               >
                 <option>Contract Manufacturing</option>
                 <option>Digital Services</option>

@@ -23,10 +23,21 @@ const ManuCapablePreview = ({ entry, getAsset }) => {
         }
     }
 
+    if (data.hasOwnProperty('Status')) {
+        if (data.Status) {
+            data.Status.map(Statuss => {
+                var getImage = getAsset(Statuss.statusimage);
+                Statuss.statusimage = getImage.toString();
+                return Statuss;
+            })
+        }
+    }
+
     return (
         <div>
             <Capable
                 Capabilities={data.Capabilities}
+                Status={data.Status}
             />
         </div>
     );
