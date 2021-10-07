@@ -1,7 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   branch: main
-  repo: sgost/Archimedis
 publish_mode: editorial_workflow
 media_folder: "src/data/assets"
 public_folder: "/"

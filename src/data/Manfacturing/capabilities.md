@@ -71,25 +71,14 @@ Capabilities:
         image: ../assets/Commercial-Scale.png
         alt_tag: Commercial Scale
         capabilitiesminicards: []
-Status: 
-  [
-      {
-          id: 1,
-          statusnumber: "750",
-          statustitle: "Tablets",
-          statusimage: ../assets/status1.svg,
-      },
-      {
-          id: 2,
-          statusnumber: "180",
-          statustitle: "Capsules",
-          statusimage: ../assets/status2.svg,
-      },
-      {
-          id: 3,
-          statusnumber: "42",
-          statustitle: "Sachets",
-          statusimage: ../assets/status3.svg,
-      },
-  ]
+Status:
+  - statusimage: ../assets/status1.svg
+    statustitle: Tablets
+    statusnumber: "750"
+  - statusnumber: "180"
+    statustitle: Capsules
+    statusimage: ../assets/status2.svg
+  - statusnumber: "42"
+    statustitle: Sachets
+    statusimage: ../assets/status3.svg
 ---

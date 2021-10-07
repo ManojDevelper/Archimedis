@@ -21,7 +21,7 @@
 }
 #clints_container_main {
   width: 100%;
-  height:20vw;
+  height:19vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
