@@ -12,7 +12,7 @@ wedo:
       that results in a beautiful creation. Remember the Big Bang that made life
       possible on planet earth?
     link: /formulation/
-    wedoimg: assets/Fomulation-development.png
+    wedoimg: assets/Formulation-development.png
     alt_tag: Formulation Development Company
   - id: 2
     wedoname: Manufacturing
