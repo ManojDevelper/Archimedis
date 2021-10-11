@@ -1,8 +1,8 @@
 ---
 author_image: palani-director.png
-author: ContentConcepts
-bio: Manuscript Editing Services
-title: Five Reasons Why Bi-layer Splits During Coating
+author: Ravindran
+bio: Head - Formulation Development
+title: Three Strategies to Improve Structural Integrity of Bi-layer Tablets
 date: 2021-02-11T18:30:00.000Z
 previewImage: blog_2.png
 excerpt: Bi-layer tablets are not only difficult to compress.  They also carry
@@ -23,11 +23,13 @@ seo:
     - academic editing
     - academic proofreading
 ---
-A scientific manuscript is written in different style and length depending upon the author, the journal instructions and the topic. So it is hard to generalise a format or style for research papers. However, there are some general guidelines that will help you publish a successful scientific manuscript in journals. When editing your own manuscript, follow these tips for making your paper effective so that it is not rejected by the publisher. 
+> Bi-layer tablets offer patients a convenient form of drug delivery.  But their **structural integrity** is often challenged while manufacturing at scale.  This article explores some key strategies to avoid layer splitting and to achieve bi-layer integrity. 
 
-## Follow  instructions to authors
+## The Love for Bi-Layer Tablets
 
-This is the first thing any journal editor would notice. Strictly adhere to the instructions from the journal. Many manuscript authors tend to overlook the instructions, especially the word count. Authors who have English as a second language (ESL) have difficulty in writing short sentences. A good manuscript editor  should look at the length of the manuscript. Editors should also review for the style, tone, and the English version - British or American .
+Bi-layer tablets are useful in many ways - physical separation of incompatible active substances, controlled drug delivery, or simply two therapeutic actions in one tablet.  For more than a decade, scientists have enjoyed the thrill of bi-layer formulations, for it is a culmination of many disciplines of research – from material science to precision engineering.  
+
+![]()
 
 ## Edit the manuscript for proper structure and organisation
 
