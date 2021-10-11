@@ -2,6 +2,8 @@
 author_image: palani-director.png
 author: any One
 bio: The Open Source Myopic in Life Sciences
+Link_preview: /blog/how-to-edit-a-scientific-manuscript-or-research-paper/
+Link_next: /blog/five-reasons-bi-layer-splits-during-coating/
 title: The Open Source Myopic in Life Sciences
 date: 2020-12-25T18:30:00.000Z
 previewImage: blog_3.png

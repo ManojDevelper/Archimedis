@@ -45,7 +45,7 @@ function Navbars() {
                             <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About</Link><span>|</span></Nav>
                             <Nav id="nav_links"><Link to="/#patners" id="nav_main_link" activeClassName='active'>Clients</Link><span>|</span></Nav>
                             <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Insights</Link><span>|</span></Nav>
-                            <Nav id="nav_links"><p id="nav_main_link" activeClassName='active'>Gallery</p><span>|</span></Nav>
+                            <Nav id="nav_links"><a data-flickr-embed="true" href="https://www.flickr.com/photos/189612750@N02" title="" id="nav_main_link" activeClassName='active'>Gallery</a><span>|</span></Nav>
                             <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact</p></Nav>
                         </Nav>
                         <Nav id="nav_b2">
@@ -177,7 +177,7 @@ function Navbars() {
                                     <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About</Nav.Link>
                                     <Nav.Link href="/#patners" id="nav_main_link" activeClassName='active'>Clients</Nav.Link>
                                     <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Insights</Nav.Link>
-                                    <Nav.Link href="/" id="nav_main_link" activeClassName='active'>Gallery</Nav.Link>
+                                    <a data-flickr-embed="true" href="https://www.flickr.com/photos/189612750@N02" id="nav_main_link" activeClassName='active'>Gallery</a>
                                     <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact</Nav.Link>
                                 </>
                             )}

@@ -2,6 +2,8 @@
 author_image: palani-director.png
 author: any One
 bio: The Art of Drug Design
+Link_preview: /blog/the-open-source-myopic-in-life-sciences/
+Link_next: /blog/how-to-edit-a-scientific-manuscript-or-research-paper/
 title: The Art of Drug Design
 date: 2021-03-13T18:30:00.000Z
 previewImage: blog_1.png

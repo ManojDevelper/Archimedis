@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import SEO from "../seo"
 import {
   BlogContainer,
@@ -10,12 +10,15 @@ import {
 import Contact from "../../pages/Home/contact";
 import Footer from "../../pages/Home/footer";
 import Nav from "../../pages/nav";
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 export const BlogPost = ({
   fields,
   author_image,
   author,
   bio,
+  Link_preview,
+  Link_next,
   date,
   title,
   html,
@@ -29,6 +32,10 @@ export const BlogPost = ({
     <Fragment>
       <Nav/>
       <BlogContainer>
+        <div id="Link_arrows">
+      <Link to={Link_preview}><LeftOutlined id="left_arrow" className="arrow"/></Link>
+        <Link to={Link_next}><RightOutlined id="left_arrow" className="arrow"/></Link>
+        </div>
         <AuthorInfo>
           <div className="author_image">
             <img src={author_image} alt={author} />
@@ -92,6 +99,8 @@ const Blog = ({ data }) => {
         previewImage={preview_Image}
         author={post.frontmatter.author}
         bio={post.frontmatter.bio}
+        Link_preview={post.frontmatter.Link_preview}
+        Link_next={post.frontmatter.Link_next}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
         html={post.html}
@@ -122,6 +131,8 @@ export const query = graphql`
           publicURL
         }
         bio
+        Link_preview
+        Link_next
         date(formatString: "MMMM DD, YYYY")
         title
         tags

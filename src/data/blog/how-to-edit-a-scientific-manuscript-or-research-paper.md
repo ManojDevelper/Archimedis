@@ -2,6 +2,8 @@
 author_image: palani-director.png
 author: ContentConcepts
 bio: Manuscript Editing Services
+Link_preview: /blog/five-reasons-bi-layer-splits-during-coating/
+Link_next: /blog/the-open-source-myopic-in-life-sciences/
 title: Five Reasons Bi-layer Splits During Coating
 date: 2021-02-11T18:30:00.000Z
 previewImage: blog_2.png

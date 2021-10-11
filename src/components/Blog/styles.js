@@ -8,6 +8,32 @@ export const BlogContainer = styled.div`
   @media (max-width: 768px) {
     padding: 24px;
   }
+  #Link_arrows{
+    position:absolute;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    left:0;
+    top:60%;
+    padding: 0 10vw;
+    transition:0.5s ease-in-out;
+    .arrow{
+      font-size:40px;
+      transition;0.5s ease-in-out;
+    }
+    @media (max-width:1073px){
+      padding: 0 4vw;
+    }
+    @media (max-width:850px){
+      display:none;
+    }
+  }
+  #Link_arrows:hover{
+    padding: 0 8vw;
+    @media (max-width:1073px){
+      padding: 0 4vw;
+    }
+  }
 `;
 
 export const AuthorInfo = styled.div`

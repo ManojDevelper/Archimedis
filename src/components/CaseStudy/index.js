@@ -7,6 +7,7 @@ import {
   BlogContent,
   TagsList
 } from '../Blog/styles';
+import Nav from "../../pages/nav";
 import Contact from "../../pages/Home/contact";
 import Footer from "../../pages/Home/footer";
 
@@ -26,6 +27,7 @@ export const CasePost = ({
 
   return (
     <Fragment>
+      <Nav/>
       <BlogContainer>
         <AuthorInfo>
           <div className="author_image">
