@@ -1,5 +1,5 @@
 ---
-author_image: palani-director.png
+author_image: t8.png
 author: Ravindran
 bio: Head - Formulation Development
 title: Three Strategies to Improve Structural Integrity of Bi-layer Tablets
