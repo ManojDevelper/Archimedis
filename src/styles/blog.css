@@ -61,7 +61,7 @@
 
   /*==============================*/
   .blogListContainer2{
-    padding:12vw 0 10vw 0;
+    padding:5vw 0;
   }
   .blogListContainer2 #blog {
     width: 100%;
@@ -81,8 +81,6 @@
     line-height: 4.31654676258993vw;
     text-align: center;
     color: #222222;
-  }
-  .blogListContainer2 #blog h1:nth-child(2) {
     display:none;
   }
   .blogListContainer2 #blog_container {

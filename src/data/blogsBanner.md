@@ -1,3 +1,3 @@
 ---
-blogsBannerDescription: "The backbone of our healthcare company. This is the place where the ‘magic’ happens."
+blogsBannerDescription: "Get an insider perspective with our take on what's new in healthcare"
 ---

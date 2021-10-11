@@ -32,7 +32,7 @@ export const Dsolutions = ({ dsolution }) => {
                           {dsolutioncardss.dsolutioncarddesc}
                         </p>
                         <div id="banner_btn_container">
-                          <button onClick={() => setContactSol(true)} role="presentation">Request a Demo</button>
+                          <button onClick={() => setContactSol(true)}>Request a Demo</button>
                           <button>Download Brochure</button>
                         </div>
                       </div>

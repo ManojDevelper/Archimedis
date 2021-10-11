@@ -175,6 +175,9 @@
     color: #200e32;
     margin-top: 3vw;
   }
+  #productdev #quality_matter:nth-child(2) {
+    padding: 10vw 3vw;
+  }
   #productdev #quality_matter:nth-child(2) .productdevtitle {
     margin-top: 0;
   }
