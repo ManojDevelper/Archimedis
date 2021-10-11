@@ -4,7 +4,7 @@ author: Ravindran
 bio: Head - Formulation Development
 title: Three Strategies to Improve Structural Integrity of Bi-layer Tablets
 date: 2021-02-11T18:30:00.000Z
-previewImage: blog_2.png
+previewImage: bilayer.png
 excerpt: Bi-layer tablets are not only difficult to compress.  They also carry
   an inherent risk of splitting during coating.  Our experience uncovers five
   factors that can help reduce the risk.
