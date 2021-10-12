@@ -1,3 +1,3 @@
 ---
-blogsBannerDescription: Here's Our Latest Thinking
+blogsBannerDescription: Here's Our Latest Thinking.  Reflect on us.
 ---
