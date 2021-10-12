@@ -32,8 +32,19 @@ export const Dsolutions = ({ dsolution }) => {
                           {dsolutioncardss.dsolutioncarddesc}
                         </p>
                         <div id="banner_btn_container">
-                          <button onClick={() => setContactSol(true)}>Request a Demo</button>
-                          <button>Download Brochure</button>
+                          {
+                            dsolutioncardss.button1
+                            ?
+                            <button onClick={() => setContactSol(true)}>{dsolutioncardss.button1}</button>
+                            :
+                            ""
+                          }
+                          {dsolutioncardss.button2
+                          ?
+                          <button>{dsolutioncardss.button2}</button>
+                          :
+                          ""
+                        }
                         </div>
                       </div>
                     </div>
@@ -152,6 +163,8 @@ const DsolutionsPrev = props => {
                 id
                 dsolutioncardid
                 dsolutioncardtitle
+                button1
+                button2
                 dsolutioncarddesc
                 dsolutionminicardsmaintitle
                 dsolutionminicardsmaintitle2

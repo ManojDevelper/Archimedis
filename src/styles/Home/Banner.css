@@ -59,11 +59,15 @@ button {
   font-family: Manrope;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.07913669064748vw;
-  line-height: 2vw;
+  font-size: 1.5VW;
+  line-height: 2.5vw;
   color: #18191f;
-  width: 39.0647482014388vw;
-  margin-top: 0.935251798561151vw;
+  width: 40VW;
+  margin-top: 2vw;
+
+}
+#banner_desc:nth-child(3) {
+  margin-top: 0.9vw;
 }
 #banner_btn_container {
   margin-top: 2.15827338129496vw;

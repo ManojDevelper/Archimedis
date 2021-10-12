@@ -10,7 +10,8 @@ import {
 import Contact from "../../pages/Home/contact";
 import Footer from "../../pages/Home/footer";
 import Nav from "../../pages/nav";
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import right from "../../images/next.svg";
+import left from "../../images/prev.svg";
 
 export const BlogPost = ({
   fields,
@@ -30,11 +31,11 @@ export const BlogPost = ({
 
   return (
     <Fragment>
-      <Nav/>
+      <Nav />
       <BlogContainer>
         <div id="Link_arrows">
-      <Link to={Link_preview}><LeftOutlined id="left_arrow" className="arrow"/></Link>
-        <Link to={Link_next}><RightOutlined id="left_arrow" className="arrow"/></Link>
+          <Link to={Link_preview} id="arrow"><img src={right} id="left_arrow" className="arrow" alt="img"/></Link>
+          <Link to={Link_next} id="arrow"><img src={left} id="left_arrow" className="arrow" alt="img"/></Link>
         </div>
         <AuthorInfo>
           <div className="author_image">
@@ -54,7 +55,7 @@ export const BlogPost = ({
         <BlogContent>
           <h2 className="blogTitle">{title}</h2>
           {
-            preview ? <div>{html}</div> : <div dangerouslySetInnerHTML={{ __html: html }} id="div_block"/>
+            preview ? <div>{html}</div> : <div dangerouslySetInnerHTML={{ __html: html }} id="div_block" />
           }
         </BlogContent>
         {

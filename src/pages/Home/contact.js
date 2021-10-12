@@ -5,13 +5,22 @@ import img2 from "../../images/c_mail.svg"
 import { message } from "antd"
 import { SmileOutlined, DownOutlined } from "@ant-design/icons"
 
-const Contact = ({contactSol}) => {
+const Contact = ({ contactSol }) => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
   const [organization, setOrganization] = useState("")
   const [description, setDescription] = useState("")
   const [categorys, setCategorys] = useState("")
+  const [over, setOver] = useState("")
+
+
+  const toggleTab = (index) => {
+    setCategorys(index);
+    setOver(false);
+  };
+
+
   const success = () => {
     message.success({
       content:
@@ -49,7 +58,7 @@ const Contact = ({contactSol}) => {
     setErrors(validation())
     warning()
   }
-  
+
   const category = contactSol ? "Digital Services" : categorys;
 
   console.log(category)
@@ -137,8 +146,8 @@ const Contact = ({contactSol}) => {
               id="contact_img_block_bottom_blocks2"
             ></iframe>
           </div>
-          <div className="contact_info_block" method="POST" action="">
-            <div className="contact_info_top">
+          <div className="contact_info_block" method="POST" action="" >
+            <div className="contact_info_top" onClick={() => setOver(false)} role="presentation">
               <div className="contact_name" style={{ position: `relative` }}>
                 {name.length < 3 ? (
                   <span style={{ color: errors.color }}>Your Name</span>
@@ -169,23 +178,43 @@ const Contact = ({contactSol}) => {
 
             <div className="contact_message2" style={{ position: `relative` }}>
               <span>Category</span>
-              <input
-                type="text"
-                placeholder="Select Category"
-                value={contactSol ? "Digital Services" : categorys}
-              />
-              <select
-                id="select"
-                onBlur={""}
-                onChange={e => setCategorys(e.target.value)}
-              >
-                <option>Contract Manufacturing</option>
-                <option>Digital Services</option>
-                <option>Licensing</option>
-                <option>Propoganda cum Distribution (PCD)</option>
-                <option>R&D Services</option>
-                <option>Others</option>
-              </select>
+              {
+                over ?
+                  <input
+                    type="text"
+                    placeholder="Select Category"
+                    value={contactSol ? "Digital Services" : categorys}
+                    onClick={() => setOver(false)}
+                    role="button"
+                  />
+                  :
+                  <input
+                    type="text"
+                    placeholder="Select Category"
+                    value={contactSol ? "Digital Services" : categorys}
+                    onClick={() => setOver(true)}
+                    style={{ cursor: `pointer` }}
+                    role="button"
+                  />
+              }
+              {
+                over ?
+                  <>
+                    { contactSol ?
+                      ("")
+                      :
+                      <div id="select">
+                        <p onClick={() => toggleTab("Contract Manufacturing")} role="presentation">Contract Manufacturing</p>
+                        <p onClick={() => toggleTab("Digital Services")} role="presentation">Digital Services</p>
+                        <p onClick={() => toggleTab("In-licensing/Out-licensing")} role="presentation">In-licensing/Out-licensing</p>
+                        <p onClick={() => toggleTab("R&D Services")} role="presentation">R&D Services</p>
+                        <p onClick={() => toggleTab("Others")} role="presentation">Others</p>
+                      </div>
+                    }
+                  </>
+                  :
+                  ""
+              }
               <DownOutlined className="icon" />
             </div>
 
@@ -234,10 +263,10 @@ const Contact = ({contactSol}) => {
             </div>
             <div className="button">
               {name.length < 3 ||
-              !email ||
-              !/\S+@\S+\.\S+/.test(email) ||
-              phone.length < 10 ||
-              organization.length < 3 ? (
+                !email ||
+                !/\S+@\S+\.\S+/.test(email) ||
+                phone.length < 10 ||
+                organization.length < 3 ? (
                 <button onClick={signUpp}>SEND MESSAGE</button>
               ) : (
                 <button onClick={onFinish}>SEND MESSAGE</button>

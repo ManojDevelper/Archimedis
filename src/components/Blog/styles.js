@@ -18,8 +18,13 @@ export const BlogContainer = styled.div`
     padding: 0 10vw;
     transition:0.5s ease-in-out;
     .arrow{
-      font-size:40px;
-      transition;0.5s ease-in-out;
+      font-size:10px;
+      transition:0.5s ease-in-out;
+      border:1px solid #22bdef;
+      width:40px;
+      height:40px;
+      border-radius:30px;
+      padding:8px;
     }
     @media (max-width:1073px){
       padding: 0 4vw;

@@ -45,6 +45,8 @@ dsolution:
             Image: ../assets/map17.svg
         dsolutioncardid: eCapsule
         dsolutioncardtitle: ERP for Life Sciences
+        button1: Request a Demo
+        button2: Download Brochure
         dsolutionminicards:
           - id: 1
             dsolutionminicardstitle: Supply-Chain Management
@@ -104,6 +106,8 @@ dsolution:
       - id: 2
         dsolutioncardid: SmartDispensing
         dsolutioncardtitle: Smart Dispensing
+        button1: Request a Demo
+        button2: 
         dsolutioncarddesc: Dispensing plays a critical role in ensuring drug product
           quality and efficacy.  It's also where manual errors breed the
           most.  That's why we designed this "Little Wonder" that digitally
@@ -116,6 +120,8 @@ dsolution:
       - id: 3
         dsolutioncardid: EnvironmentalMonitoring
         dsolutioncardtitle: Environmental Monitoring
+        button1: Request a Demo
+        button2: 
         dsolutioncarddesc: Environmental factors can help or harm products.  If a
           conducive environment is not maintained, even the best process may
           struggle to yield high-quality products. Archimedis Environment

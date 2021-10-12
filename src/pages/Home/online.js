@@ -10,7 +10,7 @@ export const Online = ({ onlinetitle, onlinedesc, onlineimg }) => {
           <div id="online_container_block1">
             <h1>{onlinetitle}</h1>
             <h2>{onlinedesc}</h2>
-            <h1 id="onlinebutton">Coming Soon...</h1>
+            <button id="onlinebutton">Dowload Brochure</button>
           </div>
           <div id="online_container_block1">
             <img src={onlineimg} alt="img" />

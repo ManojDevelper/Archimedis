@@ -134,6 +134,7 @@
   flex-direction: column;
   margin: 2vw 0;
   position: relative;
+  transition: 0.5s ease-in-out;
 }
 .contact_message2 .icon {
   color: rgba(0, 0, 0, 0.8);
@@ -154,16 +155,29 @@
 .contact_message2 #select {
   position: absolute;
   width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  background: transparent;
-  opacity: 0;
-  cursor: pointer;
+  height: fit-content;
+  background:white;
+  z-index: 1;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  top: 100%;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 0px 2.15827338129496vw rgba(23, 23, 99, 0.16);
+  padding: 1vw 0;
 }
-.contact_message2 #select option {
+.contact_message2 #select p {
   cursor: pointer;
   color: #200e32;
+  font-weight: 500;
+  padding: 0.5vw 1vw;
+  transition: 0.5s ease-in-out;
+  font-size: 1vw;
+}
+.contact_message2 #select p:hover {
+  padding: 0.5vw 1vw;
+  background: #e0dcdc;
+  transition: 0.5s ease-in-out;
 }
 .contact_message {
   display: flex;
@@ -289,5 +303,13 @@
   .contact h1 {
     font-size: 6.04651162790698vw;
     line-height: inherit;
+  }
+  .contact_message2 #select p {
+    font-size: 3vw;
+    padding: 2vw;
+  }
+  .contact_message2 #select p:hover {
+    font-size: 3vw;
+    padding: 2vw;
   }
 }

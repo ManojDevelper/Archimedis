@@ -4,6 +4,8 @@ author: What is Lorem Ipsum?
 bio: First to develop and complete BE study for Metoprolol - Ivabradine
   Hydrochloride Tablets in India (product is approved by central Drug Control of
   India)
+Link_preview: /CaseStudy/cerebroprotein-tablets-development-complete-pending-commercialization/
+Link_next: /CaseStudy/multiple-myoinositol-combination-sachets-for-pcod-infertility-treatment/
 title: First to develop and complete BE study for Metoprolol - Ivabradine
   Hydrochloride Tablets in India (product is approved by central Drug Control of
   India)

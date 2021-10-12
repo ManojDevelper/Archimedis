@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import SEO from "../seo"
 import {
   BlogContainer,
@@ -10,12 +10,16 @@ import {
 import Nav from "../../pages/nav";
 import Contact from "../../pages/Home/contact";
 import Footer from "../../pages/Home/footer";
+import right from "../../images/next.svg";
+import left from "../../images/prev.svg";
 
 export const CasePost = ({
   fields,
   author_image,
   author,
   bio,
+  Link_preview,
+  Link_next,
   date,
   title,
   html,
@@ -29,6 +33,10 @@ export const CasePost = ({
     <Fragment>
       <Nav/>
       <BlogContainer>
+      <div id="Link_arrows">
+          <Link to={Link_preview} id="arrow"><img src={right} id="left_arrow" className="arrow" alt="img"/></Link>
+          <Link to={Link_next} id="arrow"><img src={left} id="left_arrow" className="arrow" alt="img"/></Link>
+        </div>
         <AuthorInfo>
           <div className="author_image">
             <img src={author_image} alt={author} />
@@ -92,6 +100,8 @@ const Case = ({ data }) => {
         previewImage={preview_Image}
         author={post.frontmatter.author}
         bio={post.frontmatter.bio}
+        Link_preview={post.frontmatter.Link_preview}
+        Link_next={post.frontmatter.Link_next}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
         html={post.html}
@@ -122,6 +132,8 @@ export const query = graphql`
           publicURL
         }
         bio
+        Link_preview
+        Link_next
         date(formatString: "MMMM DD, YYYY")
         title
         tags

@@ -80,6 +80,7 @@ function SEO({ description, lang, meta, title, keywords, SchemaMarkup }) {
     >
         <script type="application/ld+json">{JSON.stringify(SchemaMarkup)}</script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172499235-1"></script>
+        <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     </Helmet>
   )
 }
