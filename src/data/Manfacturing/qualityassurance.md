@@ -2,7 +2,7 @@
 qualityassurance:
   - id: 1
     title: Quality Assurance
-    QualityId: "Quality_Assurance"
+    QualityId: Quality_Assurance
     description: The QA department designs and maintains QMS for the company. It
       identifies the general and specific issues of the organisation and is
       involved in continuous improvement through preventive and corrective
@@ -11,8 +11,8 @@ qualityassurance:
     qualityassuranceminicontainer:
       - id: 1
         title: QMS
-        description: " The end all be all goal is to provide impeccable quality and the
-          quality management system (QMS) helps achieve that goal."
+        description: QMS (Quality Management System) works towards achieving the goal of
+          best quality.
         image: ../assets/mp4_c1.svg
       - id: 2
         title: Training
@@ -52,7 +52,7 @@ qualityassurance:
         image: ../assets/mp4_c6.svg
   - id: 2
     title: Quality Control
-    QualityId: "Quality_Control"
+    QualityId: Quality_Control
     description: From raw material induction to in-process testing to finished
       product testing, Quality Control department plays an important role at
       every stage of the product life cycle. The identity, purity, stability and
