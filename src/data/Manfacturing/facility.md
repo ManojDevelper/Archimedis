@@ -135,7 +135,7 @@ Facility:
         descriptionSpan6: ""
         descriptionSpan7: ""
         descriptionSpan8: ""
-        fimage: ../assets/f_c5.png
+        fimage: ../assets/prd_7908.jpg
         description1: Chlorination
         description2: Multi-grade Sand Filtration
         description3: Activated Carbon Filter
