@@ -6,6 +6,7 @@ import { message } from "antd"
 import { SmileOutlined, DownOutlined } from "@ant-design/icons"
 
 const Contact = ({ contactSol }) => {
+  console.log(contactSol)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
@@ -59,7 +60,7 @@ const Contact = ({ contactSol }) => {
     warning()
   }
 
-  const category = contactSol ? "Digital Services" : categorys;
+  const category = contactSol ? contactSol : categorys;
 
   console.log(category)
 
@@ -183,7 +184,7 @@ const Contact = ({ contactSol }) => {
                   <input
                     type="text"
                     placeholder="Select Category"
-                    value={contactSol ? "Digital Services" : categorys}
+                    value={category}
                     onClick={() => setOver(false)}
                     role="button"
                   />
@@ -191,7 +192,7 @@ const Contact = ({ contactSol }) => {
                   <input
                     type="text"
                     placeholder="Select Category"
-                    value={contactSol ? "Digital Services" : categorys}
+                    value={category}
                     onClick={() => setOver(true)}
                     style={{ cursor: `pointer` }}
                     role="button"

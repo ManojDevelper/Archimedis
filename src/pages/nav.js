@@ -45,7 +45,6 @@ function Navbars() {
                             <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About</Link><span>|</span></Nav>
                             <Nav id="nav_links"><Link to="/#patners" id="nav_main_link" activeClassName='active'>Clients</Link><span>|</span></Nav>
                             <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Insights</Link><span>|</span></Nav>
-                            <Nav id="nav_links"><p id="nav_main_link" activeClassName='active'>Gallery</p><span>|</span></Nav>
                             <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact</p></Nav>
                         </Nav>
                         <Nav id="nav_b2">
@@ -53,7 +52,7 @@ function Navbars() {
                                 <Nav id="nav_add_menu">
                                     <Nav id="nav_manu_container">
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/formulation/#fservice" style={{ textDecoration: `none`, color: `#200e32` }}><Link to="/formulation/#fservice" style={{ textDecoration: `none`, color: `#200e32` }}>Services</Link></Link></h1>
+                                            <h1><Link to="/formulation/#fservice" style={{ textDecoration: `none`, color: `#200e32` }}><Link to="/formulation/#fservice" style={{ textDecoration: `none`, color: `#200e32` }}>R&D Services</Link></Link></h1>
                                             <Link to="/formulation/#Formulationdev" id="nav_sub_link">Formulation Development</Link>
                                             <Link to="/formulation/#AnalyticalMethod" id="nav_sub_link">Analytical Method Development</Link>
                                             <Link to="/formulation/#AnalyticalMethodValidation" id="nav_sub_link">Analytical Method Validation</Link>
@@ -63,10 +62,10 @@ function Navbars() {
                                             <Link to="/formulation/#ClinicalTrials" id="nav_sub_link">Clinical Trials</Link> */}
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/formulation/#fserviceassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Infrastructure</Link></h1>
+                                            <h1><Link to="/formulation/#fserviceassurance" style={{ textDecoration: `none`, color: `#200e32` }}>R&D Infrastructure</Link></h1>
                                             <Link to="/formulation/#R&D" id="nav_sub_link">R&D Pilot Plant</Link>
-                                            <Link to="/formulation/#AnalyticalLab" id="nav_sub_link">Analytical Lab</Link>
-                                            <Link to="/formulation/#StabilityChamber" id="nav_sub_link">Stability Chamber</Link>
+                                            <Link to="/formulation/#AnalyticalLab" id="nav_sub_link">Analytical R&D Lab</Link>
+                                            <Link to="/formulation/#StabilityChamber" id="nav_sub_link">Walk-in Stablity chamber</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
                                             <h1><Link to="/formulation/#casestudy" style={{ textDecoration: `none`, color: `#200e32` }}>Case Studies</Link></h1>
@@ -90,7 +89,7 @@ function Navbars() {
                                             <Link to="/manfacture/#InstalledCapacity" id="nav_sub_link">Installed Capacity</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#Qualityassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality</Link></h1>
+                                            <h1><Link to="/manfacture/#Qualityassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Scrolling error</Link></h1>
                                             <Link to="/manfacture/#Quality_Assurance" id="nav_sub_link">Quality Assurance</Link>
                                             <Link to="/manfacture/#Quality_Control" id="nav_sub_link">Quality Control</Link>
                                         </Nav>
@@ -98,13 +97,13 @@ function Navbars() {
                                             <h1><Link to="/manfacture/#facility" style={{ textDecoration: `none`, color: `#200e32` }}>Facility</Link></h1>
                                             <Link to="/manfacture/#Manufacturing" id="nav_sub_link">Manufacturing</Link>
                                             <Link to="/manfacture/#packing" id="nav_sub_link">Packing</Link>
-                                            <Link to="/manfacture/#Adherence" id="nav_sub_link">Adherence</Link>
+                                            <Link to="/manfacture/#Adherence" id="nav_sub_link">Warehouse</Link>
                                             <Link to="/manfacture/#AirHandling" id="nav_sub_link">Air Handling Units (AHUs)</Link>
                                             <Link to="/manfacture/#WaterPurification" id="nav_sub_link">Water Purification</Link>
                                             <Link to="/manfacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#industry" style={{ textDecoration: `none`, color: `#200e32` }}>Smart Factory</Link></h1>
+                                            <h1><Link to="/manfacture/#industry" style={{ textDecoration: `none`, color: `#200e32` }}>ERP should be listed first</Link></h1>
                                             <Link to="/manfacture/#smart" id="nav_sub_link">Smart Dispensing</Link>
                                             <Link to="/manfacture/#Environment" id="nav_sub_link">Environment Monitoring</Link>
                                             <Link to="/manfacture/#ERP" id="nav_sub_link">ERP</Link>
@@ -141,13 +140,13 @@ function Navbars() {
                                 <Nav id="mark"></Nav><Nav id="nav_add_menu">
                                     <Nav id="nav_manu_container">
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/digital/#dsolutions" style={{ textDecoration: `none`, color: `#200e32` }}>Solutions</Link></h1>
+                                            <h1><Link to="/digital/#dsolutions" style={{ textDecoration: `none`, color: `#200e32` }}>Digital Solutions</Link></h1>
                                             <Link to="/digital/#Formulationdev" id="nav_sub_link">ERP for Life Sciences</Link>
                                             <Link to="/digital/#SmartDispensing" id="nav_sub_link">Smart Dispensing</Link>
                                             <Link to="/digital/#EnvironmentalMonitoring" id="nav_sub_link">Environmental Monitoring</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/digital/#productdev" style={{ textDecoration: `none`, color: `#200e32` }}>Product Development</Link></h1>
+                                            <h1><Link to="/digital/#productdev" style={{ textDecoration: `none`, color: `#200e32` }}>Product Value Stream</Link></h1>
                                             <Link to="/digital/#productdev" id="nav_sub_link">Design / UX</Link>
                                             <Link to="/digital/#productdev" id="nav_sub_link">Engineering & Development</Link>
                                             <Link to="/digital/#productdev" id="nav_sub_link">Test Automation</Link>
@@ -156,7 +155,7 @@ function Navbars() {
                                             <Link to="/digital/#Design" id="nav_sub_link">Product Management</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/digital/#Quality&Compliance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality & Compliance</Link></h1>
+                                            <h1><Link to="/digital/#Quality&Compliance" style={{ textDecoration: `none`, color: `#200e32` }}>Sectional Match</Link></h1>
                                             <Link to="/digital/#Quality&Compliance" id="nav_sub_link">GxP Compliance (QMS / SOPs)</Link>
                                             <Link to="/digital/#Quality&Compliance" id="nav_sub_link">IT Quality Assurance</Link>
                                             <Link to="/digital/#Quality&Compliance" id="nav_sub_link">Computerized System Validation (CSV)</Link>
@@ -177,7 +176,6 @@ function Navbars() {
                                     <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About</Nav.Link>
                                     <Nav.Link href="/#patners" id="nav_main_link" activeClassName='active'>Clients</Nav.Link>
                                     <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Insights</Nav.Link>
-                                    <p id="nav_main_link" activeClassName='active'>Gallery</p>
                                     <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact</Nav.Link>
                                 </>
                             )}
@@ -187,7 +185,7 @@ function Navbars() {
                                 <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={minus} alt="img" /></span></p>}
                             {!hides ? null : (
                                 <>
-                                    <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeClassName='active'>Services </Nav.Link>
+                                    <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeClassName='active'>R&D Services </Nav.Link>
                                     <Nav.Link href="/formulation/#fserviceassurance" id="nav_main_link" activeClassName='active'>Infrastructure</Nav.Link>
                                     <Nav.Link href="/formulation/#casestudy" id="nav_main_link" activeClassName='active'>Case Studies</Nav.Link>
                                 </>

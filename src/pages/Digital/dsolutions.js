@@ -34,17 +34,17 @@ export const Dsolutions = ({ dsolution }) => {
                         <div id="banner_btn_container">
                           {
                             dsolutioncardss.button1
+                              ?
+                              <button onClick={() => setContactSol(true)}>{dsolutioncardss.button1}</button>
+                              :
+                              ""
+                          }
+                          {dsolutioncardss.button2
                             ?
-                            <button onClick={() => setContactSol(true)}>{dsolutioncardss.button1}</button>
+                            <button>{dsolutioncardss.button2}</button>
                             :
                             ""
                           }
-                          {dsolutioncardss.button2
-                          ?
-                          <button>{dsolutioncardss.button2}</button>
-                          :
-                          ""
-                        }
                         </div>
                       </div>
                     </div>
@@ -142,7 +142,7 @@ export const Dsolutions = ({ dsolution }) => {
       {contactSol ? (
         <div id="navcont">
           <img src={close} alt="img" id="contclose" onClick={() => setContactSol(false)} role="presentation" />
-          <Contact contactSol={contactSol} />
+          <Contact contactSol={contactSol ? "Digital Services" : ""} />
         </div>) : null}
     </>
   )

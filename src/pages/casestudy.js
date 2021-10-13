@@ -1,14 +1,18 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useState } from "react"
 import { Link } from "gatsby"
 import "../styles/casestudy.css"
 import arrow from "../images/arow.svg"
 import arrow2 from "../images/blog_btn_blue.svg"
 import SEO from "../components/seo"
+import Contact from "../pages/Home/contact";
+import close from "../images/navclose.svg";
 
 const CasePage = ({ data, title, description, keywords }) => {
   const blogList = data
 
   console.log(blogList)
+
+  const [caseStudys, setCaseStudys] = useState(false)
 
   return (
     <Fragment>
@@ -36,13 +40,11 @@ const CasePage = ({ data, title, description, keywords }) => {
                           </div>
                           <div id="casestudy_card_b2">
                             <p>{blogItem.node.frontmatter.title}</p>
-                            <Link to={blogItem.node.fields.slug}>
-                              <button id="csbtn">
+                              <button id="csbtn" onClick={() => setCaseStudys(true)}>
                                 View Case Study
                                 <img src={arrow} alt="img" id="blod_btn1" />
                                 <img src={arrow2} alt="img" id="blod_btn2" />
                               </button>
-                            </Link>
                           </div>
                         </div>
                       </>
@@ -53,6 +55,11 @@ const CasePage = ({ data, title, description, keywords }) => {
             })}
         </div>
       </div>
+      {caseStudys ? (
+        <div id="navcont">
+          <img src={close} alt="img" id="contclose" onClick={() => setCaseStudys(false)} role="presentation" />
+          <Contact contactSol={caseStudys ? "R&D Services" : ""} />
+        </div>) : null}
     </Fragment>
   )
 }
