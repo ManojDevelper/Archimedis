@@ -47,8 +47,7 @@ qualityassurance:
         image: ../assets/mp4_c7.svg
       - id: 9
         title: Managing Complaints
-        description: " Although there are hardly any but we have a department to take
-          care of those too."
+        description: " Handling all queries with swift resolutions."
         image: ../assets/mp4_c6.svg
   - id: 2
     title: Quality Control
