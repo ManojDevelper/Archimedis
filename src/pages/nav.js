@@ -176,7 +176,6 @@ function Navbars() {
                                     <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About</Nav.Link>
                                     <Nav.Link href="/#patners" id="nav_main_link" activeClassName='active'>Clients</Nav.Link>
                                     <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Insights</Nav.Link>
-                                    <p id="nav_main_link" activeClassName='active'>Gallery</p>
                                     <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact</Nav.Link>
                                 </>
                             )}
