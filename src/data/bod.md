@@ -23,6 +23,10 @@ teams2:
         teamdesignation: Head of Formulations
         teamimg: assets/t8.png
         linkdin: https://www.linkedin.com/in/ravindaran-mani-54719919/
+      - teaamname: "Dr Shantaram Nangude "
+        teamdesignation: " Head of Analytical R&D"
+        teamimg: assets/t10.png
+        linkdin: https://www.linkedin.com/in/saksham-chauhan-8a673115a/
       - teaamname: Venkat Krishnan
         teamdesignation: Head of Digital Business
         teamimg: assets/t8.png
@@ -33,10 +37,6 @@ teams2:
         linkdin: https://www.linkedin.com/in/vini-verghese-9a9766185
       - teaamname: Saksham Chauhan
         teamdesignation: Corporate Marketing & Sales
-        teamimg: assets/t10.png
-        linkdin: https://www.linkedin.com/in/saksham-chauhan-8a673115a/
-      - teaamname: "Dr Shantaram Nangude "
-        teamdesignation: " Head of Analytical R&D"
         teamimg: assets/t10.png
         linkdin: https://www.linkedin.com/in/saksham-chauhan-8a673115a/
 ---

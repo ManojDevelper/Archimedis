@@ -41,13 +41,13 @@ footer:
     },
     {
       id: 2,
-      title: "Formulation",
+      title: "Formulations",
       link: "/formulation/",
       footercontainer:
         [
           { 
             id: 1, 
-            description: "Services", 
+            description: "R&D Services", 
             Link: "/formulation/#fservice",
             subconteiner: 
               [
@@ -90,8 +90,8 @@ footer:
           },
           { 
             id: 2, 
-            description: "Infrastructure", 
-            Link: "/formulation/#fserviceassurance", 
+            description: "R&D Infrastructure", 
+            Link: "/formulation/#ffacility", 
             subconteiner: 
               [
                 {
@@ -114,7 +114,7 @@ footer:
           { 
             id: 3, 
             description: "Case Studies", 
-            Link: "/formulation/#casestudy",
+            Link: "/formulation/#caseStudy",
             subconteiner: 
               [
                 {
@@ -149,8 +149,8 @@ footer:
         [
           { 
             id: 1, 
-            description: "Capability", 
-            Link: "/manfacture/#capable", 
+            description: "Oral Solid Forms", 
+            Link: "/manfacture/#OralSolidForms", 
             subconteiner: 
               [
                 {
@@ -183,7 +183,7 @@ footer:
           { 
             id: 2, 
             description: "Quality", 
-            Link: "/manfacture/#quality", 
+            Link: "/manfacture/#Qualityassurance", 
             subconteiner: 
               [
                 {
@@ -233,7 +233,7 @@ footer:
           },
           { 
             id: 4, 
-            description: "Industry 4.0", 
+            description: "Smart Factory", 
             Link: "/manfacture/#industry", 
             subconteiner: 
               [
@@ -346,7 +346,7 @@ footer:
         [
           { 
             id: 1, 
-            description: "Solutions", 
+            description: "Digital Solutions", 
             Link: "/digital/#dsolutions", 
             subconteiner: 
               [
@@ -369,7 +369,7 @@ footer:
           },
           { 
             id: 2, 
-            description: "Product Development", 
+            description: "Product Value Stream", 
             Link: "/digital/#productdev", 
             subconteiner: 
               [

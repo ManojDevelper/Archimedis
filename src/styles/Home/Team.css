@@ -84,6 +84,7 @@
   width: 13.3093525179856vw;
   height: 14.3884892086331vw;
   margin: auto;
+  border-radius:2vw;
 }
 #team_container_cards_block1 p {
   font-family: Manrope;
@@ -182,6 +183,7 @@
     height: auto;
     margin: auto;
     padding: 2vw;
+    border-radius: 2vw;
   }
   #team_container_cards_block2_container img {
     cursor: pointer;
