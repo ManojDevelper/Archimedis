@@ -68,7 +68,7 @@ Capabilities:
           formulation, while ensuring a swift pace of manufacturing. Devoid of
           human intervention, the system also blocks any impurity from entering
           into the medicines.
-        image: ../assets/Commercial-Scale.png
+        image: ../assets/installed.jpg
         alt_tag: Commercial Scale
         capabilitiesminicards: []
 Status:
