@@ -3,51 +3,53 @@ qualityassurance:
   - id: 1
     title: Quality Assurance
     QualityId: Quality_Assurance
-    description: The QA department designs and maintains QMS for the company. It
-      identifies the general and specific issues of the organisation and is
-      involved in continuous improvement through preventive and corrective
-      actions. While conducting stringent audits periodically, it enables the
-      comprehensive, adequate and effective implementation of the QMS.
+    description: A well-designed Quality Management System (QMS) blends regulatory
+      and practical aspects.  In addition to continuous improvement, periodic
+      audits & training, QA team ensures comprehensive, adequate and effective
+      implementation of the QMS.
     qualityassuranceminicontainer:
       - id: 1
         title: QMS
-        description: QMS (Quality Management System) works towards achieving the goal of
-          best quality.
+        description: Design & maintain a code of standard for quality that meets
+          regulatory and business requirements.
         image: ../assets/mp4_c1.svg
       - id: 2
         title: Training
-        description: " New Employee Orientation and Periodic Reinforcement Trainings
-          provided to get everyone well versed with the system. "
+        description: " New employee orientation and Periodic re-enforcement trainings to
+          ensure consistent execution. "
         image: ../assets/mp4_c2.svg
       - id: 3
         title: Adherence
-        description: Ensuring all operations by all the departments are carried out as
-          per regulations.
+        description: Ensuring all departmental operations are carried out as per QMS.
         image: ../assets/mp4_c3.svg
       - id: 4
-        title: Reporting any Non-conformance
-        description: Reporting any deviation from the specifications.
+        title: Deviations
+        description: Processes & tools for managing planned and unplanned deviations.
         image: ../assets/mp4_c9.svg
       - id: 5
         title: Corrective Actions
-        description: Recommending solutions to quality issues and following up said
-          issues to resolution
+        description: Remediation of quality incidents with appropriate resolution for
+          uninterrupted operations.
         image: ../assets/mp4_c5.svg
       - id: 6
         title: Preventive Actions
-        description: Proactive action to prevent the occurrence of quality issues
+        description: Proactive action to prevent the occurrence of quality issues and
+          measuring their effectiveness.
         image: ../assets/mp4_c4.svg
       - id: 7
-        title: Controlling Non-Conforming Products
-        description: Managing the non-conforming products until corrective action.
+        title: Product Quality
+        description: Annual product quality reviews for continuous improvement and
+          effectiveness of QMS.
         image: ../assets/mp4_c8.svg
       - id: 8
-        title: Feebacks
-        description: " Delivering periodic feedbacks to management on quality status."
+        title: User Feedback
+        description: Soliciting and incorporating user feedback into the QMS for
+          continuous improvement and adoption.
         image: ../assets/mp4_c7.svg
       - id: 9
-        title: Managing Complaints
-        description: " Handling all queries with swift resolutions."
+        title: Market Complaints
+        description: " Managing market complaints with due attention and care so that
+          patients get superior quality medicines."
         image: ../assets/mp4_c6.svg
   - id: 2
     title: Quality Control
