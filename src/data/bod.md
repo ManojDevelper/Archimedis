@@ -13,8 +13,7 @@ teams2:
       - teaamname: Gopal P
         teamdesignation: VP & Head of Quality
         teamimg: assets/t6.png
-        linkdin: "https://www.linkedin.com/in/gopalakrishnan-thanikachalam-12214435/\t\\
-          t"
+        linkdin: https://www.linkedin.com/in/gopalakrishnan-thanikachalam-12214435/	\ t
       - teaamname: "Merlin Deepa "
         teamdesignation: GM & Head of Regulatory Affairs
         teamimg: assets/t7.png
@@ -25,11 +24,11 @@ teams2:
         linkdin: https://www.linkedin.com/in/ravindaran-mani-54719919/
       - teaamname: "Dr Shantaram Nangude "
         teamdesignation: " Head of Analytical R&D"
-        teamimg: assets/t10.png
+        teamimg: assets/dr-shantaram-1.png
         linkdin: https://www.linkedin.com/in/saksham-chauhan-8a673115a/
       - teaamname: Venkat Krishnan
         teamdesignation: Head of Digital Business
-        teamimg: assets/t8.png
+        teamimg: assets/venkat-1.png
         linkdin: https://www.linkedin.com/in/venkatkrishnan-raghavan-61b1799/
       - teaamname: "Vini Verghese "
         teamdesignation: Corporate Strategy & Finance
