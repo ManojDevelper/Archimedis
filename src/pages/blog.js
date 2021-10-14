@@ -34,7 +34,8 @@ const BlogPage = ({ data }) => {
               return (
                 <>
                   <div id="blog_container" key={blogItem.node.id}>
-                    <Link id="blog_card" to={blogItem.node.fields.slug}>
+                    {/* <Link id="blog_card" to={blogItem.node.fields.slug}> */}
+                    <div id="blog_card">
                       <div id="blog_card_b1">
                         <img
                           src={blogItem.node.frontmatter.previewImage.publicURL}
@@ -46,7 +47,8 @@ const BlogPage = ({ data }) => {
                         <p>{blogItem.node.frontmatter.excerpt}</p>
                         <p>{blogItem.node.frontmatter.date}</p>
                       </div>
-                    </Link>
+                    {/* </Link> */}
+                    </div>
                   </div>
                 </>
               )

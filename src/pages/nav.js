@@ -69,10 +69,10 @@ function Navbars() {
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
                                             <h1><Link to="/formulation/#caseStudy" style={{ textDecoration: `none`, color: `#200e32` }}>Case Studies</Link></h1>
-                                            <Link to="/CaseStudy/cerebroprotein-tablets-development-complete-pending-commercialization/" id="nav_sub_link">Cerebroprotein</Link>
-                                            <Link to="/CaseStudy/first-to-develop-and-complete-be-study-for-metoprolol-ivabradine-hydrochloride-tablets-in-india-product-is-approved-by-central-drug-control-of-india/" id="nav_sub_link">Ivabradine + Metoprolol</Link>
-                                            <Link to="/CaseStudy/water-soluble-vitamin-d-capsule-major-commercial-success-for-client/" id="nav_sub_link">Vitamin D3 Water Soluble</Link>
-                                            <Link to="/CaseStudy/multiple-myoinositol-combination-sachets-for-pcod-infertility-treatment/" id="nav_sub_link">Asvagandha (UK Clinical Trial)</Link>
+                                            <Link to="/formulation/#caseStudy" id="nav_sub_link">Cerebroprotein</Link>
+                                            <Link to="/formulation/#caseStudy" id="nav_sub_link">Ivabradine + Metoprolol</Link>
+                                            <Link to="/formulation/#caseStudy" id="nav_sub_link">Vitamin D3 Water Soluble</Link>
+                                            <Link to="/formulation/#caseStudy" id="nav_sub_link">Asvagandha (UK Clinical Trial)</Link>
                                         </Nav>
                                     </Nav>
                                 </Nav></Link>
