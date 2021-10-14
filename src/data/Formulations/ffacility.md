@@ -13,7 +13,7 @@ Ffacility:
           from paper to product. Fully equipped with granulation to coating, it
           shapes our scientists' ideas and encourages them to push their
           critical thinking.
-        ffacilitypic: ../assets/R-and-D-Pilot-Plant.png
+        ffacilitypic: ../assets/frd.png
         alt_tag: Drug research and development
       - id: 2
         Ffacilityblockid: AnalyticalLab
@@ -22,7 +22,7 @@ Ffacility:
           chemistry in action. Our lab lets the analytical chemists experiment
           with the physical and chemical properties of APIs, excipients and
           finished goods.
-        ffacilitypic: ../assets/Analytical-Lab.png
+        ffacilitypic: ../assets/ard.jpg
         alt_tag: Analytical Lab
       - id: 3
         Ffacilityblockid: StabilityChamber
