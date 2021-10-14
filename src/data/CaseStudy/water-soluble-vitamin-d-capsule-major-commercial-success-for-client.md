@@ -9,7 +9,7 @@ bio: Vitamin D Capsule (Water Soluble) - An essential daily dose for a healthy
 title: Vitamin D Capsule (Water Soluble) - An essential daily dose for a healthy
   lifestyle.
 date: 2021-03-13T18:30:00.000Z
-previewImage: cs_i4.png
+previewImage: shinevit.jpg
 Link_next: /CaseStudy/cerebroprotein-tablets-development-complete-pending-commercialization/
 tags:
   - Vitamin D Capsule (Water Soluble) - An essential daily dose for a healthy
