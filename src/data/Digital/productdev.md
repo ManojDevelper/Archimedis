@@ -1,11 +1,11 @@
 ---
 prodev:
   - id: 1
-    pdid: productdev
+    pdid: productdevtitle
     pdclass: ""
     title: Product Value Stream
     description: Digital products are engines of business growth.  Turn your ideas
-      into products with Archimedis Digital.
+      into products with our Product Value Stream process..
     prodevminicontainer:
       - id: 1
         pdcontid: Design
@@ -43,12 +43,12 @@ prodev:
       - id: 6
         pdcontid: ProductManagement
         title: Product Management
-        title2: "Digital products need a goal-oriented roadmap, feature prioritization,
+        title2: Digital products need a goal-oriented roadmap, feature prioritization,
           sprint planning and execution. Our Product Value Stream process can
-          bring all of these. And more. "
+          bring all of these and more.
         Image: ../assets/pd16.svg
   - id: 2
-    pdid: QualityAndCompliance
+    pdid: Quality&Compliance
     pdclass: productdevtitle
     title: Quality & Compliance
     description: "Sensible Quality & Compliance enhances the value of Digital in
