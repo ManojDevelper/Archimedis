@@ -259,80 +259,80 @@ footer:
     {
       id: 4,
       title: "Products",
-      link: "/products/",
+      link: "/product/",
       footercontainer:
         [
           { 
             id: 1, 
             description: "Pharmaceutical", 
-            Link: "/products/#pharmaceutical", 
+            Link: "/product/#pharmaceutical", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "Therapeutic Areas",
-                  links: "/products/#Therapeutic"
+                  links: "/product/#Therapeutic"
                 },
                 {
                   id: 2,
                   head: "Prescription Drugs",
-                  links: "/products/#Prescription"
+                  links: "/product/#Prescription"
                 },
                 {
                   id: 3,
                   head: "OTC",
-                  links: "/products/#OTC"
+                  links: "/product/#OTC"
                 },
                 {
                   id: 4,
                   head: "Flagship Products",
-                  links: "/products/#Flagship"
+                  links: "/product/#Flagship"
                 },
               ]
           },
           { 
             id: 2, 
             description: "Food Supplements", 
-            Link: "/products/#foodsupplements", 
+            Link: "/product/#foodsupplements", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "Vitamin D",
-                  links: "/products/#VitaminD"
+                  links: "/product/#VitaminD"
                 },
                 {
                   id: 2,
                   head: "Bone Collagen",
-                  links: "/products/#BoneCollagen"
+                  links: "/product/#BoneCollagen"
                 },
                 {
                   id: 3,
                   head: "Lola",
-                  links: "/products/#Lola"
+                  links: "/product/#Lola"
                 },
               ]
           },
           { 
             id: 3, 
             description: "Archimedis Branded", 
-            Link: "/products/#archibranded", 
+            Link: "/product/#archibranded", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "PCOS (Fertility Enhancer)",
-                  links: "/products/#PCOS"
+                  links: "/product/#PCOS"
                 },
                 {
                   id: 2,
                   head: "Nasal Irrigation",
-                  links: "/products/#NasalIrrigation"
+                  links: "/product/#NasalIrrigation"
                 },
                 {
                   id: 3,
                   head: "Hand Sanitizers",
-                  links: "/products/#HandSanitizers"
+                  links: "/product/#HandSanitizers"
                 },
               ]
           },

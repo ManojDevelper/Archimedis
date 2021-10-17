@@ -109,29 +109,29 @@ function Navbars() {
                                         </Nav>
                                     </Nav>
                                 </Nav></Link></Nav>
-                            <Nav id="nav_links"><Link to="/products/" id="nav_main_link" activeClassName='active'>Products<Nav></Nav>
+                            <Nav id="nav_links"><Link to="/product/" id="nav_main_link" activeClassName='active'>Products<Nav></Nav>
                                 <Nav id="mark"></Nav><Nav id="nav_add_menu">
                                     <Nav id="nav_manu_container">
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/products/#pharmaceutical" style={{ textDecoration: `none`, color: `#200e32` }}>Pharmaceutical</Link></h1>
-                                            <Link to="/products/#Therapeutic" id="nav_sub_link">Therapeutic Areas</Link>
-                                            <Link to="/products/#Prescription" id="nav_sub_link">Prescription Drugs</Link>
-                                            <Link to="/products/#OTC" id="nav_sub_link">OTC</Link>
-                                            <Link to="/products/#Flagship" id="nav_sub_link">Flagship Products</Link>
+                                            <h1><Link to="/product/#pharmaceutical" style={{ textDecoration: `none`, color: `#200e32` }}>Pharmaceutical</Link></h1>
+                                            <Link to="/product/#Therapeutic" id="nav_sub_link">Therapeutic Areas</Link>
+                                            <Link to="/product/#Prescription" id="nav_sub_link">Prescription Drugs</Link>
+                                            <Link to="/product/#OTC" id="nav_sub_link">OTC</Link>
+                                            <Link to="/product/#Flagship" id="nav_sub_link">Flagship Products</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/products/#foodsupplements" style={{ textDecoration: `none`, color: `#200e32` }}>Food Supplements</Link></h1>
-                                            <Link to="/products/#VitaminD" id="nav_sub_link">Vitamin D</Link>
-                                            <Link to="/products/#BoneCollagen" id="nav_sub_link">Bone Collagen</Link>
-                                            <Link to="/products/#Lola" id="nav_sub_link">Lola</Link>
+                                            <h1><Link to="/product/#foodsupplements" style={{ textDecoration: `none`, color: `#200e32` }}>Food Supplements</Link></h1>
+                                            <Link to="/product/#VitaminD" id="nav_sub_link">Vitamin D</Link>
+                                            <Link to="/product/#BoneCollagen" id="nav_sub_link">Bone Collagen</Link>
+                                            <Link to="/product/#Lola" id="nav_sub_link">Lola</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/products/#archibranded" style={{ textDecoration: `none`, color: `#200e32` }}>Archimedis Branded</Link></h1>
-                                            <Link to="/products/#PCOS" id="nav_sub_link">PCOS (Fertility Enhancer)</Link>
-                                            <Link to="/products/#NasalIrrigation" id="nav_sub_link">Nasal Irrigation</Link>
-                                            <Link to="/products/#HandSanitizers" id="nav_sub_link">Hand Sanitizers</Link>
-                                            {/* <Link to="/products/" id="nav_sub_link">All Products</Link>
-                                            <Link to="/products/" id="nav_sub_link">Visit Our Store</Link> */}
+                                            <h1><Link to="/product/#archibranded" style={{ textDecoration: `none`, color: `#200e32` }}>Archimedis Branded</Link></h1>
+                                            <Link to="/product/#PCOS" id="nav_sub_link">PCOS (Fertility Enhancer)</Link>
+                                            <Link to="/product/#NasalIrrigation" id="nav_sub_link">Nasal Irrigation</Link>
+                                            <Link to="/product/#HandSanitizers" id="nav_sub_link">Hand Sanitizers</Link>
+                                            {/* <Link to="/product/" id="nav_sub_link">All Products</Link>
+                                            <Link to="/product/" id="nav_sub_link">Visit Our Store</Link> */}
                                         </Nav>
                                     </Nav>
                                 </Nav></Link></Nav>
@@ -207,9 +207,9 @@ function Navbars() {
                                 <p id="main_top_link"><Nav.Link href="/products" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidesss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/products" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidesss(false)}><img src={minus} alt="img" /></span></p>}
                             {!hidesss ? null : (
                                 <>
-                                    <Nav.Link href="/products/#pharmaceutical" id="nav_main_link" activeClassName='active'>Pharmaceutical</Nav.Link>
-                                    <Nav.Link href="/products/#foodsupplements" id="nav_main_link" activeClassName='active'>Food Supplements</Nav.Link>
-                                    <Nav.Link href="/products/#archibranded" id="nav_main_link" activeClassName='active'>Archimedis Branded</Nav.Link>
+                                    <Nav.Link href="/product/#pharmaceutical" id="nav_main_link" activeClassName='active'>Pharmaceutical</Nav.Link>
+                                    <Nav.Link href="/product/#foodsupplements" id="nav_main_link" activeClassName='active'>Food Supplements</Nav.Link>
+                                    <Nav.Link href="/product/#archibranded" id="nav_main_link" activeClassName='active'>Archimedis Branded</Nav.Link>
                                 </>
                             )}
                         </Nav>

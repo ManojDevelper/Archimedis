@@ -24,7 +24,7 @@ wedo:
       Manufacturing Practices (GMP) never ceases to amaze us. Machines can
       behave in so many different ways just by tweaking a few process
       parameters.
-    link: /manfacture/
+    link: /manufacture/
     wedoimg: assets/mask-group.png
     alt_tag: Pharma contract manufacturer
   - id: 3
@@ -35,7 +35,7 @@ wedo:
       experience in making prescription drugs and food supplements.
       Additionally, our online store has other OTC & Rx products sourced from
       curated GMP partners.
-    link: /products/
+    link: /product/
     wedoimg: assets/Pharma-Product.png
     alt_tag: Pharma Product Manufacturing
   - id: 4
