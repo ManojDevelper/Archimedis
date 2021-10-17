@@ -4,10 +4,12 @@ import { graphql, useStaticQuery } from "gatsby"
 import close from "../../images/navclose.svg";
 import '../../styles/Nav.css';
 import Contact from "../../pages/Home/contact";
+import browcher from "../../images/eCapsule.pdf"
 
 export const Dsolutions = ({ dsolution }) => {
 
   const [contactSol, setContactSol] = useState(false)
+  
 
   return (
     <>
@@ -41,7 +43,7 @@ export const Dsolutions = ({ dsolution }) => {
                           }
                           {dsolutioncardss.button2
                             ?
-                            <button>{dsolutioncardss.button2}</button>
+                            <a href={browcher} target="_Blank"><button>{dsolutioncardss.button2}</button></a>
                             :
                             ""
                           }

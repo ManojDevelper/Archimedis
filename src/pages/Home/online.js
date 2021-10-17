@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/Home/Online.css";
 import { graphql, useStaticQuery } from "gatsby";
+import browcher from "../../images/Anjoris.pdf"
 
 export const Online = ({ onlinetitle, onlinedesc, onlineimg }) => {
   return (
@@ -10,7 +11,7 @@ export const Online = ({ onlinetitle, onlinedesc, onlineimg }) => {
           <div id="online_container_block1">
             <h1>{onlinetitle}</h1>
             <h2>{onlinedesc}</h2>
-            <button id="onlinebutton">Download Brochure</button>
+            <a href={browcher}><button id="onlinebutton">Download Brochure</button></a>
           </div>
           <div id="online_container_block1">
             <img src={onlineimg} alt="img" />

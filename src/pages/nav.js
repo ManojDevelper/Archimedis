@@ -77,35 +77,35 @@ function Navbars() {
                                     </Nav>
                                 </Nav></Link>
                             </Nav>
-                            <Nav id="nav_links"><Link to="/manfacture/" id="nav_main_link" activeClassName='active'>Manufacturing<Nav></Nav>
+                            <Nav id="nav_links"><Link to="/manufacture/" id="nav_main_link" activeClassName='active'>Manufacturing<Nav></Nav>
                                 <Nav id="mark"></Nav><Nav id="nav_add_menu">
                                     <Nav id="nav_manu_container">
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#OralSolidForms" style={{ textDecoration: `none`, color: `#200e32` }}>Oral Solid Forms</Link></h1>
-                                            <Link to="/manfacture/#tablets" id="nav_sub_link">Tablets</Link>
-                                            <Link to="/manfacture/#Capsules" id="nav_sub_link">Capsules</Link>
-                                            <Link to="/manfacture/#Powder" id="nav_sub_link">Dry Syrup / Sachet</Link>
-                                            {/* <Link to="/manfacture/#Clinicaltrail" id="nav_sub_link">Clinical Trial Supplies</Link> */}
-                                            <Link to="/manfacture/#InstalledCapacity" id="nav_sub_link">Installed Capacity</Link>
+                                            <h1><Link to="/manufacture/#OralSolidForms" style={{ textDecoration: `none`, color: `#200e32` }}>Oral Solid Forms</Link></h1>
+                                            <Link to="/manufacture/#tablets" id="nav_sub_link">Tablets</Link>
+                                            <Link to="/manufacture/#Capsules" id="nav_sub_link">Capsules</Link>
+                                            <Link to="/manufacture/#Powder" id="nav_sub_link">Dry Syrup / Sachet</Link>
+                                            {/* <Link to="/manufacture/#Clinicaltrail" id="nav_sub_link">Clinical Trial Supplies</Link> */}
+                                            <Link to="/manufacture/#InstalledCapacity" id="nav_sub_link">Installed Capacity</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#Qualityassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality</Link></h1>
-                                            <Link to="/manfacture/#Quality_Assurance" id="nav_sub_link">Quality Assurance</Link>
-                                            <Link to="/manfacture/#Quality_Control" id="nav_sub_link">Quality Control</Link>
+                                            <h1><Link to="/manufacture/#Qualityassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality</Link></h1>
+                                            <Link to="/manufacture/#Quality_Assurance" id="nav_sub_link">Quality Assurance</Link>
+                                            <Link to="/manufacture/#Quality_Control" id="nav_sub_link">Quality Control</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#facility" style={{ textDecoration: `none`, color: `#200e32` }}>Facility</Link></h1>
-                                            <Link to="/manfacture/#packing" id="nav_sub_link">Packing</Link>
-                                            <Link to="/manfacture/#Adherence" id="nav_sub_link">Warehouse</Link>
-                                            <Link to="/manfacture/#AirHandling" id="nav_sub_link">Air Handling Units (AHUs)</Link>
-                                            <Link to="/manfacture/#WaterPurification" id="nav_sub_link">Water Purification</Link>
-                                            <Link to="/manfacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
+                                            <h1><Link to="/manufacture/#facility" style={{ textDecoration: `none`, color: `#200e32` }}>Facility</Link></h1>
+                                            <Link to="/manufacture/#packing" id="nav_sub_link">Packing</Link>
+                                            <Link to="/manufacture/#Adherence" id="nav_sub_link">Warehouse</Link>
+                                            <Link to="/manufacture/#AirHandling" id="nav_sub_link">Air Handling Units (AHUs)</Link>
+                                            <Link to="/manufacture/#WaterPurification" id="nav_sub_link">Water Purification</Link>
+                                            <Link to="/manufacture/#approvals" id="nav_sub_link">Regulatory Approvals</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manfacture/#industry" style={{ textDecoration: `none`, color: `#200e32` }}>Smart Factory</Link></h1>
-                                            <Link to="/manfacture/#ERP" id="nav_sub_link">ERP</Link>
-                                            <Link to="/manfacture/#smart" id="nav_sub_link">Smart Dispensing</Link>
-                                            <Link to="/manfacture/#Environment" id="nav_sub_link">Environment Monitoring</Link>
+                                            <h1><Link to="/manufacture/#industry" style={{ textDecoration: `none`, color: `#200e32` }}>Smart Factory</Link></h1>
+                                            <Link to="/manufacture/#ERP" id="nav_sub_link">ERP</Link>
+                                            <Link to="/manufacture/#smart" id="nav_sub_link">Smart Dispensing</Link>
+                                            <Link to="/manufacture/#Environment" id="nav_sub_link">Environment Monitoring</Link>
                                         </Nav>
                                     </Nav>
                                 </Nav></Link></Nav>
@@ -192,13 +192,13 @@ function Navbars() {
                         </Nav>
                         <Nav id="nav_b1">
                             {!hidess ?
-                                <p id="main_top_link"><Nav.Link href="/manfacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidess(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/manfacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidess(false)}><img src={minus} alt="img" /></span></p>}
+                                <p id="main_top_link"><Nav.Link href="/manufacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidess(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/manufacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidess(false)}><img src={minus} alt="img" /></span></p>}
                             {!hidess ? null : (
                                 <>
-                                    <Nav.Link href="/manfacture/#OralSolidForms" id="nav_main_link" activeClassName='active'>Oral Solid Forms</Nav.Link>
-                                    <Nav.Link href="/manfacture/#Qualityassurance" id="nav_main_link" activeClassName='active'>Quality</Nav.Link>
-                                    <Nav.Link href="/manfacture/#facility" id="nav_main_link" activeClassName='active'>Facility</Nav.Link>
-                                    <Nav.Link href="/manfacture/#industry" id="nav_main_link" activeClassName='active'>Smart Factory</Nav.Link>
+                                    <Nav.Link href="/manufacture/#OralSolidForms" id="nav_main_link" activeClassName='active'>Oral Solid Forms</Nav.Link>
+                                    <Nav.Link href="/manufacture/#Qualityassurance" id="nav_main_link" activeClassName='active'>Quality</Nav.Link>
+                                    <Nav.Link href="/manufacture/#facility" id="nav_main_link" activeClassName='active'>Facility</Nav.Link>
+                                    <Nav.Link href="/manufacture/#industry" id="nav_main_link" activeClassName='active'>Smart Factory</Nav.Link>
                                 </>
                             )}
                         </Nav>

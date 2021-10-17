@@ -144,113 +144,113 @@ footer:
     {
       id: 3,
       title: "Manufacturing",
-      link: "/manfacture/",
+      link: "/manufacture/",
       footercontainer:
         [
           { 
             id: 1, 
             description: "Oral Solid Forms", 
-            Link: "/manfacture/#OralSolidForms", 
+            Link: "/manufacture/#OralSolidForms", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "Tablets",
-                  links: "/manfacture/#tablets"
+                  links: "/manufacture/#tablets"
                 },
                 {
                   id: 2,
                   head: "Capsules",
-                  links: "/manfacture/#Capsules"
+                  links: "/manufacture/#Capsules"
                 },
                 {
                   id: 3,
                   head: "Dry Syrup / Sachet",
-                  links: "/manfacture/#Powder"
+                  links: "/manufacture/#Powder"
                 },
                 {
                   id: 4,
                   head: "Clinical Trial Supplies",
-                  links: "/manfacture/#Clinicaltrail"
+                  links: "/manufacture/#Clinicaltrail"
                 },
                 {
                   id: 5,
                   head: "Commercial Scale",
-                  links: "/manfacture/#Commercial"
+                  links: "/manufacture/#Commercial"
                 },
               ]
           },
           { 
             id: 2, 
             description: "Quality", 
-            Link: "/manfacture/#Qualityassurance", 
+            Link: "/manufacture/#Qualityassurance", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "Quality Assurance",
-                  links: "/manfacture/#Qualityassurance"
+                  links: "/manufacture/#Qualityassurance"
                 },
                 {
                   id: 2,
                   head: "QC & Microbiology Labs",
-                  links: "/manfacture/"
+                  links: "/manufacture/"
                 },
               ]
           },
           { 
             id: 3, 
             description: "Facility", 
-            Link: "/manfacture/#facility", 
+            Link: "/manufacture/#facility", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "Manufacturing",
-                  links: "/manfacture/#Manufacturing"
+                  links: "/manufacture/#Manufacturing"
                 },
                 {
                   id: 2,
                   head: "Packing",
-                  links: "/manfacture/#packing"
+                  links: "/manufacture/#packing"
                 },
                 {
                   id: 3,
                   head: "Warehouse",
-                  links: "/manfacture/#Warehouse"
+                  links: "/manufacture/#Warehouse"
                 },
                 {
                   id: 4,
                   head: "Utilities (HVAC / Water)",
-                  links: "/manfacture/#utilities"
+                  links: "/manufacture/#utilities"
                 },
                 {
                   id: 5,
                   head: "Regulatory Approvals",
-                  links: "/manfacture/#approvals"
+                  links: "/manufacture/#approvals"
                 },
               ]
           },
           { 
             id: 4, 
             description: "Smart Factory", 
-            Link: "/manfacture/#industry", 
+            Link: "/manufacture/#industry", 
             subconteiner: 
               [
                 {
                   id: 1,
                   head: "Smart Dispensing",
-                  links: "/manfacture/#smart"
+                  links: "/manufacture/#smart"
                 },
                 {
                   id: 2,
                   head: "Environment Monitoring",
-                  links: "/manfacture/#Environment"
+                  links: "/manufacture/#Environment"
                 },
                 {
                   id: 3,
                   head: "ERP",
-                  links: "/manfacture/#ERP"
+                  links: "/manufacture/#ERP"
                 },
               ]
           },

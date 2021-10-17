@@ -92,7 +92,7 @@
 #dsolutions_container_cards_matter #banner_btn_container button:hover {
   width: 15vw;
 }
-#dsolutions_container_cards_matter #banner_btn_container button:nth-child(2) {
+#dsolutions_container_cards_matter #banner_btn_container a button {
   color: black;
   background: transparent;
   outline: none;
@@ -103,7 +103,7 @@
   color: rgba(45, 48, 123, 0.8);
   transition: 0.5s ease-in-out;
 }
-#dsolutions_container_cards_matter #banner_btn_container button:nth-child(2):hover {
+#dsolutions_container_cards_matter #banner_btn_container a button:hover {
   border: 0.0719424460431655vw solid #f8569e;
   color: #f8569e;
 }
@@ -671,7 +671,7 @@
   #dsolutions_container_cards_matter #banner_btn_container button:hover {
     width: 37.3vw;
   }
-  #dsolutions_container_cards_matter #banner_btn_container button:nth-child(2) {
+  #dsolutions_container_cards_matter #banner_btn_container a button {
     border-radius: 1.3vw;
     margin-left: 4vw;
   }

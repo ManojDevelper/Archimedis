@@ -3,15 +3,19 @@
 }
 #home .blogListContainer2 {
   background: #f5f8ff;
-  padding:10vw 0;
+  padding: 10vw 0;
 }
 #home .blogListContainer2 #blog {
-    background: #f5f8ff;
-    padding: 0 5vw;
-  }
+  background: #f5f8ff;
+  padding: 0 5vw;
+}
 
 #home .blogListContainer2 #blog h1 {
   display: flex;
   margin: auto;
   width: fit-content;
+}
+
+#ContactIndexPage .contact {
+  padding: 2vw 0;
 }

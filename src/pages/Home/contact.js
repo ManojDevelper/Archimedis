@@ -3,7 +3,7 @@ import "../../styles/Home/Contact.css"
 import img1 from "../../images/c_phone.svg"
 import img2 from "../../images/c_mail.svg"
 import { message } from "antd"
-import { SmileOutlined, DownOutlined } from "@ant-design/icons"
+import { SmileOutlined, DownOutlined, CloseOutlined } from "@ant-design/icons"
 
 const Contact = ({ contactSol }) => {
   console.log(contactSol)
@@ -216,7 +216,12 @@ const Contact = ({ contactSol }) => {
                   :
                   ""
               }
-              <DownOutlined className="icon" />
+              {
+                over ?
+                <CloseOutlined className="icon" onClick={() => setOver(false)}/>
+                :
+                <DownOutlined className="icon" onClick={() => setOver(true)}/>
+              }
             </div>
 
             <div className="contact_info_top">
