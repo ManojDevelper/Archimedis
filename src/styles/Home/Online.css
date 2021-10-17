@@ -39,7 +39,12 @@
     margin:1.5vw 0 2vw 0;
 }
 
-#online_container_block1 button {
+#online_container_block1 a {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+#online_container_block1 a button {
     width: 15vw;
     height: 3.45323741007194vw;
     background: #2d307b;
@@ -58,7 +63,7 @@
     margin-top: 3.23741007194245vw;
 }
 
-#online_container_block1 button:hover {
+#online_container_block1 a button:hover {
     width: 15.5vw;
 }
 
