@@ -43,7 +43,7 @@ export const Dsolutions = ({ dsolution }) => {
                           }
                           {dsolutioncardss.button2
                             ?
-                            <a href={browcher} target="_Blank"><button>{dsolutioncardss.button2}</button></a>
+                            <a href={browcher} target="_Blank" rel="noopener noreferrer"><button>{dsolutioncardss.button2}</button></a>
                             :
                             ""
                           }
