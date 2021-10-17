@@ -13,7 +13,7 @@ export const MBanner = ({ description }) => {
           <h1>{description}</h1>
         </div>
       </div>
-      <Top2 link="/manfacture/" />
+      <Top2 link="/manufacture/" />
     </>
   );
 };

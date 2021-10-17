@@ -12,7 +12,7 @@ export const Aboutbanner = ({ AboutDescription }) => {
           <h1>{AboutDescription}</h1>
         </div>
       </div>
-      <Top2 link="/digital/" />
+      <Top2 link="/aboutus/" />
     </>
   );
 };

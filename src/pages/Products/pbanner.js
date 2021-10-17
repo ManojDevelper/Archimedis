@@ -12,7 +12,7 @@ export const Pbanner = ({description}) => {
           <h1>{description}</h1>
         </div>
       </div>
-      <Top2 link="/products/" />
+      <Top2 link="/product/" />
     </>
   );
 };

@@ -8,48 +8,53 @@
 
 
 <url>
-  <loc>https://www.archimedis.global/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/home/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/aboutus/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/blog/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/blog/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/formulation/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/formulation/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/manfacture/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/manufacture/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/products/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/product/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/digital/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/digital/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/home/bod/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/static/Anjoris-e26a0ada73f784163de9dd25bb5329c8.pdf</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.archimedis.global/blog/how-to-edit-a-scientific-manuscript-or-research-paper/</loc>
-  <lastmod>2021-07-31T04:00:04+00:00</lastmod>
+  <loc>http://www.archimedis.global/home/bod/</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.archimedis.global/static/eCapsule-d4b77e11ae83b3afda521f0067ad44c3.pdf</loc>
+  <lastmod>2021-10-17T15:39:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
