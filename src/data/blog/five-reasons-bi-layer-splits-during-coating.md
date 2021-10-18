@@ -1,15 +1,15 @@
 ---
+excerpt: The inventive process of finding new medications based om the knowledge
+  of a biological target aka drug design, can be complex task.We describe the
+  intricacies of this elaborate process.
+Link_preview: /blog/the-open-source-myopic-in-life-sciences/
 author_image: palani-director.png
 author: any One
 bio: The Art of Drug Design
-Link_preview: /blog/the-open-source-myopic-in-life-sciences/
-Link_next: /blog/how-to-edit-a-scientific-manuscript-or-research-paper/
 title: The Art of Drug Design
 date: 2021-03-13T18:30:00.000Z
 previewImage: blog_1.png
-excerpt: Bi-layer tablets are not only difficult to compress.  They also carry
-  an inherent risk of splitting during coating.  Our experience uncovers five
-  factors that can help reduce the risk.
+Link_next: /blog/how-to-edit-a-scientific-manuscript-or-research-paper/
 tags:
   - aaaaaaaaaaa
 seo:
