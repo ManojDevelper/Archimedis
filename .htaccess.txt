@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^https://archifidi.netlify.app/formulation/ [NC,OR]
+
+RewriteCond %{HTTP_HOST} ^https://archifidi.netlify.app/manufacture/ [NC]
+
+RewriteRule ^(.*)$ https://archifidi.netlify.app/$1 [L,R=301,NC]

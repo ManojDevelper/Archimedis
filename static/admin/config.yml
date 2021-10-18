@@ -105,6 +105,7 @@ collections:
               widget: list,
               fields:
                 [
+                  { label: Title, name: title, required: false },
                   { label: Description, name: description, required: false },
                   { label: Icon, name: image, widget: image, required: false },
                 ],

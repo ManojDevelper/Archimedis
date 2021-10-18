@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react"
 import "../../styles/Home/Footer.css"
-import img1 from "../../images/linkdin.svg"
-import img2 from "../../images/facebook.svg"
-import img5 from "../../images/youtube.svg"
+import btnarrow from "../../images/btnhover2.svg"
+// import img2 from "../../images/facebook.svg"
+// import img5 from "../../images/youtube.svg"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import close from "../../images/navclose.svg";
+import Contact from "./contact"
 
 export const Footer = ({ footer }) => {
+
+  const [footerPop, setFooterPop] = useState(false)
+
+
   return (
     <>
       <div id="footer">
@@ -14,15 +20,42 @@ export const Footer = ({ footer }) => {
             {footer &&
               footer.map((footerItem, i) => (
                 <div id="footer_cards" key={i}>
-                  <Link to={footerItem.link} id="h1">
+                  {
+                    footerItem.link === ""
+                    ?
+                    <>
+                    {
+                      footerItem.title === "Contact"
+                      ?
+                      <p id="h1" onClick={() => setFooterPop(true)} role="presentation">
+                      {footerItem.title}
+                    </p>
+                    :
+                    <p to={footerItem.link} id="h1">
                     {footerItem.title}
-                  </Link>
+                  </p>
+                    }
+                  </>
+                  :
+                  <Link to={footerItem.link} id="h1">
+                  {footerItem.title}
+                </Link>
+                  }
                   {footerItem &&
                     footerItem.footercontainer.map((footercontainers, i) => (
                       <div key={i}>
-                        <Link to={footercontainers.Link} id="p">
+                        {
+                          footercontainers.Link === ""
+                          ?
+                          <p to={footercontainers.Link} id="p" style={{cursor: `default`}}>
                           {footercontainers.description}
-                        </Link>
+                        </p>
+                        :
+                        <Link to={footercontainers.Link} id="p">
+                        {footercontainers.description}
+                      </Link>
+                        }
+
                       </div>
                     ))}
                 </div>
@@ -42,9 +75,9 @@ export const Footer = ({ footer }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={img1} alt="img" />
+                <img src={btnarrow} alt="img" />
               </a>
-              <a
+              {/* <a
                 href="https://www.facebook.com/Archimedis-Healthcare-Private-Limited-701554783269319"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,12 +90,17 @@ export const Footer = ({ footer }) => {
                 rel="noopener noreferrer"
               >
                 <img src={img5} alt="img" />
-              </a>
+              </a> */}
             </div>
             <p>Copyright © 2021 Archimedis. All rights reserved.</p>
           </div>
         </div>
       </div>
+      {footerPop ? (
+        <div id="navcont">
+          <img src={close} alt="img" id="contclose" onClick={() => setFooterPop(false)} role="presentation" />
+          <Contact />
+        </div>) : null}
     </>
   )
 }

@@ -15,7 +15,7 @@ export const Ourvalues = ({ title, ourValues }) => {
                             :
                             <img src={ourValuess.image} alt="img" />
                         }
-                            <p>{ourValuess.description}</p>
+                            <p><span>{ourValuess.title} : </span>{ourValuess.description}</p>
                         </div>
                     )}
                 </div>
@@ -35,6 +35,7 @@ const OurvaluesPrev = () => {
                   title
                   ourValues {
                     id
+                    title
                     description
                     image {
                         publicURL

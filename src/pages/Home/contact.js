@@ -47,7 +47,7 @@ const Contact = ({ contactSol }) => {
     } else {
       errors.color = ""
     }
-    if (phone.length < 3) {
+    if (!category) {
       errors.color = "red"
     } else {
       errors.color = ""
@@ -178,7 +178,13 @@ const Contact = ({ contactSol }) => {
             </div>
 
             <div className="contact_message2" style={{ position: `relative` }}>
-              <span>Category</span>
+              {!category ? (
+                <span style={{ color: errors.color }}>
+                  Category
+                </span>
+              ) : (
+                <span>Category</span>
+              )}
               {
                 over ?
                   <input
@@ -201,7 +207,7 @@ const Contact = ({ contactSol }) => {
               {
                 over ?
                   <>
-                    { contactSol ?
+                    {contactSol ?
                       ("")
                       :
                       <div id="select">
@@ -217,22 +223,22 @@ const Contact = ({ contactSol }) => {
                   ""
               }
               {
-                over ?
-                <CloseOutlined className="icon" onClick={() => setOver(false)}/>
-                :
-                <DownOutlined className="icon" onClick={() => setOver(true)}/>
+                contactSol
+                  ?
+                  ("")
+                  :
+                  <>{
+                    over ?
+                      <CloseOutlined className="icon" onClick={() => setOver(false)} />
+                      :
+                      <DownOutlined className="icon" onClick={() => setOver(true)} />
+                  }</>
               }
             </div>
 
             <div className="contact_info_top">
               <div className="contact_name" style={{ position: `relative` }}>
-                {!phone || phone.length < 10 ? (
-                  <span style={{ color: errors.color }}>
-                    Contact Number (optional)
-                  </span>
-                ) : (
-                  <span>Contact Number (optional)</span>
-                )}
+                <span>Contact Number (optional)</span>
                 <input
                   type="mail"
                   placeholder="+91  9876543210"
@@ -271,8 +277,7 @@ const Contact = ({ contactSol }) => {
               {name.length < 3 ||
                 !email ||
                 !/\S+@\S+\.\S+/.test(email) ||
-                phone.length < 10 ||
-                organization.length < 3 ? (
+                !category ? (
                 <button onClick={signUpp}>SEND MESSAGE</button>
               ) : (
                 <button onClick={onFinish}>SEND MESSAGE</button>

@@ -1,26 +1,30 @@
-import React, { Fragment } from "react"
-import { graphql, Link } from "gatsby"
+import React, { Fragment, useState } from "react"
+import { graphql } from "gatsby"
 import "../styles/blog.css"
 import Contact from "./Home/contact"
 import Footer from "./Home/footer"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 import Nav from "./nav"
+import close from "../images/navclose.svg";
 
 const BlogPage = ({ data }) => {
+
+  const [caseStudysPop, setCaseStudysPop] = useState(false)
+
   const blogList = data.blogData.edges
 
   const BBanner = data.BBanner.childMarkdownRemark.frontmatter
 
-  const seoData = data.seoData.childMarkdownRemark.frontmatter
+  // const seoData = data.seoData.childMarkdownRemark.frontmatter
 
   return (
     <Fragment>
       <Nav />
-      <SEO
+      {/* <SEO
         title={seoData.title}
         description={seoData.description}
         keywords={seoData.keywords}
-      />
+      /> */}
       <div id="bbanner">
         <div id="bbanner_container">
           <h1>{BBanner.blogsBannerDescription}</h1>
@@ -35,7 +39,7 @@ const BlogPage = ({ data }) => {
                 <>
                   <div id="blog_container" key={blogItem.node.id}>
                     {/* <Link id="blog_card" to={blogItem.node.fields.slug}> */}
-                    <div id="blog_card">
+                    <div id="blog_card" onClick={() => setCaseStudysPop(true)}>
                       <div id="blog_card_b1">
                         <img
                           src={blogItem.node.frontmatter.previewImage.publicURL}
@@ -57,6 +61,11 @@ const BlogPage = ({ data }) => {
       </div>
       <Contact />
       <Footer />
+      {caseStudysPop ? (
+        <div id="navcont">
+          <img src={close} alt="img" id="contclose" onClick={() => setCaseStudysPop(false)} role="presentation" />
+          <Contact contactSol={caseStudysPop ? "R&D Services" : ""} />
+        </div>) : null}
     </Fragment>
   )
 }

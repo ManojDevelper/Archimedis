@@ -183,7 +183,7 @@ footer:
           { 
             id: 2, 
             description: "Quality", 
-            Link: "/manufacture/#Qualityassurance", 
+            Link: "/manufacture/#quality", 
             subconteiner: 
               [
                 {
@@ -448,7 +448,7 @@ footer:
     {
       id: 6,
       title: "Contact",
-      link: "/#contact",
+      link: "",
       footercontainer:
         [
           { 

@@ -62,6 +62,8 @@
   /*==============================*/
   .blogListContainer2{
     padding:5vw 0;
+    width: fit-content;
+    margin: auto;
   }
   .blogListContainer2 #blog {
     width: 100%;
@@ -85,6 +87,7 @@
   }
   .blogListContainer2 #blog_container {
     margin-top: 4vw;
+    cursor: pointer;
   }
   .blogListContainer2 #blog_card {
     display: flex;

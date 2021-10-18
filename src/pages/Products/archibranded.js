@@ -18,7 +18,7 @@ export const Archibranded = ({ archibrand }) => {
                                     <div id="archibranded_container_cards_matter">
                                         <p>{archibrandcardss.title}</p>
                                         <h2>{archibrandcardss.description}</h2>
-                                        <button>View More<img src={arrow} alt="img" /></button>
+                                        {/* <button>View More<img src={arrow} alt="img" /></button> */}
                                     </div>
                                 </div>
                                 <div id="archibranded_container_cards_block2">

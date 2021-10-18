@@ -89,7 +89,7 @@ function Navbars() {
                                             <Link to="/manufacture/#InstalledCapacity" id="nav_sub_link">Installed Capacity</Link>
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
-                                            <h1><Link to="/manufacture/#Qualityassurance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality</Link></h1>
+                                            <h1><Link to="/manufacture/#quality" style={{ textDecoration: `none`, color: `#200e32` }}>Quality</Link></h1>
                                             <Link to="/manufacture/#Quality_Assurance" id="nav_sub_link">Quality Assurance</Link>
                                             <Link to="/manufacture/#Quality_Control" id="nav_sub_link">Quality Control</Link>
                                         </Nav>
@@ -155,7 +155,7 @@ function Navbars() {
                                         </Nav>
                                         <Nav id="nav_manu_container_card">
                                             <h1><Link to="/digital/#QualityAndCompliance" style={{ textDecoration: `none`, color: `#200e32` }}>Quality & Compliance</Link></h1>
-                                            <Link to="/digital/#QualityAndCompliance" id="nav_sub_link">GxP Compliance (QMS / SOPs)</Link>
+                                            <Link to="/digital/#QualityAndCompliance" id="nav_sub_link">IT QMS</Link>
                                             <Link to="/digital/#QualityAndCompliance" id="nav_sub_link">IT Quality Assurance</Link>
                                             <Link to="/digital/#QualityAndCompliance" id="nav_sub_link">Computerized System Validation (CSV)</Link>
                                             <Link to="/digital/#ComputerizedSystemValidation" id="nav_sub_link">Risk-based Validation</Link>
@@ -196,7 +196,7 @@ function Navbars() {
                             {!hidess ? null : (
                                 <>
                                     <Nav.Link href="/manufacture/#OralSolidForms" id="nav_main_link" activeClassName='active'>Oral Solid Forms</Nav.Link>
-                                    <Nav.Link href="/manufacture/#Qualityassurance" id="nav_main_link" activeClassName='active'>Quality</Nav.Link>
+                                    <Nav.Link href="/manufacture/#quality" id="nav_main_link" activeClassName='active'>Quality</Nav.Link>
                                     <Nav.Link href="/manufacture/#facility" id="nav_main_link" activeClassName='active'>Facility</Nav.Link>
                                     <Nav.Link href="/manufacture/#industry" id="nav_main_link" activeClassName='active'>Smart Factory</Nav.Link>
                                 </>

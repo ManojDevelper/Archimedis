@@ -47,7 +47,7 @@
   display: flex;
 }
 #footer_container_bottom_icons a {
-  width: 1.72661870503597vw;
+  width: 6.69064748201439vw;
   height: 1.72661870503597vw;
   margin: 0;
   margin-left: 1.72661870503597vw;
@@ -125,8 +125,8 @@
     border-radius: 2vw;
   }
   #footer_container_bottom_icons a {
-    width: 5vw;
-    height: 5vw;
+    width: 15vw;
+    height: 8vw;
     margin: 0;
     margin-left: 5vw;
     cursor: pointer;

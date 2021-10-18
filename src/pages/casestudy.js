@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Contact from "../pages/Home/contact";
 import close from "../images/navclose.svg";
 
-const CasePage = ({ data, title, description, keywords }) => {
+const CasePage = ({ data }) => {
   const blogList = data
 
   console.log(blogList)
@@ -16,7 +16,7 @@ const CasePage = ({ data, title, description, keywords }) => {
 
   return (
     <Fragment>
-      <SEO title={title} description={description} keywords={keywords} />
+      {/* <SEO title={title} description={description} keywords={keywords} /> */}
       <div className="blogListContainer" id="caseStudy">
         <div id="blog">
           <div id="blogtitle">

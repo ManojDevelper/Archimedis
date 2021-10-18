@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6.90647482014388vw 0;
+  padding: 6.90647482014388vw 0 0 0;
 }
 #Ourvalues h1 {
   font-family: Manrope;
@@ -37,7 +37,6 @@
 #Ourvalues_container_block1:first-child img {
   width: 3vw;
   height: 9.2vw;
-  margin: 0 2.15827338129496vw 5vw 0;
 }
 #Ourvalues_container_block1 img {
   width: 4.1726618705036vw;
@@ -52,6 +51,13 @@
   font-size: 1.15107913669065vw;
   line-height: 2.01438848920863vw;
   color: #200e32;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 0;
+}
+#Ourvalues_container_block1 p span{
+  font-weight: bold;
+  font-weight: 1.4vw;
 }
 @media (max-width: 750px) {
   #Ourvalues {
