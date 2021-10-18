@@ -48,7 +48,6 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: ID, name: id, default: 1 },
                   { label: Title, name: title, required: false },
                   { label: Description, name: description, required: false },
                   { label: Icon, name: icon, widget: image, required: false },
@@ -66,7 +65,6 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: ID, name: id, default: 1 },
                   { label: Icon, name: icon, widget: image, required: false },
                   { label: Alt Tag, name: alt_tag },
                 ],
@@ -84,7 +82,6 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: ID, name: id, default: 1 },
                   { label: Title, name: title, required: false },
                   { label: Description, name: description, required: false },
                   { label: Date, name: date, required: false },
@@ -108,7 +105,6 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: ID, name: id, default: 1, required: false },
                   { label: Description, name: description, required: false },
                   { label: Icon, name: image, widget: image, required: false },
                 ],
@@ -557,12 +553,6 @@ collections:
                     fields:
                       [
                         {
-                          label: Id,
-                          name: Ffacilityblockid,
-                          widget: string,
-                          required: false,
-                        },
-                        {
                           label: Title,
                           name: Ffacilityname,
                           widget: string,
@@ -610,12 +600,6 @@ collections:
                     widget: list,
                     fields:
                       [
-                        {
-                          label: Id,
-                          name: fservicecardid,
-                          widget: string,
-                          required: false,
-                        },
                         {
                           label: Title,
                           name: fservicecardtitle,
@@ -714,12 +698,6 @@ collections:
                     fields:
                       [
                         {
-                          label: Id,
-                          name: capabilitiescardid,
-                          widget: string,
-                          required: false,
-                        },
-                        {
                           label: Title,
                           name: capabilitiescardtitle,
                           widget: string,
@@ -803,12 +781,6 @@ collections:
                     widget: list,
                     fields:
                       [
-                        {
-                          label: Id,
-                          name: facilityid,
-                          widget: string,
-                          required: false,
-                        },
                         {
                           label: Title,
                           name: title,
@@ -917,7 +889,6 @@ collections:
                           widget: list,
                           fields:
                             [
-                              { label: ID, name: id, default: "1" },
                               { label: Name, name: fnblocknme },
                               { label: Precentage, name: fnblockmtr },
                             ],
@@ -957,12 +928,6 @@ collections:
                     widget: list,
                     fields:
                       [
-                        {
-                          label: Id,
-                          name: industryid,
-                          widget: string,
-                          required: false,
-                        },
                         {
                           label: Title,
                           name: title,
@@ -1116,12 +1081,6 @@ collections:
                     fields:
                       [
                         {
-                          label: Id,
-                          name: dsolutioncardid,
-                          widget: string,
-                          required: false,
-                        },
-                        {
                           label: Title,
                           name: dsolutioncardtitle,
                           widget: string,
@@ -1208,7 +1167,6 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: Id, name: pdid, widget: string, required: false },
                   {
                     label: Card Title,
                     name: title,
@@ -1227,12 +1185,6 @@ collections:
                     widget: list,
                     fields:
                       [
-                        {
-                          label: Id,
-                          name: pdcontid,
-                          widget: string,
-                          required: false,
-                        },
                         {
                           label: Title,
                           name: title,
@@ -1289,7 +1241,6 @@ collections:
                     widget: list,
                     fields:
                       [
-                        { label: Link, name: pharmaceuticalid, widget: string },
                         { label: Title, name: title, widget: string },
                         {
                           label: Description,
@@ -1322,7 +1273,6 @@ collections:
                     widget: list,
                     fields:
                       [
-                        { label: Link, name: foodsuplimentsid, widget: string },
                         { label: Title, name: title, widget: string },
                         {
                           label: Description,
@@ -1354,7 +1304,6 @@ collections:
                     widget: list,
                     fields:
                       [
-                        { label: Link, name: archibrandid, widget: string },
                         { label: Title, name: title, widget: string },
                         {
                           label: Description,

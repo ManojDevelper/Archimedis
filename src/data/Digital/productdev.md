@@ -1,7 +1,7 @@
 ---
 prodev:
   - id: 1
-    pdid: productdevtitle
+    pdid: productdev
     pdclass: ""
     title: Product Value Stream
     description: Digital products are engines of business growth.  Turn your ideas
@@ -48,7 +48,7 @@ prodev:
           bring all of these and more.
         Image: ../assets/pd16.svg
   - id: 2
-    pdid: Quality&Compliance
+    pdid: QualityAndCompliance
     pdclass: productdevtitle
     title: Quality & Compliance
     description: "Sensible Quality & Compliance enhances the value of Digital in
