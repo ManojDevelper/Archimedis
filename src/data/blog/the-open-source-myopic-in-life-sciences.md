@@ -1,13 +1,15 @@
 ---
+excerpt: Digital has influenced nearly every sector in the modern business world
+  and life sciences is no different. Yet, given the complexity of the life
+  sciences industry the options available seem lacking.
+Link_preview: /blog/how-to-edit-a-scientific-manuscript-or-research-paper/
 author_image: palani-director.png
 author: any One
 bio: The Open Source Myopic in Life Sciences
-Link_preview: /blog/how-to-edit-a-scientific-manuscript-or-research-paper/
-Link_next: /blog/five-reasons-bi-layer-splits-during-coating/
 title: The Open Source Myopic in Life Sciences
 date: 2020-12-25T18:30:00.000Z
 previewImage: blog_3.png
-excerpt: The Open Source Myopic in Life Sciences
+Link_next: /blog/five-reasons-bi-layer-splits-during-coating/
 tags:
   - aaaaa
 seo:
