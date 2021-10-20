@@ -45,7 +45,7 @@ Facility:
         descriptionSpan6: ""
         descriptionSpan7: ""
         descriptionSpan8: ""
-        fimage: ../assets/f_c2.png
+        fimage: ../assets/packing.jpg
         description1: Auto-Cartonator
         description2: Pharma Code Reader
         description3: Counterfeit Bar Coding
