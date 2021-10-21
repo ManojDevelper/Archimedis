@@ -227,11 +227,13 @@ function Navbars() {
                         <Nav id="nav_b1">
                             <p id="main_top_link"><Nav.Link href="" id="main_top_links" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact us</Nav.Link></p>
                             <Nav id="navlogoimg">
-                                <img src={nav1} alt="src" />
-                                <img src={nav2} alt="src" />
-                                <img src={nav3} alt="src" />
-                                <img src={nav5} alt="src" />
-                                <img src={nav6} alt="src" />
+                                <a
+                                    href="https://in.linkedin.com/company/archimedis-healthcare-private-limited"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img src={nav1} alt="src" />
+                                </a>
                             </Nav>
                         </Nav>
                     </Nav>
