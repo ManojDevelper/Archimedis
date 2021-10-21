@@ -404,15 +404,15 @@
     margin: 83px auto 0 auto;
   }
   #basic-navbar-nav #logo_link a {
-    width: 88px;
-    height: 40.15px;
+    width: fit-content;
+    height: fit-content;
     margin-left: 5px;
     position: relative;
   }
   #basic-navbar-nav #logo_link a img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: auto;
   }
   #basic-navbar-nav .toggle {
     border: none;

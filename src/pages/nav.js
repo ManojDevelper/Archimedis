@@ -6,11 +6,11 @@ import ham from "../images/ham.svg";
 import close from "../images/navclose.svg";
 import plus from "../images/navplus.svg";
 import minus from "../images/navminus.svg";
-import nav1 from "../images/navlinkdin.svg";
-import nav2 from "../images/navfacebook.svg";
-import nav3 from "../images/navinsta.svg";
-import nav5 from "../images/navtwitter.svg";
-import nav6 from "../images/navyoutube.svg";
+import nav1 from "../images/btnnormal3.svg";
+// import nav2 from "../images/navfacebook.svg";
+// import nav3 from "../images/navinsta.svg";
+// import nav5 from "../images/navtwitter.svg";
+// import nav6 from "../images/navyoutube.svg";
 import Contact from "./Home/contact";
 import { Link } from "gatsby";
 
