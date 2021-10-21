@@ -315,7 +315,7 @@ footer:
           },
           { 
             id: 3, 
-            description: "Archimedis Branded", 
+            description: "Flagship Products", 
             Link: "/product/#archibranded", 
             subconteiner: 
               [

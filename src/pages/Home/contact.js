@@ -86,7 +86,7 @@ const Contact = ({ contactSol }) => {
     }
 
     var url =
-      "https://script.google.com/macros/s/AKfycbzzedja62Y_NSY3eGEKA9Z11M0yW3y7t-FFJ5Fz11YEowNyjzRs7nhYb5hHzgoGZkWx/exec"
+      "https://script.google.com/macros/s/AKfycbyPtVv1USNp8Z5CDohpwKPmRa8LdVlBQtsKVI_83kLRnUagUDk6Ll14L1GxRCsZ_ZSk/exec"
 
     await fetch(url, {
       method: "POST",
