@@ -65,6 +65,9 @@ const CasePage = ({ data }) => {
         okButtonProps={{ style: { display: 'none' } }}
         cancelButtonProps={{ style: { display: 'none' } }}
         onCancel={handelCancel}
+        bodyStyle={{ backgroundColor: `white`, height: `100%` }}
+        style={{ backgroundColor: `white`, height: `100%` }}
+        maskStyle={{ backgroundColor: `white`, height: `fit-content`, padding: `0` }}
       >
         <div id="navcont">
           <Contact contactSol={caseStudys ? "R&D Services" : ""} />
