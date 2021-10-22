@@ -1,6 +1,5 @@
 import React from "react";
 import "../../styles/Products/Archibranded.css";
-import arrow from "../../images/arow.svg";
 import { graphql, useStaticQuery } from "gatsby";
 
 export const Archibranded = ({ archibrand }) => {

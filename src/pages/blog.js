@@ -43,7 +43,7 @@ const BlogPage = ({ data }) => {
                 <>
                   <div id="blog_container" key={blogItem.node.id}>
                     {/* <Link id="blog_card" to={blogItem.node.fields.slug}> */}
-                    <div id="blog_card" onClick={() => setCaseStudysPop(true)}>
+                    <div id="blog_card" onClick={() => setCaseStudysPop(true)} role="presentation">
                       <div id="blog_card_b1">
                         <img
                           src={blogItem.node.frontmatter.previewImage.publicURL}

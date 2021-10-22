@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import "../../styles/Digital/dsolutions.css"
 import { graphql, useStaticQuery } from "gatsby"
-import close from "../../images/navclose.svg";
 import '../../styles/Nav.css';
 import Contact from "../../pages/Home/contact";
 import browcher from "../../images/eCapsule.pdf"

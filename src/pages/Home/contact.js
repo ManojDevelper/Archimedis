@@ -298,7 +298,7 @@ const Contact = ({ contactSol }) => {
                   { name || email || category
                     ?
                     <ReCAPTCHA
-                      sitekey="6LcmruccAAAAAIZtddoFDeanMzun5QwGzM2NQ984"
+                      sitekey="6LdTxuccAAAAAH7C-M6Jwues4uw9VF2KNeKchCLD"
                       onChange={onChange}
                     />
                     :
@@ -310,7 +310,7 @@ const Contact = ({ contactSol }) => {
           </div>
         </div>
       </div>
-      {/* 6LcSquccAAAAAHfQ2TmemcGtj_6fibFVk3JZJrDs */}
+      {/* 6LdTxuccAAAAAH7C-M6Jwues4uw9VF2KNeKchCLD */}
     </>
   )
 }
