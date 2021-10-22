@@ -229,7 +229,7 @@ function Navbars() {
                             )}
                         </Nav>
                         <Nav id="nav_b1">
-                            <p id="main_top_link"><Nav.Link href="" id="main_top_links" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact us</Nav.Link></p>
+                            <p id="main_top_link"><Nav.Link href="" id="main_top_links" activeClassName='active' onClick={() => setContact(true)} role="presentation">Contact us</Nav.Link></p>
                             <Nav id="navlogoimg">
                                 <a
                                     href="https://in.linkedin.com/company/archimedis-healthcare-private-limited"
@@ -251,6 +251,9 @@ function Navbars() {
                 okButtonProps={{ style: { display: 'none' } }}
                 cancelButtonProps={{ style: { display: 'none' } }}
                 onCancel={handelCancel}
+                bodyStyle={{backgroundColor:`white`, height:`100%`}}
+                style={{backgroundColor:`white`, height:`100%`}}
+                maskStyle={{backgroundColor:`white`, height:`fit-content`, padding:`0`}}
             >
                 <Nav id="navcont">
                     <Contact />
