@@ -5,11 +5,15 @@ import Contact from "./Home/contact"
 import Footer from "./Home/footer"
 // import SEO from "../components/seo"
 import Nav from "./nav"
-import close from "../images/navclose.svg";
+import { Modal } from 'antd';
 
 const BlogPage = ({ data }) => {
 
   const [caseStudysPop, setCaseStudysPop] = useState(false)
+
+  const handelCancel = () => {
+    setCaseStudysPop(false)
+  }
 
   const blogList = data.blogData.edges
 
@@ -51,7 +55,7 @@ const BlogPage = ({ data }) => {
                         <p>{blogItem.node.frontmatter.excerpt}</p>
                         <p>{blogItem.node.frontmatter.date}</p>
                       </div>
-                    {/* </Link> */}
+                      {/* </Link> */}
                     </div>
                   </div>
                 </>
@@ -61,11 +65,21 @@ const BlogPage = ({ data }) => {
       </div>
       <Contact />
       <Footer />
-      {caseStudysPop ? (
+
+      <Modal
+        centered
+        visible={caseStudysPop}
+        width={1000}
+        okButtonProps={{ style: { display: 'none' } }}
+        cancelButtonProps={{ style: { display: 'none' } }}
+        onCancel={handelCancel}
+      >
         <div id="navcont">
-          <img src={close} alt="img" id="contclose" onClick={() => setCaseStudysPop(false)} role="presentation" />
-          <Contact contactSol={caseStudysPop ? "R&D Services" : ""} />
-        </div>) : null}
+          <div id="navcont">
+            <Contact contactSol={caseStudysPop ? "R&D Services" : ""} />
+          </div>
+        </div>
+      </Modal>
     </Fragment>
   )
 }

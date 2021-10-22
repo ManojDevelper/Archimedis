@@ -4,6 +4,7 @@ import img1 from "../../images/c_phone.svg"
 import img2 from "../../images/c_mail.svg"
 import { message } from "antd"
 import { SmileOutlined, DownOutlined, CloseOutlined } from "@ant-design/icons"
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = ({ contactSol }) => {
   console.log(contactSol)
@@ -14,6 +15,8 @@ const Contact = ({ contactSol }) => {
   const [description, setDescription] = useState("")
   const [categorys, setCategorys] = useState("")
   const [over, setOver] = useState("")
+  const [captcha, setCaptcha] = useState(false)
+  console.log(captcha)
 
 
   const toggleTab = (index) => {
@@ -113,6 +116,10 @@ const Contact = ({ contactSol }) => {
       })
   }
 
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setCaptcha(true)
+  }
   return (
     <>
       <div className="contact" id="contact">
@@ -274,18 +281,36 @@ const Contact = ({ contactSol }) => {
               />
             </div>
             <div className="button">
-              {name.length < 3 ||
-                !email ||
-                !/\S+@\S+\.\S+/.test(email) ||
-                !category ? (
-                <button onClick={signUpp}>SEND MESSAGE</button>
-              ) : (
-                <button onClick={onFinish}>SEND MESSAGE</button>
-              )}
+              {
+                captcha ?
+                  <>
+                    {name.length < 3 ||
+                      !email ||
+                      !/\S+@\S+\.\S+/.test(email) ||
+                      !category ? (
+                      <button onClick={signUpp}>SEND MESSAGE</button>
+                    ) : (
+                      <button onClick={onFinish}>SEND MESSAGE</button>
+                    )}
+                  </>
+                  :
+                  <>
+                  { name || email || category
+                    ?
+                    <ReCAPTCHA
+                      sitekey="6LcmruccAAAAAIZtddoFDeanMzun5QwGzM2NQ984"
+                      onChange={onChange}
+                    />
+                    :
+                    <button onClick={signUpp}>SEND MESSAGE</button>
+              }
+              </>
+              }
             </div>
           </div>
         </div>
       </div>
+      {/* 6LcSquccAAAAAHfQ2TmemcGtj_6fibFVk3JZJrDs */}
     </>
   )
 }

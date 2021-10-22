@@ -4,12 +4,16 @@ import btnarrow from "../../images/btnhover2.svg"
 // import img2 from "../../images/facebook.svg"
 // import img5 from "../../images/youtube.svg"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import close from "../../images/navclose.svg";
 import Contact from "./contact"
+import { Modal } from 'antd';
 
 export const Footer = ({ footer }) => {
 
   const [footerPop, setFooterPop] = useState(false)
+
+  const handelCancel = () => {
+    setFooterPop(false)
+  }
 
 
   return (
@@ -22,38 +26,38 @@ export const Footer = ({ footer }) => {
                 <div id="footer_cards" key={i}>
                   {
                     footerItem.link === ""
-                    ?
-                    <>
-                    {
-                      footerItem.title === "Contact"
                       ?
-                      <p id="h1" onClick={() => setFooterPop(true)} role="presentation">
-                      {footerItem.title}
-                    </p>
-                    :
-                    <p to={footerItem.link} id="h1">
-                    {footerItem.title}
-                  </p>
-                    }
-                  </>
-                  :
-                  <Link to={footerItem.link} id="h1">
-                  {footerItem.title}
-                </Link>
+                      <>
+                        {
+                          footerItem.title === "Contact"
+                            ?
+                            <p id="h1" onClick={() => setFooterPop(true)} role="presentation">
+                              {footerItem.title}
+                            </p>
+                            :
+                            <p to={footerItem.link} id="h1">
+                              {footerItem.title}
+                            </p>
+                        }
+                      </>
+                      :
+                      <Link to={footerItem.link} id="h1">
+                        {footerItem.title}
+                      </Link>
                   }
                   {footerItem &&
                     footerItem.footercontainer.map((footercontainers, i) => (
                       <div key={i}>
                         {
                           footercontainers.Link === ""
-                          ?
-                          <p to={footercontainers.Link} id="p" style={{cursor: `default`}}>
-                          {footercontainers.description}
-                        </p>
-                        :
-                        <Link to={footercontainers.Link} id="p">
-                        {footercontainers.description}
-                      </Link>
+                            ?
+                            <p to={footercontainers.Link} id="p" style={{ cursor: `default` }}>
+                              {footercontainers.description}
+                            </p>
+                            :
+                            <Link to={footercontainers.Link} id="p">
+                              {footercontainers.description}
+                            </Link>
                         }
 
                       </div>
@@ -96,11 +100,20 @@ export const Footer = ({ footer }) => {
           </div>
         </div>
       </div>
-      {footerPop ? (
+
+      <Modal
+        centered
+        visible={footerPop}
+        width={1000}
+        okButtonProps={{ style: { display: 'none' } }}
+        cancelButtonProps={{ style: { display: 'none' } }}
+        onCancel={handelCancel}
+
+      >
         <div id="navcont">
-          <img src={close} alt="img" id="contclose" onClick={() => setFooterPop(false)} role="presentation" />
           <Contact />
-        </div>) : null}
+        </div>
+      </Modal>
     </>
   )
 }

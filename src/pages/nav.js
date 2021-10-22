@@ -13,6 +13,7 @@ import nav1 from "../images/btnnormal3.svg";
 // import nav6 from "../images/navyoutube.svg";
 import Contact from "./Home/contact";
 import { Link } from "gatsby";
+import { Modal } from 'antd';
 
 function Navbars() {
     const [hide, setHide] = useState("")
@@ -20,7 +21,11 @@ function Navbars() {
     const [hidess, setHidess] = useState("")
     const [hidesss, setHidesss] = useState("")
     const [hidessss, setHidessss] = useState("")
-    const [contact, setContact] = useState(true)
+    const [contact, setContact] = useState(false)
+
+    const handelCancel = () => {
+        setContact(false)
+    }
 
     return (
         <>
@@ -45,7 +50,7 @@ function Navbars() {
                             <Nav id="nav_links"><Link to="/aboutus/" id="nav_main_link" activeClassName='active'>About</Link><span>|</span></Nav>
                             <Nav id="nav_links"><Link to="/#patners" id="nav_main_link" activeClassName='active'>Clients</Link><span>|</span></Nav>
                             <Nav id="nav_links"><Link to="/blog" id="nav_main_link" activeClassName='active'>Insights</Link><span>|</span></Nav>
-                            <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(false)} role="presentation">Contact</p></Nav>
+                            <Nav id="nav_links"><p id="nav_main_link" onClick={() => setContact(true)} role="presentation">Contact</p></Nav>
                         </Nav>
                         <Nav id="nav_b2">
                             <Nav id="nav_links"><Link to="/formulation/" id="nav_main_link" activeClassName='active'>Formulations<Nav id="mark"></Nav>
@@ -174,7 +179,7 @@ function Navbars() {
                                     <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About</Nav.Link>
                                     <Nav.Link href="/#patners" id="nav_main_link" activeClassName='active'>Clients</Nav.Link>
                                     <Nav.Link href="/blog" id="nav_main_link" activeClassName='active'>Insights</Nav.Link>
-                                    <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(false)} role="presentation">Contact</Nav.Link>
+                                    <Nav.Link href="" id="nav_main_link" activeClassName='active' onClick={() => setContact(true)} role="presentation">Contact</Nav.Link>
                                 </>
                             )}
                         </Nav>
@@ -238,11 +243,19 @@ function Navbars() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            {!contact ? (
+
+            <Modal
+                centered
+                visible={contact}
+                width={1000}
+                okButtonProps={{ style: { display: 'none' } }}
+                cancelButtonProps={{ style: { display: 'none' } }}
+                onCancel={handelCancel}
+            >
                 <Nav id="navcont">
-                    <img src={close} alt="img" id="contclose" onClick={() => setContact(true)} role="presentation" />
                     <Contact />
-                </Nav>) : null}
+                </Nav>
+            </Modal>
         </>
     );
 };

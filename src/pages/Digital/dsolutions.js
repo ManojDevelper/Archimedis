@@ -5,11 +5,16 @@ import close from "../../images/navclose.svg";
 import '../../styles/Nav.css';
 import Contact from "../../pages/Home/contact";
 import browcher from "../../images/eCapsule.pdf"
+import { Modal } from 'antd';
 
 export const Dsolutions = ({ dsolution }) => {
 
   const [contactSol, setContactSol] = useState(false)
-  
+
+  const handelCancel = () => {
+    setContactSol(false)
+  }
+
 
   return (
     <>
@@ -141,11 +146,19 @@ export const Dsolutions = ({ dsolution }) => {
             ))}
           </div>
         ))}
-      {contactSol ? (
+
+      <Modal
+        centered
+        visible={contactSol}
+        width={1000}
+        okButtonProps={{ style: { display: 'none' } }}
+        cancelButtonProps={{ style: { display: 'none' } }}
+        onCancel={handelCancel}
+      >
         <div id="navcont">
-          <img src={close} alt="img" id="contclose" onClick={() => setContactSol(false)} role="presentation" />
           <Contact contactSol={contactSol ? "Digital Services" : ""} />
-        </div>) : null}
+        </div>
+      </Modal>
     </>
   )
 }

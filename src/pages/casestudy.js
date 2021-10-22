@@ -1,11 +1,9 @@
 import React, { Fragment, useState } from "react"
-import { Link } from "gatsby"
 import "../styles/casestudy.css"
 import arrow from "../images/arow.svg"
 import arrow2 from "../images/blog_btn_blue.svg"
-import SEO from "../components/seo"
 import Contact from "../pages/Home/contact";
-import close from "../images/navclose.svg";
+import { Modal } from 'antd';
 
 const CasePage = ({ data }) => {
   const blogList = data
@@ -13,6 +11,10 @@ const CasePage = ({ data }) => {
   console.log(blogList)
 
   const [caseStudys, setCaseStudys] = useState(false)
+
+  const handelCancel = () => {
+    setCaseStudys(false)
+  }
 
   return (
     <Fragment>
@@ -40,11 +42,11 @@ const CasePage = ({ data }) => {
                           </div>
                           <div id="casestudy_card_b2">
                             <p>{blogItem.node.frontmatter.title}</p>
-                              <button id="csbtn" onClick={() => setCaseStudys(true)}>
-                                Request Info 
-                                <img src={arrow} alt="img" id="blod_btn1" />
-                                <img src={arrow2} alt="img" id="blod_btn2" />
-                              </button>
+                            <button id="csbtn" onClick={() => setCaseStudys(true)}>
+                              Request Info
+                              <img src={arrow} alt="img" id="blod_btn1" />
+                              <img src={arrow2} alt="img" id="blod_btn2" />
+                            </button>
                           </div>
                         </div>
                       </>
@@ -55,11 +57,19 @@ const CasePage = ({ data }) => {
             })}
         </div>
       </div>
-      {caseStudys ? (
+
+      <Modal
+        centered
+        visible={caseStudys}
+        width={1000}
+        okButtonProps={{ style: { display: 'none' } }}
+        cancelButtonProps={{ style: { display: 'none' } }}
+        onCancel={handelCancel}
+      >
         <div id="navcont">
-          <img src={close} alt="img" id="contclose" onClick={() => setCaseStudys(false)} role="presentation" />
           <Contact contactSol={caseStudys ? "R&D Services" : ""} />
-        </div>) : null}
+        </div>
+      </Modal>
     </Fragment>
   )
 }
