@@ -212,7 +212,7 @@ function Navbars() {
                                 </Nav>
                                 <Nav id="nav_b1">
                                     {!hidesss ?
-                                        <p id="main_top_link"><Nav.Link href="/products" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidesss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/products" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidesss(false)}><img src={minus} alt="img" /></span></p>}
+                                        <p id="main_top_link"><Nav.Link href="/product" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidesss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/product" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidesss(false)}><img src={minus} alt="img" /></span></p>}
                                     {!hidesss ? null : (
                                         <>
                                             <Nav.Link href="/product/#pharmaceutical" id="nav_main_link" activeClassName='active'>Pharmaceutical</Nav.Link>
