@@ -188,8 +188,7 @@ function Navbars() {
                                     )}
                                 </Nav>
                                 <Nav id="nav_b1">
-                                    {!hides ?
-                                        <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={minus} alt="img" /></span></p>}
+                                    <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link>{!hides ? <span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span> : <span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={plus} alt="img" /></span>}</p>
                                     {!hides ? null : (
                                         <>
                                             <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeClassName='active'>R&D Services</Nav.Link>
@@ -199,8 +198,8 @@ function Navbars() {
                                     )}
                                 </Nav>
                                 <Nav id="nav_b1">
-                                    {!hidess ?
-                                        <p id="main_top_link"><Nav.Link href="/manufacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidess(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/manufacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidess(false)}><img src={minus} alt="img" /></span></p>}
+
+                                    <p id="main_top_link"><Nav.Link href="/manufacture" id="main_top_links" activeClassName='active'>Manufacturing</Nav.Link>{!hidess ? <span id="mainspan1" role="presentation" onClick={() => setHidess(true)}><img src={plus} alt="img" /></span> : <span id="mainspan2" role="presentation" onClick={() => setHidess(false)}><img src={minus} alt="img" /></span>}</p>
                                     {!hidess ? null : (
                                         <>
                                             <Nav.Link href="/manufacture/#OralSolidForms" id="nav_main_link" activeClassName='active'>Oral Solid Forms</Nav.Link>
@@ -211,8 +210,8 @@ function Navbars() {
                                     )}
                                 </Nav>
                                 <Nav id="nav_b1">
-                                    {!hidesss ?
-                                        <p id="main_top_link"><Nav.Link href="/product" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidesss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/product" id="main_top_links" activeClassName='active'>Products</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidesss(false)}><img src={minus} alt="img" /></span></p>}
+
+                                    <p id="main_top_link"><Nav.Link href="/product" id="main_top_links" activeClassName='active'>Products</Nav.Link>{!hidesss ? <span id="mainspan1" role="presentation" onClick={() => setHidesss(true)}><img src={plus} alt="img" /></span> : <span id="mainspan2" role="presentation" onClick={() => setHidesss(false)}><img src={minus} alt="img" /></span>}</p>
                                     {!hidesss ? null : (
                                         <>
                                             <Nav.Link href="/product/#pharmaceutical" id="nav_main_link" activeClassName='active'>Pharmaceutical</Nav.Link>
@@ -222,8 +221,8 @@ function Navbars() {
                                     )}
                                 </Nav>
                                 <Nav id="nav_b1">
-                                    {!hidessss ?
-                                        <p id="main_top_link"><Nav.Link href="/digital" id="main_top_links" activeClassName='active'>Digital</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHidessss(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="/digital" id="main_top_links" activeClassName='active'>Digital</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHidessss(false)}><img src={minus} alt="img" /></span></p>}
+
+                                    <p id="main_top_link"><Nav.Link href="/digital" id="main_top_links" activeClassName='active'>Digital</Nav.Link>{!hidessss ? <span id="mainspan1" role="presentation" onClick={() => setHidessss(true)}><img src={plus} alt="img" /></span> : <span id="mainspan2" role="presentation" onClick={() => setHidessss(false)}><img src={minus} alt="img" /></span>}</p>
                                     {!hidessss ? null : (
                                         <>
                                             <Nav.Link href="/digital/#dsolutions" id="nav_main_link" activeClassName='active'>Digital Solutions</Nav.Link>
