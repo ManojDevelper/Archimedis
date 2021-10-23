@@ -176,8 +176,8 @@ function Navbars() {
                             </Nav>
                             <Nav id="navbarResponsive2">
                                 <Nav id="nav_b1">
-                                    {!hide ?
-                                        <p id="main_top_link"><Nav.Link href="/" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan1" role="presentation" onClick={() => setHide(true)}><img src={plus} alt="img" /></span></p> : <p id="main_top_link"><Nav.Link href="#about" id="main_top_links" activeClassName='active'>Home</Nav.Link><span id="mainspan2" role="presentation" onClick={() => setHide(false)}><img src={minus} alt="img" /></span></p>}
+
+                                    <p id="main_top_link"><Nav.Link href="/" id="main_top_links" activeClassName='active'>Home</Nav.Link>{!hide ? <span id="mainspan1" role="presentation" onClick={() => setHide(true)}><img src={plus} alt="img" /></span> : <span id="mainspan2" role="presentation" onClick={() => setHide(false)}><img src={minus} alt="img" /></span>}</p>
                                     {!hide ? null : (
                                         <>
                                             <Nav.Link href="/aboutus/" id="nav_main_link" activeClassName='active'>About</Nav.Link>
@@ -188,7 +188,7 @@ function Navbars() {
                                     )}
                                 </Nav>
                                 <Nav id="nav_b1">
-                                    <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link>{!hides ? <span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span> : <span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={plus} alt="img" /></span>}</p>
+                                    <p id="main_top_link"><Nav.Link href="/formulation" id="main_top_links" activeClassName='active'>Formulations</Nav.Link>{!hides ? <span id="mainspan1" role="presentation" onClick={() => setHides(true)}><img src={plus} alt="img" /></span> : <span id="mainspan2" role="presentation" onClick={() => setHides(false)}><img src={minus} alt="img" /></span>}</p>
                                     {!hides ? null : (
                                         <>
                                             <Nav.Link href="/formulation/#fservice" id="nav_main_link" activeClassName='active'>R&D Services</Nav.Link>
