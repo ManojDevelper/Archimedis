@@ -11,10 +11,16 @@ import "../../styles/Nav.css";
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
+import { Modal } from 'antd';
 
 export const Banner = ({ title, description, description2, boxDescription, bannerTyping }) => {
 
-    const [bcontact, setBcontact] = useState(true)
+    const [bcontact, setBcontact] = useState(false)
+  
+    const handelCancel = () => {
+        setBcontact(false)
+    }
+
     const [open, setOpen] = React.useState(false);
 
     const handleClickOpen = () => {
@@ -63,7 +69,7 @@ export const Banner = ({ title, description, description2, boxDescription, banne
                                     </iframe>
                                 </DialogContent>
                             </Dialog>
-                            <button onClick={() => setBcontact(false)}>Contact Us</button>
+                            <button onClick={() => setBcontact(true)}>Contact Us</button>
                         </div>
                         <div id="banner_mini_container">
                             <div id="banner_mini_container_img">
@@ -78,11 +84,21 @@ export const Banner = ({ title, description, description2, boxDescription, banne
             </div>
 
             <Top link="/" />
-            {!bcontact ? (
+            <Modal
+                centered
+                visible={bcontact}
+                width={1000}
+                okButtonProps={{ style: { display: 'none' } }}
+                cancelButtonProps={{ style: { display: 'none' } }}
+                onCancel={handelCancel}
+                bodyStyle={{ backgroundColor: `white`, height: `100%` }}
+                style={{ backgroundColor: `white`, height: `100%` }}
+                maskStyle={{ backgroundColor: `white`, height: `fit-content`, padding: `0` }}
+            >
                 <div id="navcont">
-                    <img src={close} alt="img" id="contclose" onClick={() => setBcontact(true)} role="presentation" />
                     <Contact />
-                </div>) : null}
+                </div>
+            </Modal>
         </>
     );
 };
