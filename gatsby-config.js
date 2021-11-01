@@ -7,7 +7,7 @@ module.exports = {
     title: `Archimedis Healthcare Private Limited - Reputed Pharma Manufacturers Chennai`,
     description: `Archimedis reputed third party contract pharmaceutical company in Chennai, India. Our Products are Tablets, Capsules, Dry powder and Hand sanitizers.`,
     keywords: ['Medical'],
-    siteUrl: `https://manojponugoti.ml/`,
+    siteUrl: `https://www.archimedis.global/`,
   },
   plugins: [
     {
@@ -28,6 +28,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
