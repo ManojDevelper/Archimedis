@@ -69,7 +69,22 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-top: 2.51798561151079vw;
+  margin-top: 2.5vw;
+  cursor: pointer;
+}
+#footer_container_bottom #tnc_block {
+  margin-top: 2.5vw;
+}
+#footer_container_bottom p a{
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+#footer_container_bottom p a:hover {
+  opacity: 0.8;
+}
+#footer_container_bottom p a:nth-child(2) {
+  margin-left: 2.51798561151079vw;
 }
 @media (max-width: 750px) {
   #footer {
@@ -138,5 +153,11 @@
     font-size: 3.3vw;
     margin-top: 5vw;
     line-height: inherit;
+  }
+  #footer_container_bottom #tnc_block {
+    margin-top: 10vw;
+  }
+  #footer_container_bottom p a:nth-child(2) {
+    margin-left: 4vw;
   }
 }

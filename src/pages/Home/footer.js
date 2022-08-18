@@ -6,6 +6,8 @@ import btnarrow from "../../images/btnhover2.svg"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Contact from "./contact"
 import { Modal } from 'antd';
+import terms from "../../data/assets/tnc.pdf";
+import policy from "../../data/assets/pp.pdf";
 
 export const Footer = ({ footer }) => {
 
@@ -97,6 +99,7 @@ export const Footer = ({ footer }) => {
               </a> */}
             </div>
             <p>Copyright © 2021 Archimedis. All rights reserved.</p>
+            <p id="tnc_block"><a href={terms} target="_Blank" rel="noopener noreferrer" id="tnc">Terms of Service</a><a href={policy} target="_Blank" rel="noopener noreferrer" id="pp">Privacy Policy</a></p>
           </div>
         </div>
       </div>
